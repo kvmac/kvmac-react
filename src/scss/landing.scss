@@ -1,0 +1,40 @@
+
+.landing {
+  background-color: #111116;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.invisible {
+  opacity: 0;
+  width: 0;
+}
+
+.dissolve {
+  overflow: hidden !important;
+  animation: fadestars 3s ease-out forwards;
+  -webkit-animation: fadestars 3s ease-out forwards; 
+  -moz-animation: fadestars 3s ease-out forwards; 
+  -ms-animation: fadestars 3s ease-out forwards; 
+}
+
+@keyframes fadestars {
+  0% {transform: scale(1); opacity: 1.0; visibility: visible;}
+  100% {transform: scale(0); opacity: 0.0; visibility: none; position: absolute;}
+}
+
+@-moz-keyframes fadestars {
+  0% {transform: scale(1); opacity: 1.0; visibility: visible;}
+  100% {transform: scale(0); opacity: 0.0; visibility: none; position: absolute;}
+}
+@-webkit-keyframes fadestars {
+  0% {transform: scale(1); opacity: 1.0; visibility: visible;}
+  100% {transform: scale(0); opacity: 0.0; visibility: none; position: absolute;}
+}
+@-ms-keyframes fadestars {
+  0% {transform: scale(1); opacity: 1.0; visibility: visible;}
+  100% {transform: scale(0); opacity: 0.0; visibility: none; position: absolute;}
+}

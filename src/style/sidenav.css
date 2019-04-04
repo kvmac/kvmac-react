@@ -1,0 +1,359 @@
+.sidenav {
+  height: 100%;
+  width: 0;
+  overflow: hidden;
+  background: #111116;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
+  animation: slide 2s ease-in forwards;
+  -webkit-animation: slide 2s ease-in forwards;
+  -moz-animation: slide 2s ease-in forwards;
+  -ms-animation: slide 2s ease-in forwards;
+}
+
+.sidenav .header {
+  top: 0;
+  width: 100%;
+  height: 40%;
+  /* background: -webkit-linear-gradient(to bottom, #222222, #111116);
+    background: -moz-linear-gradient(to bottom, #222222, #111116); 
+    background: linear-gradient(to bottom, #222222, #111116); */
+}
+
+.sidenav .header .photo {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sidenav .info {
+  position: absolute;
+  top: 70%;
+  height: 30%;
+  width: 100%;
+  left: 50%;
+  right: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.closed {
+  height: 100%;
+  animation: hide .25s ease-in forwards;
+  -webkit-animation: hide .25s ease-in forwards;
+  -moz-animation: hide .25s ease-in forwards;
+  -ms-animation: hide .25s ease-in forwards;
+}
+
+.open {
+  height: 100%;
+  animation: reveal .5s ease-in forwards;
+  -webkit-animation: reveal .5s ease-in forwards;
+  -moz-animation: reveal .5s ease-in forwards;
+  -ms-animation: reveal .5s ease-in forwards;
+}
+
+.visible {
+  display: block;
+  overflow: hidden;
+}
+
+.sidenav > ul {
+  position: relative;
+  width: 100%;
+  /* margin-top: 88px; */
+  /* padding: 0; */
+}
+
+.sidenav > ul > li > a {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 11px 22px;
+  color: white;
+  /* color: #222327; */
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  /* width: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.sidenav > ul > li > a:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/*crops the profile photo into a circle */
+@-webkit-keyframes fadeprofile {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: .75;
+  }
+  50% {
+    opacity: .5;
+  }
+  75% {
+    opacity: .25;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeprofile {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: .75;
+  }
+  50% {
+    opacity: .5;
+  }
+  75% {
+    opacity: .25;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-profile {
+  -webkit-animation: fadeprofile .5s;
+          animation: fadeprofile .5s;
+}
+
+#social {
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+}
+
+#github {
+  top: 0;
+  position: absolute;
+  left: 20%;
+}
+
+#linkedin {
+  top: 0;
+  position: absolute;
+  right: 20%;
+}
+
+#name {
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+
+#title {
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  overflow: hidden;
+}
+
+#location {
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  width: 60%;
+  overflow: hidden;
+  top: 50%;
+  left: 25%;
+}
+
+#links {
+  height: 40%;
+  font-family: 'FiraSans', sans-serif;
+  left: 0;
+  font-size: 22px;
+  top: 80%;
+  width: 100%;
+  /* left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.link {
+  display: block;
+  color: white;
+  width: 100%;
+  height: 30px;
+  padding-top: 20px;
+  left: 50%;
+  right: 50%;
+  text-decoration: none;
+  /* left: 50%; */
+}
+
+#hamburger-button {
+  display: block;
+  width: 28px;
+  height: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5%;
+  left: 20px;
+  z-index: 100;
+}
+
+#hamburger-button > span {
+  background: white;
+  position: absolute;
+  border-radius: 10em;
+  height: 20%;
+  /* background: #222327; */
+  top: 0px;
+}
+
+.close-button > span {
+  background: white;
+  position: absolute;
+  border-radius: 10em;
+  height: 20%;
+  /* background: #222327; */
+  top: 0px;
+}
+
+#hamburger-button > span:nth-child(1) {
+  width: 100%;
+  top: 0;
+  -webkit-transition: top 0.1s ease-in, width 0.1s ease 0.1s;
+  transition: top 0.1s ease-in, width 0.1s ease 0.1s;
+}
+
+#hamburger-button > span:nth-child(2) {
+  top: 50%;
+  width: 95%;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+#hamburger-button > span:nth-child(3) {
+  width: 95%;
+  top: 50%;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+#hamburger-button > span:nth-child(4) {
+  width: 70%;
+  top: 100%;
+  -webkit-transition: top 0.1s ease-in, width 0.1s ease 0.1s;
+  transition: top 0.1s ease-in, width 0.1s ease 0.1s;
+}
+
+.close-button > span:nth-child(1) {
+  top: 50% !important;
+  width: 0% !important;
+}
+
+.close-button > span:nth-child(2) {
+  top: 50% !important;
+  -webkit-transform: rotate(45deg) !important;
+          transform: rotate(45deg) !important;
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
+}
+
+.close-button > span:nth-child(3) {
+  top: 50% !important;
+  -webkit-transform: rotate(-45deg) !important;
+          transform: rotate(-45deg) !important;
+}
+
+.close-button > span:nth-child(4) {
+  top: 50% !important;
+  width: 0% !important;
+}
+
+@keyframes slide {
+  86% {
+    width: 0;
+  }
+  93% {
+    width: 20%;
+  }
+  96% {
+    width: 16%;
+  }
+  100% {
+    width: 18%;
+  }
+}
+
+@-webkit-keyframes slide {
+  86% {
+    width: 0;
+  }
+  93% {
+    width: 20%;
+  }
+  96% {
+    width: 16%;
+  }
+  100% {
+    width: 18%;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    width: 18%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+@-webkit-keyframes reveal {
+  0% {
+    width: 18%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+@keyframes hide {
+  0% {
+    width: 85%;
+  }
+  100% {
+    width: 18%;
+  }
+}
+
+@-webkit-keyframes hide {
+  0% {
+    width: 85%;
+  }
+  100% {
+    width: 18%;
+  }
+}
+/*# sourceMappingURL=sidenav.css.map */
