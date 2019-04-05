@@ -9,7 +9,7 @@ export class Main extends React.Component {
     super(props);
 
     this.state = {
-      isMobile: window.screen.width < 1200
+      isMobile: window.innerWidth < 1200
     };
   }
 
@@ -18,7 +18,8 @@ export class Main extends React.Component {
   }
 
   checkDisplay = () => {
-    let isMobile = window.screen.width < 1200 ? true : false;
+    console.log('window width;', window.innerWidth < 1200, window.innerWidth, ' vs ', '1200');
+    let isMobile = window.innerWidth < 1200;
 
     this.setState({ isMobile });
   }

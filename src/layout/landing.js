@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import logo from '../svg/kvmac.svg';
 import '../style/landing.css';
 
 
@@ -97,7 +98,7 @@ export function Landing() {
         value: function draw(ctx) {
           ctx.beginPath();
           // adjust particle size here
-          ctx.arc(this.x, this.y, this.radius, 0, .2 * Math.PI, false);
+          ctx.arc(this.x, this.y, this.radius, 0, .5 * Math.PI, false);
           ctx.fillStyle = color;
           ctx.fill();
         }
@@ -153,7 +154,7 @@ export function Landing() {
   return(
     <div onClick={() => setDissolve({ dissolve: true })}>
       <canvas id="canvas" className={ !dissolve ? "landing" : "dissolve"}>
-        <img src="../svg/kvmac.svg" alt="kvmac logo" />
+        <img className="logo" src={logo} alt="kvmac logo" />
       </canvas>
     </div>
   )

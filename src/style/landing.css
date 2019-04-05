@@ -7,6 +7,15 @@
   overflow: hidden;
 }
 
+.logo {
+  width: 15%;
+  left: 50%;
+  right: 50%;
+  top: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .invisible {
   opacity: 0;
   width: 0;

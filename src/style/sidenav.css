@@ -10,10 +10,10 @@
   box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-  animation: slide 2s ease-in forwards;
-  -webkit-animation: slide 2s ease-in forwards;
-  -moz-animation: slide 2s ease-in forwards;
-  -ms-animation: slide 2s ease-in forwards;
+  animation: slide 1s ease-in forwards;
+  -webkit-animation: slide 1s ease-in forwards;
+  -moz-animation: slide 1s ease-in forwards;
+  -ms-animation: slide 1s ease-in forwards;
 }
 
 .sidenav .header {
@@ -26,6 +26,7 @@
 }
 
 .sidenav .header .photo {
+  width: 50% !important;
   border-radius: 50%;
   position: absolute;
   top: 50%;
@@ -34,8 +35,6 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 10;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .sidenav .info {
@@ -47,6 +46,18 @@
   right: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.sidenav .info .link {
+  display: block;
+  color: white;
+  width: 100%;
+  height: 30px;
+  padding-top: 20px;
+  left: 50%;
+  right: 50%;
+  text-decoration: none;
+  /* left: 50%; */
 }
 
 .closed {
@@ -192,18 +203,6 @@
   /* left: 50%;
   right: 50%;
   transform: translate(-50%, -50%); */
-}
-
-.link {
-  display: block;
-  color: white;
-  width: 100%;
-  height: 30px;
-  padding-top: 20px;
-  left: 50%;
-  right: 50%;
-  text-decoration: none;
-  /* left: 50%; */
 }
 
 #hamburger-button {

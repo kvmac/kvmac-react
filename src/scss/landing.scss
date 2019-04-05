@@ -7,6 +7,13 @@
   position: absolute;
   overflow: hidden;
 }
+.logo {
+  width: 15%;
+  left: 50%;
+  right: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
 
 .invisible {
   opacity: 0;
@@ -16,9 +23,9 @@
 .dissolve {
   overflow: hidden !important;
   animation: fadestars 3s ease-out forwards;
-  -webkit-animation: fadestars 3s ease-out forwards; 
-  -moz-animation: fadestars 3s ease-out forwards; 
-  -ms-animation: fadestars 3s ease-out forwards; 
+  -webkit-animation: fadestars 3s ease-out forwards;
+  -moz-animation: fadestars 3s ease-out forwards;
+  -ms-animation: fadestars 3s ease-out forwards;
 }
 
 @keyframes fadestars {
