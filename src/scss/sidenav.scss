@@ -1,12 +1,4 @@
 
-.overlay {
-  width: 10%;
-  height: 100%;
-  z-index: 10;
-  background: #111116;
-  opacity: 50%;
-  right: 0;
-}
 .sidenav {
   height: 100%;
   width: 0;
@@ -34,15 +26,31 @@
     background: -moz-linear-gradient(to bottom, #222222, #111116); 
     background: linear-gradient(to bottom, #222222, #111116); */
     .photo {
-      width: 50% !important;
+      width: 80%;
       border-radius: 50%;
       position: absolute;
-      top: 50%;
+      top: 25%;
       left: 50%;
       right: 50%;
       transform: translate(-50%, -50%);
-      z-index: 10;
       // object-fit: cover;
+    }
+
+    .social {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      
+      .github {
+      position: absolute;
+        width: 30%;
+        left: 10%;
+      }
+      .linkedin {
+      position: absolute;
+        width: 40%;
+        right: 10%;
+      }
     }
   }
   .info {
@@ -55,16 +63,15 @@
     transform: translate(-50%, -50%);
 
     .link {
+      left: 10%;
+      font-size: 24pt;
+      position: relative;
       display: block;
       color: white;
       width: 100%;
-      height: 30px;
-      padding-top: 20px;
-      left: 50%;
-      right: 50%;
+      height: 40px;
+      padding-top: 30px;
       text-decoration: none;
-      /* left: 50%; */
-
     }
   }
 
@@ -135,21 +142,6 @@
   animation: fadeprofile .5s;
 }
 
-#social {
-  z-index: 10;
-  position: absolute;
-  width: 100%;
-}
-#github {
-  top: 0;
-  position: absolute;
-  left: 20%;
-}
-#linkedin {
-  top: 0;
-  position: absolute;
-  right: 20%;
-}
 
 #name {
   font-family: 'Raleway', sans-serif;
@@ -194,7 +186,7 @@
   height: 20px;
   position: sticky;
   top: 5%;
-  left: 30%;
+  left: 20px;
   z-index: 100;
 }
 
@@ -349,7 +341,7 @@
 
 
 // TABLETS
-@media (min-width: 800px) {
+@media (min-width: 750px) {
   .sidenav {
     animation: slide 1.5s ease-in forwards;
     -webkit-animation: slide 1.5s ease-in forwards; 
@@ -364,33 +356,46 @@
       background: -moz-linear-gradient(to bottom, #222222, #111116); 
       background: linear-gradient(to bottom, #222222, #111116); */
       .photo {
-        width: 50% !important;
+        width: 60%;
         border-radius: 50%;
         position: absolute;
-        top: 50%;
+        top: 25%;
         left: 50%;
         right: 50%;
         transform: translate(-50%, -50%);
         z-index: 10;
         // object-fit: cover;
       }
+
+      .social {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        
+        .github {
+        position: absolute;
+          width: 30%;
+          left: 10%;
+        }
+        .linkedin {
+        position: absolute;
+          width: 40%;
+          right: 10%;
+        }
+      }
     }
     .info {
       position: absolute;
-      top: 70%;
+      top: 75%;
       height: 30%;
       width: 100%;
-      left: 50%;
-      right: 50%;
-      transform: translate(-50%, -50%);
 
       .link {
-        display: block;
+        font-size: 32pt;
         color: white;
-        width: 100%;
-        height: 30px;
-        padding-top: 20px;
-        left: 50%;
+        width: 40%;
+        padding: 50px;
+        left: 15%;
         right: 50%;
         text-decoration: none;
         /* left: 50%; */
@@ -413,6 +418,16 @@
     -webkit-animation: reveal .5s ease-in forwards; 
     -moz-animation: reveal .5s ease-in forwards; 
     -ms-animation: reveal .5s ease-in forwards; 
+  }
+
+  #hamburger-button {
+    display: block;
+    width: 28px;
+    height: 20px;
+    position: sticky;
+    top: 5%;
+    left: 25px;
+    z-index: 100;
   }
 
   // ANIMATIONS
