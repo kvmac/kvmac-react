@@ -1,7 +1,7 @@
 .sidenav {
   height: 100%;
   width: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   background: #111116;
   position: absolute;
   z-index: 5;
@@ -181,14 +181,14 @@
   position: absolute;
   top: 40%;
   left: 25%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 #location {
   font-family: 'Raleway', sans-serif;
   position: absolute;
   width: 60%;
-  overflow: hidden;
+  overflow-x: hidden;
   top: 50%;
   left: 25%;
 }
