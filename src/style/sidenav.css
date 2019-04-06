@@ -1,3 +1,12 @@
+.overlay {
+  width: 10%;
+  height: 100%;
+  z-index: 10;
+  background: #111116;
+  opacity: 50%;
+  right: 0;
+}
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -69,6 +78,7 @@
 }
 
 .open {
+  z-index: 10;
   height: 100%;
   animation: reveal .5s ease-in forwards;
   -webkit-animation: reveal .5s ease-in forwards;
@@ -195,7 +205,7 @@
 
 #links {
   height: 40%;
-  font-family: 'FiraSans', sans-serif;
+  font-family: 'Asap', sans-serif;
   left: 0;
   font-size: 22px;
   top: 80%;
@@ -212,7 +222,7 @@
   position: -webkit-sticky;
   position: sticky;
   top: 5%;
-  left: 20px;
+  left: 30%;
   z-index: 100;
 }
 
@@ -353,6 +363,129 @@
   }
   100% {
     width: 18%;
+  }
+}
+
+@media (min-width: 800px) {
+  .sidenav {
+    animation: slide 1.5s ease-in forwards;
+    -webkit-animation: slide 1.5s ease-in forwards;
+    -moz-animation: slide 1.5s ease-in forwards;
+    -ms-animation: slide 1.5s ease-in forwards;
+  }
+  .sidenav .header {
+    top: 0;
+    width: 100%;
+    height: 40%;
+    /* background: -webkit-linear-gradient(to bottom, #222222, #111116);
+      background: -moz-linear-gradient(to bottom, #222222, #111116); 
+      background: linear-gradient(to bottom, #222222, #111116); */
+  }
+  .sidenav .header .photo {
+    width: 50% !important;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+  .sidenav .info {
+    position: absolute;
+    top: 70%;
+    height: 30%;
+    width: 100%;
+    left: 50%;
+    right: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .sidenav .info .link {
+    display: block;
+    color: white;
+    width: 100%;
+    height: 30px;
+    padding-top: 20px;
+    left: 50%;
+    right: 50%;
+    text-decoration: none;
+    /* left: 50%; */
+  }
+  .closed {
+    height: 100%;
+    animation: hide .25s ease-in forwards;
+    -webkit-animation: hide .25s ease-in forwards;
+    -moz-animation: hide .25s ease-in forwards;
+    -ms-animation: hide .25s ease-in forwards;
+  }
+  .open {
+    height: 100%;
+    animation: reveal .5s ease-in forwards;
+    -webkit-animation: reveal .5s ease-in forwards;
+    -moz-animation: reveal .5s ease-in forwards;
+    -ms-animation: reveal .5s ease-in forwards;
+  }
+  @keyframes slide {
+    75% {
+      width: 0;
+    }
+    87% {
+      width: 9%;
+    }
+    94% {
+      width: 6%;
+    }
+    100% {
+      width: 8%;
+    }
+  }
+  @-webkit-keyframes slide {
+    75% {
+      width: 0;
+    }
+    87% {
+      width: 9%;
+    }
+    94% {
+      width: 6%;
+    }
+    100% {
+      width: 8%;
+    }
+  }
+  @keyframes reveal {
+    0% {
+      width: 8%;
+    }
+    100% {
+      width: 85%;
+    }
+  }
+  @-webkit-keyframes reveal {
+    0% {
+      width: 8%;
+    }
+    100% {
+      width: 85%;
+    }
+  }
+  @keyframes hide {
+    0% {
+      width: 85%;
+    }
+    100% {
+      width: 8%;
+    }
+  }
+  @-webkit-keyframes hide {
+    0% {
+      width: 85%;
+    }
+    100% {
+      width: 8%;
+    }
   }
 }
 /*# sourceMappingURL=sidenav.css.map */

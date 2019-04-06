@@ -9,51 +9,40 @@ export class Sidenav extends React.Component {
     super(props);
 
     this.state = {
-      isOpen: null,
-      sidenav: ""
+      isOpen: false,
+      sidenavAnimation: ''
     };
   }
 
-  handleSidenav = () => this.setState({ isOpen: !this.state.isOpen });
-
-  sidenavCheck = () => {
-    const { isOpen } = {...this.state};
-
-    let status = isOpen ? "open" : "closed";
-
-    return isOpen !== null ? status : ""
-  }
-  componentDidMount() {
-    this.setState({ sidenav: "sidenav " });
-  }
+  handleSidenav = () => this.setState({ isOpen: !this.state.isOpen, sidenavAnimation: !this.state.isOpen ? "open" : "closed" });
 
   render() {
-    const { isOpen, sidenav } = {...this.state};
+    const { isOpen, sidenavAnimation } = {...this.state};
 
     return(
-      <div className={sidenav + this.sidenavCheck()}>
-        <div id="hamburger-button" className={isOpen ? "close-button" : ""} onClick={this.handleSidenav}>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div className={`contents ${isOpen ? "visible" : "invisible"}`}>
-          <div className="header">
-            <img className="photo" src={headshot} alt="Kodee McIntosh" />
+        <div className={`sidenav ${sidenavAnimation}`}>
+          <div id="hamburger-button" className={isOpen ? "close-button" : ""} onClick={this.handleSidenav}>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-          <div className="info">
-            <div id="links">
-              <Link className="link" to="/">Home</Link>
-              <Link className="link" to="/projects">Projects</Link>
-              <Link className="link" to="/spicy-resume">🌶️Spicy Resume🔥</Link>
+          <div className={`contents ${isOpen ? "visible" : "invisible"}`}>
+            <div className="header">
+              <img className="photo" src={headshot} alt="Kodee McIntosh" />
+            </div>
+            <div className="info">
+              <div id="links">
+                <Link className="link" to="/">Home</Link>
+                <Link className="link" to="/projects">Projects</Link>
+                <Link className="link" to="/spicy-resume">🌶️Spicy Resume🔥</Link>
 
-              {/* <Link className="link" to="/blog">Blog</Link> */}
+                {/* <Link className="link" to="/blog">Blog</Link> */}
+              </div>
             </div>
           </div>
+          {/* <Link to="/blog">Blog</Link> */}
         </div>
-        {/* <Link to="/blog">Blog</Link> */}
-      </div>
     );
   }
 }
