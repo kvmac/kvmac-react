@@ -2,7 +2,9 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../scss/footer.scss"
+        "../scss/footer.scss",
+        "../scss/variables.scss",
+        "../scss/mixins.scss"
     ],
     "names": [],
     "file": "footer.css"

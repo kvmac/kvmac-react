@@ -1,47 +1,136 @@
 
-.landing {
-  background-color: #111116;
-  z-index: 1000;
+@import 'variables';
+@import 'mixins';
+
+.overlay {
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  position: absolute;
+  opacity: 100%;
+  z-index: 4;
+}
+.dissolve {
+  &.landing {
+    @include animation(0, 3s, fade-stars, ease-out);
+    // background-color: #111116;
+    background-color: $dark-primary;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  &.logo {
+    @include animation(0, 2s, fade-logo, ease-out);
+    width: 80%;
+    left: 50%;
+    right: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+  }
+}
+
+.landing {
+  // background-color: #111116;
+  position: relative;
+  background-color: $dark-primary;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 .logo {
-  width: 15%;
+  position: relative;
+  width: 80%;
   left: 50%;
   right: 50%;
   top: 40%;
   transform: translate(-50%, -50%);
+  z-index: 3;
 }
+
+
 
 .invisible {
   opacity: 0;
   width: 0;
 }
 
-.dissolve {
-  overflow: hidden !important;
-  animation: fadestars 3s ease-out forwards;
-  -webkit-animation: fadestars 3s ease-out forwards;
-  -moz-animation: fadestars 3s ease-out forwards;
-  -ms-animation: fadestars 3s ease-out forwards;
+@include keyframes(fade-logo) {
+  0% {
+    transform: scale(1);
+    opacity: 1.0;
+    visibility: visible;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0.0;
+    visibility: none;
+  }
+}
+@include keyframes(fade-stars) {
+  0% {
+    transform: scale(1);
+    opacity: 1.0;
+    visibility: visible;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0.0;
+    visibility: none;
+  }
 }
 
-@keyframes fadestars {
-  0% {transform: scale(1); opacity: 1.0; visibility: visible;}
-  100% {transform: scale(0); opacity: 0.0; visibility: none; position: absolute;}
-}
 
-@-moz-keyframes fadestars {
-  0% {transform: scale(1); opacity: 1.0; visibility: visible;}
-  100% {transform: scale(0); opacity: 0.0; visibility: none; position: absolute;}
-}
-@-webkit-keyframes fadestars {
-  0% {transform: scale(1); opacity: 1.0; visibility: visible;}
-  100% {transform: scale(0); opacity: 0.0; visibility: none; position: absolute;}
-}
-@-ms-keyframes fadestars {
-  0% {transform: scale(1); opacity: 1.0; visibility: visible;}
-  100% {transform: scale(0); opacity: 0.0; visibility: none; position: absolute;}
-}
+
+// @keyframes fadestars {
+//   0% {transform: scale(1); opacity: 1.0; visibility: visible;}
+//   100% {transform: scale(0); opacity: 0.0; visibility: none;}
+// }
+// @-webkit-keyframes fadestars {
+//   0% {transform: scale(1); opacity: 1.0; visibility: visible;}
+//   100% {transform: scale(0); opacity: 0.0; visibility: none;}
+// }
+// @-moz-keyframes fadestars {
+//   0% {transform: scale(1); opacity: 1.0; visibility: visible;}
+//   100% {transform: scale(0); opacity: 0.0; visibility: none; position: absolute;}
+// }
+// @-ms-keyframes fadestars {
+//   0% {transform: scale(1); opacity: 1.0; visibility: visible;}
+//   100% {transform: scale(0); opacity: 0.0; visibility: none; position: absolute;}
+// }
+
+// @keyframes fadelogo {
+//   0% {
+//     transform: scale(1);
+//     opacity: 1.0;
+//     visibility: visible;
+//   }
+//   100% {
+//     transform: scale(0.5);
+//     opacity: 0.0;
+//     visibility: none;
+//   }
+// }
+// @-webkit-keyframes fadelogo {
+//   0% {
+//     transform: scale(1);
+//     opacity: 1.0;
+//     visibility: visible;
+//     position: relative;
+//   }
+//   50% {transform: scale(.5); opacity: 0.0; visibility: none; position: relative;}
+// }
+// @-moz-keyframes fadelogo {
+//   0% {transform: scale(1); opacity: 1.0; visibility: visible;}
+//   100% {transform: scale(0); opacity: 0.0; visibility: none;}
+// }
+// @-ms-keyframes fadelogo {
+//   0% {transform: scale(1); opacity: 1.0; visibility: visible;}
+//   100% {transform: scale(0); opacity: 0.0; visibility: none; position: absolute;}
+// }

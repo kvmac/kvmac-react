@@ -1,8 +1,10 @@
 {
     "version": 3,
-    "mappings": "AACA,AAAA,KAAK,CAAC;EACJ,KAAK,EAAE,IAAI;CACZ",
+    "mappings": "AAMA,AAAA,KAAK,CAAC;EACJ,KAAK,EAAE,IAAI;CACZ",
     "sources": [
-        "../scss/blog.scss"
+        "../scss/blog.scss",
+        "../scss/variables.scss",
+        "../scss/mixins.scss"
     ],
     "names": [],
     "file": "blog.css"

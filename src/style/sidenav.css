@@ -1,31 +1,227 @@
+.visible {
+  display: block;
+  overflow: hidden;
+}
+
 .sidenav {
+  position: relative;
   height: 100%;
+  overflow: hidden;
+  background-color: #171717;
   width: 0;
-  overflow-x: hidden;
-  background: #111116;
-  position: absolute;
-  z-index: 5;
+  z-index: 1;
   top: 0;
   left: 0;
   box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-  animation: slide 1s ease-in forwards;
-  -webkit-animation: slide 1s ease-in forwards;
-  -moz-animation: slide 1s ease-in forwards;
-  -ms-animation: slide 1s ease-in forwards;
 }
 
-.sidenav .header {
+.init {
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-name: init;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-direction: ease-in;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 1.5s;
+  -moz-animation-name: init;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-direction: ease-in;
+  -ms-animation-delay: 0;
+  -ms-animation-duration: 1.5s;
+  -ms-animation-name: init;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-direction: ease-in;
+  animation-delay: 0;
+  animation-duration: 1.5s;
+  animation-name: init;
+  animation-fill-mode: forwards;
+  animation-direction: ease-in;
+}
+
+.open {
+  width: 18%;
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: open;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-direction: ease-in;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-name: open;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-direction: ease-in;
+  -ms-animation-delay: 0;
+  -ms-animation-duration: 0.5s;
+  -ms-animation-name: open;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-direction: ease-in;
+  animation-delay: 0;
+  animation-duration: 0.5s;
+  animation-name: open;
+  animation-fill-mode: forwards;
+  animation-direction: ease-in;
+}
+
+.close {
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 0.75s;
+  -webkit-animation-name: close;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-direction: ease-in;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 0.75s;
+  -moz-animation-name: close;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-direction: ease-in;
+  -ms-animation-delay: 0;
+  -ms-animation-duration: 0.75s;
+  -ms-animation-name: close;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-direction: ease-in;
+  animation-delay: 0;
+  animation-duration: 0.75s;
+  animation-name: close;
+  animation-fill-mode: forwards;
+  animation-direction: ease-in;
+}
+
+@-webkit-keyframes init {
+  86% {
+    width: 0;
+  }
+  93% {
+    width: 20%;
+  }
+  96% {
+    width: 16%;
+  }
+  100% {
+    width: 18%;
+  }
+}
+
+@keyframes init {
+  86% {
+    width: 0;
+  }
+  93% {
+    width: 20%;
+  }
+  96% {
+    width: 16%;
+  }
+  100% {
+    width: 18%;
+  }
+}
+
+@-webkit-keyframes open {
+  0% {
+    width: 18%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+@keyframes open {
+  0% {
+    width: 18%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+@-webkit-keyframes close {
+  0% {
+    width: 85%;
+  }
+  100% {
+    width: 18%;
+  }
+}
+
+@keyframes close {
+  0% {
+    width: 85%;
+  }
+  100% {
+    width: 18%;
+  }
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: .75;
+  }
+  50% {
+    opacity: .5;
+  }
+  75% {
+    opacity: .25;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: .75;
+  }
+  50% {
+    opacity: .5;
+  }
+  75% {
+    opacity: .25;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-content {
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: fade;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-direction: forwards;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-name: fade;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-direction: forwards;
+  -ms-animation-delay: 0;
+  -ms-animation-duration: 0.5s;
+  -ms-animation-name: fade;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-direction: forwards;
+  animation-delay: 0;
+  animation-duration: 0.5s;
+  animation-name: fade;
+  animation-fill-mode: forwards;
+  animation-direction: forwards;
+}
+
+.header {
   top: 0;
   width: 100%;
   height: 40%;
   /* background: -webkit-linear-gradient(to bottom, #222222, #111116);
-    background: -moz-linear-gradient(to bottom, #222222, #111116); 
-    background: linear-gradient(to bottom, #222222, #111116); */
+  background: -moz-linear-gradient(to bottom, #222222, #111116); 
+  background: linear-gradient(to bottom, #222222, #111116); */
 }
 
-.sidenav .header .photo {
+.header .photo {
   width: 80%;
   border-radius: 50%;
   position: absolute;
@@ -36,25 +232,25 @@
           transform: translate(-50%, -50%);
 }
 
-.sidenav .header .social {
+.header .social {
   position: absolute;
   top: 50%;
   width: 100%;
 }
 
-.sidenav .header .social .github {
+.header .social .github {
   position: absolute;
   width: 30%;
   left: 10%;
 }
 
-.sidenav .header .social .linkedin {
+.header .social .linkedin {
   position: absolute;
   width: 40%;
   right: 10%;
 }
 
-.sidenav .info {
+.info {
   position: absolute;
   top: 70%;
   height: 30%;
@@ -65,38 +261,45 @@
           transform: translate(-50%, -50%);
 }
 
-.sidenav .info .link {
-  left: 10%;
+.link {
   font-size: 24pt;
   position: relative;
   display: block;
   color: white;
   width: 100%;
-  height: 40px;
-  padding-top: 30px;
+  height: 40%;
+  background: #005EFF;
+  font-family: 'Asap', sans-serif;
+}
+
+#home-link {
+  left: 20%;
+  font-family: 'Asap', sans-serif;
   text-decoration: none;
+  box-shadow: 6px 10px 0px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 6px 10px 20px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 25px 0px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
 }
 
-.closed {
-  height: 100%;
-  animation: hide .25s ease-in forwards;
-  -webkit-animation: hide .25s ease-in forwards;
-  -moz-animation: hide .25s ease-in forwards;
-  -ms-animation: hide .25s ease-in forwards;
+#projects-link {
+  left: 20%;
+  font-family: 'Asap', sans-serif;
+  text-decoration: none;
+  box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 25px 0px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
 }
 
-.open {
-  z-index: 10;
-  height: 100%;
-  animation: reveal .5s ease-in forwards;
-  -webkit-animation: reveal .5s ease-in forwards;
-  -moz-animation: reveal .5s ease-in forwards;
-  -ms-animation: reveal .5s ease-in forwards;
-}
-
-.visible {
-  display: block;
-  overflow: hidden;
+#resume-link {
+  left: 20%;
+  font-family: 'Asap', sans-serif;
+  text-decoration: none;
+  box-shadow: 6px 10px 0px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 6px 10px 20px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 25px 0px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
 }
 
 .sidenav > ul {
@@ -127,47 +330,6 @@
   background: rgba(0, 0, 0, 0.2);
 }
 
-/*crops the profile photo into a circle */
-@-webkit-keyframes fadeprofile {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: .75;
-  }
-  50% {
-    opacity: .5;
-  }
-  75% {
-    opacity: .25;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes fadeprofile {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: .75;
-  }
-  50% {
-    opacity: .5;
-  }
-  75% {
-    opacity: .25;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-.fade-profile {
-  -webkit-animation: fadeprofile .5s;
-          animation: fadeprofile .5s;
-}
-
 #name {
   font-family: 'Raleway', sans-serif;
   font-size: 28px;
@@ -181,23 +343,22 @@
   position: absolute;
   top: 40%;
   left: 25%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 #location {
   font-family: 'Raleway', sans-serif;
   position: absolute;
   width: 60%;
-  overflow-x: hidden;
+  overflow: hidden;
   top: 50%;
   left: 25%;
 }
 
 #links {
-  height: 40%;
-  font-family: 'Asap', sans-serif;
+  font-weight: bold;
   left: 0;
-  font-size: 22px;
+  font-size: 22px !important;
   top: 80%;
   width: 100%;
   /* left: 50%;
@@ -226,7 +387,6 @@
 }
 
 .close-button > span {
-  background: white;
   position: absolute;
   border-radius: 10em;
   height: 20%;
@@ -290,79 +450,7 @@
   width: 0% !important;
 }
 
-@keyframes slide {
-  86% {
-    width: 0;
-  }
-  93% {
-    width: 20%;
-  }
-  96% {
-    width: 16%;
-  }
-  100% {
-    width: 18%;
-  }
-}
-
-@-webkit-keyframes slide {
-  86% {
-    width: 0;
-  }
-  93% {
-    width: 20%;
-  }
-  96% {
-    width: 16%;
-  }
-  100% {
-    width: 18%;
-  }
-}
-
-@keyframes reveal {
-  0% {
-    width: 18%;
-  }
-  100% {
-    width: 85%;
-  }
-}
-
-@-webkit-keyframes reveal {
-  0% {
-    width: 18%;
-  }
-  100% {
-    width: 85%;
-  }
-}
-
-@keyframes hide {
-  0% {
-    width: 85%;
-  }
-  100% {
-    width: 18%;
-  }
-}
-
-@-webkit-keyframes hide {
-  0% {
-    width: 85%;
-  }
-  100% {
-    width: 18%;
-  }
-}
-
 @media (min-width: 750px) {
-  .sidenav {
-    animation: slide 1.5s ease-in forwards;
-    -webkit-animation: slide 1.5s ease-in forwards;
-    -moz-animation: slide 1.5s ease-in forwards;
-    -ms-animation: slide 1.5s ease-in forwards;
-  }
   .sidenav .header {
     top: 0;
     width: 100%;
@@ -413,20 +501,6 @@
     text-decoration: none;
     /* left: 50%; */
   }
-  .closed {
-    height: 100%;
-    animation: hide .25s ease-in forwards;
-    -webkit-animation: hide .25s ease-in forwards;
-    -moz-animation: hide .25s ease-in forwards;
-    -ms-animation: hide .25s ease-in forwards;
-  }
-  .open {
-    height: 100%;
-    animation: reveal .5s ease-in forwards;
-    -webkit-animation: reveal .5s ease-in forwards;
-    -moz-animation: reveal .5s ease-in forwards;
-    -ms-animation: reveal .5s ease-in forwards;
-  }
   #hamburger-button {
     display: block;
     width: 28px;
@@ -437,7 +511,76 @@
     left: 25px;
     z-index: 100;
   }
-  @keyframes slide {
+  .init {
+    -webkit-animation-delay: 4s;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-name: init;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-direction: ease-in;
+    -moz-animation-delay: 4s;
+    -moz-animation-duration: 1s;
+    -moz-animation-name: init;
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-direction: ease-in;
+    -ms-animation-delay: 4s;
+    -ms-animation-duration: 1s;
+    -ms-animation-name: init;
+    -ms-animation-fill-mode: forwards;
+    -ms-animation-direction: ease-in;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    animation-name: init;
+    animation-fill-mode: forwards;
+    animation-direction: ease-in;
+  }
+  .open {
+    z-index: 2;
+    height: 100%;
+    -webkit-animation-delay: 0.25s;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-name: open;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-direction: ease-in;
+    -moz-animation-delay: 0.25s;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-name: open;
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-direction: ease-in;
+    -ms-animation-delay: 0.25s;
+    -ms-animation-duration: 0.5s;
+    -ms-animation-name: open;
+    -ms-animation-fill-mode: forwards;
+    -ms-animation-direction: ease-in;
+    animation-delay: 0.25s;
+    animation-duration: 0.5s;
+    animation-name: open;
+    animation-fill-mode: forwards;
+    animation-direction: ease-in;
+  }
+  .close {
+    height: 100%;
+    -webkit-animation-delay: 0;
+    -webkit-animation-duration: 0.25s;
+    -webkit-animation-name: close;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-direction: ease-in;
+    -moz-animation-delay: 0;
+    -moz-animation-duration: 0.25s;
+    -moz-animation-name: close;
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-direction: ease-in;
+    -ms-animation-delay: 0;
+    -ms-animation-duration: 0.25s;
+    -ms-animation-name: close;
+    -ms-animation-fill-mode: forwards;
+    -ms-animation-direction: ease-in;
+    animation-delay: 0;
+    animation-duration: 0.25s;
+    animation-name: close;
+    animation-fill-mode: forwards;
+    animation-direction: ease-in;
+  }
+  @-webkit-keyframes init {
     75% {
       width: 0;
     }
@@ -451,7 +594,7 @@
       width: 8%;
     }
   }
-  @-webkit-keyframes slide {
+  @keyframes init {
     75% {
       width: 0;
     }
@@ -465,7 +608,29 @@
       width: 8%;
     }
   }
-  @keyframes reveal {
+  .fade-content {
+    -webkit-animation-delay: 0;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-direction: forwards;
+    -moz-animation-delay: 0;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-name: fade;
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-direction: forwards;
+    -ms-animation-delay: 0;
+    -ms-animation-duration: 0.5s;
+    -ms-animation-name: fade;
+    -ms-animation-fill-mode: forwards;
+    -ms-animation-direction: forwards;
+    animation-delay: 0;
+    animation-duration: 0.5s;
+    animation-name: fade;
+    animation-fill-mode: forwards;
+    animation-direction: forwards;
+  }
+  @-webkit-keyframes open {
     0% {
       width: 8%;
     }
@@ -473,7 +638,7 @@
       width: 85%;
     }
   }
-  @-webkit-keyframes reveal {
+  @keyframes open {
     0% {
       width: 8%;
     }
@@ -481,7 +646,7 @@
       width: 85%;
     }
   }
-  @keyframes hide {
+  @-webkit-keyframes close {
     0% {
       width: 85%;
     }
@@ -489,12 +654,46 @@
       width: 8%;
     }
   }
-  @-webkit-keyframes hide {
+  @keyframes close {
     0% {
       width: 85%;
     }
     100% {
       width: 8%;
+    }
+  }
+  @-webkit-keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: .75;
+    }
+    50% {
+      opacity: .5;
+    }
+    75% {
+      opacity: .25;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: .75;
+    }
+    50% {
+      opacity: .5;
+    }
+    75% {
+      opacity: .25;
+    }
+    100% {
+      opacity: 0;
     }
   }
 }

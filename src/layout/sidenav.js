@@ -12,11 +12,11 @@ export class Sidenav extends React.Component {
 
     this.state = {
       isOpen: false,
-      sidenavAnimation: ''
+      sidenavAnimation: 'init'
     };
   }
 
-  handleSidenav = () => this.setState({ isOpen: !this.state.isOpen, sidenavAnimation: !this.state.isOpen ? "open" : "closed" });
+  handleSidenav = () => this.setState({ isOpen: !this.state.isOpen, sidenavAnimation: !this.state.isOpen ? "open" : "close" });
 
   render() {
     const { isOpen, sidenavAnimation } = {...this.state};
@@ -39,10 +39,9 @@ export class Sidenav extends React.Component {
             </div>
             <div className="info">
               <div id="links">
-                <Link onClick={this.handleSidenav} className="link" to="/">Home</Link>
-                <Link onClick={this.handleSidenav} className="link" to="/projects">Projects</Link>
-                <Link onClick={this.handleSidenav} className="link" to="/spicy-resume">Spicy Resume🌶️</Link>
-
+                <Link className="link" onClick={this.handleSidenav} to="/">Home</Link>
+                <Link className="link" onClick={this.handleSidenav} to="/projects">Projects</Link>
+                <Link className="link" onClick={this.handleSidenav} to="/spicy-resume">Spicy Resume🌶️</Link>
                 {/* <Link className="link" to="/blog">Blog</Link> */}
               </div>
             </div>

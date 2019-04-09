@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../svg/kvmac.svg';
+import logo from '../svg/kvmac-final-landing.svg';
 import '../style/landing.css';
 
 
-export function Landing() {
+export function Landing({ closeLanding }) {
   const [dissolve, setDissolve] = useState(false);
 
   useEffect(() => {
@@ -151,11 +151,16 @@ export function Landing() {
     loop();
   });
 
+  const dissolveLanding = () => {
+    setDissolve({ dissolve: true });
+
+    setTimeout(() => closeLanding(), 1000);
+  }
+
   return(
-    <div onClick={() => setDissolve({ dissolve: true })}>
-      <canvas id="canvas" className={ !dissolve ? "landing" : "dissolve"}>
-        <img className="logo" src={logo} alt="kvmac logo" />
-      </canvas>
+    <div onClick={dissolveLanding} className={!dissolve ? "overlay" : "dissolve"}>
+      <img className={`logo ${dissolve ? "dissolve" : "" }`} src={logo} alt="kvmac logo" />
+      <canvas id="canvas" className={`landing ${dissolve ? "dissolve" : "" }`} />
     </div>
   )
 }

@@ -2,7 +2,9 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../scss/resume.scss"
+        "../scss/resume.scss",
+        "../scss/variables.scss",
+        "../scss/mixins.scss"
     ],
     "names": [],
     "file": "resume.css"
