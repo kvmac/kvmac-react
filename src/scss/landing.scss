@@ -31,7 +31,6 @@
 
   .landing {
     @include animation(0, 3s, fade-stars, ease-out);
-    // background-color: #111116;
   }
   .logo {
     position: absolute;
@@ -51,21 +50,16 @@
   width: 0;
 }
 
-@mixin center() {
-    top: 40%;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-
-}
-
 @include keyframes(fade-logo) {
   0% {
     position: absolute;
     transform: scale(1);
     opacity: .4;
     z-index: 3;
-    @include center();
+    top: 40%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
   }
   100% {
     position: absolute;

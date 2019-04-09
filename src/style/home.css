@@ -1,4 +1,7 @@
 .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #191919;
 }
 /*# sourceMappingURL=home.css.map */

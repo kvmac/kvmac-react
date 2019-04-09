@@ -3,5 +3,6 @@
 @import 'mixins';
 
 .home {
+    display: flex;
     background-color: $dark-primary;
 }
