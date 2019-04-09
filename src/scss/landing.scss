@@ -3,55 +3,45 @@
 @import 'mixins';
 
 .overlay {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  display: flex;
   opacity: 100%;
   z-index: 4;
-}
-.dissolve {
-  &.landing {
-    @include animation(0, 3s, fade-stars, ease-out);
+
+  .landing {
     // background-color: #111116;
     background-color: $dark-primary;
-    top: 0;
-    left: 0;
+    position: relative;
+    display: flex;
     z-index: 2;
-    width: 100%;
-    height: 100%;
     overflow: hidden;
   }
-  &.logo {
-    @include animation(0, 2s, fade-logo, ease-out);
-    width: 80%;
+  .logo {
+    position: absolute;
+    top: 40%;
     left: 50%;
     right: 50%;
-    top: 40%;
     transform: translate(-50%, -50%);
     z-index: 3;
   }
 }
+.dissolve {
+  display: flex;
+  opacity: 100%;
+  z-index: 4;
 
-.landing {
-  // background-color: #111116;
-  position: relative;
-  background-color: $dark-primary;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.logo {
-  position: relative;
-  width: 80%;
-  left: 50%;
-  right: 50%;
-  top: 40%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
+  .landing {
+    @include animation(0, 3s, fade-stars, ease-out);
+    // background-color: #111116;
+  }
+  .logo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    @include animation(0, 2s, fade-logo, ease-out);
+  }
 }
 
 
@@ -61,16 +51,32 @@
   width: 0;
 }
 
+@mixin center() {
+    top: 40%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
 @include keyframes(fade-logo) {
   0% {
+    position: absolute;
     transform: scale(1);
-    opacity: 1.0;
-    visibility: visible;
+    opacity: .4;
+    z-index: 3;
+    @include center();
   }
   100% {
+    position: absolute;
     transform: scale(0.5);
-    opacity: 0.0;
+    opacity: 0;
     visibility: none;
+    top: 40%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
   }
 }
 @include keyframes(fade-stars) {
@@ -86,51 +92,3 @@
   }
 }
 
-
-
-// @keyframes fadestars {
-//   0% {transform: scale(1); opacity: 1.0; visibility: visible;}
-//   100% {transform: scale(0); opacity: 0.0; visibility: none;}
-// }
-// @-webkit-keyframes fadestars {
-//   0% {transform: scale(1); opacity: 1.0; visibility: visible;}
-//   100% {transform: scale(0); opacity: 0.0; visibility: none;}
-// }
-// @-moz-keyframes fadestars {
-//   0% {transform: scale(1); opacity: 1.0; visibility: visible;}
-//   100% {transform: scale(0); opacity: 0.0; visibility: none; position: absolute;}
-// }
-// @-ms-keyframes fadestars {
-//   0% {transform: scale(1); opacity: 1.0; visibility: visible;}
-//   100% {transform: scale(0); opacity: 0.0; visibility: none; position: absolute;}
-// }
-
-// @keyframes fadelogo {
-//   0% {
-//     transform: scale(1);
-//     opacity: 1.0;
-//     visibility: visible;
-//   }
-//   100% {
-//     transform: scale(0.5);
-//     opacity: 0.0;
-//     visibility: none;
-//   }
-// }
-// @-webkit-keyframes fadelogo {
-//   0% {
-//     transform: scale(1);
-//     opacity: 1.0;
-//     visibility: visible;
-//     position: relative;
-//   }
-//   50% {transform: scale(.5); opacity: 0.0; visibility: none; position: relative;}
-// }
-// @-moz-keyframes fadelogo {
-//   0% {transform: scale(1); opacity: 1.0; visibility: visible;}
-//   100% {transform: scale(0); opacity: 0.0; visibility: none;}
-// }
-// @-ms-keyframes fadelogo {
-//   0% {transform: scale(1); opacity: 1.0; visibility: visible;}
-//   100% {transform: scale(0); opacity: 0.0; visibility: none; position: absolute;}
-// }

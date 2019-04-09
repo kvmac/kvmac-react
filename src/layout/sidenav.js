@@ -33,8 +33,8 @@ export class Sidenav extends React.Component {
             <div className="header">
               <img className="photo" src={headshot} alt="Kodee McIntosh" />
               <div className="social">
-              <a href="https://github.com/kvmac" target="_blank"><img className="github" src={github} /></a>
-              <a href="https://www.linkedin.com/in/kodee-mcintosh" target="_blank"><img className="linkedin" src={linkedin} /></a>
+              <a href="https://github.com/kvmac" target="_blank" rel="noopener noreferrer"><img className="github" src={github} /></a>
+              <a href="https://www.linkedin.com/in/kodee-mcintosh" target="_blank" rel="noopener noreferrer"><img className="linkedin" src={linkedin} /></a>
               </div>
             </div>
             <div className="info">

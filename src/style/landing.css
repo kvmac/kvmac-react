@@ -1,13 +1,40 @@
 .overlay {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   opacity: 100%;
   z-index: 4;
 }
 
-.dissolve.landing {
+.overlay .landing {
+  background-color: #191919;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.overlay .logo {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  right: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.dissolve {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 100%;
+  z-index: 4;
+}
+
+.dissolve .landing {
   -webkit-animation-delay: 0;
   -webkit-animation-duration: 3s;
   -webkit-animation-name: fade-stars;
@@ -28,16 +55,16 @@
   animation-name: fade-stars;
   animation-fill-mode: forwards;
   animation-direction: ease-out;
-  background-color: #191919;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
 }
 
-.dissolve.logo {
+.dissolve .logo {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  right: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 3;
   -webkit-animation-delay: 0;
   -webkit-animation-duration: 2s;
   -webkit-animation-name: fade-logo;
@@ -58,35 +85,6 @@
   animation-name: fade-logo;
   animation-fill-mode: forwards;
   animation-direction: ease-out;
-  width: 80%;
-  left: 50%;
-  right: 50%;
-  top: 40%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 3;
-}
-
-.landing {
-  position: relative;
-  background-color: #191919;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.logo {
-  position: relative;
-  width: 80%;
-  left: 50%;
-  right: 50%;
-  top: 40%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 3;
 }
 
 .invisible {
@@ -96,31 +94,57 @@
 
 @-webkit-keyframes fade-logo {
   0% {
+    position: absolute;
     -webkit-transform: scale(1);
             transform: scale(1);
-    opacity: 1.0;
-    visibility: visible;
+    opacity: .4;
+    z-index: 3;
+    top: 40%;
+    left: 50%;
+    right: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   100% {
+    position: absolute;
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
-    opacity: 0.0;
+    opacity: 0;
     visibility: none;
+    top: 40%;
+    left: 50%;
+    right: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 3;
   }
 }
 
 @keyframes fade-logo {
   0% {
+    position: absolute;
     -webkit-transform: scale(1);
             transform: scale(1);
-    opacity: 1.0;
-    visibility: visible;
+    opacity: .4;
+    z-index: 3;
+    top: 40%;
+    left: 50%;
+    right: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   100% {
+    position: absolute;
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
-    opacity: 0.0;
+    opacity: 0;
     visibility: none;
+    top: 40%;
+    left: 50%;
+    right: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 3;
   }
 }
 

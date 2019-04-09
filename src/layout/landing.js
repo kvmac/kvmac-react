@@ -98,7 +98,7 @@ export function Landing({ closeLanding }) {
         value: function draw(ctx) {
           ctx.beginPath();
           // adjust particle size here
-          ctx.arc(this.x, this.y, this.radius, 0, .5 * Math.PI, false);
+          ctx.arc(this.x, this.y, this.radius, 0, 1 * Math.PI, false);
           ctx.fillStyle = color;
           ctx.fill();
         }
@@ -154,13 +154,13 @@ export function Landing({ closeLanding }) {
   const dissolveLanding = () => {
     setDissolve({ dissolve: true });
 
-    setTimeout(() => closeLanding(), 1000);
+    setTimeout(() => closeLanding(), 1500);
   }
 
   return(
     <div onClick={dissolveLanding} className={!dissolve ? "overlay" : "dissolve"}>
-      <img className={`logo ${dissolve ? "dissolve" : "" }`} src={logo} alt="kvmac logo" />
-      <canvas id="canvas" className={`landing ${dissolve ? "dissolve" : "" }`} />
+      <img className="logo" src={logo} alt="kvmac logo" />
+      <canvas id="canvas" className="landing" />
     </div>
   )
 }
