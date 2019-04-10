@@ -2,7 +2,7 @@ import React from 'react';
 import '../style/main.css';
 import { Route, Switch } from 'react-router-dom';
 import { Header, Sidenav, Footer } from '../layout';
-import { Home, Projects, Resume, Blog } from '../pages';
+import { Home, About, Projects, Resume, Blog } from '../pages';
 
 export class Main extends React.Component {
   constructor(props) {
@@ -33,6 +33,7 @@ export class Main extends React.Component {
         {isMobile ? <Sidenav /> : <Header />}
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/spicy-resume" component={Resume} />
           {/* <Route exact path="/blog" component={Blog} /> */}

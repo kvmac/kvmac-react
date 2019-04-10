@@ -22,10 +22,11 @@ export class Header extends React.Component {
 
     return(
       <div className={`header ${dropAnimation ? "drop-animation" : ""}`}>
-        <img className="logo" src={logo} alt="kvmac logo" />
+        <img className="logo" src={logo} />
         <div className="space-between"></div>
         <div className="nav">
           <Link className="link" to="/">Home</Link>
+          <Link className="link" to="/about">About</Link>
           <Link className="link" to="/projects">Projects</Link>
           <Link className="link" to="/spicy-resume">🌶️Spicy Resume🔥</Link>
           {/* <Link className="link" to="/blog">Blog</Link> */}
