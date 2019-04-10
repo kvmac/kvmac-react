@@ -1,1 +1,65 @@
-/* No CSS *//*# sourceMappingURL=resume.css.map */
+@import url(https://fonts.googleapis.com/css?family=Lato:100,400);
+@-webkit-keyframes load {
+  0% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes load {
+  0% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.resume {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: blue;
+  width: 100%;
+  height: 100%;
+}
+
+.resume .header {
+  width: 90%;
+  background: #005EFF;
+}
+
+.resume .objective {
+  width: 90%;
+  background: #4B24ED;
+}
+
+.resume .tech-skills {
+  width: 90%;
+  background: #FF2D2D;
+}
+
+.resume .experience {
+  width: 90%;
+  background: #FB7525;
+}
+
+.resume .education {
+  width: 90%;
+  background: #13FF5C;
+}
+
+.resume .divider {
+  width: 100%;
+  height: 10px;
+}
+
+.resume .divider .top {
+  top: 0;
+  height: 50%;
+  width: 100%;
+  background-color: black;
+}
+
+.resume .divider .bottom {
+  bottom: 0;
+  height: 50%;
+  width: 100%;
+  background-color: white;
+}
+/*# sourceMappingURL=resume.css.map */

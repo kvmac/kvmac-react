@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,400);
+@-webkit-keyframes load {
+  0% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes load {
+  0% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.circle {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+}
+
+.circlediv {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: #93A2AC;
+  font-family: Lato;
+  font-weight: 100;
+  margin: 2rem;
+}
+
+.circlediv:before {
+  content: attr(color);
+  position: absolute;
+  width: 100%;
+  bottom: -2rem;
+  font-weight: 400;
+}
+
+.circlediv:after {
+  content: attr(percent);
+  position: absolute;
+  width: 100%;
+  top: 3.7rem;
+  left: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.circle svg {
+  width: 10rem;
+  height: 10rem;
+}
+
+.circle svg:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.circle svg:nth-child(2) path {
+  fill: none;
+  stroke-width: 25;
+  stroke-dasharray: 629;
+  stroke: #fff;
+  opacity: .9;
+  -webkit-animation: load 1s;
+          animation: load 1s;
+}
+/*# sourceMappingURL=circle.css.map */

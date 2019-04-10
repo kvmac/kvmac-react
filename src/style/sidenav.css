@@ -1,17 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,400);
+@-webkit-keyframes load {
+  0% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes load {
+  0% {
+    stroke-dashoffset: 0;
+  }
+}
+
 .visible {
   display: block;
   overflow: hidden;
 }
 
 .sidenav {
-  position: relative;
   height: 100%;
   overflow: hidden;
   background-color: #171717;
-  width: 0;
   z-index: 2;
   top: 0;
   left: 0;
+  width: 0;
   box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
@@ -38,11 +49,9 @@
   animation-name: init;
   animation-fill-mode: forwards;
   animation-direction: ease-in;
-  width: 18%;
 }
 
 .sidenav.open {
-  width: 18%;
   -webkit-animation-delay: 0;
   -webkit-animation-duration: 0.5s;
   -webkit-animation-name: open;
@@ -70,22 +79,22 @@
   -webkit-animation-duration: 0.75s;
   -webkit-animation-name: close;
   -webkit-animation-fill-mode: forwards;
-  -webkit-animation-direction: ease-in;
+  -webkit-animation-direction: linear;
   -moz-animation-delay: 0;
   -moz-animation-duration: 0.75s;
   -moz-animation-name: close;
   -moz-animation-fill-mode: forwards;
-  -moz-animation-direction: ease-in;
+  -moz-animation-direction: linear;
   -ms-animation-delay: 0;
   -ms-animation-duration: 0.75s;
   -ms-animation-name: close;
   -ms-animation-fill-mode: forwards;
-  -ms-animation-direction: ease-in;
+  -ms-animation-direction: linear;
   animation-delay: 0;
   animation-duration: 0.75s;
   animation-name: close;
   animation-fill-mode: forwards;
-  animation-direction: ease-in;
+  animation-direction: linear;
 }
 
 .sidenav.fade {
@@ -93,22 +102,22 @@
   -webkit-animation-duration: 0.5s;
   -webkit-animation-name: fade;
   -webkit-animation-fill-mode: forwards;
-  -webkit-animation-direction: ease-in;
+  -webkit-animation-direction: linear;
   -moz-animation-delay: 0;
   -moz-animation-duration: 0.5s;
   -moz-animation-name: fade;
   -moz-animation-fill-mode: forwards;
-  -moz-animation-direction: ease-in;
+  -moz-animation-direction: linear;
   -ms-animation-delay: 0;
   -ms-animation-duration: 0.5s;
   -ms-animation-name: fade;
   -ms-animation-fill-mode: forwards;
-  -ms-animation-direction: ease-in;
+  -ms-animation-direction: linear;
   animation-delay: 0;
   animation-duration: 0.5s;
   animation-name: fade;
   animation-fill-mode: forwards;
-  animation-direction: ease-in;
+  animation-direction: linear;
 }
 
 @-webkit-keyframes init {
@@ -213,6 +222,91 @@
   }
 }
 
+.sidenav #hamburger-button {
+  display: block;
+  width: 28px;
+  height: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5%;
+  left: 20px;
+  z-index: 100;
+}
+
+.sidenav #hamburger-button > span {
+  background: white;
+  position: absolute;
+  border-radius: 10em;
+  height: 20%;
+  /* background: #222327; */
+  top: 0px;
+}
+
+.sidenav .close-button > span {
+  position: absolute;
+  border-radius: 10em;
+  height: 20%;
+  /* background: #222327; */
+  top: 0px;
+}
+
+.sidenav #hamburger-button > span:nth-child(1) {
+  width: 100%;
+  height: 20%;
+  top: 0;
+  -webkit-transition: top 0.1s ease-in, width 0.1s ease 0.1s;
+  transition: top 0.1s ease-in, width 0.1s ease 0.1s;
+}
+
+.sidenav #hamburger-button > span:nth-child(2) {
+  top: 50%;
+  width: 95%;
+  height: 20%;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.sidenav #hamburger-button > span:nth-child(3) {
+  width: 95%;
+  height: 20%;
+  top: 50%;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.sidenav #hamburger-button > span:nth-child(4) {
+  width: 70%;
+  top: 100%;
+  -webkit-transition: top 0.1s ease-in, width 0.1s ease 0.1s;
+  transition: top 0.1s ease-in, width 0.1s ease 0.1s;
+}
+
+.sidenav .close-button > span:nth-child(1) {
+  width: 0% !important;
+}
+
+.sidenav .close-button > span:nth-child(2) {
+  top: 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+}
+
+.sidenav .close-button > span:nth-child(3) {
+  top: 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.sidenav .close-button > span:nth-child(4) {
+  width: 0% !important;
+}
+
 .sidenav .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,7 +332,32 @@
   width: 50%;
 }
 
-.sidenav .info .link {
+.sidenav .info .name {
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  position: absolute;
+  top: 30%;
+  left: 25%;
+}
+
+.sidenav .info .title {
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  overflow: hidden;
+}
+
+.sidenav .info .location {
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  width: 60%;
+  overflow: hidden;
+  top: 50%;
+  left: 25%;
+}
+
+.sidenav .info .nav .link {
   font-size: 24pt;
   position: relative;
   display: block;
@@ -249,185 +368,7 @@
   font-family: 'Asap', sans-serif;
 }
 
-#home-link {
-  left: 20%;
-  font-family: 'Asap', sans-serif;
-  text-decoration: none;
-  box-shadow: 6px 10px 0px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 6px 10px 20px -5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 25px 0px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 5px;
-}
-
-#projects-link {
-  left: 20%;
-  font-family: 'Asap', sans-serif;
-  text-decoration: none;
-  box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 25px 0px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 5px;
-}
-
-#resume-link {
-  left: 20%;
-  font-family: 'Asap', sans-serif;
-  text-decoration: none;
-  box-shadow: 6px 10px 0px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 6px 10px 20px -5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 25px 0px 0px rgba(0, 0, 0, 0.75);
-  border-radius: 5px;
-}
-
-.sidenav > ul {
-  position: relative;
-  width: 100%;
-  /* margin-top: 88px; */
-  /* padding: 0; */
-}
-
-.sidenav > ul > li > a {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 11px 22px;
-  color: white;
-  /* color: #222327; */
-  display: block;
-  text-decoration: none;
-  font-weight: 700;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  /* width: 50%;
-  left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%); */
-}
-
-.sidenav > ul > li > a:hover {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-#name {
-  font-family: 'Raleway', sans-serif;
-  font-size: 28px;
-  position: absolute;
-  top: 30%;
-  left: 25%;
-}
-
-#title {
-  font-family: 'Raleway', sans-serif;
-  position: absolute;
-  top: 40%;
-  left: 25%;
-  overflow: hidden;
-}
-
-#location {
-  font-family: 'Raleway', sans-serif;
-  position: absolute;
-  width: 60%;
-  overflow: hidden;
-  top: 50%;
-  left: 25%;
-}
-
-#links {
-  font-weight: bold;
-  left: 0;
-  font-size: 22px !important;
-  top: 80%;
-  width: 100%;
-  /* left: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%); */
-}
-
-#hamburger-button {
-  display: block;
-  width: 28px;
-  height: 20px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 5%;
-  left: 20px;
-  z-index: 100;
-}
-
-#hamburger-button > span {
-  background: white;
-  position: absolute;
-  border-radius: 10em;
-  height: 20%;
-  /* background: #222327; */
-  top: 0px;
-}
-
-.close-button > span {
-  position: absolute;
-  border-radius: 10em;
-  height: 20%;
-  /* background: #222327; */
-  top: 0px;
-}
-
-#hamburger-button > span:nth-child(1) {
-  width: 100%;
-  top: 0;
-  -webkit-transition: top 0.1s ease-in, width 0.1s ease 0.1s;
-  transition: top 0.1s ease-in, width 0.1s ease 0.1s;
-}
-
-#hamburger-button > span:nth-child(2) {
-  top: 50%;
-  width: 95%;
-  -webkit-transition: all 0.1s ease-in;
-  transition: all 0.1s ease-in;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
-}
-
-#hamburger-button > span:nth-child(3) {
-  width: 95%;
-  top: 50%;
-  -webkit-transition: all 0.1s ease-in;
-  transition: all 0.1s ease-in;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
-}
-
-#hamburger-button > span:nth-child(4) {
-  width: 70%;
-  top: 100%;
-  -webkit-transition: top 0.1s ease-in, width 0.1s ease 0.1s;
-  transition: top 0.1s ease-in, width 0.1s ease 0.1s;
-}
-
-.close-button > span:nth-child(1) {
-  top: 50% !important;
-  width: 0% !important;
-}
-
-.close-button > span:nth-child(2) {
-  top: 50% !important;
-  -webkit-transform: rotate(45deg) !important;
-          transform: rotate(45deg) !important;
-  -webkit-box-shadow: unset !important;
-          box-shadow: unset !important;
-}
-
-.close-button > span:nth-child(3) {
-  top: 50% !important;
-  -webkit-transform: rotate(-45deg) !important;
-          transform: rotate(-45deg) !important;
-}
-
-.close-button > span:nth-child(4) {
-  top: 50% !important;
-  width: 0% !important;
-}
-
-@media (min-width: 750px) {
+@media (min-width: 700px) {
   .sidenav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -443,9 +384,9 @@
     z-index: 2;
     top: 0;
     left: 0;
-    box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
   }
   .sidenav.init {
     width: 0;
@@ -521,13 +462,13 @@
       width: 0;
     }
     87% {
-      width: 9%;
+      width: 12%;
     }
     94% {
-      width: 6%;
+      width: 8%;
     }
     100% {
-      width: 8%;
+      width: 10%;
     }
   }
   @keyframes init {
@@ -535,18 +476,18 @@
       width: 0;
     }
     87% {
-      width: 9%;
+      width: 12%;
     }
     94% {
-      width: 6%;
+      width: 8%;
     }
     100% {
-      width: 8%;
+      width: 10%;
     }
   }
   @-webkit-keyframes open {
     0% {
-      width: 8%;
+      width: 10%;
     }
     100% {
       width: 85%;
@@ -554,7 +495,7 @@
   }
   @keyframes open {
     0% {
-      width: 8%;
+      width: 10%;
     }
     100% {
       width: 85%;
@@ -565,7 +506,7 @@
       width: 85%;
     }
     100% {
-      width: 8%;
+      width: 10%;
     }
   }
   @keyframes close {
@@ -573,16 +514,89 @@
       width: 85%;
     }
     100% {
-      width: 8%;
+      width: 10%;
     }
   }
   .sidenav #hamburger-button {
     position: -webkit-sticky;
     position: sticky;
-    width: 28px;
-    height: 20px;
+    width: 35px;
+    height: 25px;
     left: 25px;
     z-index: 100;
+  }
+  .sidenav #hamburger-button > span {
+    background: white;
+    position: absolute;
+    border-radius: 10em;
+    height: 20%;
+    /* background: #222327; */
+    top: 0px;
+    box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  .sidenav #hamburger-button > span:nth-child(1) {
+    width: 100%;
+    height: 20%;
+    top: 0;
+    -webkit-transition: top 0.1s ease-in, width 0.1s ease 0.1s;
+    transition: top 0.1s ease-in, width 0.1s ease 0.1s;
+  }
+  .sidenav #hamburger-button > span:nth-child(2) {
+    top: 50%;
+    width: 95%;
+    height: 20%;
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+    -webkit-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+    -webkit-transition-delay: 0.15s;
+            transition-delay: 0.15s;
+  }
+  .sidenav #hamburger-button > span:nth-child(3) {
+    width: 95%;
+    height: 20%;
+    top: 50%;
+    -webkit-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+    -webkit-transition-delay: 0.15s;
+            transition-delay: 0.15s;
+  }
+  .sidenav #hamburger-button > span:nth-child(4) {
+    width: 70%;
+    top: 100%;
+    -webkit-transition: top 0.1s ease-in, width 0.1s ease 0.1s;
+    transition: top 0.1s ease-in, width 0.1s ease 0.1s;
+  }
+  .sidenav .close-button > span {
+    position: absolute;
+    border-radius: 10em;
+    height: 20%;
+    /* background: #222327; */
+    top: 0px;
+    box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  .sidenav .close-button > span:nth-child(1) {
+    width: 0% !important;
+  }
+  .sidenav .close-button > span:nth-child(2) {
+    top: 50%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    box-shadow: 4px -6px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px -6px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px -6px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  .sidenav .close-button > span:nth-child(3) {
+    top: 50%;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .sidenav .close-button > span:nth-child(4) {
+    width: 0% !important;
   }
   .sidenav .header {
     display: -webkit-box;

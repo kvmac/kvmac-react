@@ -1,0 +1,7 @@
+
+@import 'variables';
+@import 'mixins';
+
+.circle {
+    @include progress-circle(attr(color), attr(percent));
+}

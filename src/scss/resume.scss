@@ -2,3 +2,49 @@
 @import 'variables';
 @import 'mixins';
 
+
+.resume {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: blue;
+  width: 100%;
+  height: 100%;
+
+  .header {
+    width: 90%;
+    background: $blue1;
+  }
+  .objective {
+    width: 90%;
+    background: $purple1;
+  }
+  .tech-skills {
+    width: 90%;
+    background: $red1;
+  }
+  .experience {
+    width: 90%;
+    background: $orange1;
+  }
+  .education {
+    width: 90%;
+    background: $green1;
+  }
+  .divider {
+    width: 100%;
+    height: 10px;
+    .top {
+      top: 0;
+      height: 50%;
+      width: 100%;
+      background-color: black;
+    }
+    .bottom {
+      bottom: 0;
+      height: 50%;
+      width: 100%;
+      background-color: white;
+    }
+  }
+}

@@ -38,11 +38,13 @@ export class Sidenav extends React.Component {
               </div>
             </div>
             <div className="info">
-              <div id="links">
-                <Link className="link" onClick={this.handleSidenav} to="/">Home</Link>
-                <Link className="link" onClick={this.handleSidenav} to="/projects">Projects</Link>
-                <Link className="link" onClick={this.handleSidenav} to="/spicy-resume">Spicy Resume🌶️</Link>
-                {/* <Link className="link" to="/blog">Blog</Link> */}
+              <div className="nav">
+                <div id="links">
+                  <Link className="link" onClick={this.handleSidenav} to="/">Home</Link>
+                  <Link className="link" onClick={this.handleSidenav} to="/projects">Projects</Link>
+                  <Link className="link" onClick={this.handleSidenav} to="/spicy-resume">Spicy Resume🌶️</Link>
+                  {/* <Link className="link" to="/blog">Blog</Link> */}
+                </div>
               </div>
             </div>
           </div>
