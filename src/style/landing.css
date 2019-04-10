@@ -17,6 +17,26 @@
 }
 
 .overlay .logo {
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-name: bounce;
+  -webkit-animation-fill-mode: infinite;
+  -webkit-animation-direction: ease-out;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 1.5s;
+  -moz-animation-name: bounce;
+  -moz-animation-fill-mode: infinite;
+  -moz-animation-direction: ease-out;
+  -ms-animation-delay: 0;
+  -ms-animation-duration: 1.5s;
+  -ms-animation-name: bounce;
+  -ms-animation-fill-mode: infinite;
+  -ms-animation-direction: ease-out;
+  animation-delay: 0;
+  animation-duration: 1.5s;
+  animation-name: bounce;
+  animation-fill-mode: infinite;
+  animation-direction: ease-out;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -161,6 +181,42 @@
     opacity: 0.0;
     visibility: none;
   }
+  @-webkit-keyframes bounce {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    33% {
+      -webkit-transform: translate(0, 50px);
+              transform: translate(0, 50px);
+    }
+    66% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    100% {
+      -webkit-transform: translate(0, 50px);
+              transform: translate(0, 50px);
+    }
+  }
+  @keyframes bounce {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    33% {
+      -webkit-transform: translate(0, 50px);
+              transform: translate(0, 50px);
+    }
+    66% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    100% {
+      -webkit-transform: translate(0, 50px);
+              transform: translate(0, 50px);
+    }
+  }
 }
 
 @keyframes fade-stars {
@@ -175,6 +231,42 @@
             transform: scale(0);
     opacity: 0.0;
     visibility: none;
+  }
+  @-webkit-keyframes bounce {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    33% {
+      -webkit-transform: translate(0, 50px);
+              transform: translate(0, 50px);
+    }
+    66% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    100% {
+      -webkit-transform: translate(0, 50px);
+              transform: translate(0, 50px);
+    }
+  }
+  @keyframes bounce {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    33% {
+      -webkit-transform: translate(0, 50px);
+              transform: translate(0, 50px);
+    }
+    66% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    100% {
+      -webkit-transform: translate(0, 50px);
+              transform: translate(0, 50px);
+    }
   }
 }
 /*# sourceMappingURL=landing.css.map */

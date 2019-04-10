@@ -13,7 +13,7 @@
   background-color: #171717;
   width: 0;
   // background: #222629;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
@@ -22,6 +22,7 @@
 
   &.init {
     @include animation(0, 1.5s, init, ease-in);
+    width: 18%;
   }
   &.open {
     width: 18%;
@@ -266,135 +267,108 @@
   width: 0% !important;
 }
 
-// ANIMATIONS
-/////////////////////////////////////////
-
-// slide ////////////////////////////////
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // TABLETS
 @media (min-width: 750px) {
+
   .sidenav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    background-color: #171717;
+    width: 0;
+    // background: #222629;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
+
+    &.init {
+      width: 0;
+      @include animation(0, 1s, init, ease-in);
+    }
+    &.open {
+      width: 8%;
+      @include animation(0, .5s, open, ease-in);
+    }
+    &.close {
+      width: 85%;
+      @include animation(0, .25s, close, ease-in);
+    }
+    @include keyframes(init) {
+      75% {width: 0;}
+      87% {width: 9%;}
+      94% {width: 6%;}
+      100% {width: 8%;}
+    }
+    @include keyframes(open) {
+      0% {width: 8%;}
+      100% {width: 85%;}
+    }
+    @include keyframes(close) {
+      0% {width: 85%;}
+      100% {width: 8%;}
+    }
+
+    #hamburger-button {
+      position: sticky;
+      width: 28px;
+      height: 20px;
+      left: 25px;
+      z-index: 100;
+    }
 
     .header {
-      top: 0;
+      display: flex;
+      flex-direction: column;
       width: 100%;
-      height: 40%;
-      /* background: -webkit-linear-gradient(to bottom, #222222, #111116);
-      background: -moz-linear-gradient(to bottom, #222222, #111116); 
-      background: linear-gradient(to bottom, #222222, #111116); */
+      height: 100%;
+
       .photo {
-        width: 60%;
+        align-self: center;
+        width: 35%;
         border-radius: 50%;
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        right: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 10;
         // object-fit: cover;
       }
-
       .social {
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        
+        display: flex;
+        flex-direction: row nowrap;
+        height: 100%;
+
         .github {
-        position: absolute;
-          width: 30%;
-          left: 10%;
+          width: 40%;
         }
         .linkedin {
-        position: absolute;
-          width: 40%;
-          right: 10%;
+          width: 25%;
         }
       }
     }
     .info {
-      position: absolute;
-      top: 75%;
-      height: 30%;
-      width: 100%;
+      display: flex;
+      flex-direction: column;
 
       .link {
-        font-size: 32pt;
+        font-size: 24pt;
+        position: relative;
+        display: block;
         color: white;
-        width: 40%;
-        padding: 50px;
-        left: 15%;
-        right: 50%;
-        text-decoration: none;
-        /* left: 50%; */
-
+        width: 100%;
+        background: $blue1;
+        font-family: 'Asap', sans-serif;
       }
+      // .link:nth-child(1) {
+      // }
+      // .link:nth-child(2) {
+      // }
+      // .link:nth-child(3) {
+      // }
     }
   }
-
-  #hamburger-button {
-    display: block;
-    width: 28px;
-    height: 20px;
-    position: sticky;
-    top: 5%;
-    left: 25px;
-    z-index: 100;
-  }
-
-  // ANIMATIONS
-  /////////////////////////////////////////
-
-  .init {
-    @include animation(4s, 1s, init, ease-in);
-  }
-  .open {
-    z-index: 2;
-    height: 100%;
-    @include animation(.25s, .5s, open, ease-in);
-  }
-  .close {
-    height: 100%;
-    @include animation(0, .25s, close, ease-in);
-  }
-
-  // init-nav ////////////////////////////////
-  @include keyframes(init) {
-    75% {width: 0;}
-    87% {width: 9%;}
-    94% {width: 6%;}
-    100% {width: 8%;}
-  }
-  .fade-content {
-    @include animation(0, .5s, fade);
-  }
-
-  // open-nav ////////////////////////////////
-  @include keyframes(open) {
-    0% {width: 8%;}
-    100% {width: 85%;}
-  }
-
-  // close-nav ////////////////////////////////
-  @include keyframes(close) {
-    0% {width: 85%;}
-    100% {width: 8%;}
+  .fade {
+    @include animation(0, .5s, fade, ease-in);
   }
   @include keyframes(fade) {
     0% {opacity: 1;}

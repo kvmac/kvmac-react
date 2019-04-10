@@ -16,6 +16,7 @@
     overflow: hidden;
   }
   .logo {
+    @include animation(0, 1.5s, bounce, ease-out, infinite);
     position: absolute;
     top: 40%;
     left: 50%;
@@ -83,6 +84,21 @@
     transform: scale(0);
     opacity: 0.0;
     visibility: none;
+  }
+
+  @include keyframes(bounce) {
+    0% {
+      transform: translate(0, 0);
+    }
+    33% {
+      transform: translate(0, 50px);
+    }
+    66% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(0, 50px);
+    }
   }
 }
 

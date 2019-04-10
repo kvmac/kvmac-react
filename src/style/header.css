@@ -2,10 +2,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   top: 0;
   width: 100%;
   height: 0;
@@ -15,22 +14,22 @@
   -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
   -webkit-animation-delay: 0;
-  -webkit-animation-duration: 3s;
+  -webkit-animation-duration: 0.5s;
   -webkit-animation-name: drop;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-direction: ease-in;
   -moz-animation-delay: 0;
-  -moz-animation-duration: 3s;
+  -moz-animation-duration: 0.5s;
   -moz-animation-name: drop;
   -moz-animation-fill-mode: forwards;
   -moz-animation-direction: ease-in;
   -ms-animation-delay: 0;
-  -ms-animation-duration: 3s;
+  -ms-animation-duration: 0.5s;
   -ms-animation-name: drop;
   -ms-animation-fill-mode: forwards;
   -ms-animation-direction: ease-in;
   animation-delay: 0;
-  animation-duration: 3s;
+  animation-duration: 0.5s;
   animation-name: drop;
   animation-fill-mode: forwards;
   animation-direction: ease-in;
@@ -40,11 +39,17 @@
   0% {
     height: 0;
   }
-  90% {
-    height: 12%;
+  25% {
+    height: 11%;
+  }
+  50% {
+    height: 8%;
+  }
+  75% {
+    height: 10%;
   }
   100% {
-    height: 20%;
+    height: 9%;
   }
 }
 
@@ -52,85 +57,145 @@
   0% {
     height: 0;
   }
-  90% {
-    height: 12%;
+  25% {
+    height: 11%;
+  }
+  50% {
+    height: 8%;
+  }
+  75% {
+    height: 10%;
   }
   100% {
-    height: 20%;
+    height: 9%;
   }
 }
 
+.header .space-between {
+  width: 40%;
+}
+
 .header .logo {
+  padding: 0 0 0 80px;
   width: 10%;
-  left: 5%;
 }
 
 .header .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row nowrap;
+          flex-direction: row nowrap;
+  width: 30%;
+  height: 100%;
 }
 
 .header .nav .link {
   color: white;
   text-decoration: none;
+  font-family: 'Asap';
   display: inline;
-  padding: 10% 5% 10% 5%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 @media (min-width: 1600px) {
   .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     top: 0;
-    height: 0;
     width: 100%;
+    height: 0;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
-    background: #111116;
-    opacity: 50%;
+    background: #171717;
     box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-  }
-  .header .links {
-    position: relative;
-    height: 100%;
-    left: 70%;
-  }
-  .header .links .link {
-    position: relative;
-    top: 40%;
-    color: white;
-    text-decoration: none;
-    display: inline;
-    padding: 10% 5% 0 0;
-  }
-  .drop-animation {
-    animation: drop 1.5s ease-in forwards;
-    -webkit-animation: drop 1.5s ease-in forwards;
-    -moz-animation: drop 1.5s ease-in forwards;
-    -ms-animation: drop 1.5s ease-in forwards;
-  }
-  @keyframes drop {
-    0% {
-      height: 0;
-    }
-    90% {
-      height: 7%;
-    }
-    100% {
-      height: 10%;
-    }
+    -webkit-animation-delay: 0;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-name: drop;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-direction: ease-in;
+    -moz-animation-delay: 0;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-name: drop;
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-direction: ease-in;
+    -ms-animation-delay: 0;
+    -ms-animation-duration: 0.5s;
+    -ms-animation-name: drop;
+    -ms-animation-fill-mode: forwards;
+    -ms-animation-direction: ease-in;
+    animation-delay: 0;
+    animation-duration: 0.5s;
+    animation-name: drop;
+    animation-fill-mode: forwards;
+    animation-direction: ease-in;
   }
   @-webkit-keyframes drop {
     0% {
       height: 0;
     }
-    90% {
-      height: 7%;
+    25% {
+      height: 11%;
     }
-    100% {
+    50% {
+      height: 8%;
+    }
+    75% {
       height: 10%;
     }
+    100% {
+      height: 9%;
+    }
+  }
+  @keyframes drop {
+    0% {
+      height: 0;
+    }
+    25% {
+      height: 11%;
+    }
+    50% {
+      height: 8%;
+    }
+    75% {
+      height: 10%;
+    }
+    100% {
+      height: 9%;
+    }
+  }
+  .header .logo {
+    width: 10%;
+    left: 115px;
+  }
+  .header .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row nowrap;
+            flex-direction: row nowrap;
+    width: 30%;
+    height: 100%;
+  }
+  .header .nav .link {
+    color: white;
+    text-decoration: none;
   }
 }
 /*# sourceMappingURL=header.css.map */
