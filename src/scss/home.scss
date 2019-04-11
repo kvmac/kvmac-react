@@ -3,6 +3,17 @@
 @import 'mixins';
 
 .home {
-    display: flex;
-    background-color: $dark-primary;
+  display: flex;
+  flex-direction: column;
+  background-color: $dark-primary;
+
+  .lines {
+    span {
+        height: 10px;
+        border-radius: 3px 0 0 3px;
+        &.one {
+        width: 40px;
+        }
+    }
+  }
 }

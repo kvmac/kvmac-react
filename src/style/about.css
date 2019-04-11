@@ -10,7 +10,7 @@
   }
 }
 
-.home {
+.about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,15 +18,22 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #191919;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
 
-.home .lines span {
-  height: 10px;
-  border-radius: 3px 0 0 3px;
+.about .page-header {
+  width: 90%;
 }
 
-.home .lines span.one {
-  width: 40px;
+.about .item-header {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: #6AB6FF;
+  height: 60px;
+  width: 80%;
+  border-radius: 30px 0px 0px 30px;
 }
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=about.css.map */
