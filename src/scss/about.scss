@@ -17,5 +17,8 @@
         height: 60px;
         width: 80%;
         border-radius: 30px 0px 0px 30px;
+
+        -webkit-mask-image: linear-gradient(to left, transparent 50%, $blue3 75%);
+        mask-image: linear-gradient(to left, transparent 50%, $blue3 75%);
     }
 }
