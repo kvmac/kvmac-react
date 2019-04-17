@@ -11,10 +11,14 @@ export class Home extends React.Component {
   }
 
   render() {
+    const createLineSegments = () => {
+      let width = window.innerWidth;
+      let height = window.innerHeight;
+
+    }
 
     return (
       <div className="home">
-        <span className="one"></span>
       </div>
     );
   }

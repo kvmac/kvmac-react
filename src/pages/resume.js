@@ -23,7 +23,7 @@ export class Resume extends React.Component {
         <div className="objective">Objective</div>
         <div className="teck-skills">Tech Skills
           <div>
-            <Circle percent={"50%"} color={"blue"} />
+            <Circle percent={"50%"} color={"yellow"} />
           </div>
         </div>
         <div className="experience">Experience</div>

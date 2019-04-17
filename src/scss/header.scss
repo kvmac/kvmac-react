@@ -60,6 +60,21 @@
       font-family: 'Asap';
       display: inline;
       align-self: center;
+      span {
+        width: 0;
+        color: white;
+        @include animation(1s, 2.5s, line, ease-in);
+        height: 15px;
+        border-radius: 10em;
+      }
+    }
+  }
+  @include keyframes(line) {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
     }
   }
 }

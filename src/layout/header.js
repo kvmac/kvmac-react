@@ -25,9 +25,9 @@ export class Header extends React.Component {
         <img className="logo" src={logo} />
         <div className="space-between"></div>
         <div className="nav">
-          <Link className="link" to="/about">About</Link>
-          <Link className="link" to="/projects">Projects</Link>
-          <Link className="link" to="/spicy-resume">🌶️Spicy Resume🔥</Link>
+          <Link className="link" to="/about">About<span></span></Link>
+          <Link className="link" to="/projects">Projects<span></span></Link>
+          <Link className="link" to="/spicy-resume">🌶️Spicy Resume🔥<span></span></Link>
           {/* <Link className="link" to="/blog">Blog</Link> */}
         </div>
       </div>
