@@ -1,7 +1,7 @@
 import React from 'react';
-import './App.css';
-import { Home, Projects, Resume, Blog } from './pages';
+import { withRouter } from 'react-router-dom';
 import { Landing, Main } from './layout';
+import './App.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -16,12 +16,14 @@ class App extends React.Component {
 
   render() {
     const { hasLanding } = {...this.state};
+    const { location } = { ...this.props };
+
     return (
       <div className="App">
-        {hasLanding ? <Landing closeLanding={this.closeLanding} /> : <Main />}
+        {hasLanding && location.pathname === "/" ? <Landing closeLanding={this.closeLanding} /> : <Main />}
       </div>
     );
   }
 }
 
-export default App;
+export default withRouter(App);
