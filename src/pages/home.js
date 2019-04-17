@@ -12,6 +12,7 @@ export class Home extends React.Component {
 
   render() {
     const createLineSegments = () => {
+      const lengths = [3, 6, 8, 9, 12, 18];
       let width = window.innerWidth;
       let height = window.innerHeight;
 
