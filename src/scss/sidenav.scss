@@ -6,7 +6,21 @@
   overflow: hidden;
 }
 
+.underlay {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
+  width: 15%;
+  height: 100%;
+  z-index: 1;
+  &.hidden {
+    visibility: hidden;
+  }
+}
+
 .sidenav {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   overflow: hidden;
   background-color: #171717;
@@ -145,6 +159,8 @@
     }
   }
   .info {
+    display: flex;
+    flex-direction: column;
     .name {
       font-family: 'Raleway', sans-serif;
       font-size: 28px;
@@ -168,15 +184,17 @@
       left: 25%;
     }
     .nav {
-      .link {
-        font-size: 24pt;
-        position: relative;
-        display: block;
-        color: white;
-        width: 100%;
-        height: 40%;
-        background: $blue1;
-        font-family: 'Asap', sans-serif;
+      .links {
+        flex-direction: column;
+        .link {
+          font-size: 24pt;
+          color: white;
+          background: $blue1;
+          border-radius: 10ch;
+          width: 100%;
+          height: 40%;
+          font-family: 'Asap', sans-serif;
+        }
       }
     }
 

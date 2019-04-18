@@ -11,22 +11,16 @@
 }
 
 .home {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #191919;
+  background-color: #005EFF;
+  z-index: 1;
 }
 
-.home .lines span {
-  height: 10px;
+.home .segments span {
+  height: attr(height);
   border-radius: 3px 0 0 3px;
 }
 
-.home .lines span.one {
-  width: 40px;
+.home .segments .first {
+  left: 0;
 }
 /*# sourceMappingURL=home.css.map */

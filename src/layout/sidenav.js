@@ -22,7 +22,8 @@ export class Sidenav extends React.Component {
     const { isOpen, sidenavAnimation } = {...this.state};
 
     return(
-        <div className={`sidenav ${sidenavAnimation}`}>
+      <React.Fragment>
+        <div className={`nav ${sidenavAnimation}`}>
           <div id="hamburger-button" className={isOpen ? "close-button" : ""} onClick={this.handleSidenav}>
             <span></span>
             <span></span>
@@ -38,19 +39,19 @@ export class Sidenav extends React.Component {
               </div>
             </div>
             <div className="info">
-              <div className="nav">
-                <div id="links">
-                  <Link className="link" onClick={this.handleSidenav} to="/">Home</Link>
-                  <Link className="link" onClick={this.handleSidenav} to="/about">About</Link>
-                  <Link className="link" onClick={this.handleSidenav} to="/projects">Projects</Link>
-                  <Link className="link" onClick={this.handleSidenav} to="/spicy-resume">Spicy Resume🌶️</Link>
-                  {/* <Link className="link" to="/blog">Blog</Link> */}
-                </div>
+              <div className="links">
+                <Link className="link" onClick={this.handleSidenav} to="/">Home</Link>
+                <Link className="link" onClick={this.handleSidenav} to="/about">About</Link>
+                <Link className="link" onClick={this.handleSidenav} to="/projects">Projects</Link>
+                <Link className="link" onClick={this.handleSidenav} to="/spicy-resume">Spicy Resume🌶️</Link>
+                {/* <Link className="link" to="/blog">Blog</Link> */}
               </div>
             </div>
           </div>
           {/* <Link to="/blog">Blog</Link> */}
         </div>
+        <div className={`underlay ${!isOpen ? "hidden" : ""}`} onClick={this.handleSidenav}></div>
+      </React.Fragment>
     );
   }
 }

@@ -3,17 +3,17 @@
 @import 'mixins';
 
 .home {
-  display: flex;
-  flex-direction: column;
-  background-color: $dark-primary;
+  // background-color: $dark-primary;
+  background-color: $blue1;
+  z-index: 1;
 
-  .lines {
+  .segments {
     span {
-        height: 10px;
+        height: attr(height);
         border-radius: 3px 0 0 3px;
-        &.one {
-        width: 40px;
-        }
+    }
+    .first {
+      left: 0;
     }
   }
 }

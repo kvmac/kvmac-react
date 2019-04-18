@@ -15,7 +15,32 @@
   overflow: hidden;
 }
 
+.underlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: flex-end;
+  width: 15%;
+  height: 100%;
+  z-index: 1;
+}
+
+.underlay.hidden {
+  visibility: hidden;
+}
+
 .sidenav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
   overflow: hidden;
   background-color: #171717;
@@ -332,6 +357,16 @@
   width: 50%;
 }
 
+.sidenav .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .sidenav .info .name {
   font-family: 'Raleway', sans-serif;
   font-size: 28px;
@@ -357,14 +392,20 @@
   left: 25%;
 }
 
-.sidenav .info .nav .link {
+.sidenav .info .nav .links {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidenav .info .nav .links .link {
   font-size: 24pt;
-  position: relative;
-  display: block;
   color: white;
+  background: #005EFF;
+  border-radius: 10ch;
   width: 100%;
   height: 40%;
-  background: #005EFF;
   font-family: 'Asap', sans-serif;
 }
 
