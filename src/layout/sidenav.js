@@ -22,36 +22,38 @@ export class Sidenav extends React.Component {
     const { isOpen, sidenavAnimation } = {...this.state};
 
     return(
-      <React.Fragment>
-        <div className={`nav ${sidenavAnimation}`}>
-          <div id="hamburger-button" className={isOpen ? "close-button" : ""} onClick={this.handleSidenav}>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div className={`contents ${isOpen ? "visible" : "invisible"}`}>
-            <div className="header">
-              <img className="photo" src={headshot} alt="Kodee McIntosh" />
-              <div className="social">
-              <a href="https://github.com/kvmac" target="_blank" rel="noopener noreferrer"><img className="github" src={github} /></a>
-              <a href="https://www.linkedin.com/in/kodee-mcintosh" target="_blank" rel="noopener noreferrer"><img className="linkedin" src={linkedin} /></a>
-              </div>
-            </div>
-            <div className="info">
-              <div className="links">
-                <Link className="link" onClick={this.handleSidenav} to="/">Home</Link>
-                <Link className="link" onClick={this.handleSidenav} to="/about">About</Link>
-                <Link className="link" onClick={this.handleSidenav} to="/projects">Projects</Link>
-                <Link className="link" onClick={this.handleSidenav} to="/spicy-resume">Spicy Resume🌶️</Link>
-                {/* <Link className="link" to="/blog">Blog</Link> */}
-              </div>
-            </div>
-          </div>
-          {/* <Link to="/blog">Blog</Link> */}
+      <div className={`sidenav ${sidenavAnimation}`}>
+        <div id="hamburger-button" className={isOpen ? "close-button" : ""} onClick={this.handleSidenav}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div className={`underlay ${!isOpen ? "hidden" : ""}`} onClick={this.handleSidenav}></div>
-      </React.Fragment>
+        <div className={`contents ${isOpen ? "visible" : "invisible"}`}>
+          <div className="profile-header">
+            <img className="photo" src={headshot} alt="Kodee McIntosh" />
+            <div className="social">
+            <a href="https://github.com/kvmac" target="_blank" rel="noopener noreferrer"><img className="github" src={github} /></a>
+            <a href="https://www.linkedin.com/in/kodee-mcintosh" target="_blank" rel="noopener noreferrer"><img className="linkedin" src={linkedin} /></a>
+            </div>
+          </div>
+          <div className="profile-info">
+            <label>Kodee McIntosh</label>
+            <label>Software Engineer @ SQ</label>
+            <label>Indianapolis, IN area</label>
+          </div>
+          <div className="nav">
+            <div className="links">
+              <Link className="link" onClick={this.handleSidenav} to="/">Home</Link>
+              <Link className="link" onClick={this.handleSidenav} to="/about">About</Link>
+              <Link className="link" onClick={this.handleSidenav} to="/projects">Projects</Link>
+              <Link className="link" onClick={this.handleSidenav} to="/spicy-resume">Spicy Resume🌶️</Link>
+              {/* <Link className="link" to="/blog">Blog</Link> */}
+            </div>
+          </div>
+        </div>
+        {/* <Link to="/blog">Blog</Link> */}
+      </div>
     );
   }
 }

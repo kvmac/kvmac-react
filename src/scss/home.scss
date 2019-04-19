@@ -4,16 +4,37 @@
 
 .home {
   // background-color: $dark-primary;
-  background-color: $blue1;
+  float: right;
   z-index: 1;
+  height: 100%;
+  width: 82%;
 
   .segments {
-    span {
-        height: attr(height);
-        border-radius: 3px 0 0 3px;
+    padding: 2.5% 2.5% 2.5% 2.5%;
+    width: 95%;
+    height: 95%;
+    z-index: 2;
+
+    .line {
+      left: 50%;
+      background: white;
+      width: 5%;
+      height: 2%;
+      border-radius: 10ch;
+    }
+    .line:hover {
+      @include animation(0, .5s, pop, ease-in);
     }
     .first {
       left: 0;
+    }
+  }
+
+  @include keyframes(pop) {
+    0% {
+    }
+    100% {
+      transform: translateY(30px);
     }
   }
 }

@@ -14,6 +14,7 @@ export class Home extends React.Component {
 
     return (
       <div className="home">
+      <div className="segments"><span className="line"></span></div>
       </div>
     );
   }
