@@ -4,22 +4,34 @@ import '../style/circle.css';
 export const Circle = ({ color, percent }) => {
 
     return (
-        <div className="circle" color={color} percent={percent}>
-            <div>
-                <svg viewBox="-10 -10 220 220">
-                    <g fill="none" stroke-width="6" transform="translate(100,100)">
-                    <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
-                    <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
-                    <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
-                    <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
-                    <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
-                    <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
-                    </g>
-                </svg>
-                <svg viewBox="-10 -10 220 220">
-                    <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="629"></path>
-                </svg>
-            </div>
+        <div className="circle-container">
+            <svg viewBox="-5 -5 50 50" preserveAspectRatio="none" className={`chart ${color}`}>
+                <defs>
+                    <filter id="cardGlow" primitiveUnits="userSpaceOnUse">
+                        <feGaussianBlur stdDeviation="1" in="SourceGraphic"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 .12 
+                                                            0 0 0 0 .23 
+                                                            0 0 0 0 .75 
+                                                            0 0 0 1 0"/>
+                    <feComposite operator="over" in="SourceGraphic"/>
+                    </filter>     
+                </defs>
+                <path className="background-circle"
+                    d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                    x="50%" y="50%"
+                    />
+                <path className="circle"
+                    filter="url(#cardGlow)"
+                    stroke-dasharray={`${percent}, 100`}
+                    d="M18 2.0845
+                    a 15.9155 15.9155 0 0 1 0 31.831
+                    a 15.9155 15.9155 0 0 1 0 -31.831"
+                    x="50%" y="50%"
+                    />
+                <text x="18" y="20.35" class="percentage">{percent}%</text>
+            </svg>
         </div>
     );
 }

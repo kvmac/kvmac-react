@@ -15,15 +15,24 @@ export class Resume extends React.Component {
 
     return (
       <div className="resume">
-        <div className="header">Header</div>
+        <svg>
+          <rectangle>
+          </rectangle>
+        </svg>
+        <div className="header">
+          <div className="flex-wrapper" />Header</div>
         <div className="divider">
           <span className="top"></span>
           <span className="bottom"></span>
         </div>
         <div className="objective">Objective</div>
         <div className="teck-skills">Tech Skills
-          <div>
-            <Circle percent={"50%"} color={"yellow"} />
+          <div className="flex-wrapper">
+            <Circle percent={"75"} color={"blue"} />
+            <Circle percent={"50"} color={"purple"} />
+            <Circle percent={"25"} color={"red"} />
+            <Circle percent={"90"} color={"orange"} />
+            <Circle percent={"60"} color={"green"} />
           </div>
         </div>
         <div className="experience">Experience</div>

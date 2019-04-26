@@ -10,36 +10,68 @@
   }
 }
 
+.flex-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .resume {
   top: 0;
   left: 0;
   z-index: 1;
-  background-color: blue;
   width: 100%;
   height: 100%;
 }
 
 .resume .header {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 50px;
   width: 90%;
   background: #005EFF;
 }
 
 .resume .objective {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 90%;
   background: #4B24ED;
 }
 
 .resume .tech-skills {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 90%;
-  background: #FF2D2D;
 }
 
 .resume .experience {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 90%;
   background: #FB7525;
 }
 
 .resume .education {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 90%;
   background: #13FF5C;
 }

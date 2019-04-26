@@ -10,61 +10,100 @@
   }
 }
 
-.circle {
-  position: relative;
-  display: inline-block;
-  padding: 0;
-  text-align: center;
+.circle-container {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 20%;
 }
 
-.circlediv {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  color: #93A2AC;
-  font-family: Lato;
-  font-weight: 100;
-  margin: 2rem;
+.chart {
+  margin: 10px auto;
+  max-width: 70%;
+  max-height: 250px;
 }
 
-.circlediv:before {
-  content: attr(color);
-  position: absolute;
-  width: 100%;
-  bottom: -2rem;
-  font-weight: 400;
+.chart.blue {
+  stroke: #6AB6FF;
 }
 
-.circlediv:after {
-  content: attr(percent);
-  position: absolute;
-  width: 100%;
-  top: 3.7rem;
-  left: 0;
-  font-size: 2rem;
-  text-align: center;
+.chart.purple {
+  stroke: #8E7CFF;
 }
 
-.circle svg {
-  width: 10rem;
-  height: 10rem;
+.chart.red {
+  stroke: #FF7F95;
 }
 
-.circle svg:nth-child(2) {
-  position: absolute;
-  left: 0;
-  top: 0;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+.chart.orange {
+  stroke: #FBB03B;
 }
 
-.circle svg:nth-child(2) path {
+.chart.green {
+  stroke: #96FFD6;
+}
+
+.background-circle {
+  left: 50%;
+  right: 50%;
   fill: none;
-  stroke-width: 25;
-  stroke-dasharray: 629;
-  stroke: #fff;
-  opacity: .9;
-  -webkit-animation: load 1s;
-          animation: load 1s;
+  stroke: #111116;
+  stroke-width: 2.8;
+}
+
+.circle {
+  visibility: hidden;
+  left: 50%;
+  right: 50%;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: progress;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-direction: ease-out;
+  -moz-animation-delay: 1s;
+  -moz-animation-duration: 1s;
+  -moz-animation-name: progress;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-direction: ease-out;
+  -ms-animation-delay: 1s;
+  -ms-animation-duration: 1s;
+  -ms-animation-name: progress;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-direction: ease-out;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-name: progress;
+  animation-fill-mode: forwards;
+  animation-direction: ease-out;
+}
+
+.percentage {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+  stroke: none;
+}
+
+@-webkit-keyframes progress {
+  0% {
+    visibility: visible;
+    stroke-dasharray: 0 100;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes progress {
+  0% {
+    visibility: visible;
+    stroke-dasharray: 0 100;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 /*# sourceMappingURL=circle.css.map */
