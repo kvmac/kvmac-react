@@ -50,7 +50,9 @@
 
 @import url(https://fonts.googleapis.com/css?family=Lato:100,400);
 @keyframes load{
-    0%{stroke-dashoffset:0}}
+    0% {stroke-dashoffset:0}
+    100% {stroke-dashoffset: 1}
+}
 @mixin progress-circle($data-name, $data-percent) {
     position: relative;
     display: inline-block;
@@ -96,7 +98,7 @@
             stroke-dasharray: 629;
             stroke: #fff;
             opacity:.9;
-            animation: load 1s;
+            animation: load 1s forwards;
         }
     }
 }

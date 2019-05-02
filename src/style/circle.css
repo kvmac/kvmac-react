@@ -3,14 +3,26 @@
   0% {
     stroke-dashoffset: 0;
   }
+  100% {
+    stroke-dashoffset: 1;
+  }
 }
 @keyframes load {
   0% {
     stroke-dashoffset: 0;
   }
+  100% {
+    stroke-dashoffset: 1;
+  }
 }
 
 .circle-container {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 40%;
+}
+
+.mobile-circle-container {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 20%;
@@ -104,6 +116,14 @@
   }
   100% {
     visibility: visible;
+  }
+}
+
+@media (min-width: 1200px) {
+  .circle-container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 20%;
   }
 }
 /*# sourceMappingURL=circle.css.map */

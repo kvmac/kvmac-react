@@ -7,6 +7,27 @@
   flex-flow: row nowrap;
   justify-content: center;
 }
+.svg-wrapper {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+	  margin: 0 auto;
+  width: 320px;  
+}
+.shape {
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  fill: transparent;
+  stroke: #19f6e8;
+  border-bottom: 5px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.svg-wrapper:hover .shape {
+  stroke-width: 2px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}
 
 .resume {
   top: 0;
@@ -31,7 +52,8 @@
   .tech-skills {
     position: relative;
     @include center();
-    width: 90%;
+    width: 82%;
+    left: 18%;
   }
   .experience {
     position: relative;
@@ -60,5 +82,23 @@
       width: 100%;
       background-color: white;
     }
+  }
+}
+
+
+@media (min-width: 700px) {
+  .flex-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .flex-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
   }
 }

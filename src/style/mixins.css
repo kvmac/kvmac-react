@@ -3,10 +3,16 @@
   0% {
     stroke-dashoffset: 0;
   }
+  100% {
+    stroke-dashoffset: 1;
+  }
 }
 @keyframes load {
   0% {
     stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1;
   }
 }
 /*# sourceMappingURL=mixins.css.map */

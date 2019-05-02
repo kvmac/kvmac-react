@@ -5,6 +5,10 @@
 
 .circle-container {
     justify-content: space-around ;
+    width: 40%;
+}
+.mobile-circle-container {
+    justify-content: space-around ;
     width: 20%;
 }
 
@@ -65,3 +69,9 @@
   }
 }
 
+@media (min-width: 1200px) {
+    .circle-container {
+        justify-content: space-around ;
+        width: 20%;
+    }
+}

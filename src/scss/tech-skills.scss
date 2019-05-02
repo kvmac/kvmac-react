@@ -1,0 +1,19 @@
+
+@import 'variables';
+@import 'mixins';
+
+
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.tech-skills {
+  span {
+    align-self: center;
+    width: 20%;
+    height: 2px;
+    background: grey;
+  }
+}

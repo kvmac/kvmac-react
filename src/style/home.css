@@ -18,41 +18,31 @@
 }
 
 .home .segments {
-  padding: 2.5% 2.5% 2.5% 2.5%;
   width: 95%;
   height: 95%;
   z-index: 2;
 }
 
 .home .segments .line {
-  left: 50%;
-  background: white;
-  width: 5%;
-  height: 2%;
-  border-radius: 10ch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row nowrap;
+          flex-direction: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 40px;
+  z-index: 10;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
-.home .segments .line:hover {
-  -webkit-animation-delay: 0;
-  -webkit-animation-duration: 0.5s;
-  -webkit-animation-name: pop;
-  -webkit-animation-fill-mode: forwards;
-  -webkit-animation-direction: ease-in;
-  -moz-animation-delay: 0;
-  -moz-animation-duration: 0.5s;
-  -moz-animation-name: pop;
-  -moz-animation-fill-mode: forwards;
-  -moz-animation-direction: ease-in;
-  -ms-animation-delay: 0;
-  -ms-animation-duration: 0.5s;
-  -ms-animation-name: pop;
-  -ms-animation-fill-mode: forwards;
-  -ms-animation-direction: ease-in;
-  animation-delay: 0;
-  animation-duration: 0.5s;
-  animation-name: pop;
-  animation-fill-mode: forwards;
-  animation-direction: ease-in;
+.home .segments .line .segment {
+  height: 100%;
+  border-radius: 10ch;
 }
 
 .home .segments .first {
@@ -63,8 +53,8 @@
   0% {
   }
   100% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
   }
 }
 
@@ -72,8 +62,8 @@
   0% {
   }
   100% {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
   }
 }
 /*# sourceMappingURL=home.css.map */

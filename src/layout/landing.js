@@ -159,7 +159,7 @@ export function Landing({ closeLanding }) {
 
   return(
     <div onClick={dissolveLanding} className={!dissolve ? "overlay" : "dissolve"}>
-      <img className="logo" src={logo} alt="kvmac logo" />
+      <img className="logo" src={logo} />
       <canvas id="canvas" className="landing" />
     </div>
   )
