@@ -1,10 +1,27 @@
 import React, { useState, useEffect } from 'react';
+import '../svg/cross.svg';
 // import '../style/particles.css';
 
 
 export function Particles() {
 
   useEffect(() => {
+    var _setShapeSrc = (function(index) {
+      switch(index) {
+        case 0:
+          return "../svg/cross.svg"
+        case 1:
+          return "../svg/square.svg"
+        case 2:
+          return "../svg/hollow-square.svg"
+        case 3:
+          return "../svg/triangle.svg"
+        case 4:
+          return "../hollow-circle.svg"
+        case 5:
+          return "../zigzag.svg"
+      }
+    });
     var _createClass = (function () {
       function defineProperties (target, props) {
         for (var i = 0; i < props.length; i++) {
@@ -43,7 +60,7 @@ export function Particles() {
 
     // Variables
     var color = '#CCCCCC';
-    var maxParticles = 250;
+    var maxParticles = 50;
     var rads = [0.25, 0.5, 0.75, 1, 1.25, 2];
     var particles = [];
     var cx = void 0;
@@ -56,12 +73,13 @@ export function Particles() {
     // Particle class
 
     var Particle = (function () {
-      function Particle (x, y, radius) {
+      function Particle (x, y, radius, shapeSrc) {
         _classCallCheck(this, Particle);
 
         this.x = x;
         this.y = y;
         this.radius = radius;
+        this.shapeSrc = shapeSrc;
       }
 
       _createClass(Particle, [{
@@ -94,11 +112,15 @@ export function Particles() {
       }, {
         key: 'draw',
         value: function draw(ctx) {
-          ctx.beginPath();
-          // adjust particle size here
-          ctx.arc(this.x, this.y, this.radius, 0, 1 * Math.PI, false);
+          let img = new Image();
+          img.src = this.shapeSrc;
+          // img.fillStyle = color;
+
           ctx.fillStyle = color;
-          ctx.fill();
+          ctx.drawImage(img, 0, 0, 20, 20);
+          // ctx.beginPath();
+          // ctx.arc(this.x, this.y, this.radius, 0, 1 * Math.PI, false);
+          // ctx.fill();
         }
       }]);
 
@@ -108,7 +130,7 @@ export function Particles() {
     for (var i = 0; i < maxParticles; i++) {
       var p = new Particle(Math.floor(Math.random() * width),
         Math.floor(Math.random() * height),
-        rads[Math.floor(Math.random() * rads.length)])
+        rads[Math.floor(Math.random() * rads.length)], _setShapeSrc(i % 6))
       particles.push(p);
     }
     // Animation loop

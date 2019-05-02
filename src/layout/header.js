@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../svg/kvmac-final-landing.svg';
+
+import { logo } from '../svg';
 import '../style/header.css';
 
 
@@ -27,7 +28,7 @@ export class Header extends React.Component {
         <div className="nav">
           <Link className="link" to="/about">About<span></span></Link>
           <Link className="link" to="/projects">Projects<span></span></Link>
-          <Link className="link" to="/spicy-resume">🌶️Spicy Resume🔥<span></span></Link>
+          <Link className="link" to="/resume">Resume<span></span></Link>
           {/* <Link className="link" to="/blog">Blog</Link> */}
         </div>
       </div>

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../svg/kvmac-final-landing.svg';
+
+import { logo, cross, square, hollowSquare, hollowCircle, triangle, zigzag } from '../svg';
+
 import '../style/landing.css';
 
 
@@ -7,6 +9,24 @@ export function Landing({ closeLanding }) {
   const [dissolve, setDissolve] = useState(false);
 
   useEffect(() => {
+
+    var _setShapeSrc = (function(index) {
+      switch(index) {
+        case 0:
+          return cross;
+        case 1:
+          return square;
+        case 2:
+          return hollowSquare;
+        case 3:
+          return triangle;
+        case 4:
+          return hollowCircle;
+        case 5:
+          return zigzag;
+      }
+    });
+
     var _createClass = (function () {
       function defineProperties (target, props) {
         for (var i = 0; i < props.length; i++) {
@@ -58,12 +78,13 @@ export function Landing({ closeLanding }) {
     // Particle class
 
     var Particle = (function () {
-      function Particle (x, y, radius) {
+      function Particle (x, y, radius, shapeSrc) {
         _classCallCheck(this, Particle);
 
         this.x = x;
         this.y = y;
         this.radius = radius;
+        this.shapeSrc = shapeSrc;
       }
 
       _createClass(Particle, [{
@@ -96,11 +117,15 @@ export function Landing({ closeLanding }) {
       }, {
         key: 'draw',
         value: function draw(ctx) {
-          ctx.beginPath();
+          // ctx.beginPath();
           // adjust particle size here
-          ctx.arc(this.x, this.y, this.radius, 0, 1 * Math.PI, false);
+          // ctx.arc(this.x, this.y, this.radius, 0, 1 * Math.PI, false);
           ctx.fillStyle = color;
-          ctx.fill();
+          // ctx.fill();
+          let img = new Image();
+          img.onload = () => ctx.drawImage(img, 0, 0, 20, 20);
+          img.src = this.shapeSrc;
+          // ctx.drawImage(img, 0, 0, 20, 20);
         }
       }]);
 
@@ -110,7 +135,8 @@ export function Landing({ closeLanding }) {
     for (var i = 0; i < maxParticles; i++) {
       var p = new Particle(Math.floor(Math.random() * width),
         Math.floor(Math.random() * height),
-        rads[Math.floor(Math.random() * rads.length)])
+        rads[Math.floor(Math.random() * rads.length)],
+        _setShapeSrc(i % 6))
       particles.push(p);
     }
     // Animation loop

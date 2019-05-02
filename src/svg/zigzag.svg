@@ -1,0 +1,9 @@
+<svg width="50" height="30" style="vector-effect: non-scaling-stroke;">
+ <g>
+  <rect transform="rotate(45, 145.5, 94.65)" id="svg_10" height="19.999999" width="5" y="84.650001" x="143" stroke-width="NaN" fill="#000000"/>
+  <rect transform="rotate(-45, 144.5, 104.65)" id="svg_11" height="14.343143" width="5" y="97.478439" x="141.999995" stroke-width="NaN" fill="#000000"/>
+  <rect transform="rotate(45, 140.5, 115.65)" id="svg_12" height="19.999999" width="5" y="105.650001" x="138" stroke-width="NaN" fill="#000000"/>
+  <rect transform="rotate(-45, 138.5, 124.65)" id="svg_15" height="14.343143" width="5" y="117.478439" x="135.999995" stroke-width="NaN" fill="#000000"/>
+  <rect transform="rotate(45, 136.5, 134.65)" id="svg_16" height="19.999999" width="5" y="124.650001" x="134" stroke-width="NaN" fill="#000000"/>
+ </g>
+</svg>
