@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { logo } from '../svg';
+import { Logo } from '../svg';
 import '../style/header.css';
 
 
@@ -23,7 +23,7 @@ export class Header extends React.Component {
 
     return(
       <div className={`header ${dropAnimation ? "drop-animation" : ""}`}>
-        <img className="logo" src={logo} />
+        <img className="logo" src={Logo} />
         <div className="space-between"></div>
         <div className="nav">
           <Link className="link" to="/about">About<span></span></Link>

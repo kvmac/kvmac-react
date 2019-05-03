@@ -2,26 +2,30 @@
 @import 'variables';
 @import 'mixins';
 
+// minimum height
+@media (max-height: 600px) {
+  .header {
+    @include keyframes(drop) {
+      0% {
+        height: 0;
+      }
+      25% {
+        height: 50px;
+      }
+      50% {
+        height: 42px;
+      }
+      75% {
+        height: 48px;
+      }
+      100% {
+        height: 46px;
+      }
+    }
+  }
+}
 
-.header {
-  // align-content: flex-end;
-  // justify-content: center;
-  display: flex;
-  justify-content: flex-start;
-  top: 0;
-  width: 100%;
-  height: 0;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
-  // background: -moz-linear-gradient(top, $dark-secondary 0%, $dark-primary 100%); /* FF3.6-15 */
-  // background: -webkit-linear-gradient(top, #3E454B 0%,#111116 100%); /* Chrome10-25,Safari5.1-6 */
-  // background: linear-gradient(to bottom, rgb(43, 46, 49) 0%,#111116 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-  background: $dark-secondary;
-  box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-
-  @include animation(0, .5s, drop, ease-in);
+@media (min-height: 600px) {
   @include keyframes(drop) {
     0% {
       height: 0;
@@ -39,6 +43,28 @@
       height: 9%;
     }
   }
+}
+.header {
+  // align-content: flex-end;
+  // justify-content: center;
+  display: flex;
+  justify-content: flex-start;
+  top: 0;
+  width: 100%;
+  height: 0;
+  // background-image: url("../svg/wave.svg");
+  // background-repeat: repeat-x;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+  // background: -moz-linear-gradient(top, $dark-secondary 0%, $dark-primary 100%); /* FF3.6-15 */
+  // background: -webkit-linear-gradient(top, #3E454B 0%,#111116 100%); /* Chrome10-25,Safari5.1-6 */
+  // background: linear-gradient(to bottom, rgb(43, 46, 49) 0%,#111116 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  background: $dark-secondary;
+  box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
+
+  @include animation(0, .5s, drop, ease-in);
   .space-between {
     width: 40%;
   }

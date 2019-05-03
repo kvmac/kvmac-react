@@ -3,10 +3,90 @@
   0% {
     stroke-dashoffset: 0;
   }
+  100% {
+    stroke-dashoffset: 1;
+  }
 }
 @keyframes load {
   0% {
     stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1;
+  }
+}
+
+@media (max-height: 600px) {
+  @-webkit-keyframes drop {
+    0% {
+      height: 0;
+    }
+    25% {
+      height: 50px;
+    }
+    50% {
+      height: 42px;
+    }
+    75% {
+      height: 48px;
+    }
+    100% {
+      height: 46px;
+    }
+  }
+  @keyframes drop {
+    0% {
+      height: 0;
+    }
+    25% {
+      height: 50px;
+    }
+    50% {
+      height: 42px;
+    }
+    75% {
+      height: 48px;
+    }
+    100% {
+      height: 46px;
+    }
+  }
+}
+
+@media (min-height: 600px) {
+  @-webkit-keyframes drop {
+    0% {
+      height: 0;
+    }
+    25% {
+      height: 11%;
+    }
+    50% {
+      height: 8%;
+    }
+    75% {
+      height: 10%;
+    }
+    100% {
+      height: 9%;
+    }
+  }
+  @keyframes drop {
+    0% {
+      height: 0;
+    }
+    25% {
+      height: 11%;
+    }
+    50% {
+      height: 8%;
+    }
+    75% {
+      height: 10%;
+    }
+    100% {
+      height: 9%;
+    }
   }
 }
 
@@ -45,42 +125,6 @@
   animation-name: drop;
   animation-fill-mode: forwards;
   animation-direction: ease-in;
-}
-
-@-webkit-keyframes drop {
-  0% {
-    height: 0;
-  }
-  25% {
-    height: 11%;
-  }
-  50% {
-    height: 8%;
-  }
-  75% {
-    height: 10%;
-  }
-  100% {
-    height: 9%;
-  }
-}
-
-@keyframes drop {
-  0% {
-    height: 0;
-  }
-  25% {
-    height: 11%;
-  }
-  50% {
-    height: 8%;
-  }
-  75% {
-    height: 10%;
-  }
-  100% {
-    height: 9%;
-  }
 }
 
 .header .space-between {

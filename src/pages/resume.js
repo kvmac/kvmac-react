@@ -16,7 +16,7 @@ export class Resume extends React.Component {
     return (
       <div className="resume">
         <svg height={window.innerHeight} width={window.innerWidth} xmlns="http://www.w3.org/2000/svg">
-          <rect class="shape" height={window.innerHeight} width={window.innerWidth} />
+          <rect className="shape" height={window.innerHeight} width={window.innerWidth} />
         </svg>
         <div className="header">
           <div className="flex-wrapper" />Header</div>

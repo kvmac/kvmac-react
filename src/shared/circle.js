@@ -6,7 +6,7 @@ export class Circle extends React.Component {
         super(props);
     }
     render() {
-        const { color, percent } = this.props;
+        const { color, percent } = { ...this.props };
 
         return (
             <div className="circle-container">
@@ -35,7 +35,7 @@ export class Circle extends React.Component {
                         a 15.9155 15.9155 0 0 1 0 -31.831"
                         x="50%" y="50%"
                         />
-                    <text x="18" y="20.35" class="percentage">{percent}%</text>
+                    <text x="18" y="20.35" className="percentage">{percent}%</text>
                 </svg>
             </div>
         );
