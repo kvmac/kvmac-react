@@ -1,0 +1,16 @@
+<svg fill="#26e9ff" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <filter id="cardGlow" primitiveUnits="userSpaceOnUse">
+            <feGaussianBlur stdDeviation="3" in="SourceGraphic"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 .12 
+                                                0 0 0 0 .23 
+                                                0 0 0 0 .75 
+                                                0 0 0 1 0"/>
+        <feComposite operator="over" in="SourceGraphic"/>
+        </filter>     
+    </defs>
+ <g filter="url(#cardGlow)">
+  <rect height="20" width="8" y="0" x="11" stroke-width="1.5"/>
+  <rect height="8" width="20" y="6" x="5" stroke-width="1.5" />
+ </g>
+</svg>

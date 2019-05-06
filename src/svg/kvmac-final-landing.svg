@@ -4,7 +4,17 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="861.761px" height="220.915px" viewBox="0 0 861.761 220.915" style="enable-background:new 0 0 861.761 220.915;"
 	 xml:space="preserve">
-<g>
+    <defs>
+        <filter id="cardGlow" primitiveUnits="userSpaceOnUse">
+            <feGaussianBlur stdDeviation="3" in="SourceGraphic"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 .12 
+                                                0 0 0 0 .23 
+                                                0 0 0 0 .75 
+                                                0 0 0 1 0"/>
+        <feComposite operator="over" in="SourceGraphic"/>
+        </filter>     
+    </defs>
+<g filter="url(#cardGlow)">
 	<g>
 		<path 
 		style="fill:#005EFF;" d="M65.369,180.073c0,13.963-10.852,26.293-24.535,26.293h-0.301
