@@ -24,65 +24,67 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .svg-wrapper {
-  position: relative;
+  z-index: 2;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   margin: 0 auto;
-  width: 320px;
+  width: 100%;
+  height: 100%;
 }
 
-.shape {
-  margin-top: 5%;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  stroke-width: 8px;
+.border {
+  position: absolute;
+  stroke-dasharray: 0 3500;
+  stroke-dashoffset: 1;
+  stroke-width: 1px;
   fill: transparent;
   stroke: #19f6e8;
-  border-bottom: 5px solid black;
-  -webkit-animation-delay: 0;
-  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0.5;
+  -webkit-animation-duration: 3s;
   -webkit-animation-name: draw;
   -webkit-animation-fill-mode: forwards;
-  -webkit-animation-direction: ease-in;
-  -moz-animation-delay: 0;
-  -moz-animation-duration: 1s;
+  -webkit-animation-direction: linear;
+  -moz-animation-delay: 0.5;
+  -moz-animation-duration: 3s;
   -moz-animation-name: draw;
   -moz-animation-fill-mode: forwards;
-  -moz-animation-direction: ease-in;
-  -ms-animation-delay: 0;
-  -ms-animation-duration: 1s;
+  -moz-animation-direction: linear;
+  -ms-animation-delay: 0.5;
+  -ms-animation-duration: 3s;
   -ms-animation-name: draw;
   -ms-animation-fill-mode: forwards;
-  -ms-animation-direction: ease-in;
-  animation-delay: 0;
-  animation-duration: 1s;
+  -ms-animation-direction: linear;
+  animation-delay: 0.5;
+  animation-duration: 3s;
   animation-name: draw;
   animation-fill-mode: forwards;
-  animation-direction: ease-in;
+  animation-direction: linear;
+  z-index: 3;
 }
 
 @-webkit-keyframes draw {
-  from {
-    stroke-dashoffset: 1000;
+  0% {
+    stroke-width: 1px;
   }
-  to {
-    stroke-dashoffset: 0;
+  100% {
+    stroke-width: 4px;
+    stroke-dasharray: 3500 0;
+    stroke-dashoffset: 1;
   }
 }
 
 @keyframes draw {
-  from {
-    stroke-dashoffset: 1000;
+  0% {
+    stroke-width: 1px;
   }
-  to {
-    stroke-dashoffset: 0;
+  100% {
+    stroke-width: 4px;
+    stroke-dasharray: 3500 0;
+    stroke-dashoffset: 1;
   }
 }
 
@@ -92,6 +94,10 @@
   z-index: 1;
   width: 100%;
   height: 100%;
+}
+
+.resume rect {
+  padding: 5 em;
 }
 
 .resume .header {
@@ -172,6 +178,59 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .svg-wrapper {
+    top: 60%;
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .shape {
+    stroke-dasharray: 0 3500;
+    stroke-dashoffset: 1;
+    stroke-width: 1px;
+    fill: transparent;
+    stroke: #19f6e8;
+    -webkit-animation-delay: 0.5;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-name: draw;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-direction: linear;
+    -moz-animation-delay: 0.5;
+    -moz-animation-duration: 3s;
+    -moz-animation-name: draw;
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-direction: linear;
+    -ms-animation-delay: 0.5;
+    -ms-animation-duration: 3s;
+    -ms-animation-name: draw;
+    -ms-animation-fill-mode: forwards;
+    -ms-animation-direction: linear;
+    animation-delay: 0.5;
+    animation-duration: 3s;
+    animation-name: draw;
+    animation-fill-mode: forwards;
+    animation-direction: linear;
+  }
+  @-webkit-keyframes draw {
+    0% {
+      stroke-width: 1px;
+    }
+    100% {
+      stroke-width: 4px;
+      stroke-dasharray: 3500 0;
+      stroke-dashoffset: 1;
+    }
+  }
+  @keyframes draw {
+    0% {
+      stroke-width: 1px;
+    }
+    100% {
+      stroke-width: 4px;
+      stroke-dasharray: 3500 0;
+      stroke-dashoffset: 1;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -183,9 +242,60 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  }
+  .svg-wrapper {
+    top: 60%;
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .shape {
+    stroke-dasharray: 0 3500;
+    stroke-dashoffset: 1;
+    stroke-width: 1px;
+    fill: transparent;
+    stroke: #19f6e8;
+    z-index: 3;
+    -webkit-animation-delay: 0.5;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-name: draw;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-direction: linear;
+    -moz-animation-delay: 0.5;
+    -moz-animation-duration: 3s;
+    -moz-animation-name: draw;
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-direction: linear;
+    -ms-animation-delay: 0.5;
+    -ms-animation-duration: 3s;
+    -ms-animation-name: draw;
+    -ms-animation-fill-mode: forwards;
+    -ms-animation-direction: linear;
+    animation-delay: 0.5;
+    animation-duration: 3s;
+    animation-name: draw;
+    animation-fill-mode: forwards;
+    animation-direction: linear;
+  }
+  @-webkit-keyframes draw {
+    0% {
+      stroke-width: 1px;
+    }
+    100% {
+      stroke-width: 4px;
+      stroke-dasharray: 3500 0;
+      stroke-dashoffset: 1;
+    }
+  }
+  @keyframes draw {
+    0% {
+      stroke-width: 1px;
+    }
+    100% {
+      stroke-width: 4px;
+      stroke-dasharray: 3500 0;
+      stroke-dashoffset: 1;
+    }
   }
 }
 /*# sourceMappingURL=resume.css.map */

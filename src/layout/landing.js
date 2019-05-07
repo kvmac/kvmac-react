@@ -29,7 +29,7 @@ export function Landing({ closeLanding }) {
   useEffect(() => {
     const shapes = [
       // Cross,
-      GlowCross,
+      // GlowCross,
       // Square,
       GlowSquare,
       // HollowSquare,
@@ -46,12 +46,17 @@ export function Landing({ closeLanding }) {
 
     let bg = document.querySelector('.shape-background');
 
-    for (var i = 1; i <= 100; i ++) {
+    for (var i = 1; i <= 50; i ++) {
       let node = document.createElement('div');
       node.className = `shape-container--${i}`;
       let img = document.createElement('img');
-      img.src = shapes[i % 7];
-      img.style = "width: 50px; height: 50px; z-index: 10;";
+      img.className = "shape";
+      img.src = shapes[i % 6];
+      if(i % 3 === 0) {
+        img.style = "width: 50px; height: 50px; z-index: 0; display: inline;";
+      } else {
+        img.style = "width: 50px; height: 50px; z-index: 3; display: inline;";
+      }
 
       node.appendChild(img);
 

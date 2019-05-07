@@ -1,6 +1,7 @@
 import React from 'react';
 import { Circle } from '../shared/circle';
 import '../style/resume.css';
+import Border from '../svg/border.svg';
 
 export class Resume extends React.Component {
   constructor(props) {
@@ -12,12 +13,28 @@ export class Resume extends React.Component {
   }
 
   render() {
+    let w = window.innerWidth;
+    let h = window.innerHeight;
 
     return (
       <div className="resume">
-        <svg height={window.innerHeight} width={window.innerWidth} xmlns="http://www.w3.org/2000/svg">
-          <rect className="shape" height={window.innerHeight} width={window.innerWidth} />
-        </svg>
+        <div className="svg-wrapper">
+          <svg className="border" height={h} width={w} xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="cardGlow" primitiveUnits="userSpaceOnUse">
+                    <feGaussianBlur stdDeviation="3" in="SourceGraphic"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 .12 
+                                                        0 0 0 0 .23 
+                                                        0 0 0 0 .75 
+                                                        0 0 0 1 0"/>
+                <feComposite operator="over" in="SourceGraphic"/>
+                </filter>     
+            </defs>
+            <g filter="url(#cardGlow)">
+              <rect x={w > 1200 ? w * .02 : w * .2} y={w > 1200 ? h * .1 : h * .02} height={w > 1200 ? h : h - (h * .04)} width={w > 1200 ? w - (w * .04) : w - (w * .22)} className="shape" />
+            </g>
+          </svg>
+        </div>
         <div className="header">
           <div className="flex-wrapper" />Header</div>
         <div className="divider">
@@ -28,21 +45,11 @@ export class Resume extends React.Component {
         {window.innerWidth < 1200 ||
           <div className="teck-skills">
             <div className="flex-wrapper">
-              <div className="circle-container">
                 <Circle percent={"75"} color={"blue"} />
-              </div>
-              <div className="circle-container">
                 <Circle percent={"50"} color={"purple"} />
-              </div>
-              <div className="circle-container">
                 <Circle percent={"25"} color={"red"} />
-              </div>
-              <div className="circle-container">
                 <Circle percent={"90"} color={"orange"} />
-              </div>
-              <div className="circle-container">
                 <Circle percent={"60"} color={"green"} />
-              </div>
             </div>
           </div>
         }

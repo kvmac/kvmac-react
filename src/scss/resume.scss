@@ -2,43 +2,41 @@
 @import 'variables';
 @import 'mixins';
 
+
 .flex-wrapper {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
 }
 .svg-wrapper {
-  position: relative;
+  z-index: 2;
   top: 50%;
   transform: translateY(-50%);
-	  margin: 0 auto;
-  width: 320px;  
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }
-.shape {
-  margin-top: 5%;
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  stroke-width: 8px;
+.border {
+  position: absolute;
+  stroke-dasharray: 0 3500;
+  stroke-dashoffset: 1;
+  stroke-width: 1px;
+  // margin-top: 5%;
   fill: transparent;
   stroke: #19f6e8;
-  border-bottom: 5px solid black;
-  @include animation(0, 1s, draw, ease-in);
-  // transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+  @include animation(.5, 3s, draw, linear);
+  z-index: 3;
+}
 
-}
 @include keyframes(draw) {
-  from {
-    stroke-dashoffset: 1000;
+  0% {
+    stroke-width: 1px;
   }
-  to {
-    stroke-dashoffset: 0;
+  100% {
+    stroke-width: 4px;
+    stroke-dasharray: 3500 0;
+    stroke-dashoffset: 1;
   }
 }
-// .svg-wrapper:hover .shape {
-//   stroke-width: 2px;
-//   stroke-dashoffset: 0;
-//   stroke-dasharray: 760;
-// }
 
 .resume {
   top: 0;
@@ -46,6 +44,9 @@
   z-index: 1;
   width: 100%;
   height: 100%;
+  rect {
+    padding: 5 em;
+  }
 
   .header {
     position: relative;
@@ -103,13 +104,71 @@
     flex-flow: column nowrap;
     justify-content: center;
   }
+  .svg-wrapper {
+    top: 60%;
+    position: absolute;
+    transform: translateY(-50%);
+    // margin: 0 auto;
+  }
 
+  .shape {
+    stroke-dasharray: 0 3500;
+    stroke-dashoffset: 1;
+    stroke-width: 1px;
+    // margin-top: 5%;
+    fill: transparent;
+    stroke: #19f6e8;
+    @include animation(.5, 3s, draw, linear);
+  }
+
+  @include keyframes(draw) {
+    0% {
+      stroke-width: 1px;
+    }
+    100% {
+      stroke-width: 4px;
+      stroke-dasharray: 3500 0;
+      stroke-dashoffset: 1;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
   .flex-wrapper {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+  }
+  .svg-wrapper {
+    top: 60%;
+    position: absolute;
+    transform: translateY(-50%);
+    // margin: 0 auto;
+  }
+
+  .shape {
+    stroke-dasharray: 0 3500;
+    stroke-dashoffset: 1;
+    stroke-width: 1px;
+    // margin-top: 5%;
+    fill: transparent;
+    stroke: #19f6e8;
+    z-index: 3;
+    @include animation(.5, 3s, draw, linear);
+  }
+
+  @include keyframes(draw) {
+    0% {
+      stroke-width: 1px;
+    }
+    100% {
+      stroke-width: 4px;
+      stroke-dasharray: 3500 0;
+      stroke-dashoffset: 1;
+    }
+  }
+
+  .resume {
+    .tech-skills {
+    }
   }
 }

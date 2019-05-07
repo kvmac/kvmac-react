@@ -16,81 +16,9 @@
   }
 }
 
-@media (max-height: 600px) {
-  @-webkit-keyframes drop {
-    0% {
-      height: 0;
-    }
-    25% {
-      height: 50px;
-    }
-    50% {
-      height: 42px;
-    }
-    75% {
-      height: 48px;
-    }
-    100% {
-      height: 46px;
-    }
-  }
-  @keyframes drop {
-    0% {
-      height: 0;
-    }
-    25% {
-      height: 50px;
-    }
-    50% {
-      height: 42px;
-    }
-    75% {
-      height: 48px;
-    }
-    100% {
-      height: 46px;
-    }
-  }
-}
-
-@media (min-height: 600px) {
-  @-webkit-keyframes drop {
-    0% {
-      height: 0;
-    }
-    25% {
-      height: 11%;
-    }
-    50% {
-      height: 8%;
-    }
-    75% {
-      height: 10%;
-    }
-    100% {
-      height: 9%;
-    }
-  }
-  @keyframes drop {
-    0% {
-      height: 0;
-    }
-    25% {
-      height: 11%;
-    }
-    50% {
-      height: 8%;
-    }
-    75% {
-      height: 10%;
-    }
-    100% {
-      height: 9%;
-    }
-  }
-}
-
 .header {
+  position: -webkit-sticky;
+  position: sticky;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,6 +28,7 @@
   top: 0;
   width: 100%;
   height: 0;
+  z-index: 2;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
   background: #171717;
   box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
@@ -206,19 +135,9 @@
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    top: 0;
-    width: 100%;
     height: 0;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
-    background: #171717;
-    box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
     -webkit-animation-delay: 0;
     -webkit-animation-duration: 0.5s;
     -webkit-animation-name: drop;
@@ -240,6 +159,163 @@
     animation-fill-mode: forwards;
     animation-direction: ease-in;
   }
+  @-webkit-keyframes drop {
+    0% {
+      height: 0;
+    }
+    25% {
+      height: 17%;
+    }
+    50% {
+      height: 12%;
+    }
+    75% {
+      height: 15%;
+    }
+    100% {
+      height: 13%;
+    }
+  }
+  @keyframes drop {
+    0% {
+      height: 0;
+    }
+    25% {
+      height: 17%;
+    }
+    50% {
+      height: 12%;
+    }
+    75% {
+      height: 15%;
+    }
+    100% {
+      height: 13%;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .header {
+    -webkit-animation-delay: 0;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-name: drop;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-direction: ease-in;
+    -moz-animation-delay: 0;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-name: drop;
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-direction: ease-in;
+    -ms-animation-delay: 0;
+    -ms-animation-duration: 0.5s;
+    -ms-animation-name: drop;
+    -ms-animation-fill-mode: forwards;
+    -ms-animation-direction: ease-in;
+    animation-delay: 0;
+    animation-duration: 0.5s;
+    animation-name: drop;
+    animation-fill-mode: forwards;
+    animation-direction: ease-in;
+  }
+  @-webkit-keyframes drop {
+    0% {
+      height: 0;
+    }
+    25% {
+      height: 14%;
+    }
+    50% {
+      height: 11%;
+    }
+    75% {
+      height: 13%;
+    }
+    100% {
+      height: 18%;
+    }
+  }
+  @keyframes drop {
+    0% {
+      height: 0;
+    }
+    25% {
+      height: 14%;
+    }
+    50% {
+      height: 11%;
+    }
+    75% {
+      height: 13%;
+    }
+    100% {
+      height: 18%;
+    }
+  }
+  .header .logo {
+    width: 10%;
+    left: 115px;
+  }
+  .header .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row nowrap;
+            flex-direction: row nowrap;
+    width: 30%;
+    height: 100%;
+  }
+  .header .nav .link {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+@media (max-height: 600px) {
+  @-webkit-keyframes drop {
+    0% {
+      height: 0;
+    }
+    25% {
+      height: 50px;
+    }
+    50% {
+      height: 42px;
+    }
+    75% {
+      height: 48px;
+    }
+    100% {
+      height: 46px;
+    }
+  }
+  @keyframes drop {
+    0% {
+      height: 0;
+    }
+    25% {
+      height: 50px;
+    }
+    50% {
+      height: 42px;
+    }
+    75% {
+      height: 48px;
+    }
+    100% {
+      height: 46px;
+    }
+  }
+}
+
+@media (min-height: 600px) {
   @-webkit-keyframes drop {
     0% {
       height: 0;
@@ -273,30 +349,6 @@
     100% {
       height: 9%;
     }
-  }
-  .header .logo {
-    width: 10%;
-    left: 115px;
-  }
-  .header .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row nowrap;
-            flex-direction: row nowrap;
-    width: 30%;
-    height: 100%;
-  }
-  .header .nav .link {
-    color: white;
-    text-decoration: none;
   }
 }
 /*# sourceMappingURL=header.css.map */
