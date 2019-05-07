@@ -14,6 +14,8 @@ import Triangle from './dim/triangle.svg';
 import GlowTriangle from './glow/triangle.glow.svg';
 import Zigzag from './dim/zigzag.svg';
 import GlowZigzag from './glow/zigzag.glow.svg';
+import GlowSquiggle from './glow/squiggle.glow.svg';
+import GlowSticks from './glow/sticks.glow.svg';
 
 export {
     Logo,
@@ -31,5 +33,7 @@ export {
     HollowCircleLarge,
     GlowHollowCircleLarge,
     Zigzag,
-    GlowZigzag
+    GlowZigzag,
+    GlowSquiggle,
+    GlowSticks
 };

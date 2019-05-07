@@ -38,7 +38,7 @@ const Project = ({ name, url, github, tech, description }) => {
         <a href={url} target="_blank" rel="noopener noreferrer"><label>{name}</label></a>
       </div>
       <div className="project-tech">
-        {tech.forEach(el => <label href={el.site} target="_blank" rel="noopener noreferrer">{el.label}</label>)}
+        {tech.forEach(el => <a href={el.site} target="_blank" rel="noopener noreferrer"><label>{el.label}</label></a>)}
       </div>
       <div className="project-description">
       <label>{description}</label>

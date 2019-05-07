@@ -17,7 +17,9 @@ import {
   HollowCircleLarge,
   GlowHollowCircleLarge,
   Zigzag,
-  GlowZigzag } from '../svg';
+  GlowZigzag,
+  GlowSquiggle,
+  GlowSticks } from '../svg';
 
 import '../style/landing.css';
 
@@ -41,17 +43,19 @@ export function Landing({ closeLanding }) {
       // HollowCircleLarge,
       GlowHollowCircleLarge,
       // Zigzag,
-      GlowZigzag
+      GlowZigzag,
+      GlowSquiggle,
+      GlowSticks
     ];
 
     let bg = document.querySelector('.shape-background');
 
-    for (var i = 1; i <= 100; i ++) {
+    for (var i = 1; i <= 1000; i ++) {
       let node = document.createElement('div');
       node.className = `shape-container--${i}`;
       let img = document.createElement('img');
-      img.src = shapes[i % 7];
-      img.style = "width: 50px; height: 50px; z-index: 10;";
+      img.src = shapes[i % 9];
+      img.style = "width: 100px; height: 100px; z-index: 10;";
 
       node.appendChild(img);
 

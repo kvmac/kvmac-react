@@ -1,4 +1,5 @@
-<svg width="20 px" height="20 px" style="padding: 2em" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+	 width="19.459px" height="30.297px" viewBox="0 0 19.459 30.297" enable-background="new 0 0 19.459 30.297" xml:space="preserve">
     <defs>
         <filter id="cardGlow" primitiveUnits="userSpaceOnUse">
             <feGaussianBlur stdDeviation="3" in="SourceGraphic"/>
@@ -9,6 +10,8 @@
         <feComposite operator="over" in="SourceGraphic"/>
         </filter>     
     </defs>
-    <circle filter="url(#cardGlow)" cx="10" cy="10" r="7"
-        stroke="#26e9ff" stroke-width="3" fill="none" />
+  <g filter="url(#cardGlow)">
+    <path fill="none" stroke="#26e9ff" stroke-width="3" stroke-miterlimit="10" d="M13.569,2.783c0,4.417-6.979,4.417-6.979,8.834
+      c0,4.42,6.979,4.42,6.979,8.84s-6.979,4.42-6.979,8.84"/>
+  </g>
 </svg>

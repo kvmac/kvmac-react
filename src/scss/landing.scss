@@ -4,6 +4,10 @@
 
 
 
+svg {
+  overflow: visible !important;
+}
+
 .shape {
     margin: 0 auto;
     // position: relative;
@@ -17,7 +21,7 @@
 
 $circle-size: 100px;
 @for $i from 1 through 100 {
-    $shape-size: 100 + random(10);
+    $shape-size: 10 + random(10);
     $rotation: random(360);
     $speed: 200 + random(10);
     

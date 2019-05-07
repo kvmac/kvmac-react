@@ -1,6 +1,6 @@
 <svg viewBox="0 0 100 100" style="padding: 2em" xmlns="http://www.w3.org/2000/svg">
     <defs>
-        <filter id="cardGlow" primitiveUnits="userSpaceOnUse">
+        <filter id="cardGlow" primitiveUnits="userSpaceOnUse" height="180%" y="-40%">
             <feGaussianBlur stdDeviation="3" in="SourceGraphic"/>
             <feColorMatrix type="matrix" values="0 0 0 0 .12 
                                                 0 0 0 0 .23 
@@ -10,5 +10,5 @@
         </filter>     
     </defs>
     <circle filter="url(#cardGlow)" cx="10" cy="10" r="7"
-        stroke="#26e9ff" stroke-width="5" fill="none" />
+        stroke="#26e9ff" stroke-width="4" fill="none" />
 </svg>
