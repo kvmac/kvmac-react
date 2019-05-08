@@ -60,6 +60,7 @@
 @media (min-width: 1200px) {
   .main {
     width: 100%;
+    top: 0;
   }
 
   @for $i from 1 through 50 {

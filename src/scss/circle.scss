@@ -12,9 +12,10 @@
 }
 
 .chart {
-  margin: 10px auto;
-  max-width: 70%;
-  max-height: 250px;
+  // margin: 10px auto;
+  // max-width: 70%;
+  // max-height: 250px;
+  width: 100%;
   &.blue {
     stroke: #6AB6FF;
   }
@@ -33,21 +34,18 @@
 }
 
 .background-circle {
-    left: 50%;
-    right: 50%;
-    fill: none;
-    stroke: #111116;
-    stroke-width: 2.8;
+  margin: 5em;
+  fill: none;
+  stroke: #111116;
+  stroke-width: 2.8;
 }
 
 .circle {
-    visibility: hidden;
-    left: 50%;
-    right: 50%;
-    fill: none;
-    stroke-width: 2.8;
-    stroke-linecap: round;
-    @include animation(3s, 1s, progress, ease-out);
+  visibility: hidden;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  @include animation(3s, 1s, progress, ease-out);
 }
 
 .percentage {
@@ -71,6 +69,5 @@
 @media (min-width: 1200px) {
     .circle-container {
         justify-content: space-around ;
-        width: 20%;
     }
 }

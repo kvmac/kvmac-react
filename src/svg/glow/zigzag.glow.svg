@@ -1,15 +1,12 @@
-<svg fill="#26e9ff" xmlns="http://www.w3.org/2000/svg">
+<svg x="10" y="10" viewBox="-10 -10 50 50" fill="#26e9ff" xmlns="http://www.w3.org/2000/svg">
     <defs>
-        <filter id="cardGlow" primitiveUnits="userSpaceOnUse">
-            <feGaussianBlur stdDeviation="3" in="SourceGraphic"/>
-            <feColorMatrix type="matrix" values="0 0 0 0 .12 
-                                                0 0 0 0 .23 
-                                                0 0 0 0 .75 
-                                                0 0 0 1 0"/>
-        <feComposite operator="over" in="SourceGraphic"/>
-        </filter>     
+        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+        <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0"></feOffset>
+        <feGaussianBlur result="blurOut" in="offOut" stdDeviation="4"></feGaussianBlur>
+        <feBlend in="SourceGraphic" in2="blurOut" mode="overlay"></feBlend>
+        </filter>
     </defs>
- <g filter="url(#cardGlow)">
+ <g filter="url(#glow)">
   <rect transform="rotate(45, 145.5, 94.65)"
     height="20" width="5" y="84.650001" x="143" />
   <rect transform="rotate(-45, 144.5, 104.65)"

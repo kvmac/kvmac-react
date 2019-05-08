@@ -29,9 +29,7 @@
 }
 
 .chart {
-  margin: 10px auto;
-  max-width: 70%;
-  max-height: 250px;
+  width: 100%;
 }
 
 .chart.blue {
@@ -55,8 +53,7 @@
 }
 
 .background-circle {
-  left: 50%;
-  right: 50%;
+  margin: 5em;
   fill: none;
   stroke: #111116;
   stroke-width: 2.8;
@@ -64,8 +61,6 @@
 
 .circle {
   visibility: hidden;
-  left: 50%;
-  right: 50%;
   fill: none;
   stroke-width: 2.8;
   stroke-linecap: round;
@@ -123,7 +118,6 @@
   .circle-container {
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 20%;
   }
 }
 /*# sourceMappingURL=circle.css.map */

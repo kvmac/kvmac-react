@@ -9,9 +9,8 @@
 }
 .svg-wrapper {
   z-index: 2;
-  top: 50%;
   transform: translateY(-50%);
-  margin: 0 auto;
+  // margin: 0 auto;
   width: 100%;
   height: 100%;
 }
@@ -107,11 +106,11 @@
   .svg-wrapper {
     top: 60%;
     position: absolute;
-    transform: translateY(-50%);
-    // margin: 0 auto;
+    // transform: translateY(-50%);
+    margin: 0 auto;
   }
 
-  .shape {
+  .border {
     stroke-dasharray: 0 3500;
     stroke-dashoffset: 1;
     stroke-width: 1px;
@@ -139,13 +138,11 @@
     flex-flow: column nowrap;
   }
   .svg-wrapper {
-    top: 60%;
     position: absolute;
-    transform: translateY(-50%);
-    // margin: 0 auto;
+    margin: 0 auto;
   }
 
-  .shape {
+  .border {
     stroke-dasharray: 0 3500;
     stroke-dashoffset: 1;
     stroke-width: 1px;

@@ -21,17 +21,14 @@ export class Resume extends React.Component {
         <div className="svg-wrapper">
           <svg className="border" height={h} width={w} xmlns="http://www.w3.org/2000/svg">
             <defs>
-                <filter id="cardGlow" primitiveUnits="userSpaceOnUse">
-                    <feGaussianBlur stdDeviation="3" in="SourceGraphic"/>
-                    <feColorMatrix type="matrix" values="0 0 0 0 .12 
-                                                        0 0 0 0 .23 
-                                                        0 0 0 0 .75 
-                                                        0 0 0 1 0"/>
-                <feComposite operator="over" in="SourceGraphic"/>
-                </filter>     
-            </defs>
-            <g filter="url(#cardGlow)">
-              <rect x={w > 1200 ? w * .02 : w * .2} y={w > 1200 ? h * .1 : h * .02} height={w > 1200 ? h : h - (h * .04)} width={w > 1200 ? w - (w * .04) : w - (w * .22)} className="shape" />
+              <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0"></feOffset>
+              <feGaussianBlur result="blurOut" in="offOut" stdDeviation="4"></feGaussianBlur>
+              <feBlend in="SourceGraphic" in2="blurOut" mode="overlay"></feBlend>
+              </filter>
+          </defs>
+            <g filter="url(#glow)">
+              <rect x={w > 1200 ? w * .02 : w * .2} y={w > 1200 ? h * .1 : h * .02} height={w > 1200 ? h : h - (h * .04)} width={w > 1200 ? w - (w * .04) : w - (w * .22)} />
             </g>
           </svg>
         </div>
