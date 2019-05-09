@@ -6,7 +6,80 @@
 .main {
   // background-color: #111116;
   // background-color: $dark-primary;
-  width: 100%;
+  float: right;
+  width: 82%;
   height: 100%;
+  z-index: 1;
+
+  .shape {
+    @include animation(1s, 1s, popdrop, ease-in-out);
+  }
+
+  .shape:hover {
+    @include animation(.5s, 1s, pop, ease-in-out, forwards);
+  }
+
+  @include keyframes(pop) {
+    0% {
+      transform: translate3d();
+    }
+    100% {
+      transform: translate3d(0, 0, 100px);
+    }
+  }
+  @include keyframes(popdrop) {
+    0% {
+      transform: translate3d(0, 0, 100px);
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
 }
 
+
+@for $i from 1 through 50 {
+    $rotation: random(360);
+    $speed: 10 + random(10);
+    
+    @keyframes shape-#{$i} {
+        0% {
+          transform: translate3d(0,0,0) rotate(#{$rotation + 0}deg);
+        }
+        100% {
+          transform: translate3d(0,0,0) rotate(#{$rotation + 360}deg);
+        }
+    }
+  
+    .shape-container--#{$i} { 
+      @include animation(0, shape-#{$i}, #{$speed}s, linear, infinite)
+      // animation: shape-#{$i} #{$speed}s linear infinite;
+    }
+}
+
+@media (min-width: 1200px) {
+  .main {
+    width: 100%;
+    top: 0;
+  }
+
+  @for $i from 1 through 50 {
+      $rotation: random(360);
+      $speed: 100 + random(10);
+      
+      @keyframes shape-#{$i} {
+          0% {
+            transform: translate3d(0,0,0) rotate(#{$rotation + 0}deg);
+          }
+          100% {
+            transform: translate3d(0,0,0) rotate(#{$rotation + 360}deg);
+          }
+      }
+    
+      .shape-container--#{$i} { 
+        @include animation(0, shape-#{$i}, #{$speed}s, linear, infinite)
+        // animation: shape-#{$i} #{$speed}s linear infinite;
+      }
+  }
+
+}

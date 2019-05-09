@@ -8,6 +8,13 @@
   overflow: hidden;
 }
 
+@media (min-width: 700px) {
+  .App {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
 /* asap-regular - latin */
 @font-face {
   font-family: 'Asap';

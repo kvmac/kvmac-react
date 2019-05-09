@@ -1,9 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg width="1920px" height="252px" viewBox="0 0 1920 252" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Nav Background</title>
+    <desc>Created with Sketch.</desc>
     <defs>
-        <rect id="path-1" x="1.21083696" y="0.733038691" width="1917.33703" height="260"/>
-        <rect id="path-3" x="0.210836957" y="0.733038691" width="1917.33703" height="260"/>
-        <path d="M1981.20237,17.5975911 C1489.62605,148.681077 876.96263,196.7867 576.469279,143.870846 C275.975928,90.9549928 39.0035108,54.1460673 -249.496065,269 C-65.6189608,269 2022.66532,278.277506 2022.66532,278.277506 C1995.02336,128.984982 1981.20237,42.0916773 1981.20237,17.5975911 Z" id="path-5"/>
+        <rect id="path-1" x="1.21083696" y="0.733038691" width="1917.33703" height="260"></rect>
+        <rect id="path-3" x="0.210836957" y="0.733038691" width="1917.33703" height="260"></rect>
+        <path d="M1981.20237,17.5975911 C1489.62605,148.681077 876.96263,196.7867 576.469279,143.870846 C275.975928,90.9549928 39.0035108,54.1460673 -249.496065,269 C-65.6189608,269 2022.66532,278.277506 2022.66532,278.277506 C1995.02336,128.984982 1981.20237,42.0916773 1981.20237,17.5975911 Z" id="path-5"></path>
     </defs>
     <g id="1),-2)-Home-and-Other-Pages-(COMPLETE)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="1.0---Home">
@@ -11,20 +14,20 @@
                 <g id="Nav-Background">
                     <g id="Mask-+-Shape-Mask" transform="translate(960.545095, 131.233039) rotate(-180.000000) translate(-960.545095, -131.233039) translate(1.210837, 0.733039)">
                         <mask id="mask-2" fill="white">
-                            <use xlink:href="#path-1"/>
+                            <use xlink:href="#path-1"></use>
                         </mask>
-                        <g id="Mask"/>
-                        <path d="M2025.36786,279.589689 L-465.150139,279.589689 C-352.192106,258.451322 -270.678178,242.196012 -220.608356,230.823757 C3.5587294,179.909154 200.75907,88.6737575 536.372145,91.833079 C871.985219,94.9924005 940.942055,174.990815 1346.13423,174.990815 C1634.12848,174.990815 1866.36222,39.4744222 2025.36786,-50.0262057 C2026.25514,84.3255762 2025.36786,177.308429 2025.36786,279.589689 Z" id="Shape" fill="#73A7E8" style="mix-blend-mode: multiply;" mask="url(#mask-2)"/>
+                        <g id="Mask"></g>
+                        <path d="M2025.36786,279.589689 L-465.150139,279.589689 C-352.192106,258.451322 -270.678178,242.196012 -220.608356,230.823757 C3.5587294,179.909154 200.75907,88.6737575 536.372145,91.833079 C871.985219,94.9924005 940.942055,174.990815 1346.13423,174.990815 C1634.12848,174.990815 1866.36222,39.4744222 2025.36786,-50.0262057 C2026.25514,84.3255762 2025.36786,177.308429 2025.36786,279.589689 Z" id="Shape" fill="#191919" style="mix-blend-mode: multiply;" mask="url(#mask-2)"></path>
                     </g>
                     <g id="Mask-+-Shape-Mask-Copy" transform="translate(959.879353, 131.233039) rotate(-180.000000) translate(-959.879353, -131.233039) translate(0.879353, 0.733039)">
                         <mask id="mask-4" fill="white">
-                            <use xlink:href="#path-3"/>
+                            <use xlink:href="#path-3"></use>
                         </mask>
-                        <g id="Mask"/>
+                        <g id="Mask"></g>
                         <mask id="mask-6" fill="white">
-                            <use xlink:href="#path-5"/>
+                            <use xlink:href="#path-5"></use>
                         </mask>
-                        <use id="Mask" fill="#3A33C3" opacity="0.700000048" xlink:href="#path-5"/>
+                        <use id="Mask" fill="#3A33C3" opacity="0.700000048" xlink:href="#path-5"></use>
                     </g>
                 </g>
             </g>

@@ -2,49 +2,8 @@
 @import 'variables';
 @import 'mixins';
 
-// minimum height
-@media (max-height: 600px) {
-  .header {
-    @include keyframes(drop) {
-      0% {
-        height: 0;
-      }
-      25% {
-        height: 50px;
-      }
-      50% {
-        height: 42px;
-      }
-      75% {
-        height: 48px;
-      }
-      100% {
-        height: 46px;
-      }
-    }
-  }
-}
-
-@media (min-height: 600px) {
-  @include keyframes(drop) {
-    0% {
-      height: 0;
-    }
-    25% {
-      height: 11%;
-    }
-    50% {
-      height: 8%;
-    }
-    75% {
-      height: 10%;
-    }
-    100% {
-      height: 9%;
-    }
-  }
-}
 .header {
+  position: sticky;
   // align-content: flex-end;
   // justify-content: center;
   display: flex;
@@ -52,6 +11,7 @@
   top: 0;
   width: 100%;
   height: 0;
+  z-index: 2;
   // background-image: url("../svg/wave.svg");
   // background-repeat: repeat-x;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
@@ -107,27 +67,37 @@
 }
 
 
+// SMALL MONITORS
+@media (min-width: 1200px) {
+  .header {
+    height: 0;
+    @include animation(0, .5s, drop, ease-in);
+  }
+
+  @include keyframes(drop) {
+    0% {
+      height: 0;
+    }
+    25% {
+      height: 17%;
+    }
+    50% {
+      height: 12%;
+    }
+    75% {
+      height: 15%;
+    }
+    100% {
+      height: 13%;
+    }
+  }
+}
 
 
 
 // LARGE MONITORS
 @media (min-width: 1600px) {
   .header {
-    // align-content: flex-end;
-    // justify-content: center;
-    display: flex;
-    top: 0;
-    width: 100%;
-    height: 0;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
-    // background: -moz-linear-gradient(top, $dark-secondary 0%, $dark-primary 100%); /* FF3.6-15 */
-    // background: -webkit-linear-gradient(top, #3E454B 0%,#111116 100%); /* Chrome10-25,Safari5.1-6 */
-    // background: linear-gradient(to bottom, rgb(43, 46, 49) 0%,#111116 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-    background: $dark-secondary;
-    box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
 
     @include animation(0, .5s, drop, ease-in);
     @include keyframes(drop) {
@@ -135,16 +105,16 @@
         height: 0;
       }
       25% {
-        height: 11%;
+        height: 14%;
       }
       50% {
-        height: 8%;
+        height: 11%;
       }
       75% {
-        height: 10%;
+        height: 13%;
       }
       100% {
-        height: 9%;
+        height: 18%;
       }
     }
 
@@ -176,4 +146,58 @@
     }
   }
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// minimum height
+@media (max-height: 600px) {
+  .header {
+    @include keyframes(drop) {
+      0% {
+        height: 0;
+      }
+      25% {
+        height: 50px;
+      }
+      50% {
+        height: 42px;
+      }
+      75% {
+        height: 48px;
+      }
+      100% {
+        height: 46px;
+      }
+    }
+  }
+}
+
+@media (min-height: 600px) {
+  @include keyframes(drop) {
+    0% {
+      height: 0;
+    }
+    25% {
+      height: 11%;
+    }
+    50% {
+      height: 8%;
+    }
+    75% {
+      height: 10%;
+    }
+    100% {
+      height: 9%;
+    }
+  }
 }

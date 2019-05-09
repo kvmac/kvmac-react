@@ -1,4 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:100,400);
+@import url("https://fonts.googleapis.com/css?family=Lato:100,400");
+@import url("https://fonts.googleapis.com/css?family=Rubik:700,900");
+@import url("https://fonts.googleapis.com/css?family=Karla");
 @-webkit-keyframes load {
   0% {
     stroke-dashoffset: 0;
@@ -17,9 +19,9 @@
 }
 
 .circle-container {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 40%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .mobile-circle-container {
@@ -29,9 +31,7 @@
 }
 
 .chart {
-  margin: 10px auto;
-  max-width: 70%;
-  max-height: 250px;
+  width: 100%;
 }
 
 .chart.blue {
@@ -55,8 +55,7 @@
 }
 
 .background-circle {
-  left: 50%;
-  right: 50%;
+  margin: 5em;
   fill: none;
   stroke: #111116;
   stroke-width: 2.8;
@@ -64,27 +63,25 @@
 
 .circle {
   visibility: hidden;
-  left: 50%;
-  right: 50%;
   fill: none;
   stroke-width: 2.8;
   stroke-linecap: round;
-  -webkit-animation-delay: 1s;
+  -webkit-animation-delay: 3s;
   -webkit-animation-duration: 1s;
   -webkit-animation-name: progress;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-direction: ease-out;
-  -moz-animation-delay: 1s;
+  -moz-animation-delay: 3s;
   -moz-animation-duration: 1s;
   -moz-animation-name: progress;
   -moz-animation-fill-mode: forwards;
   -moz-animation-direction: ease-out;
-  -ms-animation-delay: 1s;
+  -ms-animation-delay: 3s;
   -ms-animation-duration: 1s;
   -ms-animation-name: progress;
   -ms-animation-fill-mode: forwards;
   -ms-animation-direction: ease-out;
-  animation-delay: 1s;
+  animation-delay: 3s;
   animation-duration: 1s;
   animation-name: progress;
   animation-fill-mode: forwards;
@@ -123,7 +120,6 @@
   .circle-container {
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 20%;
   }
 }
 /*# sourceMappingURL=circle.css.map */
