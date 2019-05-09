@@ -5,5 +5,29 @@
 
 
 .blog {
-  width: 100%;
+  // background-color: $dark-primary;
+    // position: absolute;
+  z-index: 3;
+  height: 200%;
+  width: 82%;
+  left: 50%;
+  right: 50%;
+  transform: translateY(-50%);
+
+  @include keyframes(pop) {
+    0% {
+    }
+    50% {
+      transform: translateY(+30px);
+    }
+    100% {
+      transform: translateY(-30px);
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .home {
+    width: 100%;
+  }
 }

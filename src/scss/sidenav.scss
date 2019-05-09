@@ -8,13 +8,13 @@
   overflow: hidden;
   background-color: #171717;
   // background: #222629;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   left: 0;
   width: 0;
   box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 0px 25px 10px rgba(0, 0, 0, 0.75);
 
   &.init {
     @include animation(0, 1.5s, init, ease-in);
@@ -249,9 +249,6 @@
     background-color: #171717;
     width: 0;
     // background: #222629;
-    z-index: 2;
-    top: 0;
-    left: 0;
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);

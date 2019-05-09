@@ -19,6 +19,44 @@
 }
 
 .blog {
-  width: 100%;
+  z-index: 3;
+  height: 200%;
+  width: 82%;
+  left: 50%;
+  right: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+@-webkit-keyframes pop {
+  0% {
+  }
+  50% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
+@keyframes pop {
+  0% {
+  }
+  50% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .home {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=blog.css.map */

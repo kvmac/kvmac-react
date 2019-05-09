@@ -19,9 +19,12 @@
 }
 
 .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   z-index: 3;
-  height: 100%;
   width: 82%;
+  height: 200%;
 }
 
 @-webkit-keyframes pop {
@@ -47,6 +50,13 @@
   100% {
     -webkit-transform: translateY(-30px);
             transform: translateY(-30px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .home {
+    width: 100%;
+    height: 200%;
   }
 }
 /*# sourceMappingURL=home.css.map */

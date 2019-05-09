@@ -7,9 +7,16 @@
   // background-color: #111116;
   // background-color: $dark-primary;
   float: right;
-  width: 82%;
   height: 100%;
+  width: 100%;
   z-index: 1;
+
+  .shape-background {
+    position: absolute;
+    width: 98%;
+    height: 100%;
+    z-index: 2;
+  }
 
   .shape {
     @include animation(1s, 1s, popdrop, ease-in-out);
@@ -19,22 +26,6 @@
     @include animation(.5s, 1s, pop, ease-in-out, forwards);
   }
 
-  @include keyframes(pop) {
-    0% {
-      transform: translate3d();
-    }
-    100% {
-      transform: translate3d(0, 0, 100px);
-    }
-  }
-  @include keyframes(popdrop) {
-    0% {
-      transform: translate3d(0, 0, 100px);
-    }
-    100% {
-      transform: translate3d(0, 0, 0);
-    }
-  }
 }
 
 
@@ -59,8 +50,17 @@
 
 @media (min-width: 1200px) {
   .main {
+    float: none;
     width: 100%;
-    top: 0;
+
+    .shape-background {
+      position: absolute;
+      width: 98%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 2;
+    }
+
   }
 
   @for $i from 1 through 50 {

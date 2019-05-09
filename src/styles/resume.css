@@ -243,7 +243,7 @@
             flex-flow: column nowrap;
   }
   .svg-wrapper {
-    position: absolute;
+    left: 0;
     margin: 0 auto;
   }
   .border {

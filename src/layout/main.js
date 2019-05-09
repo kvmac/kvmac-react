@@ -48,65 +48,48 @@ export class Main extends React.Component {
       GlowZigzag
     ];
 
-    let w = window.innerWidth;
-    let h = window.innerHeight;
+    let bg = document.querySelector('.shape-background');
 
-    let bg1 = document.querySelector('.shape-background-top');
-    let bg2 = document.querySelector('.shape-background-bottom');
-
-    for (var i = 1; i <= 25; i ++) {
-      let node1 = document.createElement('div');
-      let node2 = document.createElement('div');
-
-      node1.className = `shape-container--${i}`;
-      node2.className = `shape-container--${i}`;
-
-      let img1 = document.createElement('img');
-      let img2 = document.createElement('img');
-
-      img1.className = "shape";
-      img2.className = "shape";
-
-      img1.src = shapes[i % 6];
-      img2.src = shapes[i % 6];
-
-      if(i % 2 === 0) {
-        img1.style = w < 1200 ? "width: 75px; height: 75px" : "width: 150px; height: 150px;";
-        img2.style = w < 1200 ? "width: 75px; height: 75px;" : "width: 150px; height: 150px;";
+    for (var i = 1; i <= 50; i ++) {
+      let node = document.createElement('div');
+      node.className = `shape-container--${i}`;
+      let img = document.createElement('img');
+      img.src = shapes[i % 9];
+      img.style = "width: 100px; height: 100px; z-index: 10;";
+      img.className = "shape";
+      img.src = shapes[i % 6];
+      if(i % 3 === 0) {
+        img.style = "width: 50px; height: 50px; z-index: 0; display: inline;";
       } else {
-        img1.style = w < 1200 ? "width: 25px; height: 25px" : "width: 75px; height: 75px;";
-        img2.style = w < 1200 ? "width: 25px; height: 25px;" : "width: 75px; height: 75px;";
+        img.style = "width: 50px; height: 50px; z-index: 3; display: inline;";
       }
 
-      node1.appendChild(img1);
-      node2.appendChild(img2);
+      node.appendChild(img);
 
-      bg1.appendChild(node1);
-      bg2.appendChild(node2);
-  }
+      bg.appendChild(node);
+    }
 }
 
 
 
   render() {
+    let w = window.innerWidth;
+    let h = window.innerHeight;
 
     return (
-      <React.Fragment>
-      <div className="shape-background-top"></div>
-      <div className="shape-background-bottom"></div>
       <div className="main">
-        {/* {isMobile ? <Sidenav /> : <Header />} */}
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/tech-skills" component={TechSkills} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/resume" component={Resume} />
-          {/* <Route exact path="/blog" component={Blog} /> */}
-        </Switch>
-        <Footer />
+        <div className="shape-background"></div>
+          {/* {isMobile ? <Sidenav /> : <Header />} */}
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/tech-skills" component={TechSkills} />
+            <Route exact path="/projects" component={Projects} />
+            <Route exact path="/resume" component={Resume} />
+            {/* <Route exact path="/blog" component={Blog} /> */}
+          </Switch>
+          <Footer />
       </div>
-      </React.Fragment>
     );
   }
 }

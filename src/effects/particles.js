@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import '../styles/landing.css';
+import '../styles/particles.css';
 
 export function Particles() {
 
@@ -44,7 +44,7 @@ export function Particles() {
     // Variables
     // let color = '#CCCCCC';
     let color = '#26e9ff';
-    let maxParticles = 25;
+    let maxParticles = 50;
     let rads = [0.25, 0.75, 1, 1.25, 2, 2.25];
     let particles = [];
     let cx = void 0;
@@ -97,7 +97,7 @@ export function Particles() {
         value: function draw(ctx) {
           ctx.beginPath();
           // adjust particle size here
-          ctx.arc(this.x, this.y, this.radius, 0, .5 * Math.PI, false);
+          ctx.arc(this.x, this.y, this.radius, 0, .75 * Math.PI, false);
           ctx.fillStyle = color;
           ctx.fill();
         }

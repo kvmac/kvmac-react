@@ -18,9 +18,64 @@
   }
 }
 
-.particles {
+.overlay .particles {
   position: relative;
   background-color: #191919;
-  z-index: 2;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.dissolve .particles {
+  overflow: hidden;
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-name: fade;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-direction: ease-out;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 2s;
+  -moz-animation-name: fade;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-direction: ease-out;
+  -ms-animation-delay: 0;
+  -ms-animation-duration: 2s;
+  -ms-animation-name: fade;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-direction: ease-out;
+  animation-delay: 0;
+  animation-duration: 2s;
+  animation-name: fade;
+  animation-fill-mode: forwards;
+  animation-direction: ease-out;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0;
+    visibility: none;
+  }
+}
+
+@keyframes fade {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0;
+    visibility: none;
+  }
 }
 /*# sourceMappingURL=particles.css.map */

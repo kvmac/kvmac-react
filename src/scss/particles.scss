@@ -3,9 +3,37 @@
 @import 'mixins';
 
 
-.particles {
-  // background-color: #111116;
-  position: relative;
-  background-color: $dark-primary;
-  z-index: 2;
+// .particles {
+//   position: relative;
+//   background-color: $dark-primary;
+//   z-index: 1;
+//   overflow: hidden;
+// }
+
+.overlay {
+  .particles {
+    position: relative;
+    background-color: $dark-primary;
+    z-index: 1;
+    overflow: hidden;
+  }
+}
+.dissolve {
+  .particles {
+    overflow: hidden;
+    @include animation(0, 2s, fade, ease-out);
+  }
+}
+
+@include keyframes(fade) {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    transform: scale(.5);
+    opacity: 0;
+    visibility: none;
+  }
 }

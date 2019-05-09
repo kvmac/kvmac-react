@@ -1,0 +1,11 @@
+
+@import 'variables';
+@import 'mixins';
+
+.divider {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    right: 50%;
+    transform: translateY(-50%);
+}

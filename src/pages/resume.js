@@ -19,7 +19,7 @@ export class Resume extends React.Component {
     return (
       <div className="resume">
         <div className="svg-wrapper">
-          <svg className="border" height={h} width={w} xmlns="http://www.w3.org/2000/svg">
+          <svg className="border" height={h} width={w} x="50" y="50" viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
               <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0"></feOffset>
