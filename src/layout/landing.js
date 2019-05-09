@@ -21,11 +21,13 @@ import {
   GlowSquiggle,
   GlowSticks } from '../svg';
 
-import '../style/landing.css';
+import '../styles/landing.css';
 
 
 export function Landing({ closeLanding }) {
   const [dissolve, setDissolve] = useState(false);
+  let w = window.innerWidth;
+  let h = window.innerHeight;
 
 
   useEffect(() => {
@@ -48,23 +50,38 @@ export function Landing({ closeLanding }) {
       GlowSticks
     ];
 
-    let bg = document.querySelector('.shape-background');
+    let bg1 = document.querySelector('.shape-background-top');
+    let bg2 = document.querySelector('.shape-background-bottom');
 
-    for (var i = 1; i <= 50; i ++) {
-      let node = document.createElement('div');
-      node.className = `shape-container--${i}`;
-      let img = document.createElement('img');
-      img.className = "shape";
-      img.src = shapes[i % 6];
-      if(i % 3 === 0) {
-        img.style = "width: 50px; height: 50px; z-index: 0; display: inline;";
+    for (var i = 1; i <= 25; i ++) {
+      let node1 = document.createElement('div');
+      let node2 = document.createElement('div');
+
+      node1.className = `shape-container--${i}`;
+      node2.className = `shape-container--${i}`;
+
+      let img1 = document.createElement('img');
+      let img2 = document.createElement('img');
+
+      img1.className = "shape";
+      img2.className = "shape";
+
+      img1.src = shapes[i % 6];
+      img2.src = shapes[i % 6];
+
+      if(i % 2 === 0) {
+        img1.style = w < 1200 ? "width: 75px; height: 75px" : "width: 150px; height: 150px;";
+        img2.style = w < 1200 ? "width: 75px; height: 75px;" : "width: 150px; height: 150px;";
       } else {
-        img.style = "width: 50px; height: 50px; z-index: 3; display: inline;";
+        img1.style = w < 1200 ? "width: 25px; height: 25px" : "width: 75px; height: 75px;";
+        img2.style = w < 1200 ? "width: 25px; height: 25px;" : "width: 75px; height: 75px;";
       }
 
-      node.appendChild(img);
+      node1.appendChild(img1);
+      node2.appendChild(img2);
 
-      bg.appendChild(node);
+      bg1.appendChild(node1);
+      bg2.appendChild(node2);
     }
   });
 
@@ -76,10 +93,11 @@ export function Landing({ closeLanding }) {
 
   return(
     <div onClick={dissolveLanding} className={!dissolve ? "overlay" : "dissolve"}>
-      <div className="shape-background"></div>
+      <div className="shape-background-top"></div>
+        <Particles />
+      <div className="shape-background-bottom"></div>
       <img className="logo" src={Logo} />
       {/* <canvas id="canvas" className="landing" /> */}
-      <Particles />
     </div>
   )
 }

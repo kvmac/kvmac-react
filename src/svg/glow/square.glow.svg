@@ -1,4 +1,4 @@
-<svg x="20" y="20" viewBox="-10 -10 50 50" xmlns="http://www.w3.org/2000/svg">
+<svg x="20" y="20" viewBox="-50 -50 100 100" fill="#26e9ff" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <filter id="glow" x="-120%" y="-120%" width="400%" height="400%">
         <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0"></feOffset>
@@ -7,7 +7,7 @@
         </filter>
     </defs>
  <g filter="url(#glow)">
-  <rect height="15" width="15" rx="10" fill="#26e9ff" />
+  <rect height="15" width="15" rx="3" />
   <!-- <rect height="15" width="15" fill="#26e9ff" /> -->
  </g>
 </svg>

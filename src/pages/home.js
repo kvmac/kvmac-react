@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/home.css';
+import '../styles/home.css';
 import { guid } from '../utils/guid';
 
 export class Home extends React.Component {

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/sidenav.css';
+import '../styles/sidenav.css';
 import { Link } from 'react-router-dom';
 import headshot from '../img/headshot.png';
 import github from '../svg/github.svg';

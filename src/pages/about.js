@@ -2,7 +2,7 @@ import React from 'react';
 import headshot from '../img/headshot.png';
 import github from '../svg/github.svg';
 import linkedin from '../svg/linkedin.svg';
-import '../style/about.css';
+import '../styles/about.css';
 
 export class About extends React.Component {
   constructor(props) {

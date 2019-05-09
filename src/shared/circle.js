@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/circle.css';
+import '../styles/circle.css';
 
 export class Circle extends React.Component {
     constructor(props) {

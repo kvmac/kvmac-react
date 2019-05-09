@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
 import { Logo } from '../svg';
-import '../style/header.css';
+import '../styles/header.css';
 
 
 export class Header extends React.Component {

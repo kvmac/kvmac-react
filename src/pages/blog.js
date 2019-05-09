@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/blog.css';
+import '../styles/blog.css';
 // import { Route, Switch } from 'react-router-dom';
 
 export class Blog extends React.Component {

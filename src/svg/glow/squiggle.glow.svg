@@ -1,16 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-	 width="19.459px" height="30.297px" viewBox="0 0 19.459 30.297" enable-background="new 0 0 19.459 30.297" xml:space="preserve">
+<svg x="20" y="20" viewBox="-10 -10 50 50" fill="#26e9ff" xmlns="http://www.w3.org/2000/svg">
     <defs>
-        <filter id="cardGlow" primitiveUnits="userSpaceOnUse">
-            <feGaussianBlur stdDeviation="3" in="SourceGraphic"/>
-            <feColorMatrix type="matrix" values="0 0 0 0 .12 
-                                                0 0 0 0 .23 
-                                                0 0 0 0 .75 
-                                                0 0 0 1 0"/>
-        <feComposite operator="over" in="SourceGraphic"/>
-        </filter>     
+        <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+        <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0"></feOffset>
+        <feGaussianBlur result="blurOut" in="offOut" stdDeviation="4"></feGaussianBlur>
+        <feBlend in="SourceGraphic" in2="blurOut" mode="overlay"></feBlend>
+        </filter>
     </defs>
-  <g filter="url(#cardGlow)">
+  <g filter="url(#glow)">
     <path fill="none" stroke="#26e9ff" stroke-width="3" stroke-miterlimit="10" d="M13.569,2.783c0,4.417-6.979,4.417-6.979,8.834
       c0,4.42,6.979,4.42,6.979,8.84s-6.979,4.42-6.979,8.84"/>
   </g>

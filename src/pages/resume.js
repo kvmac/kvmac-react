@@ -1,6 +1,6 @@
 import React from 'react';
 import { Circle } from '../shared/circle';
-import '../style/resume.css';
+import '../styles/resume.css';
 import Border from '../svg/border.svg';
 
 export class Resume extends React.Component {

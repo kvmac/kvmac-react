@@ -1,0 +1,11 @@
+
+@import 'variables';
+@import 'mixins';
+
+
+.particles {
+  // background-color: #111116;
+  position: relative;
+  background-color: $dark-primary;
+  z-index: 2;
+}

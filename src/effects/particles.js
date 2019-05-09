@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import '../style/landing.css';
+import '../styles/landing.css';
 
 export function Particles() {
 
@@ -151,6 +151,6 @@ export function Particles() {
   });
 
   return(
-    <canvas id="canvas" className="landing" />
+    <canvas id="canvas" className="particles" />
   )
 }

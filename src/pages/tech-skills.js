@@ -1,6 +1,6 @@
 import React from 'react';
 import { Circle } from '../shared/circle';
-import '../style/tech-skills.css';
+import '../styles/tech-skills.css';
 
 export class TechSkills extends React.Component {
   constructor(props) {
