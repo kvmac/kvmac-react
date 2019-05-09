@@ -23,7 +23,7 @@
   height: 100vh;
   overflow: hidden;
   background-color: #171717;
-  z-index: 3;
+  z-index: 4;
   top: 0;
   left: 0;
   width: 0;
@@ -34,22 +34,22 @@
 
 .sidenav.init {
   -webkit-animation-delay: 0;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 2s;
   -webkit-animation-name: init;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-direction: ease-in;
   -moz-animation-delay: 0;
-  -moz-animation-duration: 1.5s;
+  -moz-animation-duration: 2s;
   -moz-animation-name: init;
   -moz-animation-fill-mode: forwards;
   -moz-animation-direction: ease-in;
   -ms-animation-delay: 0;
-  -ms-animation-duration: 1.5s;
+  -ms-animation-duration: 2s;
   -ms-animation-name: init;
   -ms-animation-fill-mode: forwards;
   -ms-animation-direction: ease-in;
   animation-delay: 0;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
   animation-name: init;
   animation-fill-mode: forwards;
   animation-direction: ease-in;

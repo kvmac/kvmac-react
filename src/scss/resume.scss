@@ -3,28 +3,6 @@
 @import 'mixins';
 
 
-.flex-wrapper {
-  display: flex;
-  flex-flow: row nowrap;
-}
-.svg-wrapper {
-  z-index: 2;
-  transform: translateY(-50%);
-  // margin: 0 auto;
-  width: 100%;
-  height: 100%;
-}
-.border {
-  position: absolute;
-  stroke-dasharray: 0 3500;
-  stroke-dashoffset: 1;
-  stroke-width: 1px;
-  // margin-top: 5%;
-  fill: transparent;
-  stroke: #19f6e8;
-  @include animation(.5, 3s, draw, linear);
-  z-index: 3;
-}
 
 @include keyframes(draw) {
   0% {
@@ -37,44 +15,56 @@
   }
 }
 
+.svg-wrapper {
+  z-index: 4;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 90%;
+  height: 90%;
+  // margin: 0 auto;
+  .border {
+    stroke-dasharray: 0 3500;
+    stroke-dashoffset: 1;
+    stroke-width: 1px;
+    // margin-top: 5%;
+    fill: transparent;
+    stroke: #19f6e8;
+    @include animation(.5, 3s, draw, linear);
+    z-index: 3;
+  }
+}
+
 .resume {
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
+  background-color: transparent;
+  float: right;
+  z-index: 3;
+  width: 82%;
   height: 100%;
-  rect {
-    padding: 5 em;
+  z-index: 3;
+
+  .flex-wrapper {
+    display: flex;
+    flex-direction: column nowrap;
   }
 
   .header {
-    position: relative;
-    @include center();
-    margin-top: 50px;
     width: 90%;
     background: $blue1;
   }
   .objective {
-    position: relative;
-    @include center();
     width: 90%;
     background: $purple1;
   }
   .tech-skills {
-    position: relative;
-    @include center();
     width: 82%;
     left: 18%;
   }
   .experience {
-    position: relative;
-    @include center();
     width: 90%;
     background: $orange1;
   }
   .education {
-    position: relative;
-    @include center();
     width: 90%;
     background: $green1;
   }
@@ -92,6 +82,59 @@
       height: 50%;
       width: 100%;
       background-color: white;
+    }
+  }
+
+  .download-btn {
+    button {
+      background: $dark-primary;
+      border: none;
+      border-radius: 25px;
+      color: white;
+      cursor: pointer;
+      font-size: 1.25em;
+      letter-spacing: .1em;
+      outline: none;
+      padding: .75em 2em;
+      position: relative;
+      text-transform: uppercase;
+      
+      &:hover {
+        animation: glow 1s ease-in infinite;
+      }
+      
+      &::before {
+        animation: glow 1s ease-in infinite;
+        background: $dark-primary;
+        border-radius: inherit;
+        content: '';
+        filter: blur(10px);
+        opacity: .75;
+        position: absolute;
+        transition: all .3s ease-in-out;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        z-index: -1;
+      }
+      
+      &:hover::before {
+        filter: blur(20px);
+        opacity: 1;
+      }
+    }
+  }
+
+  @keyframes glow {
+    0% {
+      background: $light-primary;
+    }
+    25% {
+      background: $light-secondary;
+    }
+    100% {
+      background: $light-primary;
     }
   }
 }
@@ -165,7 +208,12 @@
   }
 
   .resume {
+    .flex-wrapper {
+      display: flex;
+      flex-direction: row nowrap;
+    }
     .tech-skills {
     }
+    
   }
 }

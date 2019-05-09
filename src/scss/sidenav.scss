@@ -8,7 +8,7 @@
   overflow: hidden;
   background-color: #171717;
   // background: #222629;
-  z-index: 3;
+  z-index: 4;
   top: 0;
   left: 0;
   width: 0;
@@ -17,7 +17,7 @@
   -moz-box-shadow: 4px 0px 25px 10px rgba(0, 0, 0, 0.75);
 
   &.init {
-    @include animation(0, 1.5s, init, ease-in);
+    @include animation(0, 2s, init, ease-in);
   }
   &.open {
     @include animation(0, .5s, open, ease-in);
@@ -29,10 +29,18 @@
     @include animation(0, .5s, fade, linear);
   }
   @include keyframes(init) {
-    86% {width: 0;}
-    93% {width: 20%;}
-    96% {width: 16%;}
-    100% {width: 18%;}
+    86% {
+      width: 0;
+    }
+    93% {
+      width: 20%;
+    }
+    96% {
+      width: 16%;
+    }
+    100% {
+      width: 18%;
+    }
   }
   @include keyframes(open) {
     0% {width: 18%;}

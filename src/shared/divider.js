@@ -2,8 +2,6 @@ import React from 'react';
 import '../styles/divider.css';
 
 export const Divider = ({ color }) => {
-    let w = window.innerWidth;
-    let h = window.innerHeight;
 
     return (
         <div className="divider">
@@ -15,7 +13,7 @@ export const Divider = ({ color }) => {
                     <feBlend in="SourceGraphic" in2="blurOut" mode="overlay"></feBlend>
                     </filter>
                 </defs>
-                <line x1="10" y1="10" x2="100" y2="10" stroke="#26e9ff" stroke-width="2" />
+                <line x1="10" y1="10" x2="100" y2="10" stroke-width="2" />
             </svg>
         </div>
     );

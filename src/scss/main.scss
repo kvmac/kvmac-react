@@ -5,18 +5,13 @@
 
 .main {
   // background-color: #111116;
-  // background-color: $dark-primary;
+  background-color: transparent;
+  position: absolute;
   float: right;
   height: 100%;
   width: 100%;
   z-index: 1;
-
-  .shape-background {
-    position: absolute;
-    width: 98%;
-    height: 100%;
-    z-index: 2;
-  }
+  overflow: hidden;
 
   .shape {
     @include animation(1s, 1s, popdrop, ease-in-out);
@@ -29,24 +24,6 @@
 }
 
 
-@for $i from 1 through 50 {
-    $rotation: random(360);
-    $speed: 10 + random(10);
-    
-    @keyframes shape-#{$i} {
-        0% {
-          transform: translate3d(0,0,0) rotate(#{$rotation + 0}deg);
-        }
-        100% {
-          transform: translate3d(0,0,0) rotate(#{$rotation + 360}deg);
-        }
-    }
-  
-    .shape-container--#{$i} { 
-      @include animation(0, shape-#{$i}, #{$speed}s, linear, infinite)
-      // animation: shape-#{$i} #{$speed}s linear infinite;
-    }
-}
 
 @media (min-width: 1200px) {
   .main {

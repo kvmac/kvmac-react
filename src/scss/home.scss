@@ -3,12 +3,11 @@
 @import 'mixins';
 
 .home {
-  // background-color: $dark-primary;
-    // position: absolute;
-  display: flex;
+  background-color: transparent;
+  float: right;
   z-index: 3;
   width: 82%;
-  height: 200%;
+  height: 100%;
 
   @include keyframes(pop) {
     0% {

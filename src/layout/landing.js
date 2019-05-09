@@ -22,6 +22,7 @@ import {
   GlowSticks } from '../svg';
 
 import '../styles/landing.css';
+import '../styles/background-elements.css';
 
 
 export function Landing({ closeLanding }) {
@@ -73,7 +74,7 @@ export function Landing({ closeLanding }) {
   const dissolveLanding = () => {
     setDissolve({ dissolve: true });
 
-    setTimeout(() => closeLanding(), 3000);
+    setTimeout(() => closeLanding(), 2000);
   }
 
   return(
