@@ -10,10 +10,10 @@
     margin: 0 auto;
     position: relative;
 }
-@for $i from 1 through 50 {
+@for $i from 1 through 20 {
     $shape-size: 100 + random(10);
     $rotation: random(360);
-    $speed: 10 + random(10);
+    $speed: 100 + random(10);
     
     @keyframes shape-#{$i} {
         0% {
@@ -151,7 +151,7 @@
 
 
 @media (min-width: 1200px) {
-  @for $i from 1 through 50 {
+  @for $i from 1 through 20 {
       $shape-size: 100 + random(10);
       $rotation: random(360);
       $speed: 50 + random(10);

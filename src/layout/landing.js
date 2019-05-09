@@ -53,7 +53,7 @@ export function Landing({ closeLanding }) {
     let bg1 = document.querySelector('.shape-background-top');
     let bg2 = document.querySelector('.shape-background-bottom');
 
-    for (var i = 1; i <= 25; i ++) {
+    for (var i = 1; i <= 20; i ++) {
       let node1 = document.createElement('div');
       let node2 = document.createElement('div');
 
