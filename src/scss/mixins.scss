@@ -72,6 +72,16 @@
     left: 50%;
     transform: translateX(-50%);
 }
+@mixin asap-reg() {
+    font-family: 'Asap', 'Sans Serif';
+    color: white;
+    font-weight: normal;
+}
+@mixin asap-bold() {
+    font-family: 'Asap', 'Sans Serif';
+    color: white;
+    font-weight: bold;
+}
 
 @import url('https://fonts.googleapis.com/css?family=Lato:100,400');
 @import url('https://fonts.googleapis.com/css?family=Rubik:700,900');

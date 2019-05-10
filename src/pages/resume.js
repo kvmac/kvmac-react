@@ -15,7 +15,7 @@ export const Resume = () => {
 
   return (
     <React.Fragment>
-      <div className="svg-wrapper">
+      {/* <div className="svg-wrapper">
         <svg className="border" height={h} width={w} x="50" y="50" viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
@@ -28,7 +28,7 @@ export const Resume = () => {
             <rect x={w > 1200 ? w * .02 : w * .2} y={w > 1200 ? h * .1 : h * .02} height={w > 1200 ? h : h - (h * .04)} width={w > 1200 ? w - (w * .04) : w - (w * .22)} />
           </g>
         </svg>
-      </div>
+      </div> */}
       <div className="resume">
         <div className="header"></div>
         <div className="objective">Objective</div>

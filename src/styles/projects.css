@@ -18,12 +18,16 @@
   }
 }
 
-.project-header {
+.projects {
+  width: 82%;
+}
+
+.projects .project-header {
   font-family: 'Rubik', sans-serif;
   font-weight: 900;
 }
 
-.project-header a {
+.projects .project-header a {
   text-decoration: none;
   color: white;
 }

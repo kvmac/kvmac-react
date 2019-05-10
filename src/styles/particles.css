@@ -20,7 +20,7 @@
 
 .overlay .particles {
   position: relative;
-  background-color: #191919;
+  background-color: transparent;
   z-index: 1;
   overflow: hidden;
 }

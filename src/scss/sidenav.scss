@@ -4,7 +4,7 @@
 
 .sidenav {
   position: absolute;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   background-color: #171717;
   // background: #222629;
@@ -17,45 +17,45 @@
   -moz-box-shadow: 4px 0px 25px 10px rgba(0, 0, 0, 0.75);
 
   &.init {
-    @include animation(0, 2s, init, ease-in);
+    @include animation($init-delay, $init-duration, init, ease-in);
   }
   &.open {
-    @include animation(0, .5s, open, ease-in);
+    @include animation($open-delay, $open-duration, open, ease-in);
   }
   &.close {
-    @include animation(0, .75s, close, linear);
+    @include animation($close-delay, $close-duration, close, linear);
   }
   &.fade {
-    @include animation(0, .5s, fade, linear);
+    @include animation($fade-delay, $fade-duration, fade, linear);
   }
   @include keyframes(init) {
     86% {
-      width: 0;
+      width: $init-1;
     }
     93% {
-      width: 20%;
+      width: $init-2;
     }
     96% {
-      width: 16%;
+      width: $init-3;
     }
     100% {
-      width: 18%;
+      width: $init-4;
     }
   }
   @include keyframes(open) {
-    0% {width: 18%;}
-    100% {width: 85%;}
+    0% {width: $open-1;}
+    100% {width: $open-2;}
   }
   @include keyframes(close) {
-    0% {width: 85%;}
-    100% {width: 18%;}
+    0% {width: $close-1;}
+    100% {width: $close-2;}
   }
   @include keyframes(fade) {
-    0% {opacity: 1;}
-    25% {opacity: .75;}
-    50% {opacity: .5;}
-    75% {opacity: .25;}
-    100% {opacity: 0;}
+    0% {opacity: $fade-1;}
+    25% {opacity: $fade-2;}
+    50% {opacity: $fade-3;}
+    75% {opacity: $fade-4;}
+    100% {opacity: $fade-5;}
   }
 
 
@@ -86,7 +86,7 @@
   }
 
   #hamburger-button>span:nth-child(1) { 
-    width: 100%;
+    width: 95%;
     height: 20%;
     top: 0;
     transition: top 0.1s ease-in, width 0.1s ease 0.1s;
@@ -135,35 +135,150 @@
   }
 
   .contents {
-    position: relative;
     height: 100%;
     width: 100%;
 
     &.visible {
-      display: block;
       overflow: hidden;
+
+      .profile-header {
+        opacity: 0;
+        visibility: hidden;
+        @include animation(0, 1s, reveal-content, linear);
+      }
+      .profile-info {
+        opacity: 0;
+        visibility: hidden;
+        @include animation(0, 1s, reveal-content, linear);
+      }
+      .nav {
+
+        .link-wrapper {
+          i {
+          }
+
+          a {
+            opacity: 0;
+            visibility: hidden;
+            @include animation(0, .5s, reveal-content, linear);
+          }
+        }
+      }
+      @include keyframes(reveal-content) {
+        0% {
+          opacity: 0;
+          visibility: hidden;
+        }
+        100% {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
     }
 
     &.invisible {
-      display: none;
       overflow: hidden;
+
+      .profile-header {
+        opacity: 1;
+        visibility: visible;
+        @include animation(0, .5s, close-content, linear);
+      }
+      .profile-info {
+        opacity: 1;
+        visibility: visible;
+        @include animation(0, .5s, close-content, linear);
+      }
+      .nav {
+        left: 0;
+        .link-wrapper {
+          i {
+            position: relative;
+            left: 50%;
+            right: 50%;
+            transform: translate(-50%);
+          }
+
+          a {
+            opacity: 1;
+            visibility: visible;
+            @include animation(0, 1s, close-content, ease-out, forwards);
+          }
+        }
+
+      }
+      @include keyframes(close-content) {
+        0% {
+          opacity: 1;
+          visibility: visible;
+        }
+        50% {
+          opacity: .5;
+        }
+        100% {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
     }
 
+
+
+
+
+
     .profile-header {
-      position: relative;
-      top: 0;
+      width: 100%;
 
       .photo {
         position: relative;
         width: 80%;
         border-radius: 50%;
-        @include center();
-        // left: 50%;
-        // right: 50%;
-        // transform: translate(-50%, -50%);
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%);
         // object-fit: cover;
       }
+    }
 
+    .profile-info {
+      position: relative;
+      width: 100%;
+      @include asap-reg();
+      top: 2%;
+      font-size: 1em;
+      color: white;
+      text-align: center;
+    }
+
+    .nav {
+      position: relative;
+      top: 5%;
+      display: block;
+
+      .link-wrapper {
+        text-align: left;
+        overflow: hidden;
+        width: 100%;
+        height: 40px;
+
+        i {
+          padding-right: 2ch;
+        }
+
+        a {
+          // @include animation(.5s, .5s, reveal-text, ease-in);
+          @include asap-reg();
+          font-size: 2.5ch;
+          color: white;
+          text-decoration: none;
+          visibility: hidden;
+          border-radius: 1ch;
+          border-width: 1ch;
+        }
+      }
+    }
+    .footer {
       .social {
         position: relative;
         @include center();
@@ -180,61 +295,6 @@
         }
       }
     }
-
-    .profile-info {
-      position: relative;
-      top: 5%;
-
-      .name {
-        position: relative;
-        font-family: 'Raleway', sans-serif;
-        font-size: 28px;
-        top: 30%;
-        left: 25%;
-      }
-      .title {
-        position: relative;
-        font-family: 'Raleway', sans-serif;
-        top: 40%;
-        left: 25%;
-        overflow: hidden;
-      }
-      .location {
-        position: relative;
-        font-family: 'Raleway', sans-serif;
-        width: 60%;
-        overflow: hidden;
-        top: 50%;
-        left: 25%;
-      }
-    }
-    .nav {
-      position: relative;
-      top: 10%;
-
-      .links {
-        position: relative;
-        left: 20%;
-
-        .link {
-          position: relative;
-          font-size: 24pt;
-          color: white;
-          background: $blue1;
-          border-radius: 10ch;
-          width: 100%;
-          height: 40%;
-          font-family: 'Asap', sans-serif;
-        }
-      }
-    }
-
-    // .link:nth-child(1) {
-    // }
-    // .link:nth-child(2) {
-    // }
-    // .link:nth-child(3) {
-    // }
   }
 
 }

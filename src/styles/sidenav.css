@@ -20,7 +20,7 @@
 
 .sidenav {
   position: absolute;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   background-color: #171717;
   z-index: 4;
@@ -195,13 +195,13 @@
     opacity: 1;
   }
   25% {
-    opacity: .75;
+    opacity: 0.75;
   }
   50% {
-    opacity: .5;
+    opacity: 0.5;
   }
   75% {
-    opacity: .25;
+    opacity: 0.25;
   }
   100% {
     opacity: 0;
@@ -213,13 +213,13 @@
     opacity: 1;
   }
   25% {
-    opacity: .75;
+    opacity: 0.75;
   }
   50% {
-    opacity: .5;
+    opacity: 0.5;
   }
   75% {
-    opacity: .25;
+    opacity: 0.25;
   }
   100% {
     opacity: 0;
@@ -255,7 +255,7 @@
 }
 
 .sidenav #hamburger-button > span:nth-child(1) {
-  width: 100%;
+  width: 95%;
   height: 20%;
   top: 0;
   -webkit-transition: top 0.1s ease-in, width 0.1s ease 0.1s;
@@ -314,24 +314,232 @@
 }
 
 .sidenav .contents {
-  position: relative;
   height: 100%;
   width: 100%;
 }
 
 .sidenav .contents.visible {
-  display: block;
   overflow: hidden;
+}
+
+.sidenav .contents.visible .profile-header {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: reveal-content;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-direction: linear;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 1s;
+  -moz-animation-name: reveal-content;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-direction: linear;
+  -ms-animation-delay: 0;
+  -ms-animation-duration: 1s;
+  -ms-animation-name: reveal-content;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-direction: linear;
+  animation-delay: 0;
+  animation-duration: 1s;
+  animation-name: reveal-content;
+  animation-fill-mode: forwards;
+  animation-direction: linear;
+}
+
+.sidenav .contents.visible .profile-info {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: reveal-content;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-direction: linear;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 1s;
+  -moz-animation-name: reveal-content;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-direction: linear;
+  -ms-animation-delay: 0;
+  -ms-animation-duration: 1s;
+  -ms-animation-name: reveal-content;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-direction: linear;
+  animation-delay: 0;
+  animation-duration: 1s;
+  animation-name: reveal-content;
+  animation-fill-mode: forwards;
+  animation-direction: linear;
+}
+
+.sidenav .contents.visible .nav .link-wrapper a {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: reveal-content;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-direction: linear;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-name: reveal-content;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-direction: linear;
+  -ms-animation-delay: 0;
+  -ms-animation-duration: 0.5s;
+  -ms-animation-name: reveal-content;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-direction: linear;
+  animation-delay: 0;
+  animation-duration: 0.5s;
+  animation-name: reveal-content;
+  animation-fill-mode: forwards;
+  animation-direction: linear;
+}
+
+@-webkit-keyframes reveal-content {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes reveal-content {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .sidenav .contents.invisible {
-  display: none;
   overflow: hidden;
 }
 
-.sidenav .contents .profile-header {
+.sidenav .contents.invisible .profile-header {
+  opacity: 1;
+  visibility: visible;
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: close-content;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-direction: linear;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-name: close-content;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-direction: linear;
+  -ms-animation-delay: 0;
+  -ms-animation-duration: 0.5s;
+  -ms-animation-name: close-content;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-direction: linear;
+  animation-delay: 0;
+  animation-duration: 0.5s;
+  animation-name: close-content;
+  animation-fill-mode: forwards;
+  animation-direction: linear;
+}
+
+.sidenav .contents.invisible .profile-info {
+  opacity: 1;
+  visibility: visible;
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: close-content;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-direction: linear;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-name: close-content;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-direction: linear;
+  -ms-animation-delay: 0;
+  -ms-animation-duration: 0.5s;
+  -ms-animation-name: close-content;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-direction: linear;
+  animation-delay: 0;
+  animation-duration: 0.5s;
+  animation-name: close-content;
+  animation-fill-mode: forwards;
+  animation-direction: linear;
+}
+
+.sidenav .contents.invisible .nav {
+  left: 0;
+}
+
+.sidenav .contents.invisible .nav .link-wrapper i {
   position: relative;
-  top: 0;
+  left: 50%;
+  right: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.sidenav .contents.invisible .nav .link-wrapper a {
+  opacity: 1;
+  visibility: visible;
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: close-content;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-direction: ease-out;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 1s;
+  -moz-animation-name: close-content;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-direction: ease-out;
+  -ms-animation-delay: 0;
+  -ms-animation-duration: 1s;
+  -ms-animation-name: close-content;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-direction: ease-out;
+  animation-delay: 0;
+  animation-duration: 1s;
+  animation-name: close-content;
+  animation-fill-mode: forwards;
+  animation-direction: ease-out;
+}
+
+@-webkit-keyframes close-content {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes close-content {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.sidenav .contents .profile-header {
+  width: 100%;
 }
 
 .sidenav .contents .profile-header .photo {
@@ -339,78 +547,69 @@
   width: 80%;
   border-radius: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  right: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
-.sidenav .contents .profile-header .social {
+.sidenav .contents .profile-info {
+  position: relative;
+  width: 100%;
+  font-family: 'Asap', 'Sans Serif';
+  color: white;
+  font-weight: normal;
+  top: 2%;
+  font-size: 1em;
+  color: white;
+  text-align: center;
+}
+
+.sidenav .contents .nav {
+  position: relative;
+  top: 5%;
+  display: block;
+}
+
+.sidenav .contents .nav .link-wrapper {
+  text-align: left;
+  overflow: hidden;
+  width: 100%;
+  height: 40px;
+}
+
+.sidenav .contents .nav .link-wrapper i {
+  padding-right: 2ch;
+}
+
+.sidenav .contents .nav .link-wrapper a {
+  font-family: 'Asap', 'Sans Serif';
+  color: white;
+  font-weight: normal;
+  font-size: 2.5ch;
+  color: white;
+  text-decoration: none;
+  visibility: hidden;
+  border-radius: 1ch;
+  border-width: 1ch;
+}
+
+.sidenav .contents .footer .social {
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
-.sidenav .contents .profile-header .social .github {
+.sidenav .contents .footer .social .github {
   position: relative;
   left: 2%;
   width: 35%;
 }
 
-.sidenav .contents .profile-header .social .linkedin {
+.sidenav .contents .footer .social .linkedin {
   position: relative;
   float: right;
   width: 40%;
-}
-
-.sidenav .contents .profile-info {
-  position: relative;
-  top: 5%;
-}
-
-.sidenav .contents .profile-info .name {
-  position: relative;
-  font-family: 'Raleway', sans-serif;
-  font-size: 28px;
-  top: 30%;
-  left: 25%;
-}
-
-.sidenav .contents .profile-info .title {
-  position: relative;
-  font-family: 'Raleway', sans-serif;
-  top: 40%;
-  left: 25%;
-  overflow: hidden;
-}
-
-.sidenav .contents .profile-info .location {
-  position: relative;
-  font-family: 'Raleway', sans-serif;
-  width: 60%;
-  overflow: hidden;
-  top: 50%;
-  left: 25%;
-}
-
-.sidenav .contents .nav {
-  position: relative;
-  top: 10%;
-}
-
-.sidenav .contents .nav .links {
-  position: relative;
-  left: 20%;
-}
-
-.sidenav .contents .nav .links .link {
-  position: relative;
-  font-size: 24pt;
-  color: white;
-  background: #005EFF;
-  border-radius: 10ch;
-  width: 100%;
-  height: 40%;
-  font-family: 'Asap', sans-serif;
 }
 
 @media (min-width: 700px) {

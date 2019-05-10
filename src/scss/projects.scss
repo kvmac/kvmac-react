@@ -2,11 +2,15 @@
 @import 'variables';
 @import 'mixins';
 
-.project-header {
-  font-family: 'Rubik', sans-serif;
-  font-weight: 900;
-  a {
-    text-decoration: none;
-    color: white;
+.projects {
+  width: $page-width;
+
+  .project-header {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 900;
+    a {
+      text-decoration: none;
+      color: white;
+    }
   }
 }

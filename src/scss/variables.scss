@@ -29,3 +29,37 @@ $element-secondary: #32e597;
 
 $element-primary-glow: #26e9ff;
 $element-secondary-glow: #35ffa7;
+
+
+// sidenav adjustments
+$init-1: 0;
+$init-2: 20%;
+$init-3: 16%;
+$init-4: 18%;
+$init-delay: 0;
+$init-duration: 2s;
+
+$open-1: 18%;
+$open-2: 85%;
+$open-delay: 0;
+$open-duration: .5s;
+
+$close-1: 85%;
+$close-2: 18%;
+$close-delay: 0;
+$close-duration: .75s;
+
+$fade-1: 1;
+$fade-2: .75;
+$fade-3: .5;
+$fade-4: .25;
+$fade-5: 0;
+$fade-delay: 0;
+$fade-duration: .5s;
+
+$sidenav-width: 18%;
+$page-width: 82%;
+
+// shapes background
+$number-of-elements: 50;
+$speed-of-elements: 25;

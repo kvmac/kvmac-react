@@ -1,0 +1,50 @@
+
+@font-face {
+    font-family: "Asap";
+    src: url("../fonts/Asap-Regular.eot");
+    src: url("../fonts/Asap-Regular.eot?#iefix") format('embedded-opentype'),
+         url("../fonts/Asap-Regular.woff2") format('woff2'),
+         url("../fonts/Asap-Regular.woff") format('woff'),
+         url("../fonts/Asap-Regular.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Asap";
+    src: url("../fonts/Asap-Medium.eot");
+    src: url("../fonts/Asap-Medium.eot?#iefix") format('embedded-opentype'),
+         url("../fonts/Asap-Medium.woff2") format('woff2'),
+         url("../fonts/Asap-Medium.woff") format('woff'),
+         url("../fonts/Asap-Medium.ttf") format('truetype');
+    font-weight: 500;
+    font-style: medium;
+}
+
+@font-face {
+    font-family: "Asap";
+    src: url('../fonts/Asap-Bold.eot'); /* IE9 Compat Modes */
+    src: local('Asap-Bold'), local('Asap-Bold'),
+        url('../fonts/Asap-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/Asap-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/Asap-Bold.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/Asap-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/Asap-Bold.svg#Asap') format('svg'); /* Legacy iOS */
+
+    src: url("");
+    src: url("/fonts/Asap-Bold.eot?#iefix") format('embedded-opentype'),
+         url("/fonts/Asap-Bold.woff2") format('woff2'),
+         url("/fonts/Asap-Bold.woff") format('woff'),
+         url("/fonts/Asap-Bold.ttf") format('truetype');
+    font-weight: 700;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: "DevIcons";
+    src: url("../fonts/devicons.eot");
+    src: url("../fonts/devicons.eot?#iefix") format('embedded-opentype'),
+         url("../fonts/devicons.woff2") format('woff2'),
+         url("../fonts/devicons.woff") format('woff'),
+         url("../fonts/devicons.ttf") format('truetype');
+}

@@ -24,6 +24,50 @@
   z-index: 3;
   width: 82%;
   height: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.home label {
+  -webkit-animation-delay: 3s;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: reveal-text;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-direction: ease-in;
+  -moz-animation-delay: 3s;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-name: reveal-text;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-direction: ease-in;
+  -ms-animation-delay: 3s;
+  -ms-animation-duration: 0.5s;
+  -ms-animation-name: reveal-text;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-direction: ease-in;
+  animation-delay: 3s;
+  animation-duration: 0.5s;
+  animation-name: reveal-text;
+  animation-fill-mode: forwards;
+  animation-direction: ease-in;
+  visibility: hidden;
+  display: block;
+  font-size: 1em;
+}
+
+.home .bold {
+  font-family: 'Asap', 'Sans Serif';
+  color: white;
+  font-weight: bold;
+  position: relative;
+  top: 50%;
+}
+
+.home .regular {
+  font-family: 'Asap', 'Sans Serif';
+  color: white;
+  font-weight: normal;
+  position: relative;
+  top: 60%;
 }
 
 @-webkit-keyframes pop {
