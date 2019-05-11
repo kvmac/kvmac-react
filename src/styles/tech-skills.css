@@ -31,6 +31,10 @@
           justify-content: center;
 }
 
+.tech-skills {
+  z-index: 4;
+}
+
 .tech-skills span {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;

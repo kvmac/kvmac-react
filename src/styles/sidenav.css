@@ -324,7 +324,6 @@
 
 .sidenav .contents.visible .profile-header {
   opacity: 0;
-  visibility: hidden;
   -webkit-animation-delay: 0.15s;
   -webkit-animation-duration: 1.5s;
   -webkit-animation-name: reveal-content;
@@ -348,9 +347,9 @@
 }
 
 .sidenav .contents.visible .profile-info {
+  position: relative;
+  height: 10%;
   opacity: 0;
-  visibility: hidden;
-  display: none;
   -webkit-animation-delay: 0.15s;
   -webkit-animation-duration: 1.5s;
   -webkit-animation-name: reveal-content;
@@ -373,9 +372,13 @@
   animation-direction: linear;
 }
 
+.sidenav .contents.visible .nav {
+  top: 5%;
+}
+
 .sidenav .contents.visible .nav .link-wrapper a i {
   padding-right: 3ch;
-  padding-left: 6ch;
+  padding-left: 8ch;
 }
 
 .sidenav .contents.visible .nav .link-wrapper a label {
@@ -405,27 +408,23 @@
 
 @-webkit-keyframes reveal-content {
   0% {
-    display: none;
     opacity: 0;
     visibility: hidden;
   }
   100% {
     opacity: 1;
     visibility: visible;
-    display: block !important;
   }
 }
 
 @keyframes reveal-content {
   0% {
-    display: none;
     opacity: 0;
     visibility: hidden;
   }
   100% {
     opacity: 1;
     visibility: visible;
-    display: block !important;
   }
 }
 
@@ -435,7 +434,6 @@
 
 .sidenav .contents.invisible .profile-header {
   opacity: 1;
-  visibility: visible;
   -webkit-animation-delay: 0;
   -webkit-animation-duration: 0.5s;
   -webkit-animation-name: close-content;
@@ -459,12 +457,15 @@
 }
 
 .sidenav .contents.invisible .profile-info {
+  position: relative;
+  height: 10%;
   opacity: 0;
   visibility: hidden;
-  display: none;
 }
 
 .sidenav .contents.invisible .nav {
+  position: relative;
+  top: 20%;
   left: 0;
 }
 
@@ -510,28 +511,18 @@
 @-webkit-keyframes close-content {
   0% {
     opacity: 1;
-    visibility: visible;
-  }
-  50% {
-    opacity: .5;
   }
   100% {
     opacity: 0;
-    visibility: hidden;
   }
 }
 
 @keyframes close-content {
   0% {
     opacity: 1;
-    visibility: visible;
-  }
-  50% {
-    opacity: .5;
   }
   100% {
     opacity: 0;
-    visibility: hidden;
   }
 }
 
@@ -563,14 +554,12 @@
 
 .sidenav .contents .nav {
   position: relative;
-  top: 5%;
-  display: block;
 }
 
 .sidenav .contents .nav .link-wrapper {
   overflow: hidden;
   width: 100%;
-  height: 40px;
+  height: 35px;
 }
 
 .sidenav .contents .nav .link-wrapper a {
@@ -592,20 +581,26 @@
   border-width: 1ch;
 }
 
-.sidenav .contents .footer .social {
+.sidenav .contents .social {
   position: relative;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  width: 100%;
+  height: 10%;
+  visibility: hidden;
+  bottom: 0;
 }
 
-.sidenav .contents .footer .social .github {
+.sidenav .contents .social span {
+  width: 90%;
+  background-color: grey;
+}
+
+.sidenav .contents .social .github {
   position: relative;
   left: 2%;
   width: 35%;
 }
 
-.sidenav .contents .footer .social .linkedin {
+.sidenav .contents .social .linkedin {
   position: relative;
   float: right;
   width: 40%;

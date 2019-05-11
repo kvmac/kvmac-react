@@ -4,8 +4,14 @@
 
 
 .footer {
-  height: 0;
+  position: relative;
   visibility: hidden;
+  bottom: 0;
+
+  span {
+    width: 90%;
+    background-color: grey;
+  }
 }
 
 @media(min-width: 1200px) {

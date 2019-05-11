@@ -5,6 +5,7 @@ import headshot from '../img/headshot.png';
 import Icon from 'react-eva-icons';
 import github from '../svg/github.svg';
 import linkedin from '../svg/linkedin.svg';
+import { PulseElement } from '../shared';
 
 
 export class Sidenav extends React.Component {
@@ -86,6 +87,7 @@ export class Sidenav extends React.Component {
                   size="medium"
                   fill="grey"
                   />
+                  {/* <PulseElement /> */}
                   {!isOpen || <label>Projects</label>}
               </Link>
             </div>
@@ -126,8 +128,8 @@ export class Sidenav extends React.Component {
               </Link>
             </div>
           </div>
-          <div className="footer">
-            <div className="social">
+          <div className="social">
+            <span></span>
             <a href="https://github.com/kvmac" target="_blank" rel="noopener noreferrer">
               <Icon
                 name="github-outline"
@@ -140,7 +142,6 @@ export class Sidenav extends React.Component {
                 size="medium"
                 />
             </a>
-            </div>
           </div>
         </div>
       </div>
