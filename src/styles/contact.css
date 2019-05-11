@@ -17,24 +17,4 @@
     stroke-dashoffset: 1;
   }
 }
-
-.projects {
-  position: relative;
-  background-color: transparent;
-  float: right;
-  z-index: 3;
-  width: 82%;
-  height: 100%;
-  text-align: center;
-  overflow: hidden;
-}
-
-.projects .project-header a {
-  color: white;
-  font-family: 'Asap', 'Sans Serif';
-  color: white;
-  font-weight: bold;
-  font-size: 3ch;
-  text-decoration: none;
-}
-/*# sourceMappingURL=projects.css.map */
+/*# sourceMappingURL=contact.css.map */

@@ -19,6 +19,8 @@ export class Sidenav extends React.Component {
 
   handleSidenav = () => this.setState({ isOpen: !this.state.isOpen, sidenavAnimation: !this.state.isOpen ? "open" : "close" });
 
+  closeSidenav = () => !this.state.isOpen || this.setState({ isOpen: false, sidenavAnimation: "close" });
+
   render() {
     const { isOpen, sidenavAnimation } = {...this.state};
 
@@ -50,66 +52,79 @@ export class Sidenav extends React.Component {
           </div>
           <div className="nav">
             <div className="link-wrapper">
-            <HighLighter />
               {/* <span onMouseOver={}> */}
+                {/* </span> */}
+              <Link onClick={this.closeSidenav} to="/">
+                {/* <HighLighter /> */}
+
                 <Icon
                   name="home-outline"
                   size="medium"
                   fill="grey"
                   />
-                {/* </span> */}
-              <Link onClick={this.handleSidenav} to="/">
-                  {isOpen ? "Home" : ""}
+                  {!isOpen || <label>Home</label>}
               </Link>
             </div>
             <div className="link-wrapper">
               {/* <span onMouseOver={}> */}
+              {/* </span> */}
+              <Link onClick={this.closeSidenav} to="/tech-skills">
                 <Icon
                   name="code-outline"
                   size="medium"
                   fill="grey"
                   />
-              {/* </span> */}
-              <Link onClick={this.handleSidenav} to="/tech-skills">
-                  {isOpen ? "Tech-Skills" : ""}
+                  {!isOpen || <label>Tech Skills</label>}
               </Link>
             </div>
             <div className="link-wrapper">
               {/* <span onMouseOver={}> */}
+              {/* </span> */}
+              <Link onClick={this.closeSidenav} to="/projects">
                 <Icon
                   name="activity-outline"
                   size="medium"
                   fill="grey"
                   />
-              {/* </span> */}
-              <Link onClick={this.handleSidenav} to="/projects">
-                  {isOpen ? "Projects" : ""}
-              </Link>
-            </div>
-            <div className="link-wrapper">
-              {/* <span onMouseOver={}> */}<Icon
-                  name="file-text-outline"
-                  size="medium"
-                  fill="grey"
-                  />
-              {/* </span> */}
-              <Link onClick={this.handleSidenav} to="/resume">️
-                  {isOpen ? "Resume" : ""}
+                  {!isOpen || <label>Projects</label>}
               </Link>
             </div>
             <div className="link-wrapper">
               {/* <span onMouseOver={}> */}
+              {/* </span> */}
+              <Link onClick={this.closeSidenav} to="/resume">️
+                <Icon
+                  name="file-text-outline"
+                  size="medium"
+                  fill="grey"
+                  />
+                  {!isOpen || <label>Resume</label>}
+              </Link>
+            </div>
+            <div className="link-wrapper">
+              {/* <span onMouseOver={}> */}
+              {/* </span> */}
+              <Link onClick={this.closeSidenav} to="/blog">️
                 <Icon
                   name="message-square-outline"
                   size="medium"
                   fill="grey"
                   />
-              {/* </span> */}
-              <Link onClick={this.handleSidenav} to="/blog">️
-                  {isOpen ? "Blog" : ""}
+                  {!isOpen || <label>Blog</label>}
               </Link>
             </div>
-              {/* <Link className="link" to="/blog">Blog</Link> */}
+            <div className="link-wrapper">
+              {/* <span onMouseOver={}> */}
+              {/* </span> */}
+              <Link onClick={this.closeSidenav} to="/contact">️
+                <Icon
+                  name="paper-plane-outline"
+                  size="medium"
+                  fill="grey"
+                  />
+                  {!isOpen || <label>Contact</label>}
+              </Link>
+            </div>
           </div>
           <div className="footer">
             <div className="social">
@@ -136,15 +151,17 @@ export class Sidenav extends React.Component {
 const HighLighter = () => {
 
   return (
-    <svg viewBox="0 0 50 50">
-      <defs>
-          <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-          <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0"></feOffset>
-          <feGaussianBlur result="blurOut" in="offOut" stdDeviation="4"></feGaussianBlur>
-          <feBlend in="SourceGraphic" in2="blurOut" mode="overlay"></feBlend>
-          </filter>
-      </defs>
-      <path x1="0" y1="0" x2="0" y2="10" stroke="#26e9ff" stroke-width="2" />
-    </svg>
+    <div className="highlighter">
+      <svg viewBox="0 0 50 50">
+        <defs>
+            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+            <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0"></feOffset>
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="4"></feGaussianBlur>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="overlay"></feBlend>
+            </filter>
+        </defs>
+        <path x1="0" y1="0" x2="0" y2="10" stroke="#26e9ff" stroke-width="2" />
+      </svg>
+    </div>
   );
 }

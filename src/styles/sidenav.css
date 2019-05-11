@@ -350,6 +350,7 @@
 .sidenav .contents.visible .profile-info {
   opacity: 0;
   visibility: hidden;
+  display: none;
   -webkit-animation-delay: 0.15s;
   -webkit-animation-duration: 1.5s;
   -webkit-animation-name: reveal-content;
@@ -372,7 +373,12 @@
   animation-direction: linear;
 }
 
-.sidenav .contents.visible .nav .link-wrapper a {
+.sidenav .contents.visible .nav .link-wrapper a i {
+  padding-right: 3ch;
+  padding-left: 6ch;
+}
+
+.sidenav .contents.visible .nav .link-wrapper a label {
   opacity: 0;
   visibility: hidden;
   -webkit-animation-delay: 0.15s;
@@ -399,23 +405,27 @@
 
 @-webkit-keyframes reveal-content {
   0% {
+    display: none;
     opacity: 0;
     visibility: hidden;
   }
   100% {
     opacity: 1;
     visibility: visible;
+    display: block !important;
   }
 }
 
 @keyframes reveal-content {
   0% {
+    display: none;
     opacity: 0;
     visibility: hidden;
   }
   100% {
     opacity: 1;
     visibility: visible;
+    display: block !important;
   }
 }
 
@@ -449,43 +459,30 @@
 }
 
 .sidenav .contents.invisible .profile-info {
-  opacity: 1;
-  visibility: visible;
-  -webkit-animation-delay: 0;
-  -webkit-animation-duration: 0.5s;
-  -webkit-animation-name: close-content;
-  -webkit-animation-fill-mode: forwards;
-  -webkit-animation-direction: linear;
-  -moz-animation-delay: 0;
-  -moz-animation-duration: 0.5s;
-  -moz-animation-name: close-content;
-  -moz-animation-fill-mode: forwards;
-  -moz-animation-direction: linear;
-  -ms-animation-delay: 0;
-  -ms-animation-duration: 0.5s;
-  -ms-animation-name: close-content;
-  -ms-animation-fill-mode: forwards;
-  -ms-animation-direction: linear;
-  animation-delay: 0;
-  animation-duration: 0.5s;
-  animation-name: close-content;
-  animation-fill-mode: forwards;
-  animation-direction: linear;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
 }
 
 .sidenav .contents.invisible .nav {
   left: 0;
 }
 
-.sidenav .contents.invisible .nav .link-wrapper {
-  text-align: center;
+.sidenav .contents.invisible .nav .link-wrapper a {
+  position: relative;
 }
 
-.sidenav .contents.invisible .nav .link-wrapper i {
+.sidenav .contents.invisible .nav .link-wrapper a i {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   padding-right: 0;
 }
 
-.sidenav .contents.invisible .nav .link-wrapper a {
+.sidenav .contents.invisible .nav .link-wrapper a label {
   opacity: 1;
   visibility: visible;
   -webkit-animation-delay: 0;
@@ -576,24 +573,20 @@
   height: 40px;
 }
 
-.sidenav .contents .nav .link-wrapper i {
-  position: relative;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  left: 50%;
-  right: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+.sidenav .contents .nav .link-wrapper a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  vertical-align: 50%;
 }
 
-.sidenav .contents .nav .link-wrapper a {
+.sidenav .contents .nav .link-wrapper a label {
   font-family: 'Asap', 'Sans Serif';
   color: white;
   font-weight: normal;
   font-size: 2.5ch;
   color: white;
-  text-decoration: none;
   visibility: hidden;
   border-radius: 1ch;
   border-width: 1ch;
