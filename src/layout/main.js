@@ -86,7 +86,7 @@ export class Main extends React.Component {
             <Route exact path="/tech-skills" component={TechSkills} />
             <Route exact path="/projects" component={Projects} />
             <Route exact path="/resume" component={Resume} />
-            {/* <Route exact path="/blog" component={Blog} /> */}
+            <Route exact path="/blog" component={Blog} />
           </Switch>
           <Footer />
       </div>

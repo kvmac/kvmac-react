@@ -1,5 +1,5 @@
 import React from 'react';
-import 'styles/post1.css';
+import '../../styles/blog.post1.css';
 
 
 export const Post1 = () => {

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/blog.css';
-// import { Route, Switch } from 'react-router-dom';
+import { Link, Route, Switch } from 'react-router-dom';
+import BlogPosts from './blog-posts';
 
 export class Blog extends React.Component {
   constructor(props) {
@@ -15,12 +16,23 @@ export class Blog extends React.Component {
 
     return (
       <div className="blog">
-      Blog
-      {/* <Switch>
-        <Route path="/blog/post1" component={Post1} />
-      </Switch>
+        <div className="links">
+          {BlogPosts.map((post, i) => {
+            return (
+              <li key={i}>
+                <Link to={`/blog/:${post.key}`}>{post.key}</Link>
+              </li>
+            );
+          })}
+        </div>
 
-      <Link to="/blog/post1">Post1</Link> */}
+        <div className="post">
+            {BlogPosts.map((post, i) => {
+              return (
+                <Route path={`/blog/:${post.key}`} component={post.value} />
+              );
+            })}
+        </div>
       </div>
     );
   }

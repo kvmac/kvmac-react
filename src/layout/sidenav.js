@@ -50,6 +50,7 @@ export class Sidenav extends React.Component {
           </div>
           <div className="nav">
             <div className="link-wrapper">
+            <HighLighter />
               {/* <span onMouseOver={}> */}
                 <Icon
                   name="home-outline"
@@ -86,8 +87,7 @@ export class Sidenav extends React.Component {
               </Link>
             </div>
             <div className="link-wrapper">
-              {/* <span onMouseOver={}> */}
-                <Icon
+              {/* <span onMouseOver={}> */}<Icon
                   name="file-text-outline"
                   size="medium"
                   fill="grey"
@@ -131,4 +131,20 @@ export class Sidenav extends React.Component {
       </div>
     );
   }
+}
+
+const HighLighter = () => {
+
+  return (
+    <svg viewBox="0 0 50 50">
+      <defs>
+          <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+          <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0"></feOffset>
+          <feGaussianBlur result="blurOut" in="offOut" stdDeviation="4"></feGaussianBlur>
+          <feBlend in="SourceGraphic" in2="blurOut" mode="overlay"></feBlend>
+          </filter>
+      </defs>
+      <path x1="0" y1="0" x2="0" y2="10" stroke="#26e9ff" stroke-width="2" />
+    </svg>
+  );
 }

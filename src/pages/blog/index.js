@@ -1,1 +1,0 @@
-export { Post1 } from 'post1';
