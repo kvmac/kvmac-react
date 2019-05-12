@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/sidenav.css';
+import '../styles/sidenavbar.css';
 import { Link } from 'react-router-dom';
 import headshot from '../img/headshot.png';
 import Icon from 'react-eva-icons';
@@ -8,7 +8,7 @@ import linkedin from '../svg/linkedin.svg';
 import { PulseElement } from '../shared';
 
 
-export class Sidenav extends React.Component {
+export class SideNavBar extends React.Component {
   constructor(props) {
     super(props);
 
@@ -26,8 +26,8 @@ export class Sidenav extends React.Component {
     const { isOpen, sidenavAnimation } = {...this.state};
 
     return(
-      <div className={`sidenav ${sidenavAnimation}`}>
-        <div id="hamburger-button" className={isOpen ? "close-button" : ""} onClick={this.handleSidenav}>
+      <div className={`sidenavbar ${sidenavAnimation}`}>
+        <div id="hamburger-button" className={isOpen ? "close-btn" : ""} onClick={this.handleSidenav}>
           <span></span>
           <span></span>
           <span></span>
@@ -71,7 +71,7 @@ export class Sidenav extends React.Component {
               {/* </span> */}
               <Link onClick={this.closeSidenav} to="/tech-skills">
                 <Icon
-                  name="code-outline"
+                  name="activity-outline"
                   size="medium"
                   fill="grey"
                   />
@@ -83,7 +83,7 @@ export class Sidenav extends React.Component {
               {/* </span> */}
               <Link onClick={this.closeSidenav} to="/projects">
                 <Icon
-                  name="activity-outline"
+                  name="code-outline"
                   size="medium"
                   fill="grey"
                   />
@@ -120,7 +120,7 @@ export class Sidenav extends React.Component {
               {/* </span> */}
               <Link onClick={this.closeSidenav} to="/contact">️
                 <Icon
-                  name="paper-plane-outline"
+                  name="email-outline"
                   size="medium"
                   fill="grey"
                   />

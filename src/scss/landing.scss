@@ -3,77 +3,51 @@
 @import 'mixins';
 
 
-.overlay {
-  opacity: 100%;
-  z-index: 4;
+.logo {
   position: absolute;
+  top: 45%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%);
+  width: 80%;
+  z-index: 3;
   overflow: hidden;
 
-  .logo {
-    position: absolute;
-    width: 80%;
-    top: 45%;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-    overflow: hidden;
-
-    .letter {
-      box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-    }
+  .letter {
+    box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
   }
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  overflow: hidden;
+
 }
 .dissolve {
   overflow: hidden;
-  opacity: 100%;
-  position: absolute;
-  z-index: 4;
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  animation-play-state: paused;
+  width: 100%;
+  height: 100%;
 
-  .shape-background {
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    @include animation(.5s, 1.5s, fade, ease-out);
+  // -webkit-animation-play-state: paused;
+  // -moz-animation-play-state: paused;
+  // animation-play-state: paused;
 
-
-    .logo {
-      position: absolute;
-      width: 80%;
-      top: 45%;
-      left: 50%;
-      right: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 3;
-      overflow: hidden;
-      // @include animation(1s, 2s, fade-logo, ease-out);
-
-      .letter {
-        box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-        -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-        -moz-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-      }
-    }
+  .logo {
+    @include animation(.5s, 1s, fade-logo, ease-out);
   }
 }
-
-@include keyframes(fade) {
+@include keyframes(fade-logo) {
   0% {
-    transform: scale(1);
-    opacity: 1;
-    visibility: visible;
+    opacity: $fade-1;
+    transform: translate(-50%) scale(1);
   }
   100% {
-    transform: scale(.5);
-    opacity: 0;
-    visibility: none;
+    opacity: $fade-2;
+    transform: translate(-50%) scale(.5);
   }
 }
 

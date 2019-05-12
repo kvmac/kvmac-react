@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 import '../styles/particles.css';
 
-export function Particles() {
+export function Particles({ content }) {
 
   useEffect(() => {
     const _createClass = (function () {

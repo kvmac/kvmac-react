@@ -3,6 +3,16 @@
 @import 'mixins';
 
 
+.overlay {
+  .main {
+    height: 100%;
+    width: 100%;
+    .routes {
+      display: none;
+    }
+  }
+}
+
 @keyframes reveal-text {
     0% {
       visibility: hidden;
@@ -16,11 +26,18 @@
   // background-color: #111116;
   background-color: transparent;
   position: absolute;
+  top: 0;
   float: right;
   height: 100%;
   width: 100%;
   z-index: 1;
   overflow: hidden;
+  .routes {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+  }
 
   .shape {
     @include animation(1s, 1s, popdrop, ease-in-out);

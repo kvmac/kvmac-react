@@ -1,6 +1,134 @@
+/* Smartphones (portrait and landscape) ----------- */
 @import url("https://fonts.googleapis.com/css?family=Lato:100,400");
 @import url("https://fonts.googleapis.com/css?family=Rubik:700,900");
 @import url("https://fonts.googleapis.com/css?family=Karla");
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+}
+
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+/* iPhone 6, 7, 8 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+/* iPhone 6+, 7+, 8+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+/* iPhone X ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+
+/* iPhone XS Max, XR ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  /* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  /* Styles */
+}
+
 @-webkit-keyframes load {
   0% {
     stroke-dashoffset: 0;
@@ -9,6 +137,7 @@
     stroke-dashoffset: 1;
   }
 }
+
 @keyframes load {
   0% {
     stroke-dashoffset: 0;
@@ -46,8 +175,7 @@
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   top: 50%;
-  width: 90%;
-  height: 90%;
+  width: 82%;
 }
 
 .svg-wrapper .border {
@@ -80,12 +208,14 @@
 }
 
 .resume {
+  position: relative;
   background-color: transparent;
   float: right;
   z-index: 3;
   width: 82%;
   height: 100%;
-  z-index: 3;
+  text-align: center;
+  overflow: hidden;
 }
 
 .resume .flex-wrapper {
@@ -98,29 +228,23 @@
           flex-direction: column nowrap;
 }
 
-.resume .header {
-  width: 90%;
-  background: #005EFF;
-}
-
 .resume .objective {
-  width: 90%;
-  background: #4B24ED;
+  width: 100%;
+  height: 100vh;
 }
 
 .resume .tech-skills {
-  width: 82%;
-  left: 18%;
+  width: 100%;
 }
 
 .resume .experience {
-  width: 90%;
-  background: #FB7525;
+  width: 100%;
+  height: 100vh;
 }
 
 .resume .education {
-  width: 90%;
-  background: #13FF5C;
+  width: 100%;
+  height: 100vh;
 }
 
 .resume .divider {
@@ -211,14 +335,14 @@
 }
 
 @media (min-width: 700px) {
-  .flex-wrapper {
+  .resume .flex-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
+        -ms-flex-flow: row;
+            flex-flow: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

@@ -18,24 +18,30 @@
   }
 }
 
-.flex-wrapper {
+.tech-skills {
+  position: relative;
+  background-color: transparent;
+  float: right;
+  width: 82%;
+  height: 100%;
+  text-align: center;
+}
+
+.tech-skills .flex-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+      -ms-flex-flow: column;
+          flex-flow: column;
 }
 
-.tech-skills {
-  z-index: 4;
+.tech-skills .flex-wrapper .circle-container {
+  width: 50%;
 }
 
-.tech-skills span {
+.tech-skills .flex-wrapper span {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;

@@ -1,48 +1,38 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import { Landing, Main, Sidenav, Header } from './layout';
+import { Main, SideNavBar, NavBar } from './layout';
+import { Particles } from './effects';
+import { Logo } from './svg';
 import './App.css';
+import './styles/landing.css';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      hasLanding: true,
-      isMobile: window.innerWidth < 1200
+      hasLandingDissolved: sessionStorage.getItem('initLanding') || false
     };
   }
 
-  componentDidMount() {
-    window.addEventListener("resize", this.checkDisplay);
-  }
-
-  checkDisplay = () => {
-    console.log('window width;', window.innerWidth < 1200, window.innerWidth, ' vs ', '1200');
-
-    this.setState({ isMobile: window.innerWidth < 1200 });
-  }
-
-  closeLanding = () => this.setState({ hasLanding: false });
+  // dissolveLanding = () => this.setState({ hasLandingDissolved: true }, sessionStorage.setItem('initLanding', true));
+  //pull this out before going into prod
+  dissolveLanding = () => this.setState({ hasLandingDissolved: true });
 
   render() {
-    const { hasLanding, isMobile } = {...this.state};
+    const { hasLandingDissolved } = { ...this.state };
     const { location } = { ...this.props };
-
-    const renderNavigation = () => {
-      let nav = isMobile ? <Sidenav /> : <Header />;
-
-      return (
-        <React.Fragment>
-          {nav}
-          <Main />
-        </React.Fragment>
-      );
-    }
+    console.log('hasLandingDissolved:  ', hasLandingDissolved, "  initLanding:   ", sessionStorage.getItem('initLanding'));
 
     return (
       <div className="App">
-        {hasLanding && location.pathname === "/" ? <Landing closeLanding={this.closeLanding} /> : renderNavigation()}
+        <div className={!hasLandingDissolved && location.pathname === "/" ? "overlay" : "dissolve" } onClick={this.dissolveLanding}>
+          <Particles />
+          <img className="logo" src={Logo} />
+        <SideNavBar />
+        <NavBar />
+        <Main />
+        </div>
       </div>
     );
   }

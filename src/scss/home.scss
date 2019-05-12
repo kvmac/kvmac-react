@@ -3,13 +3,12 @@
 @import 'mixins';
 
 .home {
+  position: relative;
   background-color: transparent;
   float: right;
-  z-index: 3;
-  width: $page-width;
+  width: 82%;
   height: 100%;
   text-align: center;
-  overflow: hidden;
 
   label {
     @include animation(3s, .5s, reveal-text, ease-in);

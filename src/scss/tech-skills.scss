@@ -3,18 +3,28 @@
 @import 'mixins';
 
 
-.flex-wrapper {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-}
 
 .tech-skills {
-  z-index: 4;
-  span {
-    align-self: center;
-    width: 20%;
-    height: 2px;
-    background: grey;
+  position: relative;
+  background-color: transparent;
+  float: right;
+  width: 82%;
+  height: 100%;
+  text-align: center;
+
+  .flex-wrapper {
+    display: flex;
+    flex-flow: column;
+
+    .circle-container {
+      width: 50%;
+    }
+
+    span {
+      align-self: center;
+      width: 20%;
+      height: 2px;
+      background: grey;
+    }
   }
 }

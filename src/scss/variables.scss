@@ -31,12 +31,12 @@ $element-primary-glow: #26e9ff;
 $element-secondary-glow: #35ffa7;
 
 
-// sidenav adjustments
+// sidenavbar adjustments
 $init-1: 0;
 $init-2: 20%;
 $init-3: 16%;
 $init-4: 18%;
-$init-delay: 0;
+$init-delay: 1s;
 $init-duration: 2s;
 
 $open-1: 18%;
@@ -50,14 +50,11 @@ $close-delay: 0;
 $close-duration: .75s;
 
 $fade-1: 1;
-$fade-2: .75;
-$fade-3: .5;
-$fade-4: .25;
-$fade-5: 0;
+$fade-2: .5;
 $fade-delay: 0;
 $fade-duration: .5s;
 
-$sidenav-width: 18%;
+$sidenavbar-width: 18%;
 $page-width: 82%;
 
 // shapes background

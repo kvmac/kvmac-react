@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/main.css';
 import { Route, Switch } from 'react-router-dom';
-import { Header, Sidenav, Footer } from '../layout';
+import { Header, SideNavBar, Footer } from '../layout';
 import { Home, About, Projects, Resume, Blog, TechSkills } from '../pages';
 import {
   Logo,
@@ -78,16 +78,19 @@ export class Main extends React.Component {
 
     return (
       <div className="main">
-        <div className="shape-background"></div>
-          {/* {isMobile ? <Sidenav /> : <Header />} */}
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/tech-skills" component={TechSkills} />
-            <Route exact path="/projects" component={Projects} />
-            <Route exact path="/resume" component={Resume} />
-            <Route exact path="/blog" component={Blog} />
-          </Switch>
+          <div className="shape-background"></div>
+          {/* <canvas id="canvas" className="landing" /> */}
+          {/* {isMobile ? <SideNavBar /> : <Header />} */}
+          <div className="routes">
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/tech-skills" component={TechSkills} />
+              <Route exact path="/projects" component={Projects} />
+              <Route exact path="/resume" component={Resume} />
+              <Route exact path="/blog" component={Blog} />
+            </Switch>
+          </div>
           <Footer />
       </div>
     );

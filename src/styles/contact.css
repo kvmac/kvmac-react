@@ -17,4 +17,17 @@
     stroke-dashoffset: 1;
   }
 }
+
+.contact {
+  position: relative;
+  background-color: transparent;
+  float: right;
+  width: 82%;
+  height: 100%;
+  text-align: center;
+}
+
+.contact .form input {
+  width: 50%;
+}
 /*# sourceMappingURL=contact.css.map */

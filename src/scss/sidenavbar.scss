@@ -2,7 +2,13 @@
 @import 'mixins';
 
 
-.sidenav {
+.overlay {
+  .sidenavbar {
+    display: none;
+  }
+}
+
+.sidenavbar {
   // opacity: .99;
   position: absolute;
   height: 100%;
@@ -52,11 +58,16 @@
     100% {width: $close-2;}
   }
   @include keyframes(fade) {
-    0% {opacity: $fade-1;}
-    25% {opacity: $fade-2;}
-    50% {opacity: $fade-3;}
-    75% {opacity: $fade-4;}
-    100% {opacity: $fade-5;}
+    0% {
+      opacity: $fade-1;
+      visibility: visible;
+      transform: scale(1);
+    }
+    100% {
+      opacity: $fade-2;
+      visibility: hidden;
+      transform: scale(.5);
+    }
   }
 
 
@@ -67,28 +78,23 @@
     position: sticky;
     top: 5%;
     left: 20px;
-    z-index: 100;
+    z-index: 10;
   }
 
   #hamburger-button>span {
-    background: white;
     position: absolute;
+    background: white;
     border-radius: 10em;
-    height: 20%;
+    height: 5%;
     /* background: #222327; */
     top: 0px;
   }
-  .close-button>span {
-    position: absolute;
-    border-radius: 10em;
-    height: 20%;
-    /* background: #222327; */
-    top: 0px;
+  .close-btn>span {
+    height: 5%;
   }
 
   #hamburger-button>span:nth-child(1) { 
     width: 95%;
-    height: 20%;
     top: 0;
     transition: top 0.1s ease-in, width 0.1s ease 0.1s;
   }
@@ -97,14 +103,12 @@
     visibility: hidden;
     top: 50%;
     width: 95%;
-    height: 20%;
     transition: all 0.1s ease-in;
     transition-delay: 0.15s;
   }
 
   #hamburger-button>span:nth-child(3) {
     width: 95%;
-    height: 20%;
     top: 50%;
     transition: all 0.1s ease-in;
     transition-delay: 0.15s;
@@ -116,23 +120,27 @@
     transition: top 0.1s ease-in, width 0.1s ease 0.1s;
   }
 
-  .close-button>span:nth-child(1) {
+  .close-btn>span:nth-child(1) {
     width: 0% !important;
+    visibility: hidden !important;
   }
 
-  .close-button>span:nth-child(2) {
+  .close-btn>span:nth-child(2) {
+    height: 5%;
     visibility: visible !important;
     top: 50%;
     transform: rotate(45deg);
     box-shadow: unset;
   }
 
-  .close-button>span:nth-child(3) {
+  .close-btn>span:nth-child(3) {
+    height: 5%;
     top: 50%;
     transform: rotate(-45deg);
   }
-  .close-button>span:nth-child(4) {
+  .close-btn>span:nth-child(4) {
     width: 0% !important;
+    visibility: hidden !important;
   }
 
   .contents {
@@ -275,7 +283,6 @@
           width: 100%;
           height: 100%;
           text-decoration: none;
-          vertical-align: 50%;
 
           i {
           }
@@ -329,7 +336,7 @@
 // TABLETS
 @media (min-width: 700px) {
 
-  .sidenav {
+  .sidenavbar {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -373,79 +380,9 @@
       width: 35px;
       height: 25px;
       left: 25px;
-      z-index: 100;
-    }
-    #hamburger-button>span {
-      background: white;
-      position: absolute;
-      border-radius: 10em;
-      height: 20%;
-      /* background: #222327; */
-      top: 0px;
-      box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.75);
+      z-index: 10;
     }
 
-    #hamburger-button>span:nth-child(1) { 
-      width: 100%;
-      height: 20%;
-      top: 0;
-      transition: top 0.1s ease-in, width 0.1s ease 0.1s;
-    }
-
-    #hamburger-button>span:nth-child(2) {
-      top: 50%;
-      width: 95%;
-      height: 20%;
-      box-shadow: unset;
-      transition: all 0.1s ease-in;
-      transition-delay: 0.15s;
-    }
-
-    #hamburger-button>span:nth-child(3) {
-      width: 95%;
-      height: 20%;
-      top: 50%;
-      transition: all 0.1s ease-in;
-      transition-delay: 0.15s;
-    }
-
-    #hamburger-button>span:nth-child(4) {
-      width: 70%;
-      top: 100%;
-      transition: top 0.1s ease-in, width 0.1s ease 0.1s;
-    }
-
-    .close-button>span {
-      position: absolute;
-      border-radius: 10em;
-      height: 20%;
-      /* background: #222327; */
-      top: 0px;
-      box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 4px 6px 5px 0px rgba(0, 0, 0, 0.75);
-    }
-    .close-button>span:nth-child(1) {
-      width: 0% !important;
-    }
-
-    .close-button>span:nth-child(2) {
-      top: 50%;
-      transform: rotate(45deg);
-      box-shadow: 4px -6px 5px 0px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: 4px -6px 5px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 4px -6px 5px 0px rgba(0, 0, 0, 0.75);
-    }
-
-    .close-button>span:nth-child(3) {
-      top: 50%;
-      transform: rotate(-45deg);
-    }
-    .close-button>span:nth-child(4) {
-      width: 0% !important;
-    }
 
     .profile-header {
       width: 100%;
@@ -489,14 +426,10 @@
       // }
     }
   }
-  .fade {
-    @include animation(0, .5s, fade, ease-in);
-  }
-  @include keyframes(fade) {
-    0% {opacity: 1;}
-    25% {opacity: .75;}
-    50% {opacity: .5;}
-    75% {opacity: .25;}
-    100% {opacity: 0;}
-  }
+}
+
+
+// should not render on desktop
+@media (min-width: 1200px) {
+  display: none;
 }

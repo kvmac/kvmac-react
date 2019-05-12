@@ -1,5 +1,4 @@
-export { Header } from './header';
-export { Sidenav } from './sidenav';
+export { NavBar } from './navbar';
+export { SideNavBar } from './sidenavbar';
 export { Footer } from './footer';
-export { Landing } from './landing';
 export { Main } from './main';

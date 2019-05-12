@@ -30,7 +30,6 @@ export const Resume = () => {
         </svg>
       </div> */}
       <div className="resume">
-        <div className="header"></div>
         <div className="objective">Objective</div>
         {window.innerWidth < 1200 ||
           <div className="teck-skills">
