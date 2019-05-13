@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
+    "mailgun-js": "^0.22.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-eva-icons": "^0.0.7",
@@ -10,9 +12,17 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "^2.1.8"
   },
+  "devDependencies": {
+    "dotenv-webpack": "^1.7.0",
+    "netlify-cms": "^2.9.1",
+    "react-scripts": "^2.1.8",
+    "webpack-bundle-analyzer": "^3.3.2"
+  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts start --parallel start:lambda",
+    "start:lambda": "netlify-lambda serve lambda/src -c lambda/webpack.config.js",
+    "build": "react-scripts build --parallel build:lambda",
+    "build:lambda": "netlify-lambda build lambda/src",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

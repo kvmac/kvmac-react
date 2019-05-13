@@ -11,6 +11,7 @@
 .sidenavbar {
   // opacity: .99;
   position: absolute;
+  left: 0;
   height: 100%;
   overflow: hidden;
   background-color: #171717;
@@ -431,5 +432,7 @@
 
 // should not render on desktop
 @media (min-width: 1200px) {
-  display: none;
+  .sidenavbar {
+    display: none;
+  }
 }

@@ -44,10 +44,13 @@
   0% {
     opacity: $fade-1;
     transform: translate(-50%) scale(1);
+    visibility: visible;
   }
   100% {
     opacity: $fade-2;
     transform: translate(-50%) scale(.5);
+    visibility: hidden;
+    display: none;
   }
 }
 

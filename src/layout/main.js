@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/main.css';
 import { Route, Switch } from 'react-router-dom';
 import { Header, SideNavBar, Footer } from '../layout';
-import { Home, About, Projects, Resume, Blog, TechSkills } from '../pages';
+import { Home, About, Projects, Resume, Blog, TechSkills, Contact } from '../pages';
 import {
   Logo,
   GlowLogo,
@@ -89,6 +89,7 @@ export class Main extends React.Component {
               <Route exact path="/projects" component={Projects} />
               <Route exact path="/resume" component={Resume} />
               <Route exact path="/blog" component={Blog} />
+              <Route exact path="/contact" component={Contact} />
             </Switch>
           </div>
           <Footer />

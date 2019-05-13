@@ -24,6 +24,7 @@
 
 .sidenavbar {
   position: absolute;
+  left: 0;
   height: 100%;
   overflow: hidden;
   background-color: #171717;
@@ -796,6 +797,8 @@
 }
 
 @media (min-width: 1200px) {
-  display: none;
+  .sidenavbar {
+    display: none;
+  }
 }
 /*# sourceMappingURL=sidenavbar.css.map */

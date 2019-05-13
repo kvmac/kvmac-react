@@ -5,6 +5,7 @@ import { Particles } from './effects';
 import { Logo } from './svg';
 import './App.css';
 import './styles/landing.css';
+import './styles/particles.css';
 
 class App extends React.Component {
   constructor(props) {
