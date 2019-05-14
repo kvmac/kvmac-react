@@ -19,6 +19,7 @@ import GlowSticks from './glow/sticks.glow.svg';
 import GlowCube from './glow/cube.glow.svg';
 import GlowHorseshoe from './glow/horseshoe.glow.svg';
 import GlowHalfCircle from './glow/half-circle.glow.svg';
+import GlowHomeIcon from './glow/home.glow.svg';
 
 export {
     Logo,
@@ -41,5 +42,6 @@ export {
     GlowSticks,
     GlowCube,
     GlowHorseshoe,
-    GlowHalfCircle
+    GlowHalfCircle,
+    GlowHomeIcon
 };

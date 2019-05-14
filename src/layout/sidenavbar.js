@@ -5,7 +5,8 @@ import headshot from '../img/headshot.png';
 import Icon from 'react-eva-icons';
 import github from '../svg/github.svg';
 import linkedin from '../svg/linkedin.svg';
-import { PulseElement } from '../shared';
+import { GlowHomeIcon } from '../svg';
+import { HomeElement, PulseElement, CodeElement, FileElement, MessageElement, EmailElement } from '../shared';
 
 
 export class SideNavBar extends React.Component {
@@ -27,7 +28,7 @@ export class SideNavBar extends React.Component {
 
     return(
       <React.Fragment>
-        <div className="navbar-overlay">
+        <div className="sidenavbar-overlay">
           <div id="hamburger-button" className={isOpen ? "close-btn" : ""} onClick={this.handleSidenav}>
             <span></span>
             <span></span>
@@ -61,10 +62,11 @@ export class SideNavBar extends React.Component {
                 <Link onClick={this.closeSidenav} to="/">
                   {/* <HighLighter /> */}
 
+                  {/* <i><img src={GlowHomeIcon} /></i> */}
                   <Icon
                     name="home-outline"
                     size="medium"
-                    fill="grey"
+                    fill="white"
                     />
                     {!isOpen || <label>Home</label>}
                 </Link>
@@ -72,23 +74,12 @@ export class SideNavBar extends React.Component {
               <div className="link-wrapper">
                 {/* <span onMouseOver={}> */}
                 {/* </span> */}
-                <Link onClick={this.closeSidenav} to="/tech-skills">
-                  <Icon
-                    name="activity-outline"
-                    size="medium"
-                    fill="grey"
-                    />
-                    {!isOpen || <label>Tech Skills</label>}
-                </Link>
-              </div>
-              <div className="link-wrapper">
-                {/* <span onMouseOver={}> */}
-                {/* </span> */}
                 <Link onClick={this.closeSidenav} to="/projects">
+                {/* <CodeElement /> */}
                   <Icon
                     name="code-outline"
                     size="medium"
-                    fill="grey"
+                    fill="white"
                     />
                     {/* <PulseElement /> */}
                     {!isOpen || <label>Projects</label>}
@@ -101,19 +92,18 @@ export class SideNavBar extends React.Component {
                   <Icon
                     name="file-text-outline"
                     size="medium"
-                    fill="grey"
+                    fill="white"
                     />
+                    {/* <FileElement /> */}
                     {!isOpen || <label>Resume</label>}
                 </Link>
               </div>
               <div className="link-wrapper">
-                {/* <span onMouseOver={}> */}
-                {/* </span> */}
                 <Link onClick={this.closeSidenav} to="/blog">️
                   <Icon
                     name="message-square-outline"
                     size="medium"
-                    fill="grey"
+                    fill="white"
                     />
                     {!isOpen || <label>Blog</label>}
                 </Link>
@@ -125,24 +115,27 @@ export class SideNavBar extends React.Component {
                   <Icon
                     name="email-outline"
                     size="medium"
-                    fill="grey"
+                    fill="white"
                     />
+                    {/* <EmailElement /> */}
                     {!isOpen || <label>Contact</label>}
                 </Link>
               </div>
             </div>
             <div className="social">
-              <span></span>
-              <a href="https://github.com/kvmac" target="_blank" rel="noopener noreferrer">
+              <span className="divide"></span>
+              <a className="github" href="https://github.com/kvmac" target="_blank" rel="noopener noreferrer">
                 <Icon
                   name="github-outline"
-                  size="medium"
+                  size="large"
+                  fill="white"
                   />
               </a>
-              <a href="https://www.linkedin.com/in/kodee-mcintosh" target="_blank" rel="noopener noreferrer">
+              <a className="linkedin" href="https://www.linkedin.com/in/kodee-mcintosh" target="_blank" rel="noopener noreferrer">
                 <Icon
                   name="linkedin-outline"
-                  size="medium"
+                  size="large"
+                  fill="white"
                   />
               </a>
             </div>

@@ -30,24 +30,22 @@ export const Resume = () => {
         </svg>
       </div> */}
       <div className="resume">
-        <div className="objective">Objective</div>
-        {window.innerWidth < 1200 ||
+        {/* <div className="objective">Objective</div> */}
           <div className="teck-skills">
             <div className="flex-wrapper">
-                <Circle percent={"75"} color={"blue"} />
-                <Circle percent={"50"} color={"purple"} />
-                <Circle percent={"25"} color={"red"} />
-                <Circle percent={"90"} color={"orange"} />
-                <Circle percent={"60"} color={"green"} />
+              <Circle percent={"75"} color={"blue"} />
+              <Circle percent={"50"} color={"purple"} />
+              <Circle percent={"25"} color={"red"} />
+              <Circle percent={"90"} color={"orange"} />
+              <Circle percent={"60"} color={"green"} />
             </div>
           </div>
-        }
-        <div className="experience">Experience</div>
-        <div className="education">Education</div>
-        <div className="download-btn">
-          <button onClick={handleResume}>Download Resume!</button>
+          <div className="experience">Experience</div>
+          <div className="education">Education</div>
+          <div className="download-btn">
+            <button onClick={handleResume}>Download Resume!</button>
+        </div>
       </div>
-    </div>
     </React.Fragment>
   );
 }

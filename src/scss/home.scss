@@ -11,7 +11,7 @@
   text-align: center;
 
   label {
-    @include animation(1s, .5s, reveal-text, ease-in);
+    @include animation(1.5s, 2s, reveal-text, ease-in);
     visibility: hidden;
     display: block;
     font-size: 2em;

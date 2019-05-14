@@ -79,12 +79,15 @@
             transform: translate(-50%) scale(1);
     visibility: visible;
   }
-  100% {
+  75% {
     opacity: 0.5;
-    -webkit-transform: translate(-50%) scale(0.5);
-            transform: translate(-50%) scale(0.5);
     visibility: hidden;
-    display: none;
+  }
+  100% {
+    -webkit-transform: translate(-50%) scale(0.25);
+            transform: translate(-50%) scale(0.25);
+    opacity: 0.5;
+    visibility: hidden;
   }
 }
 
@@ -95,12 +98,15 @@
             transform: translate(-50%) scale(1);
     visibility: visible;
   }
-  100% {
+  75% {
     opacity: 0.5;
-    -webkit-transform: translate(-50%) scale(0.5);
-            transform: translate(-50%) scale(0.5);
     visibility: hidden;
-    display: none;
+  }
+  100% {
+    -webkit-transform: translate(-50%) scale(0.25);
+            transform: translate(-50%) scale(0.25);
+    opacity: 0.5;
+    visibility: hidden;
   }
 }
 

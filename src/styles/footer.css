@@ -19,16 +19,7 @@
 }
 
 .footer {
-  position: relative;
-  width: 100%;
-  height: 0;
-  visibility: hidden;
-  bottom: 0;
-}
-
-.footer span {
-  width: 90%;
-  background-color: grey;
+  display: none;
 }
 
 @media (min-width: 1200px) {

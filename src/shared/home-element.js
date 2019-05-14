@@ -1,15 +1,9 @@
 import React from 'react';
 
-export const HomeElement = ({ fill }) => {
+export const HomeElement = ({ isActive, fill }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" class="eva eva-home-outline eva-animation eva-icon-hover-undefined" fill={fill}>
-      <defs>
-          <filter id="glow" x="-120%" y="-120%" width="400%" height="400%">
-          <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0"></feOffset>
-          <feGaussianBlur result="blurOut" in="offOut" stdDeviation="4"></feGaussianBlur>
-          <feBlend in="SourceGraphic" in2="blurOut" mode="overlay"></feBlend>
-          </filter>
-      </defs>
+    <i>
+    <svg xmlns="http://www.w3.org/2000/svg" className="eva eva-message-square-outline" width="18px" height="18px" viewBox="0 0 24 24" fill={ isActive ? fill : "grey" }>
       <g filter="url(#glow)" data-name="Layer 2">
         <g data-name="home">
           <rect width="24" height="24" opacity="0"></rect>
@@ -17,5 +11,6 @@ export const HomeElement = ({ fill }) => {
         </g>
       </g>
     </svg>
+    </i>
   );
 };

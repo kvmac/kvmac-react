@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const MessageElement = ({ isActive, fill }) => {
+export const EmailElement = ({ isActive, fill }) => {
 
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill={ isActive ? fill : "white"}>
@@ -13,8 +13,8 @@ export const MessageElement = ({ isActive, fill }) => {
             </filter>
         </defs>
       }
-      <g filter="url(#glow)" data-name="Layer 2">
-        <g data-name="message-square">
+      <g data-name="Layer 2">
+        <g filter="url(#glow)" data-name="message-square">
           <rect width="24" height="24" opacity="0"></rect>
           <circle cx="12" cy="11" r="1"></circle>
           <circle cx="16" cy="11" r="1"></circle>
@@ -25,3 +25,5 @@ export const MessageElement = ({ isActive, fill }) => {
     </svg>
   );
 }
+
+

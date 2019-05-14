@@ -22,6 +22,35 @@
   display: none;
 }
 
+.overlay .sidenavbar-overlay {
+  display: none;
+}
+
+.dissolve .sidenavbar-overlay {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-animation-delay: 3.5s;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-name: reveal-content;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-direction: linear;
+  -moz-animation-delay: 3.5s;
+  -moz-animation-duration: 1.5s;
+  -moz-animation-name: reveal-content;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-direction: linear;
+  -ms-animation-delay: 3.5s;
+  -ms-animation-duration: 1.5s;
+  -ms-animation-name: reveal-content;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-direction: linear;
+  animation-delay: 3.5s;
+  animation-duration: 1.5s;
+  animation-name: reveal-content;
+  animation-fill-mode: forwards;
+  animation-direction: linear;
+}
+
 .sidenavbar {
   position: absolute;
   left: 0;
@@ -291,6 +320,10 @@
   top: 5%;
 }
 
+.sidenavbar .contents.visible .nav .link-wrapper {
+  height: 40px;
+}
+
 .sidenavbar .contents.visible .nav .link-wrapper a i {
   padding-right: 3ch;
   padding-left: 8ch;
@@ -321,6 +354,42 @@
   animation-direction: linear;
 }
 
+.sidenavbar .contents.visible .social {
+  background-color: transparent;
+  position: absolute;
+  width: 95%;
+  height: 10%;
+  bottom: 0;
+  margin: 10px;
+  text-align: center;
+}
+
+.sidenavbar .contents.visible .social span {
+  position: absolute;
+  width: 90%;
+  height: 2px;
+  background-color: white;
+  top: 0;
+  border-radius: 10em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.sidenavbar .contents.visible .social .github {
+  position: relative;
+  top: 30%;
+  width: 100%;
+  margin: 15%;
+}
+
+.sidenavbar .contents.visible .social .linkedin {
+  position: relative;
+  top: 30%;
+  width: 100%;
+  margin: 15%;
+}
+
 @-webkit-keyframes reveal-content {
   0% {
     opacity: 0;
@@ -348,6 +417,7 @@
 }
 
 .sidenavbar .contents.invisible .profile-header {
+  height: 10%;
   opacity: 1;
   -webkit-animation-delay: 0;
   -webkit-animation-duration: 0.5s;
@@ -373,22 +443,27 @@
 
 .sidenavbar .contents.invisible .profile-info {
   position: relative;
-  height: 10%;
-  opacity: 0;
-  visibility: hidden;
+  display: none;
 }
 
 .sidenavbar .contents.invisible .nav {
+  height: 50%;
   position: relative;
   top: 20%;
   left: 0;
 }
 
+.sidenavbar .contents.invisible .nav .link-wrapper {
+  height: 20%;
+}
+
 .sidenavbar .contents.invisible .nav .link-wrapper a {
+  display: block;
   position: relative;
 }
 
 .sidenavbar .contents.invisible .nav .link-wrapper a i {
+  display: inline-block;
   position: relative;
   top: 50%;
   left: 50%;
@@ -396,6 +471,11 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   padding-right: 0;
+}
+
+.sidenavbar .contents.invisible .nav .link-wrapper a i img {
+  width: 24px;
+  height: 24px;
 }
 
 .sidenavbar .contents.invisible .nav .link-wrapper a label {
@@ -421,6 +501,10 @@
   animation-name: close-content;
   animation-fill-mode: forwards;
   animation-direction: ease-out;
+}
+
+.sidenavbar .contents.invisible .social {
+  display: none;
 }
 
 @-webkit-keyframes close-content {
@@ -495,32 +579,7 @@
   border-width: 1ch;
 }
 
-.sidenavbar .contents .social {
-  position: relative;
-  width: 100%;
-  height: 10%;
-  visibility: hidden;
-  bottom: 0;
-}
-
-.sidenavbar .contents .social span {
-  width: 90%;
-  background-color: grey;
-}
-
-.sidenavbar .contents .social .github {
-  position: relative;
-  left: 2%;
-  width: 35%;
-}
-
-.sidenavbar .contents .social .linkedin {
-  position: relative;
-  float: right;
-  width: 40%;
-}
-
-.navbar-overlay {
+.sidenavbar-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -529,7 +588,7 @@
   z-index: 3;
 }
 
-.navbar-overlay #hamburger-button {
+.sidenavbar-overlay #hamburger-button {
   position: absolute;
   display: block;
   width: 28px;
@@ -542,26 +601,26 @@
   z-index: 10;
 }
 
-.navbar-overlay #hamburger-button > span {
+.sidenavbar-overlay #hamburger-button > span {
   position: absolute;
   background: white;
   border-radius: 10em;
-  height: 5%;
+  height: 10%;
   /* background: #222327; */
 }
 
-.navbar-overlay .close-btn > span {
+.sidenavbar-overlay .close-btn > span {
   height: 5%;
 }
 
-.navbar-overlay #hamburger-button > span:nth-child(1) {
+.sidenavbar-overlay #hamburger-button > span:nth-child(1) {
   width: 95%;
   top: 0;
   -webkit-transition: top 0.1s ease-in, width 0.1s ease 0.1s;
   transition: top 0.1s ease-in, width 0.1s ease 0.1s;
 }
 
-.navbar-overlay #hamburger-button > span:nth-child(2) {
+.sidenavbar-overlay #hamburger-button > span:nth-child(2) {
   position: relative;
   top: 50%;
   width: 95%;
@@ -571,7 +630,7 @@
           transition-delay: 0.15s;
 }
 
-.navbar-overlay #hamburger-button > span:nth-child(3) {
+.sidenavbar-overlay #hamburger-button > span:nth-child(3) {
   width: 95%;
   top: 50%;
   -webkit-transition: all 0.1s ease-in;
@@ -580,19 +639,19 @@
           transition-delay: 0.15s;
 }
 
-.navbar-overlay #hamburger-button > span:nth-child(4) {
+.sidenavbar-overlay #hamburger-button > span:nth-child(4) {
   width: 70%;
   top: 100%;
   -webkit-transition: top 0.1s ease-in, width 0.1s ease 0.1s;
   transition: top 0.1s ease-in, width 0.1s ease 0.1s;
 }
 
-.navbar-overlay .close-btn > span:nth-child(1) {
+.sidenavbar-overlay .close-btn > span:nth-child(1) {
   width: 0% !important;
   visibility: hidden !important;
 }
 
-.navbar-overlay .close-btn > span:nth-child(2) {
+.sidenavbar-overlay .close-btn > span:nth-child(2) {
   height: 5%;
   display: block;
   top: 50%;
@@ -600,14 +659,14 @@
           transform: rotate(45deg);
 }
 
-.navbar-overlay .close-btn > span:nth-child(3) {
+.sidenavbar-overlay .close-btn > span:nth-child(3) {
   height: 5%;
   top: 50%;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
-.navbar-overlay .close-btn > span:nth-child(4) {
+.sidenavbar-overlay .close-btn > span:nth-child(4) {
   width: 0% !important;
   visibility: hidden !important;
 }
@@ -797,7 +856,7 @@
     background: #005EFF;
     font-family: 'Asap', sans-serif;
   }
-  .navbar-overlay {
+  .sidenavbar-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -805,7 +864,7 @@
     width: 10%;
     z-index: 3;
   }
-  .navbar-overlay #hamburger-button {
+  .sidenavbar-overlay #hamburger-button {
     width: 42px;
     height: 30px;
   }

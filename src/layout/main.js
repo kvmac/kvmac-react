@@ -171,7 +171,6 @@ export class Main extends React.Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/about" component={About} />
-              <Route exact path="/tech-skills" component={TechSkills} />
               <Route exact path="/projects" component={Projects} />
               <Route exact path="/resume" component={Resume} />
               <Route exact path="/blog" component={Blog} />
