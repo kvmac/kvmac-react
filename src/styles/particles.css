@@ -32,20 +32,24 @@
   -webkit-animation-name: fade;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-direction: ease-out;
+  -webkit-animation-iteration-count: 1;
   -moz-animation-delay: 0;
   -moz-animation-duration: 2s;
   -moz-animation-name: fade;
   -moz-animation-fill-mode: forwards;
   -moz-animation-direction: ease-out;
+  -moz-animation-iteration-count: 1;
   -ms-animation-delay: 0;
   -ms-animation-duration: 2s;
   -ms-animation-name: fade;
   -ms-animation-fill-mode: forwards;
   -ms-animation-direction: ease-out;
+  -ms-animation-iteration-count: 1;
   animation-delay: 0;
   animation-duration: 2s;
   animation-name: fade;
   animation-fill-mode: forwards;
   animation-direction: ease-out;
+  animation-iteration-count: 1;
 }
 /*# sourceMappingURL=particles.css.map */

@@ -60,21 +60,25 @@
   -webkit-animation-name: draw;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-direction: linear;
+  -webkit-animation-iteration-count: 1;
   -moz-animation-delay: 0.5;
   -moz-animation-duration: 3s;
   -moz-animation-name: draw;
   -moz-animation-fill-mode: forwards;
   -moz-animation-direction: linear;
+  -moz-animation-iteration-count: 1;
   -ms-animation-delay: 0.5;
   -ms-animation-duration: 3s;
   -ms-animation-name: draw;
   -ms-animation-fill-mode: forwards;
   -ms-animation-direction: linear;
+  -ms-animation-iteration-count: 1;
   animation-delay: 0.5;
   animation-duration: 3s;
   animation-name: draw;
   animation-fill-mode: forwards;
   animation-direction: linear;
+  animation-iteration-count: 1;
   z-index: 3;
 }
 
@@ -137,48 +141,43 @@
   background-color: white;
 }
 
-.resume .download-btn button {
-  background: #191919;
-  border: none;
-  border-radius: 25px;
+.resume button {
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-name: box-glow;
+  -webkit-animation-fill-mode: none;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 2s;
+  -moz-animation-name: box-glow;
+  -moz-animation-fill-mode: none;
+  -moz-animation-direction: alternate;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-delay: 0;
+  -ms-animation-duration: 2s;
+  -ms-animation-name: box-glow;
+  -ms-animation-fill-mode: none;
+  -ms-animation-direction: alternate;
+  -ms-animation-iteration-count: infinite;
+  animation-delay: 0;
+  animation-duration: 2s;
+  animation-name: box-glow;
+  animation-fill-mode: none;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  border: 2px solid #26e9ff;
+  border-radius: .5ch;
+  margin: 0 0 10px 0;
+  font-family: 'Asap', 'Sans Serif';
   color: white;
-  cursor: pointer;
-  font-size: 1.25em;
-  letter-spacing: .1em;
-  outline: none;
-  padding: .75em 2em;
-  position: relative;
-  text-transform: uppercase;
-}
-
-.resume .download-btn button:hover {
-  -webkit-animation: glow 1s ease-in infinite;
-          animation: glow 1s ease-in infinite;
-}
-
-.resume .download-btn button::before {
-  -webkit-animation: glow 1s ease-in infinite;
-          animation: glow 1s ease-in infinite;
-  background: #191919;
-  border-radius: inherit;
-  content: '';
-  -webkit-filter: blur(10px);
-          filter: blur(10px);
-  opacity: .75;
-  position: absolute;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  z-index: -1;
-}
-
-.resume .download-btn button:hover::before {
-  -webkit-filter: blur(20px);
-          filter: blur(20px);
-  opacity: 1;
+  font-weight: normal;
+  color: white;
+  font-weight: normal;
+  background-color: transparent;
+  box-shadow: 0px 0px 25px 1px #26e9ff;
+  -webkit-box-shadow: 0px 0px 25px 1px #26e9ff;
+  -moz-box-shadow: 0px 0px 25px 1px #26e9ff;
 }
 
 @-webkit-keyframes glow {
@@ -234,21 +233,25 @@
     -webkit-animation-name: draw;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-direction: linear;
+    -webkit-animation-iteration-count: 1;
     -moz-animation-delay: 0.5;
     -moz-animation-duration: 3s;
     -moz-animation-name: draw;
     -moz-animation-fill-mode: forwards;
     -moz-animation-direction: linear;
+    -moz-animation-iteration-count: 1;
     -ms-animation-delay: 0.5;
     -ms-animation-duration: 3s;
     -ms-animation-name: draw;
     -ms-animation-fill-mode: forwards;
     -ms-animation-direction: linear;
+    -ms-animation-iteration-count: 1;
     animation-delay: 0.5;
     animation-duration: 3s;
     animation-name: draw;
     animation-fill-mode: forwards;
     animation-direction: linear;
+    animation-iteration-count: 1;
   }
   @-webkit-keyframes draw {
     0% {
@@ -298,21 +301,25 @@
     -webkit-animation-name: draw;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-direction: linear;
+    -webkit-animation-iteration-count: 1;
     -moz-animation-delay: 0.5;
     -moz-animation-duration: 3s;
     -moz-animation-name: draw;
     -moz-animation-fill-mode: forwards;
     -moz-animation-direction: linear;
+    -moz-animation-iteration-count: 1;
     -ms-animation-delay: 0.5;
     -ms-animation-duration: 3s;
     -ms-animation-name: draw;
     -ms-animation-fill-mode: forwards;
     -ms-animation-direction: linear;
+    -ms-animation-iteration-count: 1;
     animation-delay: 0.5;
     animation-duration: 3s;
     animation-name: draw;
     animation-fill-mode: forwards;
     animation-direction: linear;
+    animation-iteration-count: 1;
   }
   @-webkit-keyframes draw {
     0% {

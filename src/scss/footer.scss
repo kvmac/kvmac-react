@@ -30,7 +30,7 @@
   }
   .footer:hover {
     .drawer {
-        @include animation(0, .5s, drawer, ease-in);
+        @include animation(0, .5s, drawer, ease-in, forwards, 1);
     }
   }
 

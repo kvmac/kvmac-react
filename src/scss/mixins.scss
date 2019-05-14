@@ -1,28 +1,32 @@
 
-@mixin animation($delay, $duration, $animation, $direction: forwards, $fillmode: forwards) {
+@mixin animation($delay, $duration, $animation, $direction: forwards, $fillmode: forwards, $iterationCount: 1) {
     -webkit-animation-delay: $delay;
     -webkit-animation-duration: $duration;
     -webkit-animation-name: $animation;
     -webkit-animation-fill-mode: $fillmode;
     -webkit-animation-direction: $direction;
+    -webkit-animation-iteration-count: $iterationCount;
 
     -moz-animation-delay: $delay;
     -moz-animation-duration: $duration;
     -moz-animation-name: $animation;
     -moz-animation-fill-mode: $fillmode;
     -moz-animation-direction: $direction;
+    -moz-animation-iteration-count: $iterationCount;
 
     -ms-animation-delay: $delay;
     -ms-animation-duration: $duration;
     -ms-animation-name: $animation;
     -ms-animation-fill-mode: $fillmode;
     -ms-animation-direction: $direction;
+    -ms-animation-iteration-count: $iterationCount;
 
     animation-delay: $delay;
     animation-duration: $duration;
     animation-name: $animation;
     animation-fill-mode: $fillmode;
     animation-direction: $direction;
+    animation-iteration-count: $iterationCount;
 }
 
 @mixin keyframes($animation_name) {
@@ -34,7 +38,7 @@
         @content;
     }
 
-    @-o-keyframes #{$animation_name} {
+    @-ms-keyframes #{$animation_name} {
         @content;
     }
 

@@ -44,11 +44,11 @@
   }
 
   .shape {
-    @include animation(1s, 1s, popdrop, ease-in-out);
+    @include animation(1s, 1s, popdrop, ease-in-out, forwards, 1);
   }
 
   .shape:hover {
-    @include animation(.5s, 1s, pop, ease-in-out, forwards);
+    @include animation(.5s, 1s, pop, ease-in-out, forwards, 1);
   }
 
 }
@@ -84,7 +84,7 @@
       }
     
       .shape-container--#{$i} { 
-        @include animation(0, shape-#{$i}, #{$speed}s, linear, infinite)
+        @include animation(0, shape-#{$i}, #{$speed}s, linear, forwards, infinite);
         // animation: shape-#{$i} #{$speed}s linear infinite;
       }
   }

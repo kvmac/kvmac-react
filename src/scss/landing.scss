@@ -37,7 +37,7 @@
   // animation-play-state: paused;
 
   .logo {
-    @include animation(.25s, 1s, fade-logo, ease-out);
+    @include animation(.25s, 1s, fade-logo, ease-out, forwards, 1);
   }
 }
 @include keyframes(fade-logo) {

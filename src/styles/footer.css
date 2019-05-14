@@ -51,21 +51,25 @@
     -webkit-animation-name: drawer;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-direction: ease-in;
+    -webkit-animation-iteration-count: 1;
     -moz-animation-delay: 0;
     -moz-animation-duration: 0.5s;
     -moz-animation-name: drawer;
     -moz-animation-fill-mode: forwards;
     -moz-animation-direction: ease-in;
+    -moz-animation-iteration-count: 1;
     -ms-animation-delay: 0;
     -ms-animation-duration: 0.5s;
     -ms-animation-name: drawer;
     -ms-animation-fill-mode: forwards;
     -ms-animation-direction: ease-in;
+    -ms-animation-iteration-count: 1;
     animation-delay: 0;
     animation-duration: 0.5s;
     animation-name: drawer;
     animation-fill-mode: forwards;
     animation-direction: ease-in;
+    animation-iteration-count: 1;
   }
   @-webkit-keyframes drawer {
     0% {

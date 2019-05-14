@@ -13,6 +13,6 @@
 
 .dissolve {
   .particles {
-    @include animation(0, 2s, fade, ease-out);
+    @include animation(0, 2s, fade, ease-out, forwards, 1);
   }
 }

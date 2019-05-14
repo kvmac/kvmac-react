@@ -34,21 +34,25 @@
   -webkit-animation-name: reveal-content;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-direction: linear;
+  -webkit-animation-iteration-count: 1;
   -moz-animation-delay: 3.5s;
   -moz-animation-duration: 1.5s;
   -moz-animation-name: reveal-content;
   -moz-animation-fill-mode: forwards;
   -moz-animation-direction: linear;
+  -moz-animation-iteration-count: 1;
   -ms-animation-delay: 3.5s;
   -ms-animation-duration: 1.5s;
   -ms-animation-name: reveal-content;
   -ms-animation-fill-mode: forwards;
   -ms-animation-direction: linear;
+  -ms-animation-iteration-count: 1;
   animation-delay: 3.5s;
   animation-duration: 1.5s;
   animation-name: reveal-content;
   animation-fill-mode: forwards;
   animation-direction: linear;
+  animation-iteration-count: 1;
 }
 
 .sidenavbar {
@@ -72,21 +76,25 @@
   -webkit-animation-name: init;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-direction: ease-in;
+  -webkit-animation-iteration-count: 1;
   -moz-animation-delay: 1s;
   -moz-animation-duration: 2s;
   -moz-animation-name: init;
   -moz-animation-fill-mode: forwards;
   -moz-animation-direction: ease-in;
+  -moz-animation-iteration-count: 1;
   -ms-animation-delay: 1s;
   -ms-animation-duration: 2s;
   -ms-animation-name: init;
   -ms-animation-fill-mode: forwards;
   -ms-animation-direction: ease-in;
+  -ms-animation-iteration-count: 1;
   animation-delay: 1s;
   animation-duration: 2s;
   animation-name: init;
   animation-fill-mode: forwards;
   animation-direction: ease-in;
+  animation-iteration-count: 1;
 }
 
 .sidenavbar.open {
@@ -95,21 +103,25 @@
   -webkit-animation-name: open;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-direction: ease-in;
+  -webkit-animation-iteration-count: 1;
   -moz-animation-delay: 0;
   -moz-animation-duration: 0.5s;
   -moz-animation-name: open;
   -moz-animation-fill-mode: forwards;
   -moz-animation-direction: ease-in;
+  -moz-animation-iteration-count: 1;
   -ms-animation-delay: 0;
   -ms-animation-duration: 0.5s;
   -ms-animation-name: open;
   -ms-animation-fill-mode: forwards;
   -ms-animation-direction: ease-in;
+  -ms-animation-iteration-count: 1;
   animation-delay: 0;
   animation-duration: 0.5s;
   animation-name: open;
   animation-fill-mode: forwards;
   animation-direction: ease-in;
+  animation-iteration-count: 1;
 }
 
 .sidenavbar.close {
@@ -118,21 +130,25 @@
   -webkit-animation-name: close;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-direction: linear;
+  -webkit-animation-iteration-count: 1;
   -moz-animation-delay: 0;
   -moz-animation-duration: 0.75s;
   -moz-animation-name: close;
   -moz-animation-fill-mode: forwards;
   -moz-animation-direction: linear;
+  -moz-animation-iteration-count: 1;
   -ms-animation-delay: 0;
   -ms-animation-duration: 0.75s;
   -ms-animation-name: close;
   -ms-animation-fill-mode: forwards;
   -ms-animation-direction: linear;
+  -ms-animation-iteration-count: 1;
   animation-delay: 0;
   animation-duration: 0.75s;
   animation-name: close;
   animation-fill-mode: forwards;
   animation-direction: linear;
+  animation-iteration-count: 1;
 }
 
 .sidenavbar.fade {
@@ -141,21 +157,25 @@
   -webkit-animation-name: fade;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-direction: linear;
+  -webkit-animation-iteration-count: 1;
   -moz-animation-delay: 0;
   -moz-animation-duration: 0.5s;
   -moz-animation-name: fade;
   -moz-animation-fill-mode: forwards;
   -moz-animation-direction: linear;
+  -moz-animation-iteration-count: 1;
   -ms-animation-delay: 0;
   -ms-animation-duration: 0.5s;
   -ms-animation-name: fade;
   -ms-animation-fill-mode: forwards;
   -ms-animation-direction: linear;
+  -ms-animation-iteration-count: 1;
   animation-delay: 0;
   animation-duration: 0.5s;
   animation-name: fade;
   animation-fill-mode: forwards;
   animation-direction: linear;
+  animation-iteration-count: 1;
 }
 
 @-webkit-keyframes init {
@@ -272,21 +292,25 @@
   -webkit-animation-name: reveal-content;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-direction: linear;
+  -webkit-animation-iteration-count: 1;
   -moz-animation-delay: 0.15s;
   -moz-animation-duration: 1.5s;
   -moz-animation-name: reveal-content;
   -moz-animation-fill-mode: forwards;
   -moz-animation-direction: linear;
+  -moz-animation-iteration-count: 1;
   -ms-animation-delay: 0.15s;
   -ms-animation-duration: 1.5s;
   -ms-animation-name: reveal-content;
   -ms-animation-fill-mode: forwards;
   -ms-animation-direction: linear;
+  -ms-animation-iteration-count: 1;
   animation-delay: 0.15s;
   animation-duration: 1.5s;
   animation-name: reveal-content;
   animation-fill-mode: forwards;
   animation-direction: linear;
+  animation-iteration-count: 1;
 }
 
 .sidenavbar .contents.visible .profile-info {
@@ -299,21 +323,25 @@
   -webkit-animation-name: reveal-content;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-direction: linear;
+  -webkit-animation-iteration-count: 1;
   -moz-animation-delay: 0.15s;
   -moz-animation-duration: 1.5s;
   -moz-animation-name: reveal-content;
   -moz-animation-fill-mode: forwards;
   -moz-animation-direction: linear;
+  -moz-animation-iteration-count: 1;
   -ms-animation-delay: 0.15s;
   -ms-animation-duration: 1.5s;
   -ms-animation-name: reveal-content;
   -ms-animation-fill-mode: forwards;
   -ms-animation-direction: linear;
+  -ms-animation-iteration-count: 1;
   animation-delay: 0.15s;
   animation-duration: 1.5s;
   animation-name: reveal-content;
   animation-fill-mode: forwards;
   animation-direction: linear;
+  animation-iteration-count: 1;
 }
 
 .sidenavbar .contents.visible .nav {
@@ -337,21 +365,25 @@
   -webkit-animation-name: reveal-content;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-direction: linear;
+  -webkit-animation-iteration-count: 1;
   -moz-animation-delay: 0.15s;
   -moz-animation-duration: 1.5s;
   -moz-animation-name: reveal-content;
   -moz-animation-fill-mode: forwards;
   -moz-animation-direction: linear;
+  -moz-animation-iteration-count: 1;
   -ms-animation-delay: 0.15s;
   -ms-animation-duration: 1.5s;
   -ms-animation-name: reveal-content;
   -ms-animation-fill-mode: forwards;
   -ms-animation-direction: linear;
+  -ms-animation-iteration-count: 1;
   animation-delay: 0.15s;
   animation-duration: 1.5s;
   animation-name: reveal-content;
   animation-fill-mode: forwards;
   animation-direction: linear;
+  animation-iteration-count: 1;
 }
 
 .sidenavbar .contents.visible .social {
@@ -424,21 +456,25 @@
   -webkit-animation-name: close-content;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-direction: linear;
+  -webkit-animation-iteration-count: 1;
   -moz-animation-delay: 0;
   -moz-animation-duration: 0.5s;
   -moz-animation-name: close-content;
   -moz-animation-fill-mode: forwards;
   -moz-animation-direction: linear;
+  -moz-animation-iteration-count: 1;
   -ms-animation-delay: 0;
   -ms-animation-duration: 0.5s;
   -ms-animation-name: close-content;
   -ms-animation-fill-mode: forwards;
   -ms-animation-direction: linear;
+  -ms-animation-iteration-count: 1;
   animation-delay: 0;
   animation-duration: 0.5s;
   animation-name: close-content;
   animation-fill-mode: forwards;
   animation-direction: linear;
+  animation-iteration-count: 1;
 }
 
 .sidenavbar .contents.invisible .profile-info {
@@ -486,21 +522,25 @@
   -webkit-animation-name: close-content;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-direction: ease-out;
+  -webkit-animation-iteration-count: 1;
   -moz-animation-delay: 0;
   -moz-animation-duration: 1s;
   -moz-animation-name: close-content;
   -moz-animation-fill-mode: forwards;
   -moz-animation-direction: ease-out;
+  -moz-animation-iteration-count: 1;
   -ms-animation-delay: 0;
   -ms-animation-duration: 1s;
   -ms-animation-name: close-content;
   -ms-animation-fill-mode: forwards;
   -ms-animation-direction: ease-out;
+  -ms-animation-iteration-count: 1;
   animation-delay: 0;
   animation-duration: 1s;
   animation-name: close-content;
   animation-fill-mode: forwards;
   animation-direction: ease-out;
+  animation-iteration-count: 1;
 }
 
 .sidenavbar .contents.invisible .social {
@@ -590,7 +630,6 @@
 
 .sidenavbar-overlay #hamburger-button {
   position: absolute;
-  display: block;
   width: 28px;
   height: 20px;
   left: 50%;
@@ -610,12 +649,12 @@
 }
 
 .sidenavbar-overlay .close-btn > span {
-  height: 5%;
+  height: 10%;
 }
 
 .sidenavbar-overlay #hamburger-button > span:nth-child(1) {
   width: 95%;
-  top: 0;
+  top: 10%;
   -webkit-transition: top 0.1s ease-in, width 0.1s ease 0.1s;
   transition: top 0.1s ease-in, width 0.1s ease 0.1s;
 }
@@ -641,7 +680,7 @@
 
 .sidenavbar-overlay #hamburger-button > span:nth-child(4) {
   width: 70%;
-  top: 100%;
+  bottom: 0;
   -webkit-transition: top 0.1s ease-in, width 0.1s ease 0.1s;
   transition: top 0.1s ease-in, width 0.1s ease 0.1s;
 }
@@ -695,21 +734,25 @@
     -webkit-animation-name: init;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-direction: ease-in;
+    -webkit-animation-iteration-count: 1;
     -moz-animation-delay: 0;
     -moz-animation-duration: 1s;
     -moz-animation-name: init;
     -moz-animation-fill-mode: forwards;
     -moz-animation-direction: ease-in;
+    -moz-animation-iteration-count: 1;
     -ms-animation-delay: 0;
     -ms-animation-duration: 1s;
     -ms-animation-name: init;
     -ms-animation-fill-mode: forwards;
     -ms-animation-direction: ease-in;
+    -ms-animation-iteration-count: 1;
     animation-delay: 0;
     animation-duration: 1s;
     animation-name: init;
     animation-fill-mode: forwards;
     animation-direction: ease-in;
+    animation-iteration-count: 1;
   }
   .sidenavbar.open {
     width: 8%;
@@ -718,21 +761,25 @@
     -webkit-animation-name: open;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-direction: ease-in;
+    -webkit-animation-iteration-count: 1;
     -moz-animation-delay: 0;
     -moz-animation-duration: 0.5s;
     -moz-animation-name: open;
     -moz-animation-fill-mode: forwards;
     -moz-animation-direction: ease-in;
+    -moz-animation-iteration-count: 1;
     -ms-animation-delay: 0;
     -ms-animation-duration: 0.5s;
     -ms-animation-name: open;
     -ms-animation-fill-mode: forwards;
     -ms-animation-direction: ease-in;
+    -ms-animation-iteration-count: 1;
     animation-delay: 0;
     animation-duration: 0.5s;
     animation-name: open;
     animation-fill-mode: forwards;
     animation-direction: ease-in;
+    animation-iteration-count: 1;
   }
   .sidenavbar.close {
     width: 85%;
@@ -741,21 +788,25 @@
     -webkit-animation-name: close;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-direction: ease-in;
+    -webkit-animation-iteration-count: 1;
     -moz-animation-delay: 0;
     -moz-animation-duration: 0.25s;
     -moz-animation-name: close;
     -moz-animation-fill-mode: forwards;
     -moz-animation-direction: ease-in;
+    -moz-animation-iteration-count: 1;
     -ms-animation-delay: 0;
     -ms-animation-duration: 0.25s;
     -ms-animation-name: close;
     -ms-animation-fill-mode: forwards;
     -ms-animation-direction: ease-in;
+    -ms-animation-iteration-count: 1;
     animation-delay: 0;
     animation-duration: 0.25s;
     animation-name: close;
     animation-fill-mode: forwards;
     animation-direction: ease-in;
+    animation-iteration-count: 1;
   }
   @-webkit-keyframes init {
     75% {

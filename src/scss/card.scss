@@ -5,48 +5,33 @@
 .card {
   position: relative;
   background-color: $dark-secondary;
-  margin: 20px 20px 20px 20px;
+  // margin: 20px 20px 20px 20px;
   padding: 10% 10% 10% 10%;
   border-radius: .5ch;
-  opacity: .5;
+  height: 100%;
 
   box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 4px 0px 25px 10px rgba(0, 0, 0, 0.75);
   &.1 {
     opacity: 0;
-    @include animation(0s, 3s, reveal-card, ease-in);
+    @include animation(0s, 3s, reveal-card, ease-in, forwards, 1);
   }
   &.2 {
     opacity: 0;
-    @include animation(1s, 1s, reveal-card, ease-in);
+    @include animation(1s, 1s, reveal-card, ease-in, forwards, 1);
   }
   &.3 {
     opacity: 0;
-    @include animation(2s, 1s, reveal-card, ease-in);
+    @include animation(2s, 1s, reveal-card, ease-in, forwards, 1);
   }
   &.4 {
     opacity: 0;
-    @include animation(3s, 1s, reveal-card, ease-in);
+    @include animation(3s, 1s, reveal-card, ease-in, forwards, 1);
   }
   &.5 {
     opacity: 0;
-    @include animation(4s, 1s, reveal-card, ease-in);
-  }
-
-  input {
-    margin: 50%;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
-    border-radius: .5ch;
-
-  }
-  input:focus {
-    box-shadow: 4px 0px 25px 0px #26e9ff;
-    -webkit-box-shadow: 4px 0px 25px 0px #26e9ff;
-    -moz-box-shadow: 4px 0px 25px 10px #26e9ff;
+    @include animation(4s, 1s, reveal-card, ease-in, forwards, 1);
   }
 
   @keyframes reveal-card {

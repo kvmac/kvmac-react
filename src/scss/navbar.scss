@@ -39,7 +39,7 @@
     -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
 
-    @include animation(1s, .5s, drop, ease-in);
+    @include animation(1s, .5s, drop, ease-in, forwards, 1);
 
     .space-between {
       width: 40%;
@@ -51,7 +51,7 @@
     }
 
     .nav-links {
-      @include animation(1s, .5s, reveal-text, ease-in);
+      @include animation(1s, .5s, reveal-text, ease-in, forwards, 1);
       visibility: hidden;
       display: flex;
       justify-content: space-between;
@@ -69,7 +69,7 @@
         span {
           width: 0;
           color: white;
-          @include animation(1s, 2.5s, line, ease-in);
+          @include animation(1s, 2.5s, line, ease-in, forwards, 1);
           height: 15px;
           border-radius: 10em;
         }
@@ -107,7 +107,7 @@
 @media (min-width: 1600px) {
   .navbar {
 
-    @include animation(0, .5s, drop, ease-in);
+    @include animation(0, .5s, drop, ease-in, forwards, 1);
     @include keyframes(drop) {
       0% {
         height: 0;

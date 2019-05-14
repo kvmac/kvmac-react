@@ -21,10 +21,9 @@
 .card {
   position: relative;
   background-color: #171717;
-  margin: 20px 20px 20px 20px;
   padding: 10% 10% 10% 10%;
   border-radius: .5ch;
-  opacity: .5;
+  height: 100%;
   box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 4px 0px 25px 10px rgba(0, 0, 0, 0.75);
@@ -37,21 +36,25 @@
   -webkit-animation-name: reveal-card;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-direction: ease-in;
+  -webkit-animation-iteration-count: 1;
   -moz-animation-delay: 0s;
   -moz-animation-duration: 3s;
   -moz-animation-name: reveal-card;
   -moz-animation-fill-mode: forwards;
   -moz-animation-direction: ease-in;
+  -moz-animation-iteration-count: 1;
   -ms-animation-delay: 0s;
   -ms-animation-duration: 3s;
   -ms-animation-name: reveal-card;
   -ms-animation-fill-mode: forwards;
   -ms-animation-direction: ease-in;
+  -ms-animation-iteration-count: 1;
   animation-delay: 0s;
   animation-duration: 3s;
   animation-name: reveal-card;
   animation-fill-mode: forwards;
   animation-direction: ease-in;
+  animation-iteration-count: 1;
 }
 
 .card.2 {
@@ -61,21 +64,25 @@
   -webkit-animation-name: reveal-card;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-direction: ease-in;
+  -webkit-animation-iteration-count: 1;
   -moz-animation-delay: 1s;
   -moz-animation-duration: 1s;
   -moz-animation-name: reveal-card;
   -moz-animation-fill-mode: forwards;
   -moz-animation-direction: ease-in;
+  -moz-animation-iteration-count: 1;
   -ms-animation-delay: 1s;
   -ms-animation-duration: 1s;
   -ms-animation-name: reveal-card;
   -ms-animation-fill-mode: forwards;
   -ms-animation-direction: ease-in;
+  -ms-animation-iteration-count: 1;
   animation-delay: 1s;
   animation-duration: 1s;
   animation-name: reveal-card;
   animation-fill-mode: forwards;
   animation-direction: ease-in;
+  animation-iteration-count: 1;
 }
 
 .card.3 {
@@ -85,21 +92,25 @@
   -webkit-animation-name: reveal-card;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-direction: ease-in;
+  -webkit-animation-iteration-count: 1;
   -moz-animation-delay: 2s;
   -moz-animation-duration: 1s;
   -moz-animation-name: reveal-card;
   -moz-animation-fill-mode: forwards;
   -moz-animation-direction: ease-in;
+  -moz-animation-iteration-count: 1;
   -ms-animation-delay: 2s;
   -ms-animation-duration: 1s;
   -ms-animation-name: reveal-card;
   -ms-animation-fill-mode: forwards;
   -ms-animation-direction: ease-in;
+  -ms-animation-iteration-count: 1;
   animation-delay: 2s;
   animation-duration: 1s;
   animation-name: reveal-card;
   animation-fill-mode: forwards;
   animation-direction: ease-in;
+  animation-iteration-count: 1;
 }
 
 .card.4 {
@@ -109,21 +120,25 @@
   -webkit-animation-name: reveal-card;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-direction: ease-in;
+  -webkit-animation-iteration-count: 1;
   -moz-animation-delay: 3s;
   -moz-animation-duration: 1s;
   -moz-animation-name: reveal-card;
   -moz-animation-fill-mode: forwards;
   -moz-animation-direction: ease-in;
+  -moz-animation-iteration-count: 1;
   -ms-animation-delay: 3s;
   -ms-animation-duration: 1s;
   -ms-animation-name: reveal-card;
   -ms-animation-fill-mode: forwards;
   -ms-animation-direction: ease-in;
+  -ms-animation-iteration-count: 1;
   animation-delay: 3s;
   animation-duration: 1s;
   animation-name: reveal-card;
   animation-fill-mode: forwards;
   animation-direction: ease-in;
+  animation-iteration-count: 1;
 }
 
 .card.5 {
@@ -133,37 +148,25 @@
   -webkit-animation-name: reveal-card;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-direction: ease-in;
+  -webkit-animation-iteration-count: 1;
   -moz-animation-delay: 4s;
   -moz-animation-duration: 1s;
   -moz-animation-name: reveal-card;
   -moz-animation-fill-mode: forwards;
   -moz-animation-direction: ease-in;
+  -moz-animation-iteration-count: 1;
   -ms-animation-delay: 4s;
   -ms-animation-duration: 1s;
   -ms-animation-name: reveal-card;
   -ms-animation-fill-mode: forwards;
   -ms-animation-direction: ease-in;
+  -ms-animation-iteration-count: 1;
   animation-delay: 4s;
   animation-duration: 1s;
   animation-name: reveal-card;
   animation-fill-mode: forwards;
   animation-direction: ease-in;
-}
-
-.card input {
-  margin: 50%;
-  left: 50%;
-  right: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  display: block;
-  border-radius: .5ch;
-}
-
-.card input:focus {
-  box-shadow: 4px 0px 25px 0px #26e9ff;
-  -webkit-box-shadow: 4px 0px 25px 0px #26e9ff;
-  -moz-box-shadow: 4px 0px 25px 10px #26e9ff;
+  animation-iteration-count: 1;
 }
 
 @-webkit-keyframes reveal-card {

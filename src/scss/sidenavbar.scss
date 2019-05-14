@@ -14,7 +14,7 @@
   .sidenavbar-overlay {
     opacity: 0;
     visibility: hidden;
-    @include animation(3.5s, 1.5s, reveal-content, linear);
+    @include animation(3.5s, 1.5s, reveal-content, linear, forwards, 1);
   }
 }
 
@@ -35,16 +35,16 @@
   -moz-box-shadow: 4px 0px 25px 10px rgba(0, 0, 0, 0.75);
 
   &.init {
-    @include animation($init-delay, $init-duration, init, ease-in);
+    @include animation($init-delay, $init-duration, init, ease-in, forwards, 1);
   }
   &.open {
-    @include animation($open-delay, $open-duration, open, ease-in);
+    @include animation($open-delay, $open-duration, open, ease-in, forwards, 1);
   }
   &.close {
-    @include animation($close-delay, $close-duration, close, linear);
+    @include animation($close-delay, $close-duration, close, linear, forwards, 1);
   }
   &.fade {
-    @include animation($fade-delay, $fade-duration, fade, linear);
+    @include animation($fade-delay, $fade-duration, fade, linear, forwards, 1);
   }
   @include keyframes(init) {
     86% {
@@ -94,7 +94,7 @@
         position: relative;
         top: 2%;
         opacity: 0;
-        @include animation(.15s, 1.5s, reveal-content, linear);
+        @include animation(.15s, 1.5s, reveal-content, linear, forwards, 1);
       }
       .profile-info {
         position: relative;
@@ -102,7 +102,7 @@
         height: 10%;
         opacity: 0;
 
-        @include animation(.15s, 1.5s, reveal-content, linear, forwards);
+        @include animation(.15s, 1.5s, reveal-content, linear, forwards, 1);
       }
       .nav {
         top: 5%;
@@ -119,7 +119,7 @@
             label {
               opacity: 0;
               visibility: hidden;
-              @include animation(.15s, 1.5s, reveal-content, linear);
+              @include animation(.15s, 1.5s, reveal-content, linear, forwards, 1);
             }
           }
         }
@@ -176,7 +176,7 @@
       .profile-header {
         height: 10%;
         opacity: 1;
-        @include animation(0, .5s, close-content, linear);
+        @include animation(0, .5s, close-content, linear, forwards, 1);
       }
       .profile-info {
         position: relative;
@@ -209,7 +209,7 @@
             label {
               opacity: 1;
               visibility: visible;
-              @include animation(0, 1s, close-content, ease-out, forwards);
+              @include animation(0, 1s, close-content, ease-out, forwards, 1);
             }
           }
         }
@@ -301,7 +301,6 @@
 
   #hamburger-button {
     position: absolute;
-    display: block;
     width: 28px;
     height: 20px;
     left: 50%;
@@ -319,12 +318,12 @@
     /* background: #222327; */
   }
   .close-btn>span {
-    height: 5%;
+    height: 10%;
   }
 
   #hamburger-button>span:nth-child(1) { 
     width: 95%;
-    top: 0;
+    top: 10%;
     transition: top 0.1s ease-in, width 0.1s ease 0.1s;
   }
 
@@ -345,7 +344,7 @@
 
   #hamburger-button>span:nth-child(4) {
     width: 70%;
-    top: 100%;
+    bottom: 0;
     transition: top 0.1s ease-in, width 0.1s ease 0.1s;
   }
 
@@ -398,15 +397,15 @@
 
     &.init {
       width: 0;
-      @include animation(0, 1s, init, ease-in);
+      @include animation(0, 1s, init, ease-in, forwards, 1);
     }
     &.open {
       width: 8%;
-      @include animation(0, .5s, open, ease-in);
+      @include animation(0, .5s, open, ease-in, forwards, 1);
     }
     &.close {
       width: 85%;
-      @include animation(0, .25s, close, ease-in);
+      @include animation(0, .25s, close, ease-in, forwards, 1);
     }
     @include keyframes(init) {
       75% {width: 0;}

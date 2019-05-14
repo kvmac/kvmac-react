@@ -48,10 +48,12 @@ export class Contact extends React.Component {
     return (
       <div className="contact">
         <div className="card">
-          <input placeholder="email" className="email" onChange={this.handleEmail} value={email} />
-          <input placeholder="subject" className="subject" onChange={this.handleSubject} value={subject} />
-          <input placeholder="message" className="message" onChange={this.handleMessage} value={message} />
-          <button onClick={this.handleMessage} />
+          <div className="form">
+            <input placeholder="email" className="email" onChange={this.handleEmail} value={email} />
+            <input placeholder="subject" className="subject" onChange={this.handleSubject} value={subject} />
+            <textarea placeholder="message" className="message" onChange={this.handleMessage} value={message} />
+            <button className="submit" onClick={this.handleMessage}>Submit</button>
+          </div>
         </div>
       </div>
     );
