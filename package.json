@@ -21,8 +21,7 @@
   "scripts": {
     "start": "react-scripts start --parallel start:lambda",
     "start:lambda": "netlify-lambda serve lambda/src -c lambda/webpack.config.js",
-    "build": "react-scripts build --parallel build:lambda",
-    "build:lambda": "netlify-lambda build lambda/src",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
