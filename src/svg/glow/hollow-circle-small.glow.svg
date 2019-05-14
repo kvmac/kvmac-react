@@ -6,6 +6,6 @@
         <feBlend in="SourceGraphic" in2="blurOut" mode="overlay"></feBlend>
         </filter>
     </defs>
-    <circle filter="url(#glow)" cx="10" cy="10" r="8"
+    <circle filter="url(#glow)" cx="10" cy="10" r="5"
         stroke="#26e9ff" stroke-width="5" fill="none" />
 </svg>

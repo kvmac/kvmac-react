@@ -16,7 +16,7 @@
   overflow: hidden;
   background-color: #171717;
   // background: #222629;
-  z-index: 4;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 0;
@@ -72,77 +72,6 @@
   }
 
 
-  #hamburger-button {
-    display: block;
-    width: 28px;
-    height: 20px;
-    position: sticky;
-    top: 5%;
-    left: 20px;
-    z-index: 10;
-  }
-
-  #hamburger-button>span {
-    position: absolute;
-    background: white;
-    border-radius: 10em;
-    height: 5%;
-    /* background: #222327; */
-    top: 0px;
-  }
-  .close-btn>span {
-    height: 5%;
-  }
-
-  #hamburger-button>span:nth-child(1) { 
-    width: 95%;
-    top: 0;
-    transition: top 0.1s ease-in, width 0.1s ease 0.1s;
-  }
-
-  #hamburger-button>span:nth-child(2) {
-    visibility: hidden;
-    top: 50%;
-    width: 95%;
-    transition: all 0.1s ease-in;
-    transition-delay: 0.15s;
-  }
-
-  #hamburger-button>span:nth-child(3) {
-    width: 95%;
-    top: 50%;
-    transition: all 0.1s ease-in;
-    transition-delay: 0.15s;
-  }
-
-  #hamburger-button>span:nth-child(4) {
-    width: 70%;
-    top: 100%;
-    transition: top 0.1s ease-in, width 0.1s ease 0.1s;
-  }
-
-  .close-btn>span:nth-child(1) {
-    width: 0% !important;
-    visibility: hidden !important;
-  }
-
-  .close-btn>span:nth-child(2) {
-    height: 5%;
-    visibility: visible !important;
-    top: 50%;
-    transform: rotate(45deg);
-    box-shadow: unset;
-  }
-
-  .close-btn>span:nth-child(3) {
-    height: 5%;
-    top: 50%;
-    transform: rotate(-45deg);
-  }
-  .close-btn>span:nth-child(4) {
-    width: 0% !important;
-    visibility: hidden !important;
-  }
 
   .contents {
     height: 100%;
@@ -152,11 +81,14 @@
       overflow: hidden;
 
       .profile-header {
+        position: relative;
+        top: 2%;
         opacity: 0;
         @include animation(.15s, 1.5s, reveal-content, linear);
       }
       .profile-info {
         position: relative;
+        margin-top: 2%;
         height: 10%;
         opacity: 0;
 
@@ -326,6 +258,89 @@
     }
   }
 }
+.navbar-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20%;
+  width: $sidenavbar-width;
+  z-index: 3;
+
+
+  #hamburger-button {
+    position: absolute;
+    display: block;
+    width: 28px;
+    height: 20px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+    z-index: 10;
+  }
+
+  #hamburger-button>span {
+    position: absolute;
+    background: white;
+    border-radius: 10em;
+    height: 5%;
+    /* background: #222327; */
+  }
+  .close-btn>span {
+    height: 5%;
+  }
+
+  #hamburger-button>span:nth-child(1) { 
+    width: 95%;
+    top: 0;
+    transition: top 0.1s ease-in, width 0.1s ease 0.1s;
+  }
+
+  #hamburger-button>span:nth-child(2) {
+    position: relative;
+    top: 50%;
+    width: 95%;
+    transition: all 0.1s ease-in;
+    transition-delay: 0.15s;
+  }
+
+  #hamburger-button>span:nth-child(3) {
+    width: 95%;
+    top: 50%;
+    transition: all 0.1s ease-in;
+    transition-delay: 0.15s;
+  }
+
+  #hamburger-button>span:nth-child(4) {
+    width: 70%;
+    top: 100%;
+    transition: top 0.1s ease-in, width 0.1s ease 0.1s;
+  }
+
+  .close-btn>span:nth-child(1) {
+    width: 0% !important;
+    visibility: hidden !important;
+  }
+
+  .close-btn>span:nth-child(2) {
+    height: 5%;
+    display: block;
+    top: 50%;
+    transform: rotate(45deg);
+  }
+
+  .close-btn>span:nth-child(3) {
+    height: 5%;
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  .close-btn>span:nth-child(4) {
+    width: 0% !important;
+    visibility: hidden !important;
+  }
+
+
+}
 
 
 
@@ -376,15 +391,6 @@
       100% {width: 10%;}
     }
 
-    #hamburger-button {
-      position: sticky;
-      width: 35px;
-      height: 25px;
-      left: 25px;
-      z-index: 10;
-    }
-
-
     .profile-header {
       width: 100%;
       height: 50%;
@@ -425,6 +431,19 @@
       // }
       // .link:nth-child(3) {
       // }
+    }
+  }
+  .navbar-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20%;
+    width: 10%;
+    z-index: 3;
+
+    #hamburger-button {
+      width: 42px;
+      height: 30px;
     }
   }
 }

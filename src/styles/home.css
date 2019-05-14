@@ -28,29 +28,29 @@
 }
 
 .home label {
-  -webkit-animation-delay: 3s;
+  -webkit-animation-delay: 1s;
   -webkit-animation-duration: 0.5s;
   -webkit-animation-name: reveal-text;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-direction: ease-in;
-  -moz-animation-delay: 3s;
+  -moz-animation-delay: 1s;
   -moz-animation-duration: 0.5s;
   -moz-animation-name: reveal-text;
   -moz-animation-fill-mode: forwards;
   -moz-animation-direction: ease-in;
-  -ms-animation-delay: 3s;
+  -ms-animation-delay: 1s;
   -ms-animation-duration: 0.5s;
   -ms-animation-name: reveal-text;
   -ms-animation-fill-mode: forwards;
   -ms-animation-direction: ease-in;
-  animation-delay: 3s;
+  animation-delay: 1s;
   animation-duration: 0.5s;
   animation-name: reveal-text;
   animation-fill-mode: forwards;
   animation-direction: ease-in;
   visibility: hidden;
   display: block;
-  font-size: 1em;
+  font-size: 2em;
 }
 
 .home .bold {
@@ -58,7 +58,8 @@
   color: white;
   font-weight: bold;
   position: relative;
-  top: 50%;
+  top: 40%;
+  width: 100%;
 }
 
 .home .regular {
@@ -66,7 +67,8 @@
   color: white;
   font-weight: normal;
   position: relative;
-  top: 60%;
+  top: 50%;
+  width: 100%;
 }
 
 @-webkit-keyframes pop {

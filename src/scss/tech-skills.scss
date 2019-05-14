@@ -17,11 +17,10 @@
     flex-flow: column;
 
     .circle-container {
-      width: 50%;
     }
 
     span {
-      align-self: center;
+      position: relative;
       width: 20%;
       height: 2px;
       background: grey;

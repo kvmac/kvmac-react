@@ -26,125 +26,129 @@ export class SideNavBar extends React.Component {
     const { isOpen, sidenavAnimation } = {...this.state};
 
     return(
-      <div className={`sidenavbar ${sidenavAnimation}`}>
-        <div id="hamburger-button" className={isOpen ? "close-btn" : ""} onClick={this.handleSidenav}>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div className={`contents ${isOpen ? "visible" : "invisible"}`}>
-          <div className="profile-header">
-            <img className="photo" src={headshot} alt="Kodee McIntosh" />
-          </div>
-          <div className="profile-info">
-            <div>Kodee McIntosh</div>
-            <div>Software Engineer <Icon
-                name="at-outline"
-                size="small"
-                fill="grey"
-              /> SQ</div>
-            <div>
-              <Icon
-                name="pin-outline"
-                size="small"
-                fill="grey"
-              /> Indianapolis, IN area</div>
-          </div>
-          <div className="nav">
-            <div className="link-wrapper">
-              {/* <span onMouseOver={}> */}
-                {/* </span> */}
-              <Link onClick={this.closeSidenav} to="/">
-                {/* <HighLighter /> */}
-
-                <Icon
-                  name="home-outline"
-                  size="medium"
-                  fill="grey"
-                  />
-                  {!isOpen || <label>Home</label>}
-              </Link>
-            </div>
-            <div className="link-wrapper">
-              {/* <span onMouseOver={}> */}
-              {/* </span> */}
-              <Link onClick={this.closeSidenav} to="/tech-skills">
-                <Icon
-                  name="activity-outline"
-                  size="medium"
-                  fill="grey"
-                  />
-                  {!isOpen || <label>Tech Skills</label>}
-              </Link>
-            </div>
-            <div className="link-wrapper">
-              {/* <span onMouseOver={}> */}
-              {/* </span> */}
-              <Link onClick={this.closeSidenav} to="/projects">
-                <Icon
-                  name="code-outline"
-                  size="medium"
-                  fill="grey"
-                  />
-                  {/* <PulseElement /> */}
-                  {!isOpen || <label>Projects</label>}
-              </Link>
-            </div>
-            <div className="link-wrapper">
-              {/* <span onMouseOver={}> */}
-              {/* </span> */}
-              <Link onClick={this.closeSidenav} to="/resume">️
-                <Icon
-                  name="file-text-outline"
-                  size="medium"
-                  fill="grey"
-                  />
-                  {!isOpen || <label>Resume</label>}
-              </Link>
-            </div>
-            <div className="link-wrapper">
-              {/* <span onMouseOver={}> */}
-              {/* </span> */}
-              <Link onClick={this.closeSidenav} to="/blog">️
-                <Icon
-                  name="message-square-outline"
-                  size="medium"
-                  fill="grey"
-                  />
-                  {!isOpen || <label>Blog</label>}
-              </Link>
-            </div>
-            <div className="link-wrapper">
-              {/* <span onMouseOver={}> */}
-              {/* </span> */}
-              <Link onClick={this.closeSidenav} to="/contact">️
-                <Icon
-                  name="email-outline"
-                  size="medium"
-                  fill="grey"
-                  />
-                  {!isOpen || <label>Contact</label>}
-              </Link>
-            </div>
-          </div>
-          <div className="social">
+      <React.Fragment>
+        <div className="navbar-overlay">
+          <div id="hamburger-button" className={isOpen ? "close-btn" : ""} onClick={this.handleSidenav}>
             <span></span>
-            <a href="https://github.com/kvmac" target="_blank" rel="noopener noreferrer">
-              <Icon
-                name="github-outline"
-                size="medium"
-                />
-            </a>
-            <a href="https://www.linkedin.com/in/kodee-mcintosh" target="_blank" rel="noopener noreferrer">
-              <Icon
-                name="linkedin-outline"
-                size="medium"
-                />
-            </a>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
-      </div>
+        <div className={`sidenavbar ${sidenavAnimation}`}>
+          <div className={`contents ${isOpen ? "visible" : "invisible"}`}>
+            <div className="profile-header">
+              <img className="photo" src={headshot} alt="Kodee McIntosh" />
+            </div>
+            <div className="profile-info">
+              <div>Kodee McIntosh</div>
+              <div>Software Engineer <Icon
+                  name="at-outline"
+                  size="small"
+                  fill="grey"
+                /> SQ</div>
+              <div>
+                <Icon
+                  name="pin-outline"
+                  size="small"
+                  fill="grey"
+                /> Indianapolis, IN area</div>
+            </div>
+            <div className="nav">
+              <div className="link-wrapper">
+                {/* <span onMouseOver={}> */}
+                  {/* </span> */}
+                <Link onClick={this.closeSidenav} to="/">
+                  {/* <HighLighter /> */}
+
+                  <Icon
+                    name="home-outline"
+                    size="medium"
+                    fill="grey"
+                    />
+                    {!isOpen || <label>Home</label>}
+                </Link>
+              </div>
+              <div className="link-wrapper">
+                {/* <span onMouseOver={}> */}
+                {/* </span> */}
+                <Link onClick={this.closeSidenav} to="/tech-skills">
+                  <Icon
+                    name="activity-outline"
+                    size="medium"
+                    fill="grey"
+                    />
+                    {!isOpen || <label>Tech Skills</label>}
+                </Link>
+              </div>
+              <div className="link-wrapper">
+                {/* <span onMouseOver={}> */}
+                {/* </span> */}
+                <Link onClick={this.closeSidenav} to="/projects">
+                  <Icon
+                    name="code-outline"
+                    size="medium"
+                    fill="grey"
+                    />
+                    {/* <PulseElement /> */}
+                    {!isOpen || <label>Projects</label>}
+                </Link>
+              </div>
+              <div className="link-wrapper">
+                {/* <span onMouseOver={}> */}
+                {/* </span> */}
+                <Link onClick={this.closeSidenav} to="/resume">️
+                  <Icon
+                    name="file-text-outline"
+                    size="medium"
+                    fill="grey"
+                    />
+                    {!isOpen || <label>Resume</label>}
+                </Link>
+              </div>
+              <div className="link-wrapper">
+                {/* <span onMouseOver={}> */}
+                {/* </span> */}
+                <Link onClick={this.closeSidenav} to="/blog">️
+                  <Icon
+                    name="message-square-outline"
+                    size="medium"
+                    fill="grey"
+                    />
+                    {!isOpen || <label>Blog</label>}
+                </Link>
+              </div>
+              <div className="link-wrapper">
+                {/* <span onMouseOver={}> */}
+                {/* </span> */}
+                <Link onClick={this.closeSidenav} to="/contact">️
+                  <Icon
+                    name="email-outline"
+                    size="medium"
+                    fill="grey"
+                    />
+                    {!isOpen || <label>Contact</label>}
+                </Link>
+              </div>
+            </div>
+            <div className="social">
+              <span></span>
+              <a href="https://github.com/kvmac" target="_blank" rel="noopener noreferrer">
+                <Icon
+                  name="github-outline"
+                  size="medium"
+                  />
+              </a>
+              <a href="https://www.linkedin.com/in/kodee-mcintosh" target="_blank" rel="noopener noreferrer">
+                <Icon
+                  name="linkedin-outline"
+                  size="medium"
+                  />
+              </a>
+            </div>
+          </div>
+        </div>
+      </React.Fragment>
     );
   }
 }

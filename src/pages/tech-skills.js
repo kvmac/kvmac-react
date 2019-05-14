@@ -1,16 +1,14 @@
 import React from 'react';
-import { Card, Circle } from '../shared';
+import { Circle } from '../shared';
 import '../styles/tech-skills.css';
 
-export const TechSkills = (Card) => {
+export const TechSkills = () => {
 
   return (
     <div className="tech-skills">
     Tech-skills
       <div className="flex-wrapper">
-      <Card>
         <Circle percent={"75"} color={"blue"} />
-      </Card>
         <span></span>
         <Circle percent={"50"} color={"purple"} />
         <span></span>

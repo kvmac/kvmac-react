@@ -28,7 +28,7 @@
   height: 100%;
   overflow: hidden;
   background-color: #171717;
-  z-index: 4;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 0;
@@ -225,90 +225,6 @@
   }
 }
 
-.sidenavbar #hamburger-button {
-  display: block;
-  width: 28px;
-  height: 20px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 5%;
-  left: 20px;
-  z-index: 10;
-}
-
-.sidenavbar #hamburger-button > span {
-  position: absolute;
-  background: white;
-  border-radius: 10em;
-  height: 5%;
-  /* background: #222327; */
-  top: 0px;
-}
-
-.sidenavbar .close-btn > span {
-  height: 5%;
-}
-
-.sidenavbar #hamburger-button > span:nth-child(1) {
-  width: 95%;
-  top: 0;
-  -webkit-transition: top 0.1s ease-in, width 0.1s ease 0.1s;
-  transition: top 0.1s ease-in, width 0.1s ease 0.1s;
-}
-
-.sidenavbar #hamburger-button > span:nth-child(2) {
-  visibility: hidden;
-  top: 50%;
-  width: 95%;
-  -webkit-transition: all 0.1s ease-in;
-  transition: all 0.1s ease-in;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
-}
-
-.sidenavbar #hamburger-button > span:nth-child(3) {
-  width: 95%;
-  top: 50%;
-  -webkit-transition: all 0.1s ease-in;
-  transition: all 0.1s ease-in;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
-}
-
-.sidenavbar #hamburger-button > span:nth-child(4) {
-  width: 70%;
-  top: 100%;
-  -webkit-transition: top 0.1s ease-in, width 0.1s ease 0.1s;
-  transition: top 0.1s ease-in, width 0.1s ease 0.1s;
-}
-
-.sidenavbar .close-btn > span:nth-child(1) {
-  width: 0% !important;
-  visibility: hidden !important;
-}
-
-.sidenavbar .close-btn > span:nth-child(2) {
-  height: 5%;
-  visibility: visible !important;
-  top: 50%;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  -webkit-box-shadow: unset;
-          box-shadow: unset;
-}
-
-.sidenavbar .close-btn > span:nth-child(3) {
-  height: 5%;
-  top: 50%;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.sidenavbar .close-btn > span:nth-child(4) {
-  width: 0% !important;
-  visibility: hidden !important;
-}
-
 .sidenavbar .contents {
   height: 100%;
   width: 100%;
@@ -319,6 +235,8 @@
 }
 
 .sidenavbar .contents.visible .profile-header {
+  position: relative;
+  top: 2%;
   opacity: 0;
   -webkit-animation-delay: 0.15s;
   -webkit-animation-duration: 1.5s;
@@ -344,6 +262,7 @@
 
 .sidenavbar .contents.visible .profile-info {
   position: relative;
+  margin-top: 2%;
   height: 10%;
   opacity: 0;
   -webkit-animation-delay: 0.15s;
@@ -601,6 +520,98 @@
   width: 40%;
 }
 
+.navbar-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20%;
+  width: 18%;
+  z-index: 3;
+}
+
+.navbar-overlay #hamburger-button {
+  position: absolute;
+  display: block;
+  width: 28px;
+  height: 20px;
+  left: 50%;
+  right: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 20%;
+  z-index: 10;
+}
+
+.navbar-overlay #hamburger-button > span {
+  position: absolute;
+  background: white;
+  border-radius: 10em;
+  height: 5%;
+  /* background: #222327; */
+}
+
+.navbar-overlay .close-btn > span {
+  height: 5%;
+}
+
+.navbar-overlay #hamburger-button > span:nth-child(1) {
+  width: 95%;
+  top: 0;
+  -webkit-transition: top 0.1s ease-in, width 0.1s ease 0.1s;
+  transition: top 0.1s ease-in, width 0.1s ease 0.1s;
+}
+
+.navbar-overlay #hamburger-button > span:nth-child(2) {
+  position: relative;
+  top: 50%;
+  width: 95%;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.navbar-overlay #hamburger-button > span:nth-child(3) {
+  width: 95%;
+  top: 50%;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.navbar-overlay #hamburger-button > span:nth-child(4) {
+  width: 70%;
+  top: 100%;
+  -webkit-transition: top 0.1s ease-in, width 0.1s ease 0.1s;
+  transition: top 0.1s ease-in, width 0.1s ease 0.1s;
+}
+
+.navbar-overlay .close-btn > span:nth-child(1) {
+  width: 0% !important;
+  visibility: hidden !important;
+}
+
+.navbar-overlay .close-btn > span:nth-child(2) {
+  height: 5%;
+  display: block;
+  top: 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.navbar-overlay .close-btn > span:nth-child(3) {
+  height: 5%;
+  top: 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.navbar-overlay .close-btn > span:nth-child(4) {
+  width: 0% !important;
+  visibility: hidden !important;
+}
+
 @media (min-width: 700px) {
   .sidenavbar {
     display: -webkit-box;
@@ -747,14 +758,6 @@
       width: 10%;
     }
   }
-  .sidenavbar #hamburger-button {
-    position: -webkit-sticky;
-    position: sticky;
-    width: 35px;
-    height: 25px;
-    left: 25px;
-    z-index: 10;
-  }
   .sidenavbar .profile-header {
     width: 100%;
     height: 50%;
@@ -793,6 +796,18 @@
     width: 100%;
     background: #005EFF;
     font-family: 'Asap', sans-serif;
+  }
+  .navbar-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20%;
+    width: 10%;
+    z-index: 3;
+  }
+  .navbar-overlay #hamburger-button {
+    width: 42px;
+    height: 30px;
   }
 }
 

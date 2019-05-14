@@ -4,8 +4,7 @@
 
 
 
-@for $i from 1 through $number-of-elements {
-  $rotation: random(360);
+@for $i from 1 through $number-of-elements { $rotation: random(360);
   $speed: $speed-of-elements + random(10);
   
   @keyframes shape-#{$i} {
@@ -33,4 +32,24 @@
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+
+@media (min-width: 1200px) {
+  @for $i from 1 through $number-of-elements { $rotation: random(360);
+    $speed: 100 + random(10);
+    
+    @keyframes shape-#{$i} {
+      0% {
+        transform: translate3d(0,0,0) rotate(#{$rotation + 0}deg);
+      }
+      100% {
+        transform: translate3d(0,0,0) rotate(#{$rotation + 360}deg);
+      }
+    }
+    
+    .shape-container--#{$i} { 
+      animation: shape-#{$i} #{$speed}s linear infinite;
+    }
+  }
 }

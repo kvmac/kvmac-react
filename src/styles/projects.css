@@ -25,14 +25,25 @@
   width: 82%;
   height: 100%;
   text-align: center;
+  padding-top: 20px;
 }
 
-.projects .project-header a {
+.projects .project {
+  margin-top: 20px;
+}
+
+.projects .project .project-header a {
   color: white;
   font-family: 'Asap', 'Sans Serif';
   color: white;
   font-weight: bold;
   font-size: 3ch;
   text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+  .projects {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=projects.css.map */

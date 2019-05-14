@@ -37,6 +37,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
+    z-index: 3;
     overflow-y: auto;
   }
 
@@ -86,4 +87,10 @@
       }
   }
 
+}
+
+@media (min-width: 1200px) {
+  .main {
+    position: relative;
+  }
 }

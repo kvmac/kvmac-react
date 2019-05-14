@@ -8,6 +8,11 @@
 }
 
 @media (min-width: 1200px) {
+  .overlay {
+    .navbar {
+      display: none;
+    }
+  }
   .navbar {
     position: sticky;
     top: 0;
@@ -30,7 +35,7 @@
     -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
 
-    @include animation(0, .5s, drop, ease-in);
+    @include animation(1s, .5s, drop, ease-in);
 
     .space-between {
       width: 40%;
@@ -42,6 +47,8 @@
     }
 
     .nav-links {
+      @include animation(1s, .5s, reveal-text, ease-in);
+      visibility: hidden;
       display: flex;
       justify-content: space-between;
       flex-direction: row nowrap;
@@ -51,7 +58,8 @@
         color: white;
         text-decoration: none;
         // font-family: 'Asap';
-        font-family: 'Karla', sans-serif;
+        font-family: 'Asap', sans-serif;
+        font-weight: normal;
         display: inline;
         align-self: center;
         span {
@@ -129,6 +137,7 @@
       .link {
         color: white;
         text-decoration: none;
+        font-size: 2.5ch;
 
         // .link {
         //   position: relative;

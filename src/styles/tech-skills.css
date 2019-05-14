@@ -37,14 +37,8 @@
           flex-flow: column;
 }
 
-.tech-skills .flex-wrapper .circle-container {
-  width: 50%;
-}
-
 .tech-skills .flex-wrapper span {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  position: relative;
   width: 20%;
   height: 2px;
   background: grey;

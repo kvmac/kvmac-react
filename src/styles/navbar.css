@@ -23,6 +23,9 @@
 }
 
 @media (min-width: 1200px) {
+  .overlay .navbar {
+    display: none;
+  }
   .navbar {
     position: -webkit-sticky;
     position: sticky;
@@ -41,22 +44,22 @@
     box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-    -webkit-animation-delay: 0;
+    -webkit-animation-delay: 1s;
     -webkit-animation-duration: 0.5s;
     -webkit-animation-name: drop;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-direction: ease-in;
-    -moz-animation-delay: 0;
+    -moz-animation-delay: 1s;
     -moz-animation-duration: 0.5s;
     -moz-animation-name: drop;
     -moz-animation-fill-mode: forwards;
     -moz-animation-direction: ease-in;
-    -ms-animation-delay: 0;
+    -ms-animation-delay: 1s;
     -ms-animation-duration: 0.5s;
     -ms-animation-name: drop;
     -ms-animation-fill-mode: forwards;
     -ms-animation-direction: ease-in;
-    animation-delay: 0;
+    animation-delay: 1s;
     animation-duration: 0.5s;
     animation-name: drop;
     animation-fill-mode: forwards;
@@ -70,6 +73,27 @@
     width: 10%;
   }
   .navbar .nav-links {
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-name: reveal-text;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-direction: ease-in;
+    -moz-animation-delay: 1s;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-name: reveal-text;
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-direction: ease-in;
+    -ms-animation-delay: 1s;
+    -ms-animation-duration: 0.5s;
+    -ms-animation-name: reveal-text;
+    -ms-animation-fill-mode: forwards;
+    -ms-animation-direction: ease-in;
+    animation-delay: 1s;
+    animation-duration: 0.5s;
+    animation-name: reveal-text;
+    animation-fill-mode: forwards;
+    animation-direction: ease-in;
+    visibility: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -86,7 +110,8 @@
   .navbar .nav-links .link {
     color: white;
     text-decoration: none;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Asap', sans-serif;
+    font-weight: normal;
     display: inline;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -250,6 +275,7 @@
   .navbar .nav-links .link {
     color: white;
     text-decoration: none;
+    font-size: 2.5ch;
   }
 }
 

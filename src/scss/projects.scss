@@ -9,15 +9,25 @@
   width: 82%;
   height: 100%;
   text-align: center;
-
-  .project-header {
-    // font-family: 'Asap', sans-serif;
-    // font-weight: bold;
-    a {
-      color: white;
-      @include asap-bold();
-      font-size: 3ch;
-      text-decoration: none;
+  padding-top: 20px;
+  .project {
+    margin-top: 20px;
+    .project-header {
+      // font-family: 'Asap', sans-serif;
+      // font-weight: bold;
+      a {
+        color: white;
+        @include asap-bold();
+        font-size: 3ch;
+        text-decoration: none;
+      }
     }
   }
+}
+
+@media (min-width: 1200px) {
+  .projects {
+    width: 100%;
+  }
+
 }

@@ -37,7 +37,7 @@
   // animation-play-state: paused;
 
   .logo {
-    @include animation(.5s, 1s, fade-logo, ease-out);
+    @include animation(.25s, 1s, fade-logo, ease-out);
   }
 }
 @include keyframes(fade-logo) {
@@ -80,26 +80,21 @@
 
 
 @media (min-width: 1200px) {
-  @for $i from 1 through 50 {
-      $shape-size: 100 + random(10);
-      $rotation: random(360);
-      $speed: 50 + random(10);
-      
-      @keyframes shape-#{$i} {
-          0% {
-              transform: translate3d(0,0,0) rotate(#{$rotation + 0}deg);
-          }
-          100% {
-              transform: translate3d(0,0,0) rotate(#{$rotation + 360}deg);
-          }
-      }
-    
-      .shape-container--#{$i} { 
-          animation: shape-#{$i} #{$speed}s linear infinite;
 
-          .random-shape:after {
-              margin: #{$shape-size}rem;
-          }
-      }
+  .logo {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    z-index: 3;
+    overflow: hidden;
+
+    .letter {
+      box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
+    }
   }
 }

@@ -16,6 +16,9 @@ import Zigzag from './dim/zigzag.svg';
 import GlowZigzag from './glow/zigzag.glow.svg';
 import GlowSquiggle from './glow/squiggle.glow.svg';
 import GlowSticks from './glow/sticks.glow.svg';
+import GlowCube from './glow/cube.glow.svg';
+import GlowHorseshoe from './glow/horseshoe.glow.svg';
+import GlowHalfCircle from './glow/half-circle.glow.svg';
 
 export {
     Logo,
@@ -35,5 +38,8 @@ export {
     Zigzag,
     GlowZigzag,
     GlowSquiggle,
-    GlowSticks
+    GlowSticks,
+    GlowCube,
+    GlowHorseshoe,
+    GlowHalfCircle
 };

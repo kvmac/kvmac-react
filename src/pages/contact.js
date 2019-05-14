@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/contact.css';
 import { guid } from '../utils/guid';
-import axios from 'axios';
+// import axios from 'axios';
 
 export class Contact extends React.Component {
   constructor(props) {
@@ -18,24 +18,24 @@ export class Contact extends React.Component {
     const { email, subject, message } = { ...this.state };
     // api call here
 
-    axios
-      .post(`https://kvmac.com/mailgun`)
-      .then(({ data: { data: message } }) => {
-        callback(null, {
-          statusCode: 200,
-          headers: {
-            'content-type': 'application/json',
-          },
-          body: JSON.stringify(
-            from: email,
-            subject: subject,
-            text: message,
-          ),
-        })
-      })
-      .catch((e) => {
-        callback(e)
-      })
+    // axios
+    //   .post(`https://kvmac.com/mailgun`)
+    //   .then(({ data: { data: message } }) => {
+    //     callback(null, {
+    //       statusCode: 200,
+    //       headers: {
+    //         'content-type': 'application/json',
+    //       },
+    //       body: JSON.stringify(
+    //         // from: email,
+    //         // subject: subject,
+    //         // text: message,
+    //       ),
+    //     })
+    //   })
+    //   .catch((e) => {
+    //     callback(e)
+    //   })
   }
 
   handleEmail = (e) => this.setState({ email: e.target.value });

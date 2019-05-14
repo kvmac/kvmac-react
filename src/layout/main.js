@@ -19,7 +19,12 @@ import {
   HollowCircleLarge,
   GlowHollowCircleLarge,
   Zigzag,
-  GlowZigzag } from '../svg';
+  GlowSquiggle,
+  GlowZigzag,
+  GlowHorseshoe,
+  GlowHalfCircle,
+  GlowCube
+ } from '../svg';
 
 
 export class Main extends React.Component {
@@ -33,36 +38,117 @@ export class Main extends React.Component {
   componentDidMount() {
     const shapes = [
       // Cross,
-      // GlowCross,
-      // Square,
-      GlowSquare,
-      // HollowSquare,
-      GlowHollowSquare,
-      // Triangle,
-      GlowTriangle,
-      // HollowCircleSmall,
-      GlowHollowCircleSmall,
-      // HollowCircleLarge,
-      GlowHollowCircleLarge,
-      // Zigzag,
-      GlowZigzag
+      {
+        shape: GlowCross,
+        sizes: [
+        "width: 40px; height: 40px;",
+        "width: 60px; height: 60px;",
+        "width: 80px; height: 80px;"
+        ]
+      },
+      {
+        shape: GlowSquare,
+        sizes: [
+          "width: 60px; height: 60px;",
+          "width: 80px; height: 80px;",
+          "width: 100px; height: 100px;"
+
+        ]
+      },
+      {
+        shape: GlowHollowSquare,
+        sizes: [
+          "width: 20px; height: 20px;",
+          "width: 40px; height: 40px;",
+
+        ]
+      },
+      {
+        shape: GlowTriangle,
+        sizes: [
+          "width: 30px; height: 30px;",
+          "width: 60px; height: 60px;",
+          "width: 90px; height: 90px;"
+        ]
+      },
+      {
+        shape: GlowHollowCircleSmall,
+        sizes: [
+          "width: 30px; height: 30px;",
+          "width: 50px; height: 50px;",
+        ]
+      },
+      {
+        shape: GlowHollowCircleLarge,
+        sizes: [
+          "width: 30px; height: 30px;",
+          "width: 40px; height: 40px;",
+          "width: 70px; height: 70px;",
+          "width: 100px; height: 100px;"
+        ]
+      },
+      {
+        shape: GlowZigzag,
+        sizes: [
+          "width: 20px; height: 20px;",
+          "width: 40px; height: 40px;",
+          "width: 60px; height: 60px;",
+          "width: 90px; height: 90px;",
+          "width: 20px; height: 20px; -webkit-transform: scaleX(-1); transform: scaleX(-1);",
+          "width: 40px; height: 40px; -webkit-transform: scaleX(-1); transform: scaleX(-1);",
+          "width: 60px; height: 60px; -webkit-transform: scaleX(-1); transform: scaleX(-1);",
+          "width: 60px; height: 90px; -webkit-transform: scaleX(-1); transform: scaleX(-1);",
+        ]
+      },
+      {
+        shape: GlowSquiggle,
+        sizes: [
+          "width: 30px; height: 30px;",
+          "width: 60px; height: 60px;",
+          "width: 30px; height: 30px; -webkit-transform: scaleX(-1); transform: scaleX(-1);",
+          "width: 60px; height: 60px; -webkit-transform: scaleX(-1); transform: scaleX(-1);",
+        ]
+      },
+      {
+        shape: GlowHorseshoe,
+        sizes: [
+          "width: 30px; height: 30px;",
+          "width: 50px; height: 50px;",
+          "width: 30px; height: 30px; -webkit-transform: scaleX(-1); transform: scaleX(-1);",
+          "width: 50px; height: 50px; -webkit-transform: scaleX(-1); transform: scaleX(-1);",
+        ]
+      },
+      {
+        shape: GlowHalfCircle,
+        sizes: [
+          "width: 30px; height: 30px;",
+          "width: 50px; height: 50px;",
+          "width: 30px; height: 30px; -webkit-transform: scaleX(-1); transform: scaleX(-1);",
+          "width: 50px; height: 50px; -webkit-transform: scaleX(-1); transform: scaleX(-1);",
+        ]
+      },
+      // {
+      //   shape: GlowCube,
+      //   sizes: [
+      //     "width: 30px; height: 30px;",
+      //     "width: 50px; height: 50px;",
+      //     "width: 30px; height: 30px; -webkit-transform: scaleX(-1); transform: scaleX(-1);",
+      //     "width: 50px; height: 50px; -webkit-transform: scaleX(-1); transform: scaleX(-1);",
+      //   ]
+      // },
     ];
 
     let bg = document.querySelector('.shape-background');
 
     for (var i = 1; i <= 50; i ++) {
+      let el = shapes[Math.floor(Math.random() * Math.floor(shapes.length))]
+      let size = el.sizes[Math.floor(Math.random() * Math.floor(el.sizes.length))]
       let node = document.createElement('div');
       node.className = `shape-container--${i}`;
       let img = document.createElement('img');
-      img.src = shapes[i % 9];
-      img.style = "width: 100px; height: 100px; z-index: 10;";
+      img.src = el.shape;
+      img.style = size;
       img.className = "shape";
-      img.src = shapes[i % 6];
-      if(i % 3 === 0) {
-        img.style = "width: 50px; height: 50px; z-index: 0; display: inline;";
-      } else {
-        img.style = "width: 50px; height: 50px; z-index: 3; display: inline;";
-      }
 
       node.appendChild(img);
 

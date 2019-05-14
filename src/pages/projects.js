@@ -26,6 +26,13 @@ export class Projects extends React.Component {
           tech={[this.tech['react'], this.tech['golang']]}
           description={"An app that identifies whether you uploaded a picture of a dog or not"}
         />
+        <Project
+          name={"Twitter Search"}
+          url={"https://www.ts-app.kvmac.com"}
+          github={"TwitterSearchApp"}
+          tech={[this.tech['react']]}
+          description={"An app that lets you search tweets by hashtag"}
+        />
       </div>
     );
   }
