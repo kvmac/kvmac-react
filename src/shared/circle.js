@@ -5,7 +5,7 @@ export const Circle = ({ color, percent }) => {
 
     return (
         <div className="circle-container">
-            <svg x="50" y="50" viewBox="-50 -50 100 100" className={`chart ${color}`}>
+            <svg x="0" y="0" viewBox="-8 -8 52 52" className={`chart ${color}`}>
                 <defs>
                     <filter id="glow" x="-120%" y="-120%" width="400%" height="400%">
                     <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0"></feOffset>

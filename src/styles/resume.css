@@ -86,7 +86,7 @@
   width: 82%;
   height: 100%;
   text-align: center;
-  overflow: hidden;
+  overflow-y: auto;
 }
 
 .resume .flex-wrapper {
@@ -95,8 +95,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column nowrap;
-          flex-direction: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
 }
 
 .resume .objective {

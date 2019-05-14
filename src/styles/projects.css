@@ -24,21 +24,29 @@
   float: right;
   width: 82%;
   height: 100%;
-  text-align: center;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .projects .project {
+  padding: 10% 10% 10% 10%;
   margin-top: 20px;
+  color: white;
 }
 
 .projects .project .project-header a {
-  color: white;
   font-family: 'Asap', 'Sans Serif';
   color: white;
   font-weight: bold;
   font-size: 3ch;
+}
+
+.projects .project a {
+  color: white;
   text-decoration: none;
+  font-family: 'Asap', 'Sans Serif';
+  color: white;
+  font-weight: normal;
 }
 
 @media (min-width: 1200px) {

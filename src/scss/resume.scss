@@ -42,12 +42,11 @@
   width: $page-width;
   height: 100%;
   text-align: center;
-  overflow: hidden;
+  overflow-y: auto;
 
   .flex-wrapper {
     display: flex;
-    flex-direction: column nowrap;
-
+    flex-flow: column nowrap;
   }
 
   .objective {

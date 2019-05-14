@@ -20,29 +20,31 @@ export class Projects extends React.Component {
     return (
       <div className="projects">
         <Project
-          name={"Pupper-ML"}
-          url={"https://www.pupper.kvmac.com"}
-          github={"pupper-ml-web"}
+          cardNumber="1"
+          name="Pupper-ML"
+          url="https://www.pupper.kvmac.com"
+          github="pupper-ml-web"
           tech={[this.tech['react'], this.tech['golang']]}
-          description={"An app that identifies whether you uploaded a picture of a dog or not"}
+          description="An app that identifies whether you uploaded a picture of a dog or not"
         />
         <Project
-          name={"Twitter Search"}
-          url={"https://www.ts-app.kvmac.com"}
-          github={"TwitterSearchApp"}
+          cardNumber="2"
+          name="Twitter Search"
+          url="https://www.ts-app.kvmac.com"
+          github="TwitterSearchApp"
           tech={[this.tech['react']]}
-          description={"An app that lets you search tweets by hashtag"}
+          description="An app that lets you search tweets by hashtag"
         />
       </div>
     );
   }
 }
 
-const Project = ({ name, url, github, tech, description }) => {
+const Project = ({ name, url, github, tech, description, cardNumber }) => {
   return (
-    <div className="project">
+    <div className={`project card ${cardNumber}`}>
       <div className="project-header">
-        <a href={url} target="_blank" rel="noopener noreferrer"><label>{name}</label></a>
+        <a href={url} target="_blank" rel="noopener noreferrer">{name}</a>
       </div>
       <div className="project-tech">
         {tech.forEach(el => <a href={el.site} target="_blank" rel="noopener noreferrer"><label>{el.label}</label></a>)}

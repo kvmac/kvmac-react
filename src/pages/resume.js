@@ -31,13 +31,26 @@ export const Resume = () => {
       </div> */}
       <div className="resume">
         {/* <div className="objective">Objective</div> */}
-          <div className="teck-skills">
+          <div className="teck-skills card">Tech-Skills
             <div className="flex-wrapper">
+              <div className="card">
               <Circle percent={"75"} color={"blue"} />
+              </div>
+              <div className="card">
               <Circle percent={"50"} color={"purple"} />
+              </div>
+              <div className="card">
               <Circle percent={"25"} color={"red"} />
+              </div>
+              <div className="card">
               <Circle percent={"90"} color={"orange"} />
+              </div>
+              <div className="card">
               <Circle percent={"60"} color={"green"} />
+              </div>
+              <div className="card">
+              <Circle percent={"40"} color={"green"} />
+              </div>
             </div>
           </div>
           <div className="experience">Experience</div>
