@@ -39,6 +39,28 @@
       -webkit-box-shadow: 0px 0px 25px 1px #26e9ff;
       -moz-box-shadow: 0px 0px 25px 1px #26e9ff;
     }
+    textarea {
+      position: relative;
+      display: block;
+      left: 0;
+      width: 80%;
+      height: 20%;
+      border: 2px solid white; 
+      border-radius: .5ch;
+      padding: 15px;
+      background: transparent;
+      margin: 0 0 10px 0;
+      @include asap-reg();
+      color: white;
+      font-weight: normal;
+    }
+    textarea:focus {
+      @include animation(0, 2s, box-glow, alternate, none, infinite);
+      border: 2px solid #26e9ff; 
+      box-shadow: 0px 0px 25px 1px #26e9ff;
+      -webkit-box-shadow: 0px 0px 25px 1px #26e9ff;
+      -moz-box-shadow: 0px 0px 25px 1px #26e9ff;
+    }
 
     button {
       width: 30%;
