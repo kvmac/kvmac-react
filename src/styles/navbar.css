@@ -26,17 +26,19 @@
   .overlay .navbar {
     display: none;
   }
-  .navbar {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    height: 0;
+  .dissolve .navbar {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+  .navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 0;
     width: 100%;
     z-index: 2;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */

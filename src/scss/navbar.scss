@@ -13,14 +13,18 @@
       display: none;
     }
   }
+  .dissolve {
+    .navbar {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
   .navbar {
     position: sticky;
     top: 0;
     height: 0;
     // align-content: flex-end;
     // justify-content: center;
-    display: flex;
-    justify-content: flex-start;
     width: 100%;
     z-index: 2;
     // background-image: url("../svg/wave.svg");
