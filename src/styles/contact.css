@@ -189,12 +189,12 @@
       align-self: auto;
 }
 
-.contact .form button:focus {
+.contact .form button:active {
   background-color: transparent;
   color: #26e9ff;
-  box-shadow: 0 0 0 0;
-  -webkit-box-shadow: 0 0 0 0;
-  -moz-box-shadow: 0 0 0 0;
+  box-shadow: unset;
+  -webkit-box-shadow: unset;
+  -moz-box-shadow: unset;
 }
 
 @-webkit-keyframes box-glow {
