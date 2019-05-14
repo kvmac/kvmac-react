@@ -19,12 +19,9 @@
 }
 
 .circle-container {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 50%;
-  height: 50%;
+  position: absolute;
   float: right;
+  width: 50%;
 }
 
 .chart {

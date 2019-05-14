@@ -3,12 +3,11 @@
 @import 'mixins';
 
 .card {
-  position: relative;
-  background-color: $dark-secondary;
-  // margin: 20px 20px 20px 20px;
+  display: block;
+  background-color: #2a2a2a;
+  margin: 10% 5% 10% 5%;
   padding: 10% 10% 10% 10%;
   border-radius: .5ch;
-  height: 100%;
 
   box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);

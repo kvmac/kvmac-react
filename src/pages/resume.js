@@ -31,8 +31,7 @@ export const Resume = () => {
       </div> */}
       <div className="resume">
         {/* <div className="objective">Objective</div> */}
-          <div className="teck-skills card">Tech-Skills
-            <div className="flex-wrapper">
+          <div className="tech-skills">Tech-Skills
               <div className="card">
               <Circle percent={"75"} color={"blue"} />
               </div>
@@ -52,7 +51,6 @@ export const Resume = () => {
               <Circle percent={"40"} color={"green"} />
               </div>
             </div>
-          </div>
           <div className="experience">Experience</div>
           <div className="education">Education</div>
           <div className="download-btn">
