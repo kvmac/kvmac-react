@@ -6,7 +6,7 @@
 .pnp.js
 
 # styles
-./src/styles
+/styles
 
 # testing
 /coverage

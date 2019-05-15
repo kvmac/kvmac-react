@@ -2,7 +2,6 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { Main, SideNavBar, NavBar } from './layout';
 import { Particles } from './effects';
-import { Logo } from './svg';
 import './App.css';
 import './styles/landing.css';
 import './styles/particles.css';

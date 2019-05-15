@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,400");
+@import url("https://fonts.googleapis.com/css?family=Rubik:700,900");
+@import url("https://fonts.googleapis.com/css?family=Karla");
+@-webkit-keyframes load {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1;
+  }
+}
+@keyframes load {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1;
+  }
+}
+
+.footer {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 4;
+  }
+  .footer .drawer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 0%;
+    width: 100%;
+    background: #1f1f1f;
+    box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
+  }
+  .footer:hover .drawer {
+    -webkit-animation-delay: 0;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-name: drawer;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-direction: ease-in;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-delay: 0;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-name: drawer;
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-direction: ease-in;
+    -moz-animation-iteration-count: 1;
+    -ms-animation-delay: 0;
+    -ms-animation-duration: 0.5s;
+    -ms-animation-name: drawer;
+    -ms-animation-fill-mode: forwards;
+    -ms-animation-direction: ease-in;
+    -ms-animation-iteration-count: 1;
+    animation-delay: 0;
+    animation-duration: 0.5s;
+    animation-name: drawer;
+    animation-fill-mode: forwards;
+    animation-direction: ease-in;
+    animation-iteration-count: 1;
+  }
+  @-webkit-keyframes drawer {
+    0% {
+      .footer {
+        .drawer {
+          height: 0%;
+        }
+      }
+    }
+    100% {
+      .footer {
+        .drawer {
+          height: 20%;
+        }
+      }
+    }
+  }
+  @keyframes drawer {
+    0% {
+      .footer {
+        .drawer {
+          height: 0%;
+        }
+      }
+    }
+    100% {
+      .footer {
+        .drawer {
+          height: 20%;
+        }
+      }
+    }
+  }
+}
+/*# sourceMappingURL=footer.css.map */

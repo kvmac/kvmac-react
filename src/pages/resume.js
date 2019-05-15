@@ -31,27 +31,46 @@ export const Resume = () => {
       </div> */}
       <div className="resume">
         {/* <div className="objective">Objective</div> */}
-          <div className="tech-skills">Tech-Skills
+          <div className="tech-skills card">Tech-Skills
               <div className="card">
-              <Circle percent={"75"} color={"blue"} />
+                <Circle percent={"75"} color={"blue"} />
               </div>
               <div className="card">
-              <Circle percent={"50"} color={"purple"} />
+                <Circle percent={"50"} color={"purple"} />
               </div>
               <div className="card">
-              <Circle percent={"25"} color={"red"} />
+                <Circle percent={"25"} color={"red"} />
               </div>
               <div className="card">
-              <Circle percent={"90"} color={"orange"} />
+                <Circle percent={"90"} color={"orange"} />
               </div>
               <div className="card">
-              <Circle percent={"60"} color={"green"} />
+                <Circle percent={"60"} color={"green"} />
               </div>
               <div className="card">
-              <Circle percent={"40"} color={"green"} />
+                <Circle percent={"40"} color={"green"} />
               </div>
             </div>
-          <div className="experience">Experience</div>
+          <div className="experience card">Experience
+            <div className="sq card">
+              <div className="title">
+                <a href="https://www.stratospherequality.com">Stratosphere Quality</a>
+              </div>
+              <div className=""></div>
+            </div>
+            <div className="availity card">
+              <div className="title">
+                <a href="https://www.availity.com">Availity</a>
+              </div>
+              <div className=""></div>
+            </div>
+            <div className="egenuity card">
+              <div className="title">
+                <a href="https://www.egenuity.com">eGenuity</a>
+              </div>
+              <div className=""></div>
+            </div>
+          </div>
           <div className="education">Education</div>
           <div className="download-btn">
             <button onClick={handleResume}>Download Resume!</button>
