@@ -41,6 +41,13 @@
     width: 100%;
     z-index: 3;
     overflow-y: auto;
+    /* width */
+    scrollbar-width: thin;
+    scrollbar-color: $dark-tertiary;
+
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
   }
 
   .shape {

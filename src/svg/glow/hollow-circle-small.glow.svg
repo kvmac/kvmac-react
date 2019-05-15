@@ -1,11 +1,10 @@
-<svg x="20" y="20" viewBox="-10 -10 50 50" xmlns="http://www.w3.org/2000/svg">
+<svg x="0" y="0" viewBox="-5 -5 30 30" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <filter id="glow" x="-120%" y="-120%" width="400%" height="400%">
         <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0"></feOffset>
-        <feGaussianBlur result="blurOut" in="offOut" stdDeviation="4"></feGaussianBlur>
+        <feGaussianBlur result="blurOut" in="offOut" stdDeviation="2"></feGaussianBlur>
         <feBlend in="SourceGraphic" in2="blurOut" mode="overlay"></feBlend>
         </filter>
     </defs>
-    <circle filter="url(#glow)" cx="10" cy="10" r="5"
-        stroke="#26e9ff" stroke-width="5" fill="none" />
+    <circle filter="url(#glow)" cx="10" cy="10" r="5" fill="#26e9ff" />
 </svg>

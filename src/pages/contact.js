@@ -49,9 +49,9 @@ export class Contact extends React.Component {
       <div className="contact">
         <div className="card">
           <div className="form">
-            <input placeholder="email" className="email" onChange={this.handleEmail} value={email} />
-            <input placeholder="subject" className="subject" onChange={this.handleSubject} value={subject} />
-            <textarea placeholder="message" className="message" onChange={this.handleMessage} value={message} />
+            <input placeholder="email" className="email" value={email} onChange={this.handleEmail} />
+            <input placeholder="subject" className="subject" value={subject} onChange={this.handleSubject} />
+            <textarea placeholder="message" className="message" value={message} onChange={this.handleMessage} />
             <button className="submit" onClick={this.handleMessage}>Submit</button>
           </div>
         </div>

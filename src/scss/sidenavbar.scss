@@ -24,15 +24,20 @@
   left: 0;
   height: 100%;
   overflow: hidden;
-  background-color: #1f1f1f;
+  background-color: #171717;
+  // background-color: $dark-secondary;
+  // background: $dark-secondary; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(color1, color2); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(color1, color2); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($dark-primary, #1f1f1f); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(color1, color2); /* Standard syntax */
+
   // background: #222629;
   z-index: 2;
   top: 0;
   left: 0;
   width: 0;
-  box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 4px 0px 25px 10px rgba(0, 0, 0, 0.75);
+  @include box-shadow();
 
   &.init {
     @include animation($init-delay, $init-duration, init, ease-in, forwards, 1);
@@ -391,9 +396,7 @@
     background-color: #171717;
     width: 0;
     // background: #222629;
-    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
+    @include box-shadow();
 
     &.init {
       width: 0;
@@ -483,6 +486,9 @@
 // should not render on desktop
 @media (min-width: 1200px) {
   .sidenavbar {
+    display: none;
+  }
+  .sidenavbar-overlay {
     display: none;
   }
 }

@@ -6,8 +6,8 @@
         <feBlend in="SourceGraphic" in2="blurOut" mode="overlay"></feBlend>
         </filter>
     </defs>
- <g filter="url(#glow)">
-  <rect height="15" width="15" rx="3" />
+ <g>
+  <rect filter="url(#glow)" height="15" width="15" rx="3" />
   <!-- <rect height="15" width="15" fill="#26e9ff" /> -->
  </g>
 </svg>

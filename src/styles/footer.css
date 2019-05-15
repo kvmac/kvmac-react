@@ -40,10 +40,10 @@
             justify-content: center;
     height: 0%;
     width: 100%;
-    background: #171717;
-    box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
+    background: #1f1f1f;
+    box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
   }
   .footer:hover .drawer {
     -webkit-animation-delay: 0;

@@ -29,10 +29,10 @@ class App extends React.Component {
       <div className="App">
         <div className={!hasLandingDissolved && location.pathname === "/" ? "overlay" : "dissolve" } onClick={this.dissolveLanding}>
           <Particles />
-          <img className="logo" src={Logo} />
-        <SideNavBar />
-        <NavBar />
-        <Main />
+          {/* <img className="logo" src={Logo} /> */}
+          <SideNavBar />
+          <NavBar />
+          <Main />
         </div>
       </div>
     );

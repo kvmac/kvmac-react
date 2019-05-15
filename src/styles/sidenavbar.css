@@ -60,14 +60,20 @@
   left: 0;
   height: 100%;
   overflow: hidden;
-  background-color: #1f1f1f;
+  background-color: #171717;
+  /* For Safari 5.1 to 6.0 */
+  /* For Opera 11.1 to 12.0 */
+  /* For Firefox 3.6 to 15 */
+  background: -webkit-gradient(linear, left top, left bottom, from(color1), to(color2));
+  background: linear-gradient(color1, color2);
+  /* Standard syntax */
   z-index: 2;
   top: 0;
   left: 0;
   width: 0;
-  box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 4px 0px 25px 10px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
 }
 
 .sidenavbar.init {
@@ -723,9 +729,9 @@
     overflow: hidden;
     background-color: #171717;
     width: 0;
-    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
   }
   .sidenavbar.init {
     width: 0;
@@ -923,6 +929,9 @@
 
 @media (min-width: 1200px) {
   .sidenavbar {
+    display: none;
+  }
+  .sidenavbar-overlay {
     display: none;
   }
 }

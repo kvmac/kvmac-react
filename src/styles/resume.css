@@ -184,9 +184,9 @@
   color: white;
   font-weight: normal;
   background-color: transparent;
-  box-shadow: 0px 0px 25px 1px #26e9ff;
-  -webkit-box-shadow: 0px 0px 25px 1px #26e9ff;
-  -moz-box-shadow: 0px 0px 25px 1px #26e9ff;
+  box-shadow: 0px 0px 20px 1x #26e9ff;
+  -webkit-box-shadow: 0px 0px 20px 1px #26e9ff;
+  -moz-box-shadow: 0px 0px 20px 1px #26e9ff;
 }
 
 @-webkit-keyframes glow {

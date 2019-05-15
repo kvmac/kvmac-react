@@ -34,10 +34,8 @@
     // background: -webkit-linear-gradient(top, #3E454B 0%,#111116 100%); /* Chrome10-25,Safari5.1-6 */
     // background: linear-gradient(to bottom, rgb(43, 46, 49) 0%,#111116 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
-    background: $dark-secondary;
-    box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
+    background-color: #171717;
+    @include box-shadow();
 
     @include animation(1s, .5s, drop, ease-in, forwards, 1);
 

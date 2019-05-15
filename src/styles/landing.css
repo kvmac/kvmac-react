@@ -31,9 +31,9 @@
 }
 
 .logo .letter {
-  box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
 }
 
 .overlay {
@@ -190,9 +190,9 @@
     overflow: hidden;
   }
   .logo .letter {
-    box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
   }
 }
 /*# sourceMappingURL=landing.css.map */

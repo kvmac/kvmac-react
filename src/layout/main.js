@@ -23,7 +23,8 @@ import {
   GlowZigzag,
   GlowHorseshoe,
   GlowHalfCircle,
-  GlowCube
+  GlowCube,
+  GlowSticks
  } from '../svg';
 
 
@@ -109,6 +110,13 @@ export class Main extends React.Component {
           "width: 60px; height: 60px; -webkit-transform: scaleX(-1); transform: scaleX(-1);",
         ]
       },
+      // {
+      //   shape: GlowSticks,
+      //   sizes: [
+      //     "width: 60px; height: 60px;",
+      //     "width: 90px; height: 90px;",
+      //   ]
+      // },
       {
         shape: GlowHorseshoe,
         sizes: [
@@ -121,10 +129,10 @@ export class Main extends React.Component {
       {
         shape: GlowHalfCircle,
         sizes: [
-          "width: 30px; height: 30px;",
-          "width: 50px; height: 50px;",
-          "width: 30px; height: 30px; -webkit-transform: scaleX(-1); transform: scaleX(-1);",
-          "width: 50px; height: 50px; -webkit-transform: scaleX(-1); transform: scaleX(-1);",
+          "width: 20px; height: 20px;",
+          "width: 40px; height: 40px;",
+          "width: 20px; height: 20px; -webkit-transform: scaleX(-1); transform: scaleX(-1);",
+          "width: 40px; height: 40px; -webkit-transform: scaleX(-1); transform: scaleX(-1);",
         ]
       },
       // {
