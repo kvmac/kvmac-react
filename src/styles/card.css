@@ -54,6 +54,9 @@
     background-color: #1f1f1f;
     margin: 20% 5% 5% 5%;
     border-radius: .5ch;
+    box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 0px 25px 10px rgba(0, 0, 0, 0.75);
   }
   .card input {
     position: relative;

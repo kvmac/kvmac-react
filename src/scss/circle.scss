@@ -43,7 +43,9 @@
   fill: none;
   stroke-width: 2.8;
   stroke-linecap: round;
-  @include animation(.5s, 1s, progress, ease-out, forwards, 1);
+  &.active {
+    @include animation(.5s, 1s, progress, ease-out, forwards, 1);
+  }
 }
 
 .percentage {

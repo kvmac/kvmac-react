@@ -11,7 +11,8 @@
     "react-eva-icons": "^0.0.7",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "^2.1.8"
+    "react-scripts": "^2.1.8",
+    "react-visibility-sensor": "^5.0.2"
   },
   "devDependencies": {
     "@babel/plugin-transform-object-assign": "^7.2.0",

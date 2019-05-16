@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,400");
+@import url("https://fonts.googleapis.com/css?family=Rubik:700,900");
+@import url("https://fonts.googleapis.com/css?family=Karla");
+@-webkit-keyframes load {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1;
+  }
+}
+@keyframes load {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1;
+  }
+}
+
+.projects {
+  position: relative;
+  background-color: transparent;
+  float: right;
+  width: 82%;
+  height: 100%;
+  padding: 5% 0 5% 0;
+  color: white;
+  text-decoration: none;
+}
+
+.projects a {
+  text-decoration: none;
+}
+
+.projects .project {
+  margin-top: 20px;
+}
+
+.projects .project .project-header a {
+  font-family: 'Asap', 'Sans Serif';
+  color: white;
+  font-weight: bold;
+  font-size: 3ch;
+}
+
+.projects .project .links {
+  display: block;
+  position: relative;
+  width: 30%;
+  float: right;
+}
+
+.projects .project .links a {
+  font-family: 'Asap', 'Sans Serif';
+  color: white;
+  font-weight: normal;
+  margin: 0 10% 0 10%;
+}
+
+.projects .project .links a i {
+  display: inline;
+}
+
+@media (min-width: 1200px) {
+  .projects {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=projects.css.map */

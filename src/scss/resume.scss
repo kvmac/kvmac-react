@@ -42,33 +42,62 @@
   height: 100%;
   text-align: center;
   overflow-y: auto;
+  .title {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 3ch;
+    color: white;
+    @include asap-bold();
+  }
 
   .tech-skills {
     position: relative;
     width: 90%;
-    height: 100%;
     left: 50%;
     right: 50%;
     transform: translateX(-50%);
 
     .card {
       position: relative;
-      height: 10%;
+      height: 30px;
       .circle-container {
-        width: 50%;
+        float: right;
+        position: relative;
         top: 50%;
         transform: translateY(-50%);
         right: 0;
       }
+
+      i {
+        font-size: 3ch;
+        color: white;
+      }
+      #react {
+        i {
+        }
+      }
+      // #golang {
+      // }
+      // #c-sharp {
+      // }
+      // #python {
+      // }
+      // #node {
+      // }
+      // #angular {
+      // }
+
+      button {
+        width: 25%;
+        height: 40%;
+      }
     }
   }
 
-  .objective {
-    width: 100%;
-    height: 100vh;
-  }
   .experience {
+    position: relative;
     width: 100%;
+    text-align: center;
 
     .card {
       &.sq {
@@ -79,6 +108,7 @@
       }
 
       .title {
+        text-align: center;
         a {
           @include asap-bold();
           color: white;
@@ -89,6 +119,7 @@
     }
   }
   .education {
+    position: relative;
     width: 100%;
     height: 100vh;
   }

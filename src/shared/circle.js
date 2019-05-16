@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/circle.css';
 
-export const Circle = ({ color, percent }) => {
+export const Circle = ({ color, percent = 0, isActive = false }) => {
 
     return (
         <div className="circle-container">
@@ -18,7 +18,7 @@ export const Circle = ({ color, percent }) => {
                     a 15.9155 15.9155 0 0 1 0 31.831
                     a 15.9155 15.9155 0 0 1 0 -31.831"
                     />
-                <path className="circle"
+                <path className={`circle ${isActive ? "active" : ""}`}
                     filter="url(#glow)"
                     strokeDasharray={`${percent}, 100`}
                     d="M18 2.0845

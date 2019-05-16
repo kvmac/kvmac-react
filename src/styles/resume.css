@@ -92,11 +92,19 @@
   overflow-y: auto;
 }
 
+.resume .title {
+  text-align: center;
+  margin-top: 10%;
+  font-size: 3ch;
+  color: white;
+  font-family: 'Asap', 'Sans Serif';
+  color: white;
+  font-weight: bold;
+}
+
 .resume .tech-skills {
   position: relative;
   width: 90%;
-  height: 100%;
-  margin-top: 20px;
   left: 50%;
   right: 50%;
   -webkit-transform: translateX(-50%);
@@ -105,24 +113,36 @@
 
 .resume .tech-skills .card {
   position: relative;
-  height: 10%;
+  height: 30px;
 }
 
 .resume .tech-skills .card .circle-container {
-  width: 50%;
+  float: right;
+  position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 0;
 }
 
-.resume .objective {
-  width: 100%;
-  height: 100vh;
+.resume .tech-skills .card i {
+  font-size: 3ch;
+  color: white;
+}
+
+.resume .tech-skills .card button {
+  width: 25%;
+  height: 40%;
 }
 
 .resume .experience {
+  position: relative;
   width: 100%;
+  text-align: center;
+}
+
+.resume .experience .card .title {
+  text-align: center;
 }
 
 .resume .experience .card .title a {
@@ -135,27 +155,9 @@
 }
 
 .resume .education {
+  position: relative;
   width: 100%;
   height: 100vh;
-}
-
-.resume .divider {
-  width: 100%;
-  height: 10px;
-}
-
-.resume .divider .top {
-  top: 0;
-  height: 50%;
-  width: 100%;
-  background-color: black;
-}
-
-.resume .divider .bottom {
-  bottom: 0;
-  height: 50%;
-  width: 100%;
-  background-color: white;
 }
 
 .resume button {
@@ -195,30 +197,6 @@
   box-shadow: 0px 0px 20px 1x #26e9ff;
   -webkit-box-shadow: 0px 0px 20px 1px #26e9ff;
   -moz-box-shadow: 0px 0px 20px 1px #26e9ff;
-}
-
-@-webkit-keyframes glow {
-  0% {
-    background: #F0EFED;
-  }
-  25% {
-    background: #D6D4D5;
-  }
-  100% {
-    background: #F0EFED;
-  }
-}
-
-@keyframes glow {
-  0% {
-    background: #F0EFED;
-  }
-  25% {
-    background: #D6D4D5;
-  }
-  100% {
-    background: #F0EFED;
-  }
 }
 
 @media (min-width: 700px) {

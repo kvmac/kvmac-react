@@ -321,7 +321,7 @@
 
 .sidenavbar .contents.visible .profile-info {
   position: relative;
-  margin-top: 2%;
+  margin: 3% 0 3% 0;
   height: 10%;
   opacity: 0;
   -webkit-animation-delay: 0.15s;
@@ -351,16 +351,18 @@
 }
 
 .sidenavbar .contents.visible .nav {
-  top: 5%;
+  top: 3%;
+  bottom: 2%;
+  height: 30%;
 }
 
 .sidenavbar .contents.visible .nav .link-wrapper {
-  height: 40px;
+  height: 20%;
 }
 
 .sidenavbar .contents.visible .nav .link-wrapper a i {
   padding-right: 3ch;
-  padding-left: 8ch;
+  padding-left: 7ch;
 }
 
 .sidenavbar .contents.visible .nav .link-wrapper a label {
@@ -393,22 +395,26 @@
 }
 
 .sidenavbar .contents.visible .social {
+  position: relative;
   background-color: transparent;
-  position: absolute;
   width: 95%;
   height: 10%;
+  left: 50%;
+  right: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
   bottom: 0;
-  margin: 10px;
+  margin: 10% 0 10% 0;
   text-align: center;
 }
 
 .sidenavbar .contents.visible .social span {
   position: absolute;
   width: 90%;
-  height: 2px;
+  height: 3%;
+  border-radius: 10em;
   background-color: white;
   top: 0;
-  border-radius: 10em;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -577,7 +583,7 @@
 
 .sidenavbar .contents .profile-header .photo {
   position: relative;
-  width: 80%;
+  width: 75%;
   border-radius: 50%;
   left: 50%;
   right: 50%;
@@ -604,8 +610,7 @@
 .sidenavbar .contents .nav .link-wrapper {
   overflow: hidden;
   width: 100%;
-  height: 35px;
-  border-top: 1px solid white;
+  height: 20%;
 }
 
 .sidenavbar .contents .nav .link-wrapper a {
@@ -613,6 +618,10 @@
   width: 100%;
   height: 100%;
   text-decoration: none;
+}
+
+.sidenavbar .contents .nav .link-wrapper a i {
+  opacity: 1;
 }
 
 .sidenavbar .contents .nav .link-wrapper a label {

@@ -1,14 +1,23 @@
 import React from 'react';
 import { Circle, Divider } from '../shared';
 import '../styles/resume.css';
+import VisibilitySensor from 'react-visibility-sensor';
 import Border from '../svg/border.svg';
 import KodeeResume from '../pdf/McIntosh-Kodee.pdf';
 
 export const Resume = () => {
+  const [ activeCircles, activateCircle ] = React.useState({});
+  
   const handleResume = () => {
     console.log('resume downloaded');
     return KodeeResume;
   }
+
+  const handleCircle = (id, visibility) => {
+    console.log('handle circle:   ', {[id]: visibility});
+    activateCircle({ ...activeCircles, [id]: visibility });
+  }
+  console.log('active:   ', activeCircles, "    ", activeCircles["React"], activeCircles["Golang"], activeCircles["C#"], activeCircles["Python"], activateCircle["Node"], activeCircles["Angular"]);
 
   let w = window.innerWidth;
   let h = window.innerHeight;
@@ -31,27 +40,53 @@ export const Resume = () => {
       </div> */}
       <div className="resume">
         {/* <div className="objective">Objective</div> */}
-          <div className="tech-skills card">Tech-Skills
+          <div className="tech-skills">
+              <div className="title">Tech-Skills</div>
               <div className="card">
-                <Circle percent={"75"} color={"blue"} />
+                {/* <i className="devicons devicons-react"></i>
+                <button id="react" onClick={handleCircle}></button> */}
+                <VisibilitySensor onChange={(e)=> handleCircle(e, "react")}>
+                  <Circle percent={75} color={"blue"} isActive={activeCircles["react"]} />
+                </VisibilitySensor>
               </div>
               <div className="card">
-                <Circle percent={"50"} color={"purple"} />
+                {/* <i className="devicons devicons-go"></i> */}
+                {/* <button id="golang" onClick={handleCircle}></button> */}
+                <VisibilitySensor onChange={(e)=> handleCircle(e, "golang")}>
+                  <Circle percent={50} color={"purple"} isActive={activeCircles["golang"]} />
+                </VisibilitySensor>
               </div>
               <div className="card">
-                <Circle percent={"25"} color={"red"} />
+                {/* <i className="devicons devicons-dotnet"></i>
+                <button id="c-sharp" onClick={handleCircle}></button> */}
+                <VisibilitySensor onChange={(e)=> handleCircle(e, "c-sharp")}>
+                  <Circle percent={25} color={"red"} isActive={activeCircles["c-sharp"]} />
+                </VisibilitySensor>
               </div>
               <div className="card">
-                <Circle percent={"90"} color={"orange"} />
+                {/* <i className="devicons devicons-python"></i>
+                <button id="python" onClick={handleCircle}></button> */}
+                <VisibilitySensor onChange={(e)=> handleCircle(e, "python")}>
+                  <Circle percent={90} color={"orange"} isActive={activeCircles["python"]} />
+                </VisibilitySensor>
               </div>
               <div className="card">
-                <Circle percent={"60"} color={"green"} />
+                {/* <i className="devicons devicons-nodejs_small"></i>
+                <button id="node" onClick={handleCircle}></button> */}
+                <VisibilitySensor onChange={(e)=> handleCircle(e, "node")}>
+                  <Circle percent={60} color={"green"} isActive={activeCircles["node"]} />
+                </VisibilitySensor>
               </div>
               <div className="card">
-                <Circle percent={"40"} color={"green"} />
+                {/* <i className="devicons devicons-angular"></i>
+                <button id="angular" onClick={handleCircle}></button> */}
+                <VisibilitySensor onChange={(e)=> handleCircle(e, "angular")}>
+                  <Circle percent={40} color={"green"} isActive={activeCircles["angular"]} />
+                </VisibilitySensor>
               </div>
             </div>
-          <div className="experience card">Experience
+          <div className="experience">
+            <div className="title">Experience</div>
             <div className="sq card">
               <div className="title">
                 <a href="https://www.stratospherequality.com">Stratosphere Quality</a>
@@ -71,7 +106,9 @@ export const Resume = () => {
               <div className=""></div>
             </div>
           </div>
-          <div className="education">Education</div>
+          <div className="education">
+          <div className="title">Education</div>
+          </div>
           <div className="download-btn">
             <button onClick={handleResume}>Download Resume!</button>
         </div>

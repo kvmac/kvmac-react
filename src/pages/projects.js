@@ -62,11 +62,7 @@ const Project = ({ name, url, github, tech, description, cardNumber }) => {
           />
         </a>
         <a href={"https://www.github.com/kvmac/" + github} target="_blank" rel="noopener noreferrer">
-          <Icon
-            name="home-outline"
-            size="medium"
-            fill="white"
-          />
+          <i className="devicons devicons-code" />
         </a>
       </div>
     </div>
