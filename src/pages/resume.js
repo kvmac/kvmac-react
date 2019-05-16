@@ -13,7 +13,7 @@ export const Resume = () => {
     return KodeeResume;
   }
 
-  const handleCircle = (id, visibility) => {
+  const handleCircle = (visibility, id) => {
     console.log('handle circle:   ', {[id]: visibility});
     activateCircle({ ...activeCircles, [id]: visibility });
   }
@@ -45,42 +45,42 @@ export const Resume = () => {
               <div className="card">
                 {/* <i className="devicons devicons-react"></i>
                 <button id="react" onClick={handleCircle}></button> */}
-                <VisibilitySensor onChange={(e)=> handleCircle(e, "react")}>
+                <VisibilitySensor onChange={(e) => handleCircle(e, "react")}>
                   <Circle percent={75} color={"blue"} isActive={activeCircles["react"]} />
                 </VisibilitySensor>
               </div>
               <div className="card">
                 {/* <i className="devicons devicons-go"></i> */}
                 {/* <button id="golang" onClick={handleCircle}></button> */}
-                <VisibilitySensor onChange={(e)=> handleCircle(e, "golang")}>
+                <VisibilitySensor onChange={(e) => handleCircle(e, "golang")}>
                   <Circle percent={50} color={"purple"} isActive={activeCircles["golang"]} />
                 </VisibilitySensor>
               </div>
               <div className="card">
                 {/* <i className="devicons devicons-dotnet"></i>
                 <button id="c-sharp" onClick={handleCircle}></button> */}
-                <VisibilitySensor onChange={(e)=> handleCircle(e, "c-sharp")}>
+                <VisibilitySensor onChange={(e) => handleCircle(e, "c-sharp")}>
                   <Circle percent={25} color={"red"} isActive={activeCircles["c-sharp"]} />
                 </VisibilitySensor>
               </div>
               <div className="card">
                 {/* <i className="devicons devicons-python"></i>
                 <button id="python" onClick={handleCircle}></button> */}
-                <VisibilitySensor onChange={(e)=> handleCircle(e, "python")}>
+                <VisibilitySensor onChange={(e) => handleCircle(e, "python")}>
                   <Circle percent={90} color={"orange"} isActive={activeCircles["python"]} />
                 </VisibilitySensor>
               </div>
               <div className="card">
                 {/* <i className="devicons devicons-nodejs_small"></i>
                 <button id="node" onClick={handleCircle}></button> */}
-                <VisibilitySensor onChange={(e)=> handleCircle(e, "node")}>
+                <VisibilitySensor onChange={(e) => handleCircle(e, "node")}>
                   <Circle percent={60} color={"green"} isActive={activeCircles["node"]} />
                 </VisibilitySensor>
               </div>
               <div className="card">
                 {/* <i className="devicons devicons-angular"></i>
                 <button id="angular" onClick={handleCircle}></button> */}
-                <VisibilitySensor onChange={(e)=> handleCircle(e, "angular")}>
+                <VisibilitySensor onChange={(e) => handleCircle(e, "angular")}>
                   <Circle percent={40} color={"green"} isActive={activeCircles["angular"]} />
                 </VisibilitySensor>
               </div>

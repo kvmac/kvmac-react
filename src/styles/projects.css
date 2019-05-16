@@ -37,7 +37,7 @@
   margin-top: 20px;
 }
 
-.projects .project .project-header a {
+.projects .project .project-title a {
   font-family: 'Asap', 'Sans Serif';
   color: white;
   font-weight: bold;
@@ -64,7 +64,51 @@
 
 @media (min-width: 1200px) {
   .projects {
+    position: relative;
+    background-color: transparent;
     width: 100%;
+    float: none;
+    padding: 2% 0 2% 0;
+    color: white;
+    text-decoration: none;
+  }
+  .projects a {
+    text-decoration: none;
+  }
+  .projects .project {
+    position: relative;
+    height: 15%;
+    margin-top: 20px;
+    left: 50%;
+    right: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .projects .project.card {
+    position: relative;
+    padding: 2% 2% 2% 2%;
+    margin: 2% 5% 2% 5%;
+  }
+  .projects .project .project-header a {
+    font-family: 'Asap', 'Sans Serif';
+    color: white;
+    font-weight: bold;
+    font-size: 3ch;
+  }
+  .projects .project .links {
+    display: block;
+    position: relative;
+    width: 30%;
+    float: right;
+  }
+  .projects .project .links a {
+    font-family: 'Asap', 'Sans Serif';
+    color: white;
+    font-weight: normal;
+    margin: 0 10% 0 10%;
+  }
+  .projects .project .links a i {
+    display: inline;
   }
 }
 /*# sourceMappingURL=projects.css.map */

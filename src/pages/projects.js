@@ -13,7 +13,8 @@ export class Projects extends React.Component {
   tech = {
     react: { label: 'ReactJS', site: 'reactjs.org' },
     golang: { label: 'Golang', site: 'golang.org' },
-    cSharp: { label: 'C#', site: 'microsoft.com/dotnet' }
+    cSharp: { label: 'C#', site: 'microsoft.com/dotnet' },
+    angular: { label: 'Angular', site: 'angularjs.org'}
   };
 
   render() {
@@ -36,6 +37,14 @@ export class Projects extends React.Component {
           tech={[this.tech['react']]}
           description="An app that lets you search tweets by hashtag"
         />
+        <Project
+          cardNumber="3"
+          name="Grocery List"
+          url="https://gl-app.kvmac.com"
+          github="gl-web-app"
+          tech={[this.tech['angular']]}
+          description="A crud app to keep track of your groceries"
+        />
       </div>
     );
   }
@@ -44,7 +53,7 @@ export class Projects extends React.Component {
 const Project = ({ name, url, github, tech, description, cardNumber }) => {
   return (
     <div className={`project card ${cardNumber}`}>
-      <div className="project-header">
+      <div className="project-title">
         <a href={url} target="_blank" rel="noopener noreferrer">{name}</a>
       </div>
       <div className="project-tech">
