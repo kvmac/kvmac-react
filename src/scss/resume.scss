@@ -47,7 +47,6 @@
     position: relative;
     width: 90%;
     height: 100%;
-    margin-top: 20px;
     left: 50%;
     right: 50%;
     transform: translateX(-50%);
@@ -93,22 +92,6 @@
     width: 100%;
     height: 100vh;
   }
-  .divider {
-    width: 100%;
-    height: 10px;
-    .top {
-      top: 0;
-      height: 50%;
-      width: 100%;
-      background-color: black;
-    }
-    .bottom {
-      bottom: 0;
-      height: 50%;
-      width: 100%;
-      background-color: white;
-    }
-  }
 
   button {
     @include animation(0, 2s, box-glow, alternate, none, infinite);
@@ -120,18 +103,6 @@
     font-weight: normal;
     background-color: transparent;
     @include input-box-shadow();
-  }
-
-  @keyframes glow {
-    0% {
-      background: $light-primary;
-    }
-    25% {
-      background: $light-secondary;
-    }
-    100% {
-      background: $light-primary;
-    }
   }
 }
 

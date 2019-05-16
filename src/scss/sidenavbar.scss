@@ -103,22 +103,24 @@
       }
       .profile-info {
         position: relative;
-        margin-top: 2%;
+        margin: 3% 0 3% 0;
         height: 10%;
         opacity: 0;
 
         @include animation(.15s, 1.5s, reveal-content, linear, forwards, 1);
       }
       .nav {
-        top: 5%;
+        top: 3%;
+        bottom: 2%;
+        height: 30%;
 
         .link-wrapper {
-          height: 40px;
+          height: 20%;
 
           a {
             i {
               padding-right: 3ch;
-              padding-left: 8ch;
+              padding-left: 7ch;
             }
 
             label {
@@ -131,22 +133,25 @@
       }
 
       .social {
+        position: relative;
         background-color: transparent;
-        position: absolute;
         width: 95%;
         height: 10%;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%);
         bottom: 0;
-        margin: 10px;
+        margin: 10% 0 10% 0;
         text-align: center;
 
 
         span {
           position: absolute;
           width: 90%;
-          height: 2px;
+          height: 3%;
+          border-radius: 10em;
           background-color: white;
           top: 0;
-          border-radius: 10em;
           @include center();
         }
 
@@ -244,7 +249,7 @@
 
       .photo {
         position: relative;
-        width: 80%;
+        width: 75%;
         border-radius: 50%;
         left: 50%;
         right: 50%;
@@ -279,6 +284,7 @@
           text-decoration: none;
 
           i {
+            opacity: 1;
           }
 
           label {

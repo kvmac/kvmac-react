@@ -44,19 +44,22 @@
 }
 
 @media (min-width: 1200px) {
-.card {
-  position: relative;
-  background-color: $dark-secondary;
-  margin: 20% 5% 5% 5%;
-  border-radius: .5ch;
-
-  input {
+  .card {
     position: relative;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-    display: block;
-  }
-}
+    background-color: $dark-secondary;
+    margin: 20% 5% 5% 5%;
+    border-radius: .5ch;
 
+    box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px 0px 25px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px 0px 25px 10px rgba(0, 0, 0, 0.75);
+
+    input {
+      position: relative;
+      left: 50%;
+      right: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+    }
+  }
 }

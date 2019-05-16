@@ -8,25 +8,43 @@
   float: right;
   width: 82%;
   height: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 5% 0 5% 0;
+  color: white;
+  text-decoration: none;
+  a {
+    text-decoration: none;
+  }
+
   .project {
-    padding: 10% 10% 10% 10%;
     margin-top: 20px;
-    color: white;
+
 
     .project-header {
       a {
         @include asap-bold();
         font-size: 3ch;
       }
-      // font-family: 'Asap', sans-serif;
-      // font-weight: bold;
     }
-    a {
-      color: white;
-      text-decoration: none;
-      @include asap-reg();
+    .project-description {
+
+    }
+    .project-tech {
+      a {
+      }
+    }
+
+    .links {
+      display: block;
+      position: relative;
+      width: 30%;
+      float: right;
+      a {
+        @include asap-reg();
+        margin: 0 10% 0 10%;
+        i {
+          display: inline;
+        }
+      }
     }
   }
 }

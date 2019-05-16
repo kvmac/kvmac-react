@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from 'react-eva-icons';
 import '../styles/projects.css';
 
 export class Projects extends React.Component {
@@ -22,7 +23,7 @@ export class Projects extends React.Component {
         <Project
           cardNumber="1"
           name="Pupper-ML"
-          url="https://www.pupper.kvmac.com"
+          url="https://pupper.kvmac.com"
           github="pupper-ml-web"
           tech={[this.tech['react'], this.tech['golang']]}
           description="An app that identifies whether you uploaded a picture of a dog or not"
@@ -30,7 +31,7 @@ export class Projects extends React.Component {
         <Project
           cardNumber="2"
           name="Twitter Search"
-          url="https://www.ts-app.kvmac.com"
+          url="https://ts-app.kvmac.com"
           github="TwitterSearchApp"
           tech={[this.tech['react']]}
           description="An app that lets you search tweets by hashtag"
@@ -50,11 +51,23 @@ const Project = ({ name, url, github, tech, description, cardNumber }) => {
         {tech.forEach(el => <a href={el.site} target="_blank" rel="noopener noreferrer"><label>{el.label}</label></a>)}
       </div>
       <div className="project-description">
-      <label>{description}</label>
+        <label>{description}</label>
       </div>
-      <div>
-        {/* github icon */}
-        <a href={"https://www.github.com/kvmac/" + github} target="_blank" rel="noopener noreferrer"><label>Code</label></a>
+      <div className="links">
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          <Icon
+            name="browser-outline"
+            size="medium"
+            fill="white"
+          />
+        </a>
+        <a href={"https://www.github.com/kvmac/" + github} target="_blank" rel="noopener noreferrer">
+          <Icon
+            name="home-outline"
+            size="medium"
+            fill="white"
+          />
+        </a>
       </div>
     </div>
   );
