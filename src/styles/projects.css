@@ -34,7 +34,28 @@
 }
 
 .projects .project {
-  margin-top: 20px;
+  position: relative;
+}
+
+.projects .project.card {
+  margin: 5% 5% 5% 5%;
+}
+
+.projects .project.card .links {
+  position: relative;
+  display: block;
+  width: 100%;
+  text-align: right;
+  margin-top: 5%;
+}
+
+.projects .project.card .links a {
+  position: relative;
+  display: inline;
+  margin: 0 6% 0 6%;
+  font-size: 3ch;
+  text-decoration: none;
+  color: white;
 }
 
 .projects .project .project-title a {
@@ -42,24 +63,6 @@
   color: white;
   font-weight: bold;
   font-size: 3ch;
-}
-
-.projects .project .links {
-  display: block;
-  position: relative;
-  width: 30%;
-  float: right;
-}
-
-.projects .project .links a {
-  font-family: 'Asap', 'Sans Serif';
-  color: white;
-  font-weight: normal;
-  margin: 0 10% 0 10%;
-}
-
-.projects .project .links a i {
-  display: inline;
 }
 
 @media (min-width: 1200px) {
@@ -77,17 +80,25 @@
   }
   .projects .project {
     position: relative;
-    height: 15%;
-    margin-top: 20px;
-    left: 50%;
-    right: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
   }
   .projects .project.card {
     position: relative;
     padding: 2% 2% 2% 2%;
-    margin: 2% 5% 2% 5%;
+    margin: 2% 10% 2% 10%;
+  }
+  .projects .project.card .links {
+    position: relative;
+    display: block;
+    text-align: right;
+    margin-top: 0;
+  }
+  .projects .project.card .links a {
+    position: relative;
+    display: inline;
+    margin: 0 2% 0 2%;
+    font-size: 3ch;
+    text-decoration: none;
+    color: white;
   }
   .projects .project .project-header a {
     font-family: 'Asap', 'Sans Serif';
@@ -99,7 +110,7 @@
     display: block;
     position: relative;
     width: 30%;
-    float: right;
+    right: 0;
   }
   .projects .project .links a {
     font-family: 'Asap', 'Sans Serif';

@@ -89,7 +89,6 @@
   width: 82%;
   height: 100%;
   text-align: center;
-  overflow-y: auto;
 }
 
 .resume .title {
@@ -203,6 +202,7 @@
 @media (min-width: 700px) {
   .resume {
     width: 100%;
+    height: 100%;
     float: none;
   }
   .resume .tech-skills {

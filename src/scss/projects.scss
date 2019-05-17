@@ -16,8 +16,28 @@
   }
 
   .project {
-    margin-top: 20px;
+    position: relative;
 
+    &.card {
+      margin: 5% 5% 5% 5%;
+
+      .links {
+        position: relative;
+        display: block;
+        width: 100%;
+        text-align: right;
+        margin-top: 5%;
+
+        a {
+          position: relative;
+          display: inline;
+          margin: 0 6% 0 6%;
+          font-size: 3ch;
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
 
     .project-title {
       a {
@@ -33,19 +53,6 @@
       }
     }
 
-    .links {
-      display: block;
-      position: relative;
-      width: 30%;
-      float: right;
-      a {
-        @include asap-reg();
-        margin: 0 10% 0 10%;
-        i {
-          display: inline;
-        }
-      }
-    }
   }
 }
 
@@ -64,18 +71,26 @@
 
   .project {
     position: relative;
-    height: 15%;
-    margin-top: 20px;
-    left: 50%;
-    right: 50%;
-    transform: translateX(-50%);
 
     &.card {
       position: relative;
       padding: 2% 2% 2% 2%;
-      margin: 2% 5% 2% 5%;
-      a {
+      margin: 2% 10% 2% 10%;
 
+      .links {
+        position: relative;
+        display: block;
+        text-align: right;
+        margin-top: 0;
+
+        a {
+          position: relative;
+          display: inline;
+          margin: 0 2% 0 2%;
+          font-size: 3ch;
+          text-decoration: none;
+          color: white;
+        }
       }
     }
 
@@ -98,7 +113,7 @@
       display: block;
       position: relative;
       width: 30%;
-      float: right;
+      right: 0;
       a {
         @include asap-reg();
         margin: 0 10% 0 10%;

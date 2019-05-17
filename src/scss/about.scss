@@ -3,49 +3,76 @@
 @import 'mixins';
 
 
+
 .about {
+  position: relative;
+  background-color: transparent;
+  width: 100%;
+  float: none;
+  padding: 2% 0 2% 0;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  align-content: center;
+  a {
+    text-decoration: none;
+  }
 
-  // background-color: $dark-primary;
-    // position: absolute;
-    z-index: 3;
-    height: 200%;
-    width: 82%;
-    left: 50%;
-    right: 50%;
-    transform: translateY(-50%);
+  .about-title {
+    position: relative;
+    @include asap-bold();
+    color: white;
+    font-size: 3ch;
+  }
+  .content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    .page-header {
-        width: 90%;
-    }
-    .item-header {
-        align-self: flex-end;
-        background-color: $blue3;
-        height: 60px;
-        width: 80%;
-        border-radius: 30px 0px 0px 30px;
+    flex-flow: row nowrap;
 
-        -webkit-mask-image: linear-gradient(to left, transparent 50%, $blue3 75%);
-        mask-image: linear-gradient(to left, transparent 50%, $blue3 75%);
-    }
+    .card {
+      position: relative;
+      padding: 2% 2% 2% 2%;
 
-    @include keyframes(pop) {
-        0% {
-        }
-        50% {
-        transform: translateY(+30px);
-        }
-        100% {
-        transform: translateY(-30px);
-        }
-    }
-}
+      &.profile-header {
+        position: relative;
+        width: 40%;
+        margin: 2% 1% 2% 2%;
 
-@media (min-width: 1200px) {
-  .home {
-    width: 100%;
+        .photo {
+          border-radius: 50%;
+          width: 60%;
+          padding: 1% 1% 1% 1%;
+        }
+        .profile-info {
+          position: relative;
+          width: 100%;
+          text-align: center;
+          margin: 1% 1% 1% 1%;
+        }
+        .social {
+          position: relative;
+          margin: 10% 0 5% 0;
+          left: 50%;
+          right: 50%;
+          transform: translate(-50%, -50%);
+
+          a {
+            margin: 0 2% 0 2%;
+          }
+        }
+      }
+
+      &.bio {
+        align-content: center;
+        width: 60%;
+        margin: 2% 2% 2% 1%;
+
+        .bio-title {
+          @include asap-bold();
+          color: white;
+          font-size: 2ch;
+        }
+
+      }
+    }
   }
 }
-

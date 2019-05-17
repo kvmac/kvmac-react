@@ -3,8 +3,6 @@ import '../styles/sidenavbar.css';
 import { Link } from 'react-router-dom';
 import headshot from '../img/headshot.png';
 import Icon from 'react-eva-icons';
-import github from '../svg/github.svg';
-import linkedin from '../svg/linkedin.svg';
 import { GlowHomeIcon } from '../svg';
 import { HomeElement, PulseElement, CodeElement, FileElement, MessageElement, EmailElement } from '../shared';
 

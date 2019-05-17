@@ -66,12 +66,16 @@ const Project = ({ name, url, github, tech, description, cardNumber }) => {
         <a href={url} target="_blank" rel="noopener noreferrer">
           <Icon
             name="browser-outline"
-            size="medium"
+            size="large"
             fill="white"
           />
         </a>
         <a href={"https://www.github.com/kvmac/" + github} target="_blank" rel="noopener noreferrer">
-          <i className="devicons devicons-code" />
+          <Icon
+            name="archive-outline"
+            size="large"
+            fill="white"
+          />
         </a>
       </div>
     </div>

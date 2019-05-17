@@ -103,11 +103,14 @@
       }
       .profile-info {
         position: relative;
-        margin: 3% 0 3% 0;
-        height: 10%;
+        margin: 5% 0 5% 0;
         opacity: 0;
 
         @include animation(.15s, 1.5s, reveal-content, linear, forwards, 1);
+        
+        label {
+          margin: 2% 0 2% 0;
+        }
       }
       .nav {
         top: 3%;

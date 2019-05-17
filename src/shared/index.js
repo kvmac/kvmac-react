@@ -1,5 +1,6 @@
 export { Circle } from './circle';
 export { Divider } from './divider';
+export { Tooltip } from './tooltip';
 
 export { HomeElement } from './home-element';
 export { PulseElement } from './pulse-element';
