@@ -31,17 +31,19 @@
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  margin: 20% 5% 20% 5%;
   margin-top: 0;
 }
 
-.contact .card .form {
+.contact .card > form {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.contact .card .form .title {
+.contact .card > form > .title {
   position: relative;
+  text-align: center;
   font-size: 3ch;
   left: 0;
   font-family: 'Asap', 'Sans Serif';
@@ -49,29 +51,29 @@
   font-weight: bold;
 }
 
-.contact .card .form input {
+.contact .card > form > input {
   position: relative;
   left: 0;
   border: 2px solid white;
   border-radius: .5ch;
   padding: 3%;
   background: transparent;
-  margin: 10% 0 0 0;
+  margin: 5% 0 5% 0;
   font-family: 'Asap', 'Sans Serif';
   color: white;
   font-weight: normal;
   color: white;
 }
 
-.contact .card .form input.email {
+.contact .card > form > input.email {
   width: 80%;
 }
 
-.contact .card .form input.subject {
+.contact .card > form > input.subject {
   width: 50%;
 }
 
-.contact .card .form input:focus {
+.contact .card > form > input:focus {
   -webkit-animation-delay: 0;
   -webkit-animation-duration: 2s;
   -webkit-animation-name: box-glow;
@@ -96,20 +98,20 @@
   animation-fill-mode: none;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  box-shadow: 0px 0px 20px 1x #26e9ff;
-  -webkit-box-shadow: 0px 0px 20px 1px #26e9ff;
-  -moz-box-shadow: 0px 0px 20px 1px #26e9ff;
+  box-shadow: 0px 0px 20px 0px #26e9ff;
+  -webkit-box-shadow: 0px 0px 20px 0px #26e9ff;
+  -moz-box-shadow: 0px 0px 20px 0px #26e9ff;
   border: 2px solid #26e9ff;
 }
 
-.contact .card .form textarea {
+.contact .card > form > textarea {
   position: relative;
-  min-height: 100px;
-  height: 40%;
+  min-height: 200px;
+  height: 50%;
   border: 2px solid white;
   border-radius: .5ch;
   padding: 3%;
-  margin: 10% 0 0 0;
+  margin: 5% 0 10% 0;
   background: transparent;
   font-family: 'Asap', 'Sans Serif';
   color: white;
@@ -119,7 +121,7 @@
   resize: none;
 }
 
-.contact .card .form textarea:focus {
+.contact .card > form > textarea:focus {
   -webkit-animation-delay: 0;
   -webkit-animation-duration: 2s;
   -webkit-animation-name: box-glow;
@@ -144,58 +146,58 @@
   animation-fill-mode: none;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  box-shadow: 0px 0px 20px 1x #26e9ff;
-  -webkit-box-shadow: 0px 0px 20px 1px #26e9ff;
-  -moz-box-shadow: 0px 0px 20px 1px #26e9ff;
+  box-shadow: 0px 0px 20px 0px #26e9ff;
+  -webkit-box-shadow: 0px 0px 20px 0px #26e9ff;
+  -moz-box-shadow: 0px 0px 20px 0px #26e9ff;
   border: 2px solid #26e9ff;
 }
 
-.contact .card .form button {
+.contact .card > form > button {
   position: relative;
   background-color: #26e9ff;
   width: 30%;
   height: 5%;
-  padding: 3%;
-  margin: 20% 0 0 0;
+  margin: 10% 0 0 0;
+  left: 50%;
   border-radius: .5ch;
   border: 2px solid transparent;
   -webkit-animation-delay: 0;
-  -webkit-animation-duration: 2s;
+  -webkit-animation-duration: 1s;
   -webkit-animation-name: box-glow;
   -webkit-animation-fill-mode: none;
   -webkit-animation-direction: alternate;
   -webkit-animation-iteration-count: infinite;
   -moz-animation-delay: 0;
-  -moz-animation-duration: 2s;
+  -moz-animation-duration: 1s;
   -moz-animation-name: box-glow;
   -moz-animation-fill-mode: none;
   -moz-animation-direction: alternate;
   -moz-animation-iteration-count: infinite;
   -ms-animation-delay: 0;
-  -ms-animation-duration: 2s;
+  -ms-animation-duration: 1s;
   -ms-animation-name: box-glow;
   -ms-animation-fill-mode: none;
   -ms-animation-direction: alternate;
   -ms-animation-iteration-count: infinite;
   animation-delay: 0;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-name: box-glow;
   animation-fill-mode: none;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-  box-shadow: 0px 0px 20px 1x #26e9ff;
-  -webkit-box-shadow: 0px 0px 20px 1px #26e9ff;
-  -moz-box-shadow: 0px 0px 20px 1px #26e9ff;
+  box-shadow: 0px 0px 20px 0px #26e9ff;
+  -webkit-box-shadow: 0px 0px 20px 0px #26e9ff;
+  -moz-box-shadow: 0px 0px 20px 0px #26e9ff;
   font-family: 'Asap', 'Sans Serif';
   color: white;
   font-weight: bold;
 }
 
-.contact .card .form button.submit {
+.contact .card > form > button.submit {
   color: #2a2a2a;
 }
 
-.contact .card .form button:active {
+.contact .card > form > button:active {
   background-color: transparent;
   color: #26e9ff;
   box-shadow: unset;
@@ -205,27 +207,27 @@
 
 @-webkit-keyframes box-glow {
   0% {
-    box-shadow: 0px 0px 20px 1x #26e9ff;
-    -webkit-box-shadow: 0px 0px 20px 1px #26e9ff;
-    -moz-box-shadow: 0px 0px 20px 1px #26e9ff;
+    box-shadow: 0px 0px 20px 0px #26e9ff;
+    -webkit-box-shadow: 0px 0px 20px 0px #26e9ff;
+    -moz-box-shadow: 0px 0px 20px 0px #26e9ff;
   }
   100% {
-    box-shadow: 0px 0px 25px 1px #26e9ff;
-    -webkit-box-shadow: 0px 0px 25px 1px #26e9ff;
-    -moz-box-shadow: 0px 0px 25px 1px #26e9ff;
+    box-shadow: 0px 0px 25px 0px #26e9ff;
+    -webkit-box-shadow: 0px 0px 25px 0px #26e9ff;
+    -moz-box-shadow: 0px 0px 25px 0px #26e9ff;
   }
 }
 
 @keyframes box-glow {
   0% {
-    box-shadow: 0px 0px 20px 1x #26e9ff;
-    -webkit-box-shadow: 0px 0px 20px 1px #26e9ff;
-    -moz-box-shadow: 0px 0px 20px 1px #26e9ff;
+    box-shadow: 0px 0px 20px 0px #26e9ff;
+    -webkit-box-shadow: 0px 0px 20px 0px #26e9ff;
+    -moz-box-shadow: 0px 0px 20px 0px #26e9ff;
   }
   100% {
-    box-shadow: 0px 0px 25px 1px #26e9ff;
-    -webkit-box-shadow: 0px 0px 25px 1px #26e9ff;
-    -moz-box-shadow: 0px 0px 25px 1px #26e9ff;
+    box-shadow: 0px 0px 25px 0px #26e9ff;
+    -webkit-box-shadow: 0px 0px 25px 0px #26e9ff;
+    -moz-box-shadow: 0px 0px 25px 0px #26e9ff;
   }
 }
 /*# sourceMappingURL=contact.css.map */

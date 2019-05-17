@@ -22,10 +22,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start:lambda": "netlify-lambda serve /lambdas",
+    "start:lambda": "netlify-lambda serve src/lambdas",
     "build": "run-p build:**",
     "build:app": "react-scripts build",
-    "build:lambda": "netlify-lambda build /lambdas",
+    "build:lambda": "netlify-lambda build src/lambdas",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

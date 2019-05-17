@@ -4,10 +4,9 @@
 
 .card {
   display: block;
-  background-color: $dark-tertiary;
+  background-color: $dark-tertiary-transparent;
   padding: 10% 10% 10% 10%;
   border-radius: .5ch;
-  opacity: .8;
 
   @include box-shadow();
 

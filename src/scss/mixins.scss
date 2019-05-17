@@ -52,9 +52,9 @@
   -moz-box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
 }
 @mixin input-box-shadow() {
-  box-shadow: 0px 0px 20px 1x #26e9ff;
-  -webkit-box-shadow: 0px 0px 20px 1px #26e9ff;
-  -moz-box-shadow: 0px 0px 20px 1px #26e9ff;
+  box-shadow: 0px 0px 20px 0px #26e9ff;
+  -webkit-box-shadow: 0px 0px 20px 0px #26e9ff;
+  -moz-box-shadow: 0px 0px 20px 0px #26e9ff;
 }
 // @mixin scrollbar($width: 8px, $tab-color: white, $tab-hover-color: blue, $track-color: #f1f1f1) {
 //     ::-webkit-scrollbar {
