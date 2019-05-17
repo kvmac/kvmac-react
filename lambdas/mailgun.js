@@ -28,7 +28,9 @@ export async function handler(event, context, callback) {
     // NOT res.status >= 200 && res.status < 300
       return {
         statusCode: res.status,
-        body: statusText: res.statusText
+        body: {
+          statusText: res.statusText
+        }
       };
     }
 
