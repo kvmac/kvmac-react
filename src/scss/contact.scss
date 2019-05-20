@@ -23,6 +23,7 @@
   }
   .card>form>.title {
     position: relative;
+    margin-bottom: 5%;
     text-align: center;
     font-size: 3ch;
     left: 0;
@@ -63,6 +64,7 @@
     color: white;
     font-weight: normal;
     resize: none;
+    width: 80%;
   }
   .card>form>textarea:focus {
     @include animation(0, 2s, box-glow, alternate, none, infinite);
@@ -74,7 +76,7 @@
     background-color: #26e9ff;
     width: 30%;
     height: 5%;
-    margin: 10% 0 0 0;
+    margin: 5% 0 0 0;
     left: 50%;
     border-radius: .5ch;
     border: 2px solid transparent; 

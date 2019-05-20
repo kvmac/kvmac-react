@@ -4,9 +4,8 @@
 
 
 .circle-container {
-  position: absolute;
-  float: right;
-  width: 50%;
+  position: relative;
+  display: block;
 }
 
 .chart {
@@ -43,9 +42,7 @@
   fill: none;
   stroke-width: 2.8;
   stroke-linecap: round;
-  &.active {
-    @include animation(.5s, 1s, progress, ease-out, forwards, 1);
-  }
+  @include animation(.5s, 1s, progress, ease-out, forwards, 1);
 }
 
 .percentage {
