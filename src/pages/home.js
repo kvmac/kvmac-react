@@ -15,8 +15,8 @@ export class Home extends React.Component {
 
     return (
       <div className="home">
-        <label className="bold">Asap Bold</label>
-        <label className="regular">Asap Normal</label>
+        <label className="bold">This site is currently</label>
+        <label className="regular">under development</label>
       </div>
     );
   }
