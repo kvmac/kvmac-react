@@ -96,7 +96,7 @@ export class SideNavBar extends React.Component {
                     {!isOpen || <label>Resume</label>}
                 </Link>
               </div>
-              <div className="link-wrapper">
+              {/* <div className="link-wrapper">
                 <Link onClick={this.closeSidenav} to="/blog">️
                   <Icon
                     name="message-square-outline"
@@ -105,7 +105,7 @@ export class SideNavBar extends React.Component {
                     />
                     {!isOpen || <label>Blog</label>}
                 </Link>
-              </div>
+              </div> */}
               <div className="link-wrapper">
                 {/* <span onMouseOver={}> */}
                 {/* </span> */}

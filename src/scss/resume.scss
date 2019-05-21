@@ -40,7 +40,6 @@
   float: right;
   width: $page-width;
   height: 100%;
-  text-align: center;
   padding: 5% 0 5% 0;
 
   .title {
@@ -56,6 +55,7 @@
 
   .tech-skills {
     position: relative;
+    opacity: 0;
       // #golang {
       // }
       // #c-sharp {
@@ -68,23 +68,34 @@
       // }
 
   }
+  .tech-skills>.title {
+    margin-bottom: 10%;
+  }
   .tech-skills>.skill-container {
     display: flex;
     flex-flow: row nowrap;
     height: 15%;
     margin: 5% 0 5% 0;
+    &.card {
+      padding: 0 0 0 0;
+    }
   }
   .tech-skills>.skill-container>.skill {
     position: relative;
-    width: 50%;
-    label {
-      justify-self: center;
-
-    }
+    width: 40%;
+  }
+  .tech-skills>.skill-container>.skill>label {
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include asap-reg();
+    color: white;
   }
   .tech-skills>.skill-container>.circle-container {
     position: relative;
-    width: 50%;
+    width: 60%;
   }
 
   .tech-skills>button {
@@ -94,23 +105,50 @@
 
   .experience {
     position: relative;
+    opacity: 0;
 
-    .card {
-      &.sq {
-      }
-      &.availity {
-      }
-      &.egenuity {
-      }
-
+    &.card {
       .title {
         position: relative;
-        text-align: center;
-
+        @include asap-bold();
+        color: white;
+        font-size: 3ch;
+        text-decoration: none;
+        margin-bottom: 5%;
+      }
+      .sq {
+          position: relative;
         a {
+          margin: 5% 0 5% 0;
+          position: relative;
           @include asap-bold();
           color: white;
-          font-size: 3ch;
+          font-size: 2ch;
+          text-decoration: none;
+        }
+      }
+      .availity {
+          position: relative;
+        a {
+        margin: 5% 0 5% 0;
+          position: relative;
+          @include asap-bold();
+          color: white;
+          font-size: 2ch;
+          text-decoration: none;
+        }
+        .card {
+          width: 90%;
+        }
+      }
+      .egenuity {
+          position: relative;
+        a {
+        margin: 5% 0 5% 0;
+          position: relative;
+          @include asap-bold();
+          color: white;
+          font-size: 2ch;
           text-decoration: none;
         }
       }
@@ -118,6 +156,8 @@
   }
   .education {
     position: relative;
+    opacity: 0;
+
     .card>&.school {
     }
     .card>&.major {
@@ -126,7 +166,11 @@
     }
   }
 
-  button {
+  .download-btn {
+    opacity: 0;
+  }
+
+  .download-btn>a>button {
     @include animation(0, 2s, box-glow, alternate, none, infinite);
     border: 2px solid #26e9ff; 
     border-radius: .5ch;
@@ -136,6 +180,10 @@
     font-weight: normal;
     background-color: transparent;
     @include input-box-shadow();
+  }
+
+  .active {
+    @include animation(.25s, 3s, reveal-card, ease-in, forwards, 1);
   }
 }
 

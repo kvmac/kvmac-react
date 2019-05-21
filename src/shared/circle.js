@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/circle.css';
 
-export const Circle = ({ color, percent = 0, isActive = false }) => {
+export const Circle = ({ label, color, percent = 0, isActive = false }) => {
 
     return (
         <div className="circle-container">
@@ -18,14 +18,14 @@ export const Circle = ({ color, percent = 0, isActive = false }) => {
                     a 15.9155 15.9155 0 0 1 0 31.831
                     a 15.9155 15.9155 0 0 1 0 -31.831"
                     />
-                <path className={`circle ${isActive ? "active" : ""}`}
+                <path className={`circle ${isActive ? "progress" : ""}`}
                     filter="url(#glow)"
                     strokeDasharray={`${percent}, 100`}
                     d="M18 2.0845
                     a 15.9155 15.9155 0 0 1 0 31.831
                     a 15.9155 15.9155 0 0 1 0 -31.831"
                     />
-                <text x="18" y="20.35" className="percentage">{percent}%</text>
+                <text x="18" y="20.35" className="percentage">{label}</text>
             </svg>
         </div>
     );

@@ -20,7 +20,6 @@
 
 .blog {
   position: relative;
-  background-color: yellow;
   float: right;
   width: 82%;
   height: 100%;
@@ -28,7 +27,13 @@
   overflow: hidden;
 }
 
-.blog .links {
+.blog .card {
+  background-color: rgba(31, 31, 31, 0.3);
+  height: 40%;
+  margin: 20% 5% 20% 5%;
+}
+
+.blog .card > .links {
   display: block;
 }
 

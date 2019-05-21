@@ -9,6 +9,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-eva-icons": "^0.0.7",
+    "react-pdf": "^4.0.5",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
     "react-scripts": "^2.1.8",

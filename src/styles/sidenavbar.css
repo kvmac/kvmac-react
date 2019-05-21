@@ -323,6 +323,8 @@
   position: relative;
   margin: 5% 0 5% 0;
   opacity: 0;
+  height: 10%;
+  visibility: hidden;
   -webkit-animation-delay: 0.15s;
   -webkit-animation-duration: 1.5s;
   -webkit-animation-name: reveal-content;
@@ -398,7 +400,7 @@
 }
 
 .sidenavbar .contents.visible .social {
-  position: relative;
+  position: absolute;
   background-color: transparent;
   width: 95%;
   height: 10%;
@@ -409,6 +411,32 @@
   bottom: 0;
   margin: 10% 0 10% 0;
   text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: reveal-content;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-direction: linear;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-delay: 0.5s;
+  -moz-animation-duration: 1s;
+  -moz-animation-name: reveal-content;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-direction: linear;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-delay: 0.5s;
+  -ms-animation-duration: 1s;
+  -ms-animation-name: reveal-content;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-direction: linear;
+  -ms-animation-iteration-count: 1;
+  animation-delay: 0.5s;
+  animation-duration: 1s;
+  animation-name: reveal-content;
+  animation-fill-mode: forwards;
+  animation-direction: linear;
+  animation-iteration-count: 1;
 }
 
 .sidenavbar .contents.visible .social span {
@@ -464,6 +492,8 @@
 }
 
 .sidenavbar .contents.invisible .profile-header {
+  position: relative;
+  top: 2%;
   height: 10%;
   opacity: 1;
   -webkit-animation-delay: 0;
@@ -731,20 +761,8 @@
 
 @media (min-width: 700px) {
   .sidenavbar {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     height: 100%;
     overflow: hidden;
-    background-color: #171717;
-    width: 0;
-    box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
   }
   .sidenavbar.init {
     width: 0;
@@ -887,44 +905,14 @@
       width: 10%;
     }
   }
-  .sidenavbar .profile-header {
-    width: 100%;
-    height: 50%;
-  }
   .sidenavbar .profile-header .photo {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    width: 35%;
-    border-radius: 50%;
-  }
-  .sidenavbar .profile-header .social {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row nowrap;
-            flex-direction: row nowrap;
-    height: 100%;
-  }
-  .sidenavbar .profile-header .social .github {
-    width: 40%;
-  }
-  .sidenavbar .profile-header .social .linkedin {
-    width: 25%;
-  }
-  .sidenavbar .profile-info {
-    height: 50%;
-  }
-  .sidenavbar .profile-info .link {
-    font-size: 24pt;
     position: relative;
-    display: block;
-    color: white;
-    width: 100%;
-    background: #005EFF;
-    font-family: 'Asap', sans-serif;
+    width: 75%;
+    border-radius: 50%;
+    left: 50%;
+    right: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
   }
   .sidenavbar-overlay {
     position: absolute;

@@ -16,6 +16,7 @@ export class Blog extends React.Component {
 
     return (
       <div className="blog">
+        <div className="card">
         <div className="links">
           {BlogPosts.map((post, i) => {
             return (
@@ -32,6 +33,7 @@ export class Blog extends React.Component {
                 <Route path={`/blog/:${post.key}`} component={post.value} />
               );
             })}
+        </div>
         </div>
       </div>
     );

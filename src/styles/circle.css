@@ -59,25 +59,28 @@
   fill: none;
   stroke-width: 2.8;
   stroke-linecap: round;
-  -webkit-animation-delay: 0.5s;
+}
+
+.circle.progress {
+  -webkit-animation-delay: 1.5s;
   -webkit-animation-duration: 1s;
   -webkit-animation-name: progress;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-direction: ease-out;
   -webkit-animation-iteration-count: 1;
-  -moz-animation-delay: 0.5s;
+  -moz-animation-delay: 1.5s;
   -moz-animation-duration: 1s;
   -moz-animation-name: progress;
   -moz-animation-fill-mode: forwards;
   -moz-animation-direction: ease-out;
   -moz-animation-iteration-count: 1;
-  -ms-animation-delay: 0.5s;
+  -ms-animation-delay: 1.5s;
   -ms-animation-duration: 1s;
   -ms-animation-name: progress;
   -ms-animation-fill-mode: forwards;
   -ms-animation-direction: ease-out;
   -ms-animation-iteration-count: 1;
-  animation-delay: 0.5s;
+  animation-delay: 1.5s;
   animation-duration: 1s;
   animation-name: progress;
   animation-fill-mode: forwards;
@@ -87,8 +90,10 @@
 
 .percentage {
   fill: #666;
-  font-family: sans-serif;
-  font-size: 0.5em;
+  font-family: 'Asap', 'Sans Serif';
+  color: white;
+  font-weight: bold;
+  font-size: 1ch;
   text-anchor: middle;
   stroke: none;
 }

@@ -88,7 +88,6 @@
   float: right;
   width: 82%;
   height: 100%;
-  text-align: center;
   padding: 5% 0 5% 0;
 }
 
@@ -108,6 +107,11 @@
 
 .resume .tech-skills {
   position: relative;
+  opacity: 0;
+}
+
+.resume .tech-skills > .title {
+  margin-bottom: 10%;
 }
 
 .resume .tech-skills > .skill-container {
@@ -122,19 +126,31 @@
   margin: 5% 0 5% 0;
 }
 
-.resume .tech-skills > .skill-container > .skill {
-  position: relative;
-  width: 50%;
+.resume .tech-skills > .skill-container.card {
+  padding: 0 0 0 0;
 }
 
-.resume .tech-skills > .skill-container > .skill label {
-  -ms-grid-column-align: center;
-      justify-self: center;
+.resume .tech-skills > .skill-container > .skill {
+  position: relative;
+  width: 40%;
+}
+
+.resume .tech-skills > .skill-container > .skill > label {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: 'Asap', 'Sans Serif';
+  color: white;
+  font-weight: normal;
+  color: white;
 }
 
 .resume .tech-skills > .skill-container > .circle-container {
   position: relative;
-  width: 50%;
+  width: 60%;
 }
 
 .resume .tech-skills > button {
@@ -144,27 +160,79 @@
 
 .resume .experience {
   position: relative;
+  opacity: 0;
 }
 
-.resume .experience .card .title {
+.resume .experience.card .title {
   position: relative;
-  text-align: center;
-}
-
-.resume .experience .card .title a {
   font-family: 'Asap', 'Sans Serif';
   color: white;
   font-weight: bold;
   color: white;
   font-size: 3ch;
   text-decoration: none;
+  margin-bottom: 5%;
+}
+
+.resume .experience.card .sq {
+  position: relative;
+}
+
+.resume .experience.card .sq a {
+  margin: 5% 0 5% 0;
+  position: relative;
+  font-family: 'Asap', 'Sans Serif';
+  color: white;
+  font-weight: bold;
+  color: white;
+  font-size: 2ch;
+  text-decoration: none;
+}
+
+.resume .experience.card .availity {
+  position: relative;
+}
+
+.resume .experience.card .availity a {
+  margin: 5% 0 5% 0;
+  position: relative;
+  font-family: 'Asap', 'Sans Serif';
+  color: white;
+  font-weight: bold;
+  color: white;
+  font-size: 2ch;
+  text-decoration: none;
+}
+
+.resume .experience.card .availity .card {
+  width: 90%;
+}
+
+.resume .experience.card .egenuity {
+  position: relative;
+}
+
+.resume .experience.card .egenuity a {
+  margin: 5% 0 5% 0;
+  position: relative;
+  font-family: 'Asap', 'Sans Serif';
+  color: white;
+  font-weight: bold;
+  color: white;
+  font-size: 2ch;
+  text-decoration: none;
 }
 
 .resume .education {
   position: relative;
+  opacity: 0;
 }
 
-.resume button {
+.resume .download-btn {
+  opacity: 0;
+}
+
+.resume .download-btn > a > button {
   -webkit-animation-delay: 0;
   -webkit-animation-duration: 2s;
   -webkit-animation-name: box-glow;
@@ -201,6 +269,33 @@
   box-shadow: 0px 0px 20px 0px #26e9ff;
   -webkit-box-shadow: 0px 0px 20px 0px #26e9ff;
   -moz-box-shadow: 0px 0px 20px 0px #26e9ff;
+}
+
+.resume .active {
+  -webkit-animation-delay: 0.25s;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-name: reveal-card;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-direction: ease-in;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-delay: 0.25s;
+  -moz-animation-duration: 3s;
+  -moz-animation-name: reveal-card;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-direction: ease-in;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-delay: 0.25s;
+  -ms-animation-duration: 3s;
+  -ms-animation-name: reveal-card;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-direction: ease-in;
+  -ms-animation-iteration-count: 1;
+  animation-delay: 0.25s;
+  animation-duration: 3s;
+  animation-name: reveal-card;
+  animation-fill-mode: forwards;
+  animation-direction: ease-in;
+  animation-iteration-count: 1;
 }
 
 @media (min-width: 700px) {

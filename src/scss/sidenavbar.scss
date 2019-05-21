@@ -105,7 +105,8 @@
         position: relative;
         margin: 5% 0 5% 0;
         opacity: 0;
-
+        height: 10%;
+        visibility: hidden;
         @include animation(.15s, 1.5s, reveal-content, linear, forwards, 1);
         
         label {
@@ -136,7 +137,7 @@
       }
 
       .social {
-        position: relative;
+        position: absolute;
         background-color: transparent;
         width: 95%;
         height: 10%;
@@ -146,6 +147,9 @@
         bottom: 0;
         margin: 10% 0 10% 0;
         text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        @include animation(0.5s, 1s, reveal-content, linear, forwards, 1);
 
 
         span {
@@ -187,6 +191,8 @@
       overflow: hidden;
 
       .profile-header {
+        position: relative;
+        top: 2%;
         height: 10%;
         opacity: 1;
         @include animation(0, .5s, close-content, linear, forwards, 1);
@@ -397,14 +403,8 @@
 @media (min-width: 700px) {
 
   .sidenavbar {
-    display: flex;
-    flex-direction: column;
     height: 100%;
     overflow: hidden;
-    background-color: #171717;
-    width: 0;
-    // background: #222629;
-    @include box-shadow();
 
     &.init {
       width: 0;
@@ -432,47 +432,16 @@
       0% {width: 85%;}
       100% {width: 10%;}
     }
-
     .profile-header {
-      width: 100%;
-      height: 50%;
-
       .photo {
-        align-self: center;
-        width: 35%;
+        position: relative;
+        width: 75%;
         border-radius: 50%;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%);
         // object-fit: cover;
       }
-      .social {
-        display: flex;
-        flex-direction: row nowrap;
-        height: 100%;
-
-        .github {
-          width: 40%;
-        }
-        .linkedin {
-          width: 25%;
-        }
-      }
-    }
-    .profile-info {
-      height: 50%;
-      .link {
-        font-size: 24pt;
-        position: relative;
-        display: block;
-        color: white;
-        width: 100%;
-        background: $blue1;
-        font-family: 'Asap', sans-serif;
-      }
-      // .link:nth-child(1) {
-      // }
-      // .link:nth-child(2) {
-      // }
-      // .link:nth-child(3) {
-      // }
     }
   }
   .sidenavbar-overlay {

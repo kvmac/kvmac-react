@@ -42,13 +42,17 @@
   fill: none;
   stroke-width: 2.8;
   stroke-linecap: round;
-  @include animation(.5s, 1s, progress, ease-out, forwards, 1);
+  
+  &.progress {
+    @include animation(1.5s, 1s, progress, ease-out, forwards, 1);
+  }
 }
 
 .percentage {
   fill: #666;
-  font-family: sans-serif;
-  font-size: 0.5em;
+  @include asap-bold();
+  // font-size: 0.5em;
+  font-size: 1ch;
   text-anchor: middle;
   stroke: none;
 }
