@@ -13,16 +13,19 @@ mailgun({
 
 
 export async function handler(event, context, callback) {
-  const data = JSON.parse(event.body);
   try {
-    if(!data.from
-      || !data.subject
-      || !data.text) {
-        console.log('body:  ', data);
-        console.log('MADE INTO NULL CHECK', 'from: ',data.from, '... subject: ', data.subject, '... text: ', data.text);
-      return;
-    }
-        console.log('MADE INTO HANDLER', 'from: ', data.from, '... subject: ', data.subject, '... text: ', data.text);
+    const data = JSON.parse(event.body);
+
+    // if(!data.from
+    //   || !data.subject
+    //   || !data.text) {
+    //     console.log('body:  ', data, '  type:  ', typeof(data));
+    //     console.log('MADE INTO NULL CHECK', 'from: ',data.from, '... subject: ', data.subject, '... text: ', data.text);
+    //   return;
+    // }
+
+    console.log('body:  ', data, '  type:  ', typeof(data));
+    console.log('MADE INTO HANDLER', 'from: ', data.from, '... subject: ', data.subject, '... text: ', data.text);
 
     let res = await mailgun.messages().send(domain, {
       'to': 'kodee.mcintosh@gmail.com',
