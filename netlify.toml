@@ -2,3 +2,9 @@
   command = "yarn build"
   publish = "./build"
   functions = "./functions"
+
+[context.production]
+  command = "make production"
+
+[context.branch-deploy]
+  command = "make dev"
