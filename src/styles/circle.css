@@ -27,24 +27,28 @@
   width: 100%;
 }
 
-.chart.blue {
-  stroke: #6AB6FF;
+.chart.golang {
+  stroke: #00ADD8;
 }
 
-.chart.purple {
-  stroke: #8E7CFF;
+.chart.react {
+  stroke: #00d8ff;
 }
 
-.chart.red {
-  stroke: #FF7F95;
+.chart.c-sharp {
+  stroke: #a27ddd;
 }
 
-.chart.orange {
-  stroke: #FBB03B;
+.chart.node {
+  stroke: #6cc24a;
 }
 
-.chart.green {
-  stroke: #96FFD6;
+.chart.angular {
+  stroke: #b52e31;
+}
+
+.chart.python {
+  stroke: #ffde57;
 }
 
 .background-circle {

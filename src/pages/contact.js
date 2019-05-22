@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/contact.css';
-import { guid } from '../utils/guid';
 import axios from 'axios';
 
 const netlify = () => {
@@ -20,7 +19,7 @@ export class Contact extends React.Component {
       emailSuccessful: null,
       from: '',
       subject: '',
-      text: ''
+      text: '' 
     };
   }
 
@@ -29,26 +28,27 @@ export class Contact extends React.Component {
 
     e.preventDefault();
 
-    // const formData = new FormData(e.target);
-
     if(!from || !subject || !text) {
       return;
     }
 
+    let body = JSON.stringify({
+      from,
+      subject,
+      text
+    });
+
     axios
-      .post("/.netlify/functions/mailgun", {
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        // body: encode({
-          // 'form-name': 'contact',
-          body: JSON.stringify({
-          ...this.state
-        })
+      .post("http://localhost:9000/mailgun", {
+          header: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+          },
+          body: { ...body,
+            'form-name': 'Contact'
+          }
       })
       .then(res => res.json())
       .then(json => this.setState({ isLoading: false, emailSuccessful: json.msg.statusCode === 200 ? true : false }))
-    console.log('made it into handleMessage');
   }
 
   handleEmail = (e) => this.setState({ from: e.target.value });
@@ -73,9 +73,3 @@ export class Contact extends React.Component {
     );
   }
 }
-
-// const encode = (data) => {
-//   return Object.keys(data)
-//     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-//     .join("&");
-// }

@@ -20,233 +20,411 @@
 
 @-webkit-keyframes shape-1 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(197deg);
-            transform: translate3d(0, 0, 0) rotate(197deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(13deg);
+            transform: translate3d(0, 0, 0) rotate(13deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(557deg);
-            transform: translate3d(0, 0, 0) rotate(557deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(373deg);
+            transform: translate3d(0, 0, 0) rotate(373deg);
   }
 }
 
 @keyframes shape-1 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(197deg);
-            transform: translate3d(0, 0, 0) rotate(197deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(13deg);
+            transform: translate3d(0, 0, 0) rotate(13deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(557deg);
-            transform: translate3d(0, 0, 0) rotate(557deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(373deg);
+            transform: translate3d(0, 0, 0) rotate(373deg);
   }
 }
 
 .shape-container--1 {
-  -webkit-animation: shape-1 32s linear infinite;
-          animation: shape-1 32s linear infinite;
+  -webkit-animation: shape-1 26s linear infinite;
+          animation: shape-1 26s linear infinite;
 }
 
 @-webkit-keyframes shape-2 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(89deg);
-            transform: translate3d(0, 0, 0) rotate(89deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(205deg);
+            transform: translate3d(0, 0, 0) rotate(205deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(449deg);
-            transform: translate3d(0, 0, 0) rotate(449deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(565deg);
+            transform: translate3d(0, 0, 0) rotate(565deg);
   }
 }
 
 @keyframes shape-2 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(89deg);
-            transform: translate3d(0, 0, 0) rotate(89deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(205deg);
+            transform: translate3d(0, 0, 0) rotate(205deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(449deg);
-            transform: translate3d(0, 0, 0) rotate(449deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(565deg);
+            transform: translate3d(0, 0, 0) rotate(565deg);
   }
 }
 
 .shape-container--2 {
-  -webkit-animation: shape-2 35s linear infinite;
-          animation: shape-2 35s linear infinite;
+  -webkit-animation: shape-2 28s linear infinite;
+          animation: shape-2 28s linear infinite;
 }
 
 @-webkit-keyframes shape-3 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(241deg);
-            transform: translate3d(0, 0, 0) rotate(241deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(131deg);
+            transform: translate3d(0, 0, 0) rotate(131deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(601deg);
-            transform: translate3d(0, 0, 0) rotate(601deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(491deg);
+            transform: translate3d(0, 0, 0) rotate(491deg);
   }
 }
 
 @keyframes shape-3 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(241deg);
-            transform: translate3d(0, 0, 0) rotate(241deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(131deg);
+            transform: translate3d(0, 0, 0) rotate(131deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(601deg);
-            transform: translate3d(0, 0, 0) rotate(601deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(491deg);
+            transform: translate3d(0, 0, 0) rotate(491deg);
   }
 }
 
 .shape-container--3 {
-  -webkit-animation: shape-3 34s linear infinite;
-          animation: shape-3 34s linear infinite;
+  -webkit-animation: shape-3 32s linear infinite;
+          animation: shape-3 32s linear infinite;
 }
 
 @-webkit-keyframes shape-4 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(44deg);
-            transform: translate3d(0, 0, 0) rotate(44deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(169deg);
+            transform: translate3d(0, 0, 0) rotate(169deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(404deg);
-            transform: translate3d(0, 0, 0) rotate(404deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(529deg);
+            transform: translate3d(0, 0, 0) rotate(529deg);
   }
 }
 
 @keyframes shape-4 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(44deg);
-            transform: translate3d(0, 0, 0) rotate(44deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(169deg);
+            transform: translate3d(0, 0, 0) rotate(169deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(404deg);
-            transform: translate3d(0, 0, 0) rotate(404deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(529deg);
+            transform: translate3d(0, 0, 0) rotate(529deg);
   }
 }
 
 .shape-container--4 {
-  -webkit-animation: shape-4 27s linear infinite;
-          animation: shape-4 27s linear infinite;
+  -webkit-animation: shape-4 34s linear infinite;
+          animation: shape-4 34s linear infinite;
 }
 
 @-webkit-keyframes shape-5 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(295deg);
-            transform: translate3d(0, 0, 0) rotate(295deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(241deg);
+            transform: translate3d(0, 0, 0) rotate(241deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(655deg);
-            transform: translate3d(0, 0, 0) rotate(655deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(601deg);
+            transform: translate3d(0, 0, 0) rotate(601deg);
   }
 }
 
 @keyframes shape-5 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(295deg);
-            transform: translate3d(0, 0, 0) rotate(295deg);
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(655deg);
-            transform: translate3d(0, 0, 0) rotate(655deg);
-  }
-}
-
-.shape-container--5 {
-  -webkit-animation: shape-5 27s linear infinite;
-          animation: shape-5 27s linear infinite;
-}
-
-@-webkit-keyframes shape-6 {
-  0% {
     -webkit-transform: translate3d(0, 0, 0) rotate(241deg);
             transform: translate3d(0, 0, 0) rotate(241deg);
   }
   100% {
     -webkit-transform: translate3d(0, 0, 0) rotate(601deg);
             transform: translate3d(0, 0, 0) rotate(601deg);
+  }
+}
+
+.shape-container--5 {
+  -webkit-animation: shape-5 30s linear infinite;
+          animation: shape-5 30s linear infinite;
+}
+
+@-webkit-keyframes shape-6 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(298deg);
+            transform: translate3d(0, 0, 0) rotate(298deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(658deg);
+            transform: translate3d(0, 0, 0) rotate(658deg);
   }
 }
 
 @keyframes shape-6 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(241deg);
-            transform: translate3d(0, 0, 0) rotate(241deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(298deg);
+            transform: translate3d(0, 0, 0) rotate(298deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(601deg);
-            transform: translate3d(0, 0, 0) rotate(601deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(658deg);
+            transform: translate3d(0, 0, 0) rotate(658deg);
   }
 }
 
 .shape-container--6 {
-  -webkit-animation: shape-6 30s linear infinite;
-          animation: shape-6 30s linear infinite;
+  -webkit-animation: shape-6 27s linear infinite;
+          animation: shape-6 27s linear infinite;
 }
 
 @-webkit-keyframes shape-7 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(142deg);
-            transform: translate3d(0, 0, 0) rotate(142deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(276deg);
+            transform: translate3d(0, 0, 0) rotate(276deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(502deg);
-            transform: translate3d(0, 0, 0) rotate(502deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(636deg);
+            transform: translate3d(0, 0, 0) rotate(636deg);
   }
 }
 
 @keyframes shape-7 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(142deg);
-            transform: translate3d(0, 0, 0) rotate(142deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(276deg);
+            transform: translate3d(0, 0, 0) rotate(276deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(502deg);
-            transform: translate3d(0, 0, 0) rotate(502deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(636deg);
+            transform: translate3d(0, 0, 0) rotate(636deg);
   }
 }
 
 .shape-container--7 {
-  -webkit-animation: shape-7 27s linear infinite;
-          animation: shape-7 27s linear infinite;
+  -webkit-animation: shape-7 28s linear infinite;
+          animation: shape-7 28s linear infinite;
 }
 
 @-webkit-keyframes shape-8 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(268deg);
-            transform: translate3d(0, 0, 0) rotate(268deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(19deg);
+            transform: translate3d(0, 0, 0) rotate(19deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(628deg);
-            transform: translate3d(0, 0, 0) rotate(628deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(379deg);
+            transform: translate3d(0, 0, 0) rotate(379deg);
   }
 }
 
 @keyframes shape-8 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(268deg);
-            transform: translate3d(0, 0, 0) rotate(268deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(19deg);
+            transform: translate3d(0, 0, 0) rotate(19deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(628deg);
-            transform: translate3d(0, 0, 0) rotate(628deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(379deg);
+            transform: translate3d(0, 0, 0) rotate(379deg);
   }
 }
 
 .shape-container--8 {
-  -webkit-animation: shape-8 33s linear infinite;
-          animation: shape-8 33s linear infinite;
+  -webkit-animation: shape-8 31s linear infinite;
+          animation: shape-8 31s linear infinite;
 }
 
 @-webkit-keyframes shape-9 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(314deg);
-            transform: translate3d(0, 0, 0) rotate(314deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(51deg);
+            transform: translate3d(0, 0, 0) rotate(51deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(674deg);
-            transform: translate3d(0, 0, 0) rotate(674deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(411deg);
+            transform: translate3d(0, 0, 0) rotate(411deg);
   }
 }
 
 @keyframes shape-9 {
   0% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(51deg);
+            transform: translate3d(0, 0, 0) rotate(51deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(411deg);
+            transform: translate3d(0, 0, 0) rotate(411deg);
+  }
+}
+
+.shape-container--9 {
+  -webkit-animation: shape-9 26s linear infinite;
+          animation: shape-9 26s linear infinite;
+}
+
+@-webkit-keyframes shape-10 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(316deg);
+            transform: translate3d(0, 0, 0) rotate(316deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(676deg);
+            transform: translate3d(0, 0, 0) rotate(676deg);
+  }
+}
+
+@keyframes shape-10 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(316deg);
+            transform: translate3d(0, 0, 0) rotate(316deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(676deg);
+            transform: translate3d(0, 0, 0) rotate(676deg);
+  }
+}
+
+.shape-container--10 {
+  -webkit-animation: shape-10 26s linear infinite;
+          animation: shape-10 26s linear infinite;
+}
+
+@-webkit-keyframes shape-11 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(244deg);
+            transform: translate3d(0, 0, 0) rotate(244deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(604deg);
+            transform: translate3d(0, 0, 0) rotate(604deg);
+  }
+}
+
+@keyframes shape-11 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(244deg);
+            transform: translate3d(0, 0, 0) rotate(244deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(604deg);
+            transform: translate3d(0, 0, 0) rotate(604deg);
+  }
+}
+
+.shape-container--11 {
+  -webkit-animation: shape-11 30s linear infinite;
+          animation: shape-11 30s linear infinite;
+}
+
+@-webkit-keyframes shape-12 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(54deg);
+            transform: translate3d(0, 0, 0) rotate(54deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(414deg);
+            transform: translate3d(0, 0, 0) rotate(414deg);
+  }
+}
+
+@keyframes shape-12 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(54deg);
+            transform: translate3d(0, 0, 0) rotate(54deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(414deg);
+            transform: translate3d(0, 0, 0) rotate(414deg);
+  }
+}
+
+.shape-container--12 {
+  -webkit-animation: shape-12 30s linear infinite;
+          animation: shape-12 30s linear infinite;
+}
+
+@-webkit-keyframes shape-13 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(168deg);
+            transform: translate3d(0, 0, 0) rotate(168deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(528deg);
+            transform: translate3d(0, 0, 0) rotate(528deg);
+  }
+}
+
+@keyframes shape-13 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(168deg);
+            transform: translate3d(0, 0, 0) rotate(168deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(528deg);
+            transform: translate3d(0, 0, 0) rotate(528deg);
+  }
+}
+
+.shape-container--13 {
+  -webkit-animation: shape-13 32s linear infinite;
+          animation: shape-13 32s linear infinite;
+}
+
+@-webkit-keyframes shape-14 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(230deg);
+            transform: translate3d(0, 0, 0) rotate(230deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(590deg);
+            transform: translate3d(0, 0, 0) rotate(590deg);
+  }
+}
+
+@keyframes shape-14 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(230deg);
+            transform: translate3d(0, 0, 0) rotate(230deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(590deg);
+            transform: translate3d(0, 0, 0) rotate(590deg);
+  }
+}
+
+.shape-container--14 {
+  -webkit-animation: shape-14 29s linear infinite;
+          animation: shape-14 29s linear infinite;
+}
+
+@-webkit-keyframes shape-15 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(129deg);
+            transform: translate3d(0, 0, 0) rotate(129deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(489deg);
+            transform: translate3d(0, 0, 0) rotate(489deg);
+  }
+}
+
+@keyframes shape-15 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(129deg);
+            transform: translate3d(0, 0, 0) rotate(129deg);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(489deg);
+            transform: translate3d(0, 0, 0) rotate(489deg);
+  }
+}
+
+.shape-container--15 {
+  -webkit-animation: shape-15 33s linear infinite;
+          animation: shape-15 33s linear infinite;
+}
+
+@-webkit-keyframes shape-16 {
+  0% {
     -webkit-transform: translate3d(0, 0, 0) rotate(314deg);
             transform: translate3d(0, 0, 0) rotate(314deg);
   }
@@ -256,435 +434,257 @@
   }
 }
 
-.shape-container--9 {
-  -webkit-animation: shape-9 29s linear infinite;
-          animation: shape-9 29s linear infinite;
-}
-
-@-webkit-keyframes shape-10 {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(91deg);
-            transform: translate3d(0, 0, 0) rotate(91deg);
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(451deg);
-            transform: translate3d(0, 0, 0) rotate(451deg);
-  }
-}
-
-@keyframes shape-10 {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(91deg);
-            transform: translate3d(0, 0, 0) rotate(91deg);
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(451deg);
-            transform: translate3d(0, 0, 0) rotate(451deg);
-  }
-}
-
-.shape-container--10 {
-  -webkit-animation: shape-10 30s linear infinite;
-          animation: shape-10 30s linear infinite;
-}
-
-@-webkit-keyframes shape-11 {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(215deg);
-            transform: translate3d(0, 0, 0) rotate(215deg);
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(575deg);
-            transform: translate3d(0, 0, 0) rotate(575deg);
-  }
-}
-
-@keyframes shape-11 {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(215deg);
-            transform: translate3d(0, 0, 0) rotate(215deg);
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(575deg);
-            transform: translate3d(0, 0, 0) rotate(575deg);
-  }
-}
-
-.shape-container--11 {
-  -webkit-animation: shape-11 33s linear infinite;
-          animation: shape-11 33s linear infinite;
-}
-
-@-webkit-keyframes shape-12 {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(320deg);
-            transform: translate3d(0, 0, 0) rotate(320deg);
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(680deg);
-            transform: translate3d(0, 0, 0) rotate(680deg);
-  }
-}
-
-@keyframes shape-12 {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(320deg);
-            transform: translate3d(0, 0, 0) rotate(320deg);
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(680deg);
-            transform: translate3d(0, 0, 0) rotate(680deg);
-  }
-}
-
-.shape-container--12 {
-  -webkit-animation: shape-12 33s linear infinite;
-          animation: shape-12 33s linear infinite;
-}
-
-@-webkit-keyframes shape-13 {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(333deg);
-            transform: translate3d(0, 0, 0) rotate(333deg);
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(693deg);
-            transform: translate3d(0, 0, 0) rotate(693deg);
-  }
-}
-
-@keyframes shape-13 {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(333deg);
-            transform: translate3d(0, 0, 0) rotate(333deg);
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(693deg);
-            transform: translate3d(0, 0, 0) rotate(693deg);
-  }
-}
-
-.shape-container--13 {
-  -webkit-animation: shape-13 29s linear infinite;
-          animation: shape-13 29s linear infinite;
-}
-
-@-webkit-keyframes shape-14 {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(3deg);
-            transform: translate3d(0, 0, 0) rotate(3deg);
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(363deg);
-            transform: translate3d(0, 0, 0) rotate(363deg);
-  }
-}
-
-@keyframes shape-14 {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(3deg);
-            transform: translate3d(0, 0, 0) rotate(3deg);
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(363deg);
-            transform: translate3d(0, 0, 0) rotate(363deg);
-  }
-}
-
-.shape-container--14 {
-  -webkit-animation: shape-14 30s linear infinite;
-          animation: shape-14 30s linear infinite;
-}
-
-@-webkit-keyframes shape-15 {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(203deg);
-            transform: translate3d(0, 0, 0) rotate(203deg);
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(563deg);
-            transform: translate3d(0, 0, 0) rotate(563deg);
-  }
-}
-
-@keyframes shape-15 {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(203deg);
-            transform: translate3d(0, 0, 0) rotate(203deg);
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(563deg);
-            transform: translate3d(0, 0, 0) rotate(563deg);
-  }
-}
-
-.shape-container--15 {
-  -webkit-animation: shape-15 32s linear infinite;
-          animation: shape-15 32s linear infinite;
-}
-
-@-webkit-keyframes shape-16 {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(178deg);
-            transform: translate3d(0, 0, 0) rotate(178deg);
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(538deg);
-            transform: translate3d(0, 0, 0) rotate(538deg);
-  }
-}
-
 @keyframes shape-16 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(178deg);
-            transform: translate3d(0, 0, 0) rotate(178deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(314deg);
+            transform: translate3d(0, 0, 0) rotate(314deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(538deg);
-            transform: translate3d(0, 0, 0) rotate(538deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(674deg);
+            transform: translate3d(0, 0, 0) rotate(674deg);
   }
 }
 
 .shape-container--16 {
-  -webkit-animation: shape-16 32s linear infinite;
-          animation: shape-16 32s linear infinite;
+  -webkit-animation: shape-16 26s linear infinite;
+          animation: shape-16 26s linear infinite;
 }
 
 @-webkit-keyframes shape-17 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(79deg);
-            transform: translate3d(0, 0, 0) rotate(79deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(81deg);
+            transform: translate3d(0, 0, 0) rotate(81deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(439deg);
-            transform: translate3d(0, 0, 0) rotate(439deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(441deg);
+            transform: translate3d(0, 0, 0) rotate(441deg);
   }
 }
 
 @keyframes shape-17 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(79deg);
-            transform: translate3d(0, 0, 0) rotate(79deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(81deg);
+            transform: translate3d(0, 0, 0) rotate(81deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(439deg);
-            transform: translate3d(0, 0, 0) rotate(439deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(441deg);
+            transform: translate3d(0, 0, 0) rotate(441deg);
   }
 }
 
 .shape-container--17 {
-  -webkit-animation: shape-17 30s linear infinite;
-          animation: shape-17 30s linear infinite;
+  -webkit-animation: shape-17 26s linear infinite;
+          animation: shape-17 26s linear infinite;
 }
 
 @-webkit-keyframes shape-18 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(305deg);
-            transform: translate3d(0, 0, 0) rotate(305deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(87deg);
+            transform: translate3d(0, 0, 0) rotate(87deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(665deg);
-            transform: translate3d(0, 0, 0) rotate(665deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(447deg);
+            transform: translate3d(0, 0, 0) rotate(447deg);
   }
 }
 
 @keyframes shape-18 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(305deg);
-            transform: translate3d(0, 0, 0) rotate(305deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(87deg);
+            transform: translate3d(0, 0, 0) rotate(87deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(665deg);
-            transform: translate3d(0, 0, 0) rotate(665deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(447deg);
+            transform: translate3d(0, 0, 0) rotate(447deg);
   }
 }
 
 .shape-container--18 {
-  -webkit-animation: shape-18 31s linear infinite;
-          animation: shape-18 31s linear infinite;
+  -webkit-animation: shape-18 27s linear infinite;
+          animation: shape-18 27s linear infinite;
 }
 
 @-webkit-keyframes shape-19 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(190deg);
-            transform: translate3d(0, 0, 0) rotate(190deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(253deg);
+            transform: translate3d(0, 0, 0) rotate(253deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(550deg);
-            transform: translate3d(0, 0, 0) rotate(550deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(613deg);
+            transform: translate3d(0, 0, 0) rotate(613deg);
   }
 }
 
 @keyframes shape-19 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(190deg);
-            transform: translate3d(0, 0, 0) rotate(190deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(253deg);
+            transform: translate3d(0, 0, 0) rotate(253deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(550deg);
-            transform: translate3d(0, 0, 0) rotate(550deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(613deg);
+            transform: translate3d(0, 0, 0) rotate(613deg);
   }
 }
 
 .shape-container--19 {
-  -webkit-animation: shape-19 26s linear infinite;
-          animation: shape-19 26s linear infinite;
+  -webkit-animation: shape-19 32s linear infinite;
+          animation: shape-19 32s linear infinite;
 }
 
 @-webkit-keyframes shape-20 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(339deg);
-            transform: translate3d(0, 0, 0) rotate(339deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(9deg);
+            transform: translate3d(0, 0, 0) rotate(9deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(699deg);
-            transform: translate3d(0, 0, 0) rotate(699deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(369deg);
+            transform: translate3d(0, 0, 0) rotate(369deg);
   }
 }
 
 @keyframes shape-20 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(339deg);
-            transform: translate3d(0, 0, 0) rotate(339deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(9deg);
+            transform: translate3d(0, 0, 0) rotate(9deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(699deg);
-            transform: translate3d(0, 0, 0) rotate(699deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(369deg);
+            transform: translate3d(0, 0, 0) rotate(369deg);
   }
 }
 
 .shape-container--20 {
-  -webkit-animation: shape-20 35s linear infinite;
-          animation: shape-20 35s linear infinite;
+  -webkit-animation: shape-20 33s linear infinite;
+          animation: shape-20 33s linear infinite;
 }
 
 @-webkit-keyframes shape-21 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(192deg);
-            transform: translate3d(0, 0, 0) rotate(192deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(250deg);
+            transform: translate3d(0, 0, 0) rotate(250deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(552deg);
-            transform: translate3d(0, 0, 0) rotate(552deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(610deg);
+            transform: translate3d(0, 0, 0) rotate(610deg);
   }
 }
 
 @keyframes shape-21 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(192deg);
-            transform: translate3d(0, 0, 0) rotate(192deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(250deg);
+            transform: translate3d(0, 0, 0) rotate(250deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(552deg);
-            transform: translate3d(0, 0, 0) rotate(552deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(610deg);
+            transform: translate3d(0, 0, 0) rotate(610deg);
   }
 }
 
 .shape-container--21 {
-  -webkit-animation: shape-21 28s linear infinite;
-          animation: shape-21 28s linear infinite;
+  -webkit-animation: shape-21 30s linear infinite;
+          animation: shape-21 30s linear infinite;
 }
 
 @-webkit-keyframes shape-22 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(166deg);
-            transform: translate3d(0, 0, 0) rotate(166deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(5deg);
+            transform: translate3d(0, 0, 0) rotate(5deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(526deg);
-            transform: translate3d(0, 0, 0) rotate(526deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(365deg);
+            transform: translate3d(0, 0, 0) rotate(365deg);
   }
 }
 
 @keyframes shape-22 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(166deg);
-            transform: translate3d(0, 0, 0) rotate(166deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(5deg);
+            transform: translate3d(0, 0, 0) rotate(5deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(526deg);
-            transform: translate3d(0, 0, 0) rotate(526deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(365deg);
+            transform: translate3d(0, 0, 0) rotate(365deg);
   }
 }
 
 .shape-container--22 {
-  -webkit-animation: shape-22 26s linear infinite;
-          animation: shape-22 26s linear infinite;
+  -webkit-animation: shape-22 29s linear infinite;
+          animation: shape-22 29s linear infinite;
 }
 
 @-webkit-keyframes shape-23 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(281deg);
-            transform: translate3d(0, 0, 0) rotate(281deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(80deg);
+            transform: translate3d(0, 0, 0) rotate(80deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(641deg);
-            transform: translate3d(0, 0, 0) rotate(641deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(440deg);
+            transform: translate3d(0, 0, 0) rotate(440deg);
   }
 }
 
 @keyframes shape-23 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(281deg);
-            transform: translate3d(0, 0, 0) rotate(281deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(80deg);
+            transform: translate3d(0, 0, 0) rotate(80deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(641deg);
-            transform: translate3d(0, 0, 0) rotate(641deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(440deg);
+            transform: translate3d(0, 0, 0) rotate(440deg);
   }
 }
 
 .shape-container--23 {
-  -webkit-animation: shape-23 26s linear infinite;
-          animation: shape-23 26s linear infinite;
+  -webkit-animation: shape-23 32s linear infinite;
+          animation: shape-23 32s linear infinite;
 }
 
 @-webkit-keyframes shape-24 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(50deg);
-            transform: translate3d(0, 0, 0) rotate(50deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(340deg);
+            transform: translate3d(0, 0, 0) rotate(340deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(410deg);
-            transform: translate3d(0, 0, 0) rotate(410deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(700deg);
+            transform: translate3d(0, 0, 0) rotate(700deg);
   }
 }
 
 @keyframes shape-24 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(50deg);
-            transform: translate3d(0, 0, 0) rotate(50deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(340deg);
+            transform: translate3d(0, 0, 0) rotate(340deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(410deg);
-            transform: translate3d(0, 0, 0) rotate(410deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(700deg);
+            transform: translate3d(0, 0, 0) rotate(700deg);
   }
 }
 
 .shape-container--24 {
-  -webkit-animation: shape-24 28s linear infinite;
-          animation: shape-24 28s linear infinite;
+  -webkit-animation: shape-24 31s linear infinite;
+          animation: shape-24 31s linear infinite;
 }
 
 @-webkit-keyframes shape-25 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(185deg);
-            transform: translate3d(0, 0, 0) rotate(185deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(217deg);
+            transform: translate3d(0, 0, 0) rotate(217deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(545deg);
-            transform: translate3d(0, 0, 0) rotate(545deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(577deg);
+            transform: translate3d(0, 0, 0) rotate(577deg);
   }
 }
 
 @keyframes shape-25 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(185deg);
-            transform: translate3d(0, 0, 0) rotate(185deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(217deg);
+            transform: translate3d(0, 0, 0) rotate(217deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(545deg);
-            transform: translate3d(0, 0, 0) rotate(545deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(577deg);
+            transform: translate3d(0, 0, 0) rotate(577deg);
   }
 }
 
@@ -695,482 +695,482 @@
 
 @-webkit-keyframes shape-26 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(92deg);
-            transform: translate3d(0, 0, 0) rotate(92deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(347deg);
+            transform: translate3d(0, 0, 0) rotate(347deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(452deg);
-            transform: translate3d(0, 0, 0) rotate(452deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(707deg);
+            transform: translate3d(0, 0, 0) rotate(707deg);
   }
 }
 
 @keyframes shape-26 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(92deg);
-            transform: translate3d(0, 0, 0) rotate(92deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(347deg);
+            transform: translate3d(0, 0, 0) rotate(347deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(452deg);
-            transform: translate3d(0, 0, 0) rotate(452deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(707deg);
+            transform: translate3d(0, 0, 0) rotate(707deg);
   }
 }
 
 .shape-container--26 {
-  -webkit-animation: shape-26 33s linear infinite;
-          animation: shape-26 33s linear infinite;
+  -webkit-animation: shape-26 28s linear infinite;
+          animation: shape-26 28s linear infinite;
 }
 
 @-webkit-keyframes shape-27 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(70deg);
-            transform: translate3d(0, 0, 0) rotate(70deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(46deg);
+            transform: translate3d(0, 0, 0) rotate(46deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(430deg);
-            transform: translate3d(0, 0, 0) rotate(430deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(406deg);
+            transform: translate3d(0, 0, 0) rotate(406deg);
   }
 }
 
 @keyframes shape-27 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(70deg);
-            transform: translate3d(0, 0, 0) rotate(70deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(46deg);
+            transform: translate3d(0, 0, 0) rotate(46deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(430deg);
-            transform: translate3d(0, 0, 0) rotate(430deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(406deg);
+            transform: translate3d(0, 0, 0) rotate(406deg);
   }
 }
 
 .shape-container--27 {
-  -webkit-animation: shape-27 35s linear infinite;
-          animation: shape-27 35s linear infinite;
+  -webkit-animation: shape-27 33s linear infinite;
+          animation: shape-27 33s linear infinite;
 }
 
 @-webkit-keyframes shape-28 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(25deg);
-            transform: translate3d(0, 0, 0) rotate(25deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(36deg);
+            transform: translate3d(0, 0, 0) rotate(36deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(385deg);
-            transform: translate3d(0, 0, 0) rotate(385deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(396deg);
+            transform: translate3d(0, 0, 0) rotate(396deg);
   }
 }
 
 @keyframes shape-28 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(25deg);
-            transform: translate3d(0, 0, 0) rotate(25deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(36deg);
+            transform: translate3d(0, 0, 0) rotate(36deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(385deg);
-            transform: translate3d(0, 0, 0) rotate(385deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(396deg);
+            transform: translate3d(0, 0, 0) rotate(396deg);
   }
 }
 
 .shape-container--28 {
-  -webkit-animation: shape-28 32s linear infinite;
-          animation: shape-28 32s linear infinite;
+  -webkit-animation: shape-28 28s linear infinite;
+          animation: shape-28 28s linear infinite;
 }
 
 @-webkit-keyframes shape-29 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(238deg);
-            transform: translate3d(0, 0, 0) rotate(238deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(3deg);
+            transform: translate3d(0, 0, 0) rotate(3deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(598deg);
-            transform: translate3d(0, 0, 0) rotate(598deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(363deg);
+            transform: translate3d(0, 0, 0) rotate(363deg);
   }
 }
 
 @keyframes shape-29 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(238deg);
-            transform: translate3d(0, 0, 0) rotate(238deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(3deg);
+            transform: translate3d(0, 0, 0) rotate(3deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(598deg);
-            transform: translate3d(0, 0, 0) rotate(598deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(363deg);
+            transform: translate3d(0, 0, 0) rotate(363deg);
   }
 }
 
 .shape-container--29 {
-  -webkit-animation: shape-29 30s linear infinite;
-          animation: shape-29 30s linear infinite;
+  -webkit-animation: shape-29 31s linear infinite;
+          animation: shape-29 31s linear infinite;
 }
 
 @-webkit-keyframes shape-30 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(129deg);
-            transform: translate3d(0, 0, 0) rotate(129deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(134deg);
+            transform: translate3d(0, 0, 0) rotate(134deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(489deg);
-            transform: translate3d(0, 0, 0) rotate(489deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(494deg);
+            transform: translate3d(0, 0, 0) rotate(494deg);
   }
 }
 
 @keyframes shape-30 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(129deg);
-            transform: translate3d(0, 0, 0) rotate(129deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(134deg);
+            transform: translate3d(0, 0, 0) rotate(134deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(489deg);
-            transform: translate3d(0, 0, 0) rotate(489deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(494deg);
+            transform: translate3d(0, 0, 0) rotate(494deg);
   }
 }
 
 .shape-container--30 {
-  -webkit-animation: shape-30 26s linear infinite;
-          animation: shape-30 26s linear infinite;
+  -webkit-animation: shape-30 35s linear infinite;
+          animation: shape-30 35s linear infinite;
 }
 
 @-webkit-keyframes shape-31 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(331deg);
-            transform: translate3d(0, 0, 0) rotate(331deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(56deg);
+            transform: translate3d(0, 0, 0) rotate(56deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(691deg);
-            transform: translate3d(0, 0, 0) rotate(691deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(416deg);
+            transform: translate3d(0, 0, 0) rotate(416deg);
   }
 }
 
 @keyframes shape-31 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(331deg);
-            transform: translate3d(0, 0, 0) rotate(331deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(56deg);
+            transform: translate3d(0, 0, 0) rotate(56deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(691deg);
-            transform: translate3d(0, 0, 0) rotate(691deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(416deg);
+            transform: translate3d(0, 0, 0) rotate(416deg);
   }
 }
 
 .shape-container--31 {
-  -webkit-animation: shape-31 31s linear infinite;
-          animation: shape-31 31s linear infinite;
+  -webkit-animation: shape-31 30s linear infinite;
+          animation: shape-31 30s linear infinite;
 }
 
 @-webkit-keyframes shape-32 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(284deg);
-            transform: translate3d(0, 0, 0) rotate(284deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(181deg);
+            transform: translate3d(0, 0, 0) rotate(181deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(644deg);
-            transform: translate3d(0, 0, 0) rotate(644deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(541deg);
+            transform: translate3d(0, 0, 0) rotate(541deg);
   }
 }
 
 @keyframes shape-32 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(284deg);
-            transform: translate3d(0, 0, 0) rotate(284deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(181deg);
+            transform: translate3d(0, 0, 0) rotate(181deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(644deg);
-            transform: translate3d(0, 0, 0) rotate(644deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(541deg);
+            transform: translate3d(0, 0, 0) rotate(541deg);
   }
 }
 
 .shape-container--32 {
-  -webkit-animation: shape-32 32s linear infinite;
-          animation: shape-32 32s linear infinite;
+  -webkit-animation: shape-32 34s linear infinite;
+          animation: shape-32 34s linear infinite;
 }
 
 @-webkit-keyframes shape-33 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(51deg);
-            transform: translate3d(0, 0, 0) rotate(51deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(229deg);
+            transform: translate3d(0, 0, 0) rotate(229deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(411deg);
-            transform: translate3d(0, 0, 0) rotate(411deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(589deg);
+            transform: translate3d(0, 0, 0) rotate(589deg);
   }
 }
 
 @keyframes shape-33 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(51deg);
-            transform: translate3d(0, 0, 0) rotate(51deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(229deg);
+            transform: translate3d(0, 0, 0) rotate(229deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(411deg);
-            transform: translate3d(0, 0, 0) rotate(411deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(589deg);
+            transform: translate3d(0, 0, 0) rotate(589deg);
   }
 }
 
 .shape-container--33 {
-  -webkit-animation: shape-33 31s linear infinite;
-          animation: shape-33 31s linear infinite;
+  -webkit-animation: shape-33 32s linear infinite;
+          animation: shape-33 32s linear infinite;
 }
 
 @-webkit-keyframes shape-34 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(19deg);
-            transform: translate3d(0, 0, 0) rotate(19deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(136deg);
+            transform: translate3d(0, 0, 0) rotate(136deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(379deg);
-            transform: translate3d(0, 0, 0) rotate(379deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(496deg);
+            transform: translate3d(0, 0, 0) rotate(496deg);
   }
 }
 
 @keyframes shape-34 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(19deg);
-            transform: translate3d(0, 0, 0) rotate(19deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(136deg);
+            transform: translate3d(0, 0, 0) rotate(136deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(379deg);
-            transform: translate3d(0, 0, 0) rotate(379deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(496deg);
+            transform: translate3d(0, 0, 0) rotate(496deg);
   }
 }
 
 .shape-container--34 {
-  -webkit-animation: shape-34 30s linear infinite;
-          animation: shape-34 30s linear infinite;
+  -webkit-animation: shape-34 29s linear infinite;
+          animation: shape-34 29s linear infinite;
 }
 
 @-webkit-keyframes shape-35 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(193deg);
-            transform: translate3d(0, 0, 0) rotate(193deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(186deg);
+            transform: translate3d(0, 0, 0) rotate(186deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(553deg);
-            transform: translate3d(0, 0, 0) rotate(553deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(546deg);
+            transform: translate3d(0, 0, 0) rotate(546deg);
   }
 }
 
 @keyframes shape-35 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(193deg);
-            transform: translate3d(0, 0, 0) rotate(193deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(186deg);
+            transform: translate3d(0, 0, 0) rotate(186deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(553deg);
-            transform: translate3d(0, 0, 0) rotate(553deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(546deg);
+            transform: translate3d(0, 0, 0) rotate(546deg);
   }
 }
 
 .shape-container--35 {
-  -webkit-animation: shape-35 32s linear infinite;
-          animation: shape-35 32s linear infinite;
+  -webkit-animation: shape-35 35s linear infinite;
+          animation: shape-35 35s linear infinite;
 }
 
 @-webkit-keyframes shape-36 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(254deg);
-            transform: translate3d(0, 0, 0) rotate(254deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(293deg);
+            transform: translate3d(0, 0, 0) rotate(293deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(614deg);
-            transform: translate3d(0, 0, 0) rotate(614deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(653deg);
+            transform: translate3d(0, 0, 0) rotate(653deg);
   }
 }
 
 @keyframes shape-36 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(254deg);
-            transform: translate3d(0, 0, 0) rotate(254deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(293deg);
+            transform: translate3d(0, 0, 0) rotate(293deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(614deg);
-            transform: translate3d(0, 0, 0) rotate(614deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(653deg);
+            transform: translate3d(0, 0, 0) rotate(653deg);
   }
 }
 
 .shape-container--36 {
-  -webkit-animation: shape-36 32s linear infinite;
-          animation: shape-36 32s linear infinite;
+  -webkit-animation: shape-36 28s linear infinite;
+          animation: shape-36 28s linear infinite;
 }
 
 @-webkit-keyframes shape-37 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(12deg);
-            transform: translate3d(0, 0, 0) rotate(12deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(68deg);
+            transform: translate3d(0, 0, 0) rotate(68deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(372deg);
-            transform: translate3d(0, 0, 0) rotate(372deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(428deg);
+            transform: translate3d(0, 0, 0) rotate(428deg);
   }
 }
 
 @keyframes shape-37 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(12deg);
-            transform: translate3d(0, 0, 0) rotate(12deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(68deg);
+            transform: translate3d(0, 0, 0) rotate(68deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(372deg);
-            transform: translate3d(0, 0, 0) rotate(372deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(428deg);
+            transform: translate3d(0, 0, 0) rotate(428deg);
   }
 }
 
 .shape-container--37 {
-  -webkit-animation: shape-37 28s linear infinite;
-          animation: shape-37 28s linear infinite;
+  -webkit-animation: shape-37 29s linear infinite;
+          animation: shape-37 29s linear infinite;
 }
 
 @-webkit-keyframes shape-38 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(47deg);
-            transform: translate3d(0, 0, 0) rotate(47deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(358deg);
+            transform: translate3d(0, 0, 0) rotate(358deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(407deg);
-            transform: translate3d(0, 0, 0) rotate(407deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(718deg);
+            transform: translate3d(0, 0, 0) rotate(718deg);
   }
 }
 
 @keyframes shape-38 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(47deg);
-            transform: translate3d(0, 0, 0) rotate(47deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(358deg);
+            transform: translate3d(0, 0, 0) rotate(358deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(407deg);
-            transform: translate3d(0, 0, 0) rotate(407deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(718deg);
+            transform: translate3d(0, 0, 0) rotate(718deg);
   }
 }
 
 .shape-container--38 {
-  -webkit-animation: shape-38 29s linear infinite;
-          animation: shape-38 29s linear infinite;
+  -webkit-animation: shape-38 33s linear infinite;
+          animation: shape-38 33s linear infinite;
 }
 
 @-webkit-keyframes shape-39 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(236deg);
-            transform: translate3d(0, 0, 0) rotate(236deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(291deg);
+            transform: translate3d(0, 0, 0) rotate(291deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(596deg);
-            transform: translate3d(0, 0, 0) rotate(596deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(651deg);
+            transform: translate3d(0, 0, 0) rotate(651deg);
   }
 }
 
 @keyframes shape-39 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(236deg);
-            transform: translate3d(0, 0, 0) rotate(236deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(291deg);
+            transform: translate3d(0, 0, 0) rotate(291deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(596deg);
-            transform: translate3d(0, 0, 0) rotate(596deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(651deg);
+            transform: translate3d(0, 0, 0) rotate(651deg);
   }
 }
 
 .shape-container--39 {
-  -webkit-animation: shape-39 33s linear infinite;
-          animation: shape-39 33s linear infinite;
+  -webkit-animation: shape-39 28s linear infinite;
+          animation: shape-39 28s linear infinite;
 }
 
 @-webkit-keyframes shape-40 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(242deg);
-            transform: translate3d(0, 0, 0) rotate(242deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(268deg);
+            transform: translate3d(0, 0, 0) rotate(268deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(602deg);
-            transform: translate3d(0, 0, 0) rotate(602deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(628deg);
+            transform: translate3d(0, 0, 0) rotate(628deg);
   }
 }
 
 @keyframes shape-40 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(242deg);
-            transform: translate3d(0, 0, 0) rotate(242deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(268deg);
+            transform: translate3d(0, 0, 0) rotate(268deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(602deg);
-            transform: translate3d(0, 0, 0) rotate(602deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(628deg);
+            transform: translate3d(0, 0, 0) rotate(628deg);
   }
 }
 
 .shape-container--40 {
-  -webkit-animation: shape-40 26s linear infinite;
-          animation: shape-40 26s linear infinite;
+  -webkit-animation: shape-40 28s linear infinite;
+          animation: shape-40 28s linear infinite;
 }
 
 @-webkit-keyframes shape-41 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(20deg);
-            transform: translate3d(0, 0, 0) rotate(20deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(294deg);
+            transform: translate3d(0, 0, 0) rotate(294deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(380deg);
-            transform: translate3d(0, 0, 0) rotate(380deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(654deg);
+            transform: translate3d(0, 0, 0) rotate(654deg);
   }
 }
 
 @keyframes shape-41 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(20deg);
-            transform: translate3d(0, 0, 0) rotate(20deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(294deg);
+            transform: translate3d(0, 0, 0) rotate(294deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(380deg);
-            transform: translate3d(0, 0, 0) rotate(380deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(654deg);
+            transform: translate3d(0, 0, 0) rotate(654deg);
   }
 }
 
 .shape-container--41 {
-  -webkit-animation: shape-41 35s linear infinite;
-          animation: shape-41 35s linear infinite;
+  -webkit-animation: shape-41 30s linear infinite;
+          animation: shape-41 30s linear infinite;
 }
 
 @-webkit-keyframes shape-42 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(293deg);
-            transform: translate3d(0, 0, 0) rotate(293deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(130deg);
+            transform: translate3d(0, 0, 0) rotate(130deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(653deg);
-            transform: translate3d(0, 0, 0) rotate(653deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(490deg);
+            transform: translate3d(0, 0, 0) rotate(490deg);
   }
 }
 
 @keyframes shape-42 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(293deg);
-            transform: translate3d(0, 0, 0) rotate(293deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(130deg);
+            transform: translate3d(0, 0, 0) rotate(130deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(653deg);
-            transform: translate3d(0, 0, 0) rotate(653deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(490deg);
+            transform: translate3d(0, 0, 0) rotate(490deg);
   }
 }
 
 .shape-container--42 {
-  -webkit-animation: shape-42 34s linear infinite;
-          animation: shape-42 34s linear infinite;
+  -webkit-animation: shape-42 35s linear infinite;
+          animation: shape-42 35s linear infinite;
 }
 
 @-webkit-keyframes shape-43 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(267deg);
-            transform: translate3d(0, 0, 0) rotate(267deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(260deg);
+            transform: translate3d(0, 0, 0) rotate(260deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(627deg);
-            transform: translate3d(0, 0, 0) rotate(627deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(620deg);
+            transform: translate3d(0, 0, 0) rotate(620deg);
   }
 }
 
 @keyframes shape-43 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(267deg);
-            transform: translate3d(0, 0, 0) rotate(267deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(260deg);
+            transform: translate3d(0, 0, 0) rotate(260deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(627deg);
-            transform: translate3d(0, 0, 0) rotate(627deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(620deg);
+            transform: translate3d(0, 0, 0) rotate(620deg);
   }
 }
 
@@ -1181,104 +1181,104 @@
 
 @-webkit-keyframes shape-44 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(10deg);
-            transform: translate3d(0, 0, 0) rotate(10deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(256deg);
+            transform: translate3d(0, 0, 0) rotate(256deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(370deg);
-            transform: translate3d(0, 0, 0) rotate(370deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(616deg);
+            transform: translate3d(0, 0, 0) rotate(616deg);
   }
 }
 
 @keyframes shape-44 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(10deg);
-            transform: translate3d(0, 0, 0) rotate(10deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(256deg);
+            transform: translate3d(0, 0, 0) rotate(256deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(370deg);
-            transform: translate3d(0, 0, 0) rotate(370deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(616deg);
+            transform: translate3d(0, 0, 0) rotate(616deg);
   }
 }
 
 .shape-container--44 {
-  -webkit-animation: shape-44 34s linear infinite;
-          animation: shape-44 34s linear infinite;
+  -webkit-animation: shape-44 31s linear infinite;
+          animation: shape-44 31s linear infinite;
 }
 
 @-webkit-keyframes shape-45 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(172deg);
-            transform: translate3d(0, 0, 0) rotate(172deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(56deg);
+            transform: translate3d(0, 0, 0) rotate(56deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(532deg);
-            transform: translate3d(0, 0, 0) rotate(532deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(416deg);
+            transform: translate3d(0, 0, 0) rotate(416deg);
   }
 }
 
 @keyframes shape-45 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(172deg);
-            transform: translate3d(0, 0, 0) rotate(172deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(56deg);
+            transform: translate3d(0, 0, 0) rotate(56deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(532deg);
-            transform: translate3d(0, 0, 0) rotate(532deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(416deg);
+            transform: translate3d(0, 0, 0) rotate(416deg);
   }
 }
 
 .shape-container--45 {
-  -webkit-animation: shape-45 29s linear infinite;
-          animation: shape-45 29s linear infinite;
+  -webkit-animation: shape-45 28s linear infinite;
+          animation: shape-45 28s linear infinite;
 }
 
 @-webkit-keyframes shape-46 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(357deg);
-            transform: translate3d(0, 0, 0) rotate(357deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(67deg);
+            transform: translate3d(0, 0, 0) rotate(67deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(717deg);
-            transform: translate3d(0, 0, 0) rotate(717deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(427deg);
+            transform: translate3d(0, 0, 0) rotate(427deg);
   }
 }
 
 @keyframes shape-46 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(357deg);
-            transform: translate3d(0, 0, 0) rotate(357deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(67deg);
+            transform: translate3d(0, 0, 0) rotate(67deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(717deg);
-            transform: translate3d(0, 0, 0) rotate(717deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(427deg);
+            transform: translate3d(0, 0, 0) rotate(427deg);
   }
 }
 
 .shape-container--46 {
-  -webkit-animation: shape-46 32s linear infinite;
-          animation: shape-46 32s linear infinite;
+  -webkit-animation: shape-46 27s linear infinite;
+          animation: shape-46 27s linear infinite;
 }
 
 @-webkit-keyframes shape-47 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(44deg);
-            transform: translate3d(0, 0, 0) rotate(44deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(81deg);
+            transform: translate3d(0, 0, 0) rotate(81deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(404deg);
-            transform: translate3d(0, 0, 0) rotate(404deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(441deg);
+            transform: translate3d(0, 0, 0) rotate(441deg);
   }
 }
 
 @keyframes shape-47 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(44deg);
-            transform: translate3d(0, 0, 0) rotate(44deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(81deg);
+            transform: translate3d(0, 0, 0) rotate(81deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(404deg);
-            transform: translate3d(0, 0, 0) rotate(404deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(441deg);
+            transform: translate3d(0, 0, 0) rotate(441deg);
   }
 }
 
@@ -1289,83 +1289,83 @@
 
 @-webkit-keyframes shape-48 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(26deg);
-            transform: translate3d(0, 0, 0) rotate(26deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(319deg);
+            transform: translate3d(0, 0, 0) rotate(319deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(386deg);
-            transform: translate3d(0, 0, 0) rotate(386deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(679deg);
+            transform: translate3d(0, 0, 0) rotate(679deg);
   }
 }
 
 @keyframes shape-48 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(26deg);
-            transform: translate3d(0, 0, 0) rotate(26deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(319deg);
+            transform: translate3d(0, 0, 0) rotate(319deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(386deg);
-            transform: translate3d(0, 0, 0) rotate(386deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(679deg);
+            transform: translate3d(0, 0, 0) rotate(679deg);
   }
 }
 
 .shape-container--48 {
-  -webkit-animation: shape-48 35s linear infinite;
-          animation: shape-48 35s linear infinite;
+  -webkit-animation: shape-48 34s linear infinite;
+          animation: shape-48 34s linear infinite;
 }
 
 @-webkit-keyframes shape-49 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(162deg);
-            transform: translate3d(0, 0, 0) rotate(162deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(222deg);
+            transform: translate3d(0, 0, 0) rotate(222deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(522deg);
-            transform: translate3d(0, 0, 0) rotate(522deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(582deg);
+            transform: translate3d(0, 0, 0) rotate(582deg);
   }
 }
 
 @keyframes shape-49 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(162deg);
-            transform: translate3d(0, 0, 0) rotate(162deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(222deg);
+            transform: translate3d(0, 0, 0) rotate(222deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(522deg);
-            transform: translate3d(0, 0, 0) rotate(522deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(582deg);
+            transform: translate3d(0, 0, 0) rotate(582deg);
   }
 }
 
 .shape-container--49 {
-  -webkit-animation: shape-49 31s linear infinite;
-          animation: shape-49 31s linear infinite;
+  -webkit-animation: shape-49 26s linear infinite;
+          animation: shape-49 26s linear infinite;
 }
 
 @-webkit-keyframes shape-50 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(284deg);
-            transform: translate3d(0, 0, 0) rotate(284deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(242deg);
+            transform: translate3d(0, 0, 0) rotate(242deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(644deg);
-            transform: translate3d(0, 0, 0) rotate(644deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(602deg);
+            transform: translate3d(0, 0, 0) rotate(602deg);
   }
 }
 
 @keyframes shape-50 {
   0% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(284deg);
-            transform: translate3d(0, 0, 0) rotate(284deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(242deg);
+            transform: translate3d(0, 0, 0) rotate(242deg);
   }
   100% {
-    -webkit-transform: translate3d(0, 0, 0) rotate(644deg);
-            transform: translate3d(0, 0, 0) rotate(644deg);
+    -webkit-transform: translate3d(0, 0, 0) rotate(602deg);
+            transform: translate3d(0, 0, 0) rotate(602deg);
   }
 }
 
 .shape-container--50 {
-  -webkit-animation: shape-50 32s linear infinite;
-          animation: shape-50 32s linear infinite;
+  -webkit-animation: shape-50 35s linear infinite;
+          animation: shape-50 35s linear infinite;
 }
 
 .shape {
@@ -1384,70 +1384,70 @@
 @media (min-width: 1200px) {
   @-webkit-keyframes shape-1 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(317deg);
-              transform: translate3d(0, 0, 0) rotate(317deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(15deg);
+              transform: translate3d(0, 0, 0) rotate(15deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(677deg);
-              transform: translate3d(0, 0, 0) rotate(677deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(375deg);
+              transform: translate3d(0, 0, 0) rotate(375deg);
     }
   }
   @keyframes shape-1 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(317deg);
-              transform: translate3d(0, 0, 0) rotate(317deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(15deg);
+              transform: translate3d(0, 0, 0) rotate(15deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(677deg);
-              transform: translate3d(0, 0, 0) rotate(677deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(375deg);
+              transform: translate3d(0, 0, 0) rotate(375deg);
     }
   }
   .shape-container--1 {
-    -webkit-animation: shape-1 103s linear infinite;
-            animation: shape-1 103s linear infinite;
+    -webkit-animation: shape-1 106s linear infinite;
+            animation: shape-1 106s linear infinite;
   }
   @-webkit-keyframes shape-2 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(123deg);
-              transform: translate3d(0, 0, 0) rotate(123deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(270deg);
+              transform: translate3d(0, 0, 0) rotate(270deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(483deg);
-              transform: translate3d(0, 0, 0) rotate(483deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(630deg);
+              transform: translate3d(0, 0, 0) rotate(630deg);
     }
   }
   @keyframes shape-2 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(123deg);
-              transform: translate3d(0, 0, 0) rotate(123deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(270deg);
+              transform: translate3d(0, 0, 0) rotate(270deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(483deg);
-              transform: translate3d(0, 0, 0) rotate(483deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(630deg);
+              transform: translate3d(0, 0, 0) rotate(630deg);
     }
   }
   .shape-container--2 {
-    -webkit-animation: shape-2 102s linear infinite;
-            animation: shape-2 102s linear infinite;
+    -webkit-animation: shape-2 101s linear infinite;
+            animation: shape-2 101s linear infinite;
   }
   @-webkit-keyframes shape-3 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(263deg);
-              transform: translate3d(0, 0, 0) rotate(263deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(250deg);
+              transform: translate3d(0, 0, 0) rotate(250deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(623deg);
-              transform: translate3d(0, 0, 0) rotate(623deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(610deg);
+              transform: translate3d(0, 0, 0) rotate(610deg);
     }
   }
   @keyframes shape-3 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(263deg);
-              transform: translate3d(0, 0, 0) rotate(263deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(250deg);
+              transform: translate3d(0, 0, 0) rotate(250deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(623deg);
-              transform: translate3d(0, 0, 0) rotate(623deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(610deg);
+              transform: translate3d(0, 0, 0) rotate(610deg);
     }
   }
   .shape-container--3 {
@@ -1456,256 +1456,846 @@
   }
   @-webkit-keyframes shape-4 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(2deg);
-              transform: translate3d(0, 0, 0) rotate(2deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(339deg);
+              transform: translate3d(0, 0, 0) rotate(339deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(362deg);
-              transform: translate3d(0, 0, 0) rotate(362deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(699deg);
+              transform: translate3d(0, 0, 0) rotate(699deg);
     }
   }
   @keyframes shape-4 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(2deg);
-              transform: translate3d(0, 0, 0) rotate(2deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(339deg);
+              transform: translate3d(0, 0, 0) rotate(339deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(362deg);
-              transform: translate3d(0, 0, 0) rotate(362deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(699deg);
+              transform: translate3d(0, 0, 0) rotate(699deg);
     }
   }
   .shape-container--4 {
-    -webkit-animation: shape-4 106s linear infinite;
-            animation: shape-4 106s linear infinite;
+    -webkit-animation: shape-4 101s linear infinite;
+            animation: shape-4 101s linear infinite;
   }
   @-webkit-keyframes shape-5 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(279deg);
-              transform: translate3d(0, 0, 0) rotate(279deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(116deg);
+              transform: translate3d(0, 0, 0) rotate(116deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(639deg);
-              transform: translate3d(0, 0, 0) rotate(639deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(476deg);
+              transform: translate3d(0, 0, 0) rotate(476deg);
     }
   }
   @keyframes shape-5 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(279deg);
-              transform: translate3d(0, 0, 0) rotate(279deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(116deg);
+              transform: translate3d(0, 0, 0) rotate(116deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(639deg);
-              transform: translate3d(0, 0, 0) rotate(639deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(476deg);
+              transform: translate3d(0, 0, 0) rotate(476deg);
     }
   }
   .shape-container--5 {
-    -webkit-animation: shape-5 103s linear infinite;
-            animation: shape-5 103s linear infinite;
+    -webkit-animation: shape-5 110s linear infinite;
+            animation: shape-5 110s linear infinite;
   }
   @-webkit-keyframes shape-6 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(245deg);
-              transform: translate3d(0, 0, 0) rotate(245deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(295deg);
+              transform: translate3d(0, 0, 0) rotate(295deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(605deg);
-              transform: translate3d(0, 0, 0) rotate(605deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(655deg);
+              transform: translate3d(0, 0, 0) rotate(655deg);
     }
   }
   @keyframes shape-6 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(245deg);
-              transform: translate3d(0, 0, 0) rotate(245deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(295deg);
+              transform: translate3d(0, 0, 0) rotate(295deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(605deg);
-              transform: translate3d(0, 0, 0) rotate(605deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(655deg);
+              transform: translate3d(0, 0, 0) rotate(655deg);
     }
   }
   .shape-container--6 {
-    -webkit-animation: shape-6 110s linear infinite;
-            animation: shape-6 110s linear infinite;
+    -webkit-animation: shape-6 107s linear infinite;
+            animation: shape-6 107s linear infinite;
   }
   @-webkit-keyframes shape-7 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(331deg);
-              transform: translate3d(0, 0, 0) rotate(331deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(136deg);
+              transform: translate3d(0, 0, 0) rotate(136deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(691deg);
-              transform: translate3d(0, 0, 0) rotate(691deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(496deg);
+              transform: translate3d(0, 0, 0) rotate(496deg);
     }
   }
   @keyframes shape-7 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(331deg);
-              transform: translate3d(0, 0, 0) rotate(331deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(136deg);
+              transform: translate3d(0, 0, 0) rotate(136deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(691deg);
-              transform: translate3d(0, 0, 0) rotate(691deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(496deg);
+              transform: translate3d(0, 0, 0) rotate(496deg);
     }
   }
   .shape-container--7 {
-    -webkit-animation: shape-7 101s linear infinite;
-            animation: shape-7 101s linear infinite;
+    -webkit-animation: shape-7 103s linear infinite;
+            animation: shape-7 103s linear infinite;
   }
   @-webkit-keyframes shape-8 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(44deg);
-              transform: translate3d(0, 0, 0) rotate(44deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(51deg);
+              transform: translate3d(0, 0, 0) rotate(51deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(404deg);
-              transform: translate3d(0, 0, 0) rotate(404deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(411deg);
+              transform: translate3d(0, 0, 0) rotate(411deg);
     }
   }
   @keyframes shape-8 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(44deg);
-              transform: translate3d(0, 0, 0) rotate(44deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(51deg);
+              transform: translate3d(0, 0, 0) rotate(51deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(404deg);
-              transform: translate3d(0, 0, 0) rotate(404deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(411deg);
+              transform: translate3d(0, 0, 0) rotate(411deg);
     }
   }
   .shape-container--8 {
-    -webkit-animation: shape-8 106s linear infinite;
-            animation: shape-8 106s linear infinite;
+    -webkit-animation: shape-8 109s linear infinite;
+            animation: shape-8 109s linear infinite;
   }
   @-webkit-keyframes shape-9 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(285deg);
-              transform: translate3d(0, 0, 0) rotate(285deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(81deg);
+              transform: translate3d(0, 0, 0) rotate(81deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(645deg);
-              transform: translate3d(0, 0, 0) rotate(645deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(441deg);
+              transform: translate3d(0, 0, 0) rotate(441deg);
     }
   }
   @keyframes shape-9 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(285deg);
-              transform: translate3d(0, 0, 0) rotate(285deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(81deg);
+              transform: translate3d(0, 0, 0) rotate(81deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(645deg);
-              transform: translate3d(0, 0, 0) rotate(645deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(441deg);
+              transform: translate3d(0, 0, 0) rotate(441deg);
     }
   }
   .shape-container--9 {
-    -webkit-animation: shape-9 102s linear infinite;
-            animation: shape-9 102s linear infinite;
+    -webkit-animation: shape-9 110s linear infinite;
+            animation: shape-9 110s linear infinite;
   }
   @-webkit-keyframes shape-10 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(113deg);
-              transform: translate3d(0, 0, 0) rotate(113deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(281deg);
+              transform: translate3d(0, 0, 0) rotate(281deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(473deg);
-              transform: translate3d(0, 0, 0) rotate(473deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(641deg);
+              transform: translate3d(0, 0, 0) rotate(641deg);
     }
   }
   @keyframes shape-10 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(113deg);
-              transform: translate3d(0, 0, 0) rotate(113deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(281deg);
+              transform: translate3d(0, 0, 0) rotate(281deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(473deg);
-              transform: translate3d(0, 0, 0) rotate(473deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(641deg);
+              transform: translate3d(0, 0, 0) rotate(641deg);
     }
   }
   .shape-container--10 {
-    -webkit-animation: shape-10 106s linear infinite;
-            animation: shape-10 106s linear infinite;
+    -webkit-animation: shape-10 107s linear infinite;
+            animation: shape-10 107s linear infinite;
   }
   @-webkit-keyframes shape-11 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(163deg);
-              transform: translate3d(0, 0, 0) rotate(163deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(101deg);
+              transform: translate3d(0, 0, 0) rotate(101deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(523deg);
-              transform: translate3d(0, 0, 0) rotate(523deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(461deg);
+              transform: translate3d(0, 0, 0) rotate(461deg);
     }
   }
   @keyframes shape-11 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(163deg);
-              transform: translate3d(0, 0, 0) rotate(163deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(101deg);
+              transform: translate3d(0, 0, 0) rotate(101deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(523deg);
-              transform: translate3d(0, 0, 0) rotate(523deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(461deg);
+              transform: translate3d(0, 0, 0) rotate(461deg);
     }
   }
   .shape-container--11 {
-    -webkit-animation: shape-11 101s linear infinite;
-            animation: shape-11 101s linear infinite;
+    -webkit-animation: shape-11 109s linear infinite;
+            animation: shape-11 109s linear infinite;
   }
   @-webkit-keyframes shape-12 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(56deg);
-              transform: translate3d(0, 0, 0) rotate(56deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(198deg);
+              transform: translate3d(0, 0, 0) rotate(198deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(416deg);
-              transform: translate3d(0, 0, 0) rotate(416deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(558deg);
+              transform: translate3d(0, 0, 0) rotate(558deg);
     }
   }
   @keyframes shape-12 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(56deg);
-              transform: translate3d(0, 0, 0) rotate(56deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(198deg);
+              transform: translate3d(0, 0, 0) rotate(198deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(416deg);
-              transform: translate3d(0, 0, 0) rotate(416deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(558deg);
+              transform: translate3d(0, 0, 0) rotate(558deg);
     }
   }
   .shape-container--12 {
-    -webkit-animation: shape-12 105s linear infinite;
-            animation: shape-12 105s linear infinite;
+    -webkit-animation: shape-12 108s linear infinite;
+            animation: shape-12 108s linear infinite;
   }
   @-webkit-keyframes shape-13 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(352deg);
-              transform: translate3d(0, 0, 0) rotate(352deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(186deg);
+              transform: translate3d(0, 0, 0) rotate(186deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(712deg);
-              transform: translate3d(0, 0, 0) rotate(712deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(546deg);
+              transform: translate3d(0, 0, 0) rotate(546deg);
     }
   }
   @keyframes shape-13 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(352deg);
-              transform: translate3d(0, 0, 0) rotate(352deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(186deg);
+              transform: translate3d(0, 0, 0) rotate(186deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(712deg);
-              transform: translate3d(0, 0, 0) rotate(712deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(546deg);
+              transform: translate3d(0, 0, 0) rotate(546deg);
     }
   }
   .shape-container--13 {
-    -webkit-animation: shape-13 101s linear infinite;
-            animation: shape-13 101s linear infinite;
+    -webkit-animation: shape-13 109s linear infinite;
+            animation: shape-13 109s linear infinite;
   }
   @-webkit-keyframes shape-14 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(279deg);
-              transform: translate3d(0, 0, 0) rotate(279deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(161deg);
+              transform: translate3d(0, 0, 0) rotate(161deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(639deg);
-              transform: translate3d(0, 0, 0) rotate(639deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(521deg);
+              transform: translate3d(0, 0, 0) rotate(521deg);
     }
   }
   @keyframes shape-14 {
     0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(161deg);
+              transform: translate3d(0, 0, 0) rotate(161deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(521deg);
+              transform: translate3d(0, 0, 0) rotate(521deg);
+    }
+  }
+  .shape-container--14 {
+    -webkit-animation: shape-14 109s linear infinite;
+            animation: shape-14 109s linear infinite;
+  }
+  @-webkit-keyframes shape-15 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(238deg);
+              transform: translate3d(0, 0, 0) rotate(238deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(598deg);
+              transform: translate3d(0, 0, 0) rotate(598deg);
+    }
+  }
+  @keyframes shape-15 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(238deg);
+              transform: translate3d(0, 0, 0) rotate(238deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(598deg);
+              transform: translate3d(0, 0, 0) rotate(598deg);
+    }
+  }
+  .shape-container--15 {
+    -webkit-animation: shape-15 108s linear infinite;
+            animation: shape-15 108s linear infinite;
+  }
+  @-webkit-keyframes shape-16 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(266deg);
+              transform: translate3d(0, 0, 0) rotate(266deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(626deg);
+              transform: translate3d(0, 0, 0) rotate(626deg);
+    }
+  }
+  @keyframes shape-16 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(266deg);
+              transform: translate3d(0, 0, 0) rotate(266deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(626deg);
+              transform: translate3d(0, 0, 0) rotate(626deg);
+    }
+  }
+  .shape-container--16 {
+    -webkit-animation: shape-16 103s linear infinite;
+            animation: shape-16 103s linear infinite;
+  }
+  @-webkit-keyframes shape-17 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(30deg);
+              transform: translate3d(0, 0, 0) rotate(30deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(390deg);
+              transform: translate3d(0, 0, 0) rotate(390deg);
+    }
+  }
+  @keyframes shape-17 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(30deg);
+              transform: translate3d(0, 0, 0) rotate(30deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(390deg);
+              transform: translate3d(0, 0, 0) rotate(390deg);
+    }
+  }
+  .shape-container--17 {
+    -webkit-animation: shape-17 110s linear infinite;
+            animation: shape-17 110s linear infinite;
+  }
+  @-webkit-keyframes shape-18 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(333deg);
+              transform: translate3d(0, 0, 0) rotate(333deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(693deg);
+              transform: translate3d(0, 0, 0) rotate(693deg);
+    }
+  }
+  @keyframes shape-18 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(333deg);
+              transform: translate3d(0, 0, 0) rotate(333deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(693deg);
+              transform: translate3d(0, 0, 0) rotate(693deg);
+    }
+  }
+  .shape-container--18 {
+    -webkit-animation: shape-18 109s linear infinite;
+            animation: shape-18 109s linear infinite;
+  }
+  @-webkit-keyframes shape-19 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(298deg);
+              transform: translate3d(0, 0, 0) rotate(298deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(658deg);
+              transform: translate3d(0, 0, 0) rotate(658deg);
+    }
+  }
+  @keyframes shape-19 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(298deg);
+              transform: translate3d(0, 0, 0) rotate(298deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(658deg);
+              transform: translate3d(0, 0, 0) rotate(658deg);
+    }
+  }
+  .shape-container--19 {
+    -webkit-animation: shape-19 105s linear infinite;
+            animation: shape-19 105s linear infinite;
+  }
+  @-webkit-keyframes shape-20 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(154deg);
+              transform: translate3d(0, 0, 0) rotate(154deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(514deg);
+              transform: translate3d(0, 0, 0) rotate(514deg);
+    }
+  }
+  @keyframes shape-20 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(154deg);
+              transform: translate3d(0, 0, 0) rotate(154deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(514deg);
+              transform: translate3d(0, 0, 0) rotate(514deg);
+    }
+  }
+  .shape-container--20 {
+    -webkit-animation: shape-20 107s linear infinite;
+            animation: shape-20 107s linear infinite;
+  }
+  @-webkit-keyframes shape-21 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(18deg);
+              transform: translate3d(0, 0, 0) rotate(18deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(378deg);
+              transform: translate3d(0, 0, 0) rotate(378deg);
+    }
+  }
+  @keyframes shape-21 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(18deg);
+              transform: translate3d(0, 0, 0) rotate(18deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(378deg);
+              transform: translate3d(0, 0, 0) rotate(378deg);
+    }
+  }
+  .shape-container--21 {
+    -webkit-animation: shape-21 104s linear infinite;
+            animation: shape-21 104s linear infinite;
+  }
+  @-webkit-keyframes shape-22 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(159deg);
+              transform: translate3d(0, 0, 0) rotate(159deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(519deg);
+              transform: translate3d(0, 0, 0) rotate(519deg);
+    }
+  }
+  @keyframes shape-22 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(159deg);
+              transform: translate3d(0, 0, 0) rotate(159deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(519deg);
+              transform: translate3d(0, 0, 0) rotate(519deg);
+    }
+  }
+  .shape-container--22 {
+    -webkit-animation: shape-22 102s linear infinite;
+            animation: shape-22 102s linear infinite;
+  }
+  @-webkit-keyframes shape-23 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(35deg);
+              transform: translate3d(0, 0, 0) rotate(35deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(395deg);
+              transform: translate3d(0, 0, 0) rotate(395deg);
+    }
+  }
+  @keyframes shape-23 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(35deg);
+              transform: translate3d(0, 0, 0) rotate(35deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(395deg);
+              transform: translate3d(0, 0, 0) rotate(395deg);
+    }
+  }
+  .shape-container--23 {
+    -webkit-animation: shape-23 108s linear infinite;
+            animation: shape-23 108s linear infinite;
+  }
+  @-webkit-keyframes shape-24 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(162deg);
+              transform: translate3d(0, 0, 0) rotate(162deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(522deg);
+              transform: translate3d(0, 0, 0) rotate(522deg);
+    }
+  }
+  @keyframes shape-24 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(162deg);
+              transform: translate3d(0, 0, 0) rotate(162deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(522deg);
+              transform: translate3d(0, 0, 0) rotate(522deg);
+    }
+  }
+  .shape-container--24 {
+    -webkit-animation: shape-24 107s linear infinite;
+            animation: shape-24 107s linear infinite;
+  }
+  @-webkit-keyframes shape-25 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(244deg);
+              transform: translate3d(0, 0, 0) rotate(244deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(604deg);
+              transform: translate3d(0, 0, 0) rotate(604deg);
+    }
+  }
+  @keyframes shape-25 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(244deg);
+              transform: translate3d(0, 0, 0) rotate(244deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(604deg);
+              transform: translate3d(0, 0, 0) rotate(604deg);
+    }
+  }
+  .shape-container--25 {
+    -webkit-animation: shape-25 110s linear infinite;
+            animation: shape-25 110s linear infinite;
+  }
+  @-webkit-keyframes shape-26 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(324deg);
+              transform: translate3d(0, 0, 0) rotate(324deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(684deg);
+              transform: translate3d(0, 0, 0) rotate(684deg);
+    }
+  }
+  @keyframes shape-26 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(324deg);
+              transform: translate3d(0, 0, 0) rotate(324deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(684deg);
+              transform: translate3d(0, 0, 0) rotate(684deg);
+    }
+  }
+  .shape-container--26 {
+    -webkit-animation: shape-26 109s linear infinite;
+            animation: shape-26 109s linear infinite;
+  }
+  @-webkit-keyframes shape-27 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(195deg);
+              transform: translate3d(0, 0, 0) rotate(195deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(555deg);
+              transform: translate3d(0, 0, 0) rotate(555deg);
+    }
+  }
+  @keyframes shape-27 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(195deg);
+              transform: translate3d(0, 0, 0) rotate(195deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(555deg);
+              transform: translate3d(0, 0, 0) rotate(555deg);
+    }
+  }
+  .shape-container--27 {
+    -webkit-animation: shape-27 106s linear infinite;
+            animation: shape-27 106s linear infinite;
+  }
+  @-webkit-keyframes shape-28 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(249deg);
+              transform: translate3d(0, 0, 0) rotate(249deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(609deg);
+              transform: translate3d(0, 0, 0) rotate(609deg);
+    }
+  }
+  @keyframes shape-28 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(249deg);
+              transform: translate3d(0, 0, 0) rotate(249deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(609deg);
+              transform: translate3d(0, 0, 0) rotate(609deg);
+    }
+  }
+  .shape-container--28 {
+    -webkit-animation: shape-28 104s linear infinite;
+            animation: shape-28 104s linear infinite;
+  }
+  @-webkit-keyframes shape-29 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(40deg);
+              transform: translate3d(0, 0, 0) rotate(40deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(400deg);
+              transform: translate3d(0, 0, 0) rotate(400deg);
+    }
+  }
+  @keyframes shape-29 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(40deg);
+              transform: translate3d(0, 0, 0) rotate(40deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(400deg);
+              transform: translate3d(0, 0, 0) rotate(400deg);
+    }
+  }
+  .shape-container--29 {
+    -webkit-animation: shape-29 102s linear infinite;
+            animation: shape-29 102s linear infinite;
+  }
+  @-webkit-keyframes shape-30 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(65deg);
+              transform: translate3d(0, 0, 0) rotate(65deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(425deg);
+              transform: translate3d(0, 0, 0) rotate(425deg);
+    }
+  }
+  @keyframes shape-30 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(65deg);
+              transform: translate3d(0, 0, 0) rotate(65deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(425deg);
+              transform: translate3d(0, 0, 0) rotate(425deg);
+    }
+  }
+  .shape-container--30 {
+    -webkit-animation: shape-30 108s linear infinite;
+            animation: shape-30 108s linear infinite;
+  }
+  @-webkit-keyframes shape-31 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(165deg);
+              transform: translate3d(0, 0, 0) rotate(165deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(525deg);
+              transform: translate3d(0, 0, 0) rotate(525deg);
+    }
+  }
+  @keyframes shape-31 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(165deg);
+              transform: translate3d(0, 0, 0) rotate(165deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(525deg);
+              transform: translate3d(0, 0, 0) rotate(525deg);
+    }
+  }
+  .shape-container--31 {
+    -webkit-animation: shape-31 110s linear infinite;
+            animation: shape-31 110s linear infinite;
+  }
+  @-webkit-keyframes shape-32 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(152deg);
+              transform: translate3d(0, 0, 0) rotate(152deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(512deg);
+              transform: translate3d(0, 0, 0) rotate(512deg);
+    }
+  }
+  @keyframes shape-32 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(152deg);
+              transform: translate3d(0, 0, 0) rotate(152deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(512deg);
+              transform: translate3d(0, 0, 0) rotate(512deg);
+    }
+  }
+  .shape-container--32 {
+    -webkit-animation: shape-32 104s linear infinite;
+            animation: shape-32 104s linear infinite;
+  }
+  @-webkit-keyframes shape-33 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(58deg);
+              transform: translate3d(0, 0, 0) rotate(58deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(418deg);
+              transform: translate3d(0, 0, 0) rotate(418deg);
+    }
+  }
+  @keyframes shape-33 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(58deg);
+              transform: translate3d(0, 0, 0) rotate(58deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(418deg);
+              transform: translate3d(0, 0, 0) rotate(418deg);
+    }
+  }
+  .shape-container--33 {
+    -webkit-animation: shape-33 102s linear infinite;
+            animation: shape-33 102s linear infinite;
+  }
+  @-webkit-keyframes shape-34 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(324deg);
+              transform: translate3d(0, 0, 0) rotate(324deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(684deg);
+              transform: translate3d(0, 0, 0) rotate(684deg);
+    }
+  }
+  @keyframes shape-34 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(324deg);
+              transform: translate3d(0, 0, 0) rotate(324deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(684deg);
+              transform: translate3d(0, 0, 0) rotate(684deg);
+    }
+  }
+  .shape-container--34 {
+    -webkit-animation: shape-34 105s linear infinite;
+            animation: shape-34 105s linear infinite;
+  }
+  @-webkit-keyframes shape-35 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(134deg);
+              transform: translate3d(0, 0, 0) rotate(134deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(494deg);
+              transform: translate3d(0, 0, 0) rotate(494deg);
+    }
+  }
+  @keyframes shape-35 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(134deg);
+              transform: translate3d(0, 0, 0) rotate(134deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(494deg);
+              transform: translate3d(0, 0, 0) rotate(494deg);
+    }
+  }
+  .shape-container--35 {
+    -webkit-animation: shape-35 104s linear infinite;
+            animation: shape-35 104s linear infinite;
+  }
+  @-webkit-keyframes shape-36 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(180deg);
+              transform: translate3d(0, 0, 0) rotate(180deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(540deg);
+              transform: translate3d(0, 0, 0) rotate(540deg);
+    }
+  }
+  @keyframes shape-36 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(180deg);
+              transform: translate3d(0, 0, 0) rotate(180deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(540deg);
+              transform: translate3d(0, 0, 0) rotate(540deg);
+    }
+  }
+  .shape-container--36 {
+    -webkit-animation: shape-36 108s linear infinite;
+            animation: shape-36 108s linear infinite;
+  }
+  @-webkit-keyframes shape-37 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(290deg);
+              transform: translate3d(0, 0, 0) rotate(290deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(650deg);
+              transform: translate3d(0, 0, 0) rotate(650deg);
+    }
+  }
+  @keyframes shape-37 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(290deg);
+              transform: translate3d(0, 0, 0) rotate(290deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(650deg);
+              transform: translate3d(0, 0, 0) rotate(650deg);
+    }
+  }
+  .shape-container--37 {
+    -webkit-animation: shape-37 104s linear infinite;
+            animation: shape-37 104s linear infinite;
+  }
+  @-webkit-keyframes shape-38 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(326deg);
+              transform: translate3d(0, 0, 0) rotate(326deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(686deg);
+              transform: translate3d(0, 0, 0) rotate(686deg);
+    }
+  }
+  @keyframes shape-38 {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(326deg);
+              transform: translate3d(0, 0, 0) rotate(326deg);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0) rotate(686deg);
+              transform: translate3d(0, 0, 0) rotate(686deg);
+    }
+  }
+  .shape-container--38 {
+    -webkit-animation: shape-38 107s linear infinite;
+            animation: shape-38 107s linear infinite;
+  }
+  @-webkit-keyframes shape-39 {
+    0% {
       -webkit-transform: translate3d(0, 0, 0) rotate(279deg);
               transform: translate3d(0, 0, 0) rotate(279deg);
     }
@@ -1714,873 +2304,283 @@
               transform: translate3d(0, 0, 0) rotate(639deg);
     }
   }
-  .shape-container--14 {
-    -webkit-animation: shape-14 102s linear infinite;
-            animation: shape-14 102s linear infinite;
-  }
-  @-webkit-keyframes shape-15 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(138deg);
-              transform: translate3d(0, 0, 0) rotate(138deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(498deg);
-              transform: translate3d(0, 0, 0) rotate(498deg);
-    }
-  }
-  @keyframes shape-15 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(138deg);
-              transform: translate3d(0, 0, 0) rotate(138deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(498deg);
-              transform: translate3d(0, 0, 0) rotate(498deg);
-    }
-  }
-  .shape-container--15 {
-    -webkit-animation: shape-15 110s linear infinite;
-            animation: shape-15 110s linear infinite;
-  }
-  @-webkit-keyframes shape-16 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(330deg);
-              transform: translate3d(0, 0, 0) rotate(330deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(690deg);
-              transform: translate3d(0, 0, 0) rotate(690deg);
-    }
-  }
-  @keyframes shape-16 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(330deg);
-              transform: translate3d(0, 0, 0) rotate(330deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(690deg);
-              transform: translate3d(0, 0, 0) rotate(690deg);
-    }
-  }
-  .shape-container--16 {
-    -webkit-animation: shape-16 110s linear infinite;
-            animation: shape-16 110s linear infinite;
-  }
-  @-webkit-keyframes shape-17 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(200deg);
-              transform: translate3d(0, 0, 0) rotate(200deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(560deg);
-              transform: translate3d(0, 0, 0) rotate(560deg);
-    }
-  }
-  @keyframes shape-17 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(200deg);
-              transform: translate3d(0, 0, 0) rotate(200deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(560deg);
-              transform: translate3d(0, 0, 0) rotate(560deg);
-    }
-  }
-  .shape-container--17 {
-    -webkit-animation: shape-17 108s linear infinite;
-            animation: shape-17 108s linear infinite;
-  }
-  @-webkit-keyframes shape-18 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(248deg);
-              transform: translate3d(0, 0, 0) rotate(248deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(608deg);
-              transform: translate3d(0, 0, 0) rotate(608deg);
-    }
-  }
-  @keyframes shape-18 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(248deg);
-              transform: translate3d(0, 0, 0) rotate(248deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(608deg);
-              transform: translate3d(0, 0, 0) rotate(608deg);
-    }
-  }
-  .shape-container--18 {
-    -webkit-animation: shape-18 105s linear infinite;
-            animation: shape-18 105s linear infinite;
-  }
-  @-webkit-keyframes shape-19 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(16deg);
-              transform: translate3d(0, 0, 0) rotate(16deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(376deg);
-              transform: translate3d(0, 0, 0) rotate(376deg);
-    }
-  }
-  @keyframes shape-19 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(16deg);
-              transform: translate3d(0, 0, 0) rotate(16deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(376deg);
-              transform: translate3d(0, 0, 0) rotate(376deg);
-    }
-  }
-  .shape-container--19 {
-    -webkit-animation: shape-19 102s linear infinite;
-            animation: shape-19 102s linear infinite;
-  }
-  @-webkit-keyframes shape-20 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(4deg);
-              transform: translate3d(0, 0, 0) rotate(4deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(364deg);
-              transform: translate3d(0, 0, 0) rotate(364deg);
-    }
-  }
-  @keyframes shape-20 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(4deg);
-              transform: translate3d(0, 0, 0) rotate(4deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(364deg);
-              transform: translate3d(0, 0, 0) rotate(364deg);
-    }
-  }
-  .shape-container--20 {
-    -webkit-animation: shape-20 104s linear infinite;
-            animation: shape-20 104s linear infinite;
-  }
-  @-webkit-keyframes shape-21 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(324deg);
-              transform: translate3d(0, 0, 0) rotate(324deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(684deg);
-              transform: translate3d(0, 0, 0) rotate(684deg);
-    }
-  }
-  @keyframes shape-21 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(324deg);
-              transform: translate3d(0, 0, 0) rotate(324deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(684deg);
-              transform: translate3d(0, 0, 0) rotate(684deg);
-    }
-  }
-  .shape-container--21 {
-    -webkit-animation: shape-21 110s linear infinite;
-            animation: shape-21 110s linear infinite;
-  }
-  @-webkit-keyframes shape-22 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(248deg);
-              transform: translate3d(0, 0, 0) rotate(248deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(608deg);
-              transform: translate3d(0, 0, 0) rotate(608deg);
-    }
-  }
-  @keyframes shape-22 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(248deg);
-              transform: translate3d(0, 0, 0) rotate(248deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(608deg);
-              transform: translate3d(0, 0, 0) rotate(608deg);
-    }
-  }
-  .shape-container--22 {
-    -webkit-animation: shape-22 101s linear infinite;
-            animation: shape-22 101s linear infinite;
-  }
-  @-webkit-keyframes shape-23 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(117deg);
-              transform: translate3d(0, 0, 0) rotate(117deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(477deg);
-              transform: translate3d(0, 0, 0) rotate(477deg);
-    }
-  }
-  @keyframes shape-23 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(117deg);
-              transform: translate3d(0, 0, 0) rotate(117deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(477deg);
-              transform: translate3d(0, 0, 0) rotate(477deg);
-    }
-  }
-  .shape-container--23 {
-    -webkit-animation: shape-23 110s linear infinite;
-            animation: shape-23 110s linear infinite;
-  }
-  @-webkit-keyframes shape-24 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(355deg);
-              transform: translate3d(0, 0, 0) rotate(355deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(715deg);
-              transform: translate3d(0, 0, 0) rotate(715deg);
-    }
-  }
-  @keyframes shape-24 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(355deg);
-              transform: translate3d(0, 0, 0) rotate(355deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(715deg);
-              transform: translate3d(0, 0, 0) rotate(715deg);
-    }
-  }
-  .shape-container--24 {
-    -webkit-animation: shape-24 105s linear infinite;
-            animation: shape-24 105s linear infinite;
-  }
-  @-webkit-keyframes shape-25 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(67deg);
-              transform: translate3d(0, 0, 0) rotate(67deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(427deg);
-              transform: translate3d(0, 0, 0) rotate(427deg);
-    }
-  }
-  @keyframes shape-25 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(67deg);
-              transform: translate3d(0, 0, 0) rotate(67deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(427deg);
-              transform: translate3d(0, 0, 0) rotate(427deg);
-    }
-  }
-  .shape-container--25 {
-    -webkit-animation: shape-25 107s linear infinite;
-            animation: shape-25 107s linear infinite;
-  }
-  @-webkit-keyframes shape-26 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(330deg);
-              transform: translate3d(0, 0, 0) rotate(330deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(690deg);
-              transform: translate3d(0, 0, 0) rotate(690deg);
-    }
-  }
-  @keyframes shape-26 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(330deg);
-              transform: translate3d(0, 0, 0) rotate(330deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(690deg);
-              transform: translate3d(0, 0, 0) rotate(690deg);
-    }
-  }
-  .shape-container--26 {
-    -webkit-animation: shape-26 102s linear infinite;
-            animation: shape-26 102s linear infinite;
-  }
-  @-webkit-keyframes shape-27 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(105deg);
-              transform: translate3d(0, 0, 0) rotate(105deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(465deg);
-              transform: translate3d(0, 0, 0) rotate(465deg);
-    }
-  }
-  @keyframes shape-27 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(105deg);
-              transform: translate3d(0, 0, 0) rotate(105deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(465deg);
-              transform: translate3d(0, 0, 0) rotate(465deg);
-    }
-  }
-  .shape-container--27 {
-    -webkit-animation: shape-27 110s linear infinite;
-            animation: shape-27 110s linear infinite;
-  }
-  @-webkit-keyframes shape-28 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(166deg);
-              transform: translate3d(0, 0, 0) rotate(166deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(526deg);
-              transform: translate3d(0, 0, 0) rotate(526deg);
-    }
-  }
-  @keyframes shape-28 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(166deg);
-              transform: translate3d(0, 0, 0) rotate(166deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(526deg);
-              transform: translate3d(0, 0, 0) rotate(526deg);
-    }
-  }
-  .shape-container--28 {
-    -webkit-animation: shape-28 110s linear infinite;
-            animation: shape-28 110s linear infinite;
-  }
-  @-webkit-keyframes shape-29 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(32deg);
-              transform: translate3d(0, 0, 0) rotate(32deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(392deg);
-              transform: translate3d(0, 0, 0) rotate(392deg);
-    }
-  }
-  @keyframes shape-29 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(32deg);
-              transform: translate3d(0, 0, 0) rotate(32deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(392deg);
-              transform: translate3d(0, 0, 0) rotate(392deg);
-    }
-  }
-  .shape-container--29 {
-    -webkit-animation: shape-29 108s linear infinite;
-            animation: shape-29 108s linear infinite;
-  }
-  @-webkit-keyframes shape-30 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(54deg);
-              transform: translate3d(0, 0, 0) rotate(54deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(414deg);
-              transform: translate3d(0, 0, 0) rotate(414deg);
-    }
-  }
-  @keyframes shape-30 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(54deg);
-              transform: translate3d(0, 0, 0) rotate(54deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(414deg);
-              transform: translate3d(0, 0, 0) rotate(414deg);
-    }
-  }
-  .shape-container--30 {
-    -webkit-animation: shape-30 110s linear infinite;
-            animation: shape-30 110s linear infinite;
-  }
-  @-webkit-keyframes shape-31 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(323deg);
-              transform: translate3d(0, 0, 0) rotate(323deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(683deg);
-              transform: translate3d(0, 0, 0) rotate(683deg);
-    }
-  }
-  @keyframes shape-31 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(323deg);
-              transform: translate3d(0, 0, 0) rotate(323deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(683deg);
-              transform: translate3d(0, 0, 0) rotate(683deg);
-    }
-  }
-  .shape-container--31 {
-    -webkit-animation: shape-31 105s linear infinite;
-            animation: shape-31 105s linear infinite;
-  }
-  @-webkit-keyframes shape-32 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(153deg);
-              transform: translate3d(0, 0, 0) rotate(153deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(513deg);
-              transform: translate3d(0, 0, 0) rotate(513deg);
-    }
-  }
-  @keyframes shape-32 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(153deg);
-              transform: translate3d(0, 0, 0) rotate(153deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(513deg);
-              transform: translate3d(0, 0, 0) rotate(513deg);
-    }
-  }
-  .shape-container--32 {
-    -webkit-animation: shape-32 105s linear infinite;
-            animation: shape-32 105s linear infinite;
-  }
-  @-webkit-keyframes shape-33 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(56deg);
-              transform: translate3d(0, 0, 0) rotate(56deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(416deg);
-              transform: translate3d(0, 0, 0) rotate(416deg);
-    }
-  }
-  @keyframes shape-33 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(56deg);
-              transform: translate3d(0, 0, 0) rotate(56deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(416deg);
-              transform: translate3d(0, 0, 0) rotate(416deg);
-    }
-  }
-  .shape-container--33 {
-    -webkit-animation: shape-33 105s linear infinite;
-            animation: shape-33 105s linear infinite;
-  }
-  @-webkit-keyframes shape-34 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(271deg);
-              transform: translate3d(0, 0, 0) rotate(271deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(631deg);
-              transform: translate3d(0, 0, 0) rotate(631deg);
-    }
-  }
-  @keyframes shape-34 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(271deg);
-              transform: translate3d(0, 0, 0) rotate(271deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(631deg);
-              transform: translate3d(0, 0, 0) rotate(631deg);
-    }
-  }
-  .shape-container--34 {
-    -webkit-animation: shape-34 110s linear infinite;
-            animation: shape-34 110s linear infinite;
-  }
-  @-webkit-keyframes shape-35 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(329deg);
-              transform: translate3d(0, 0, 0) rotate(329deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(689deg);
-              transform: translate3d(0, 0, 0) rotate(689deg);
-    }
-  }
-  @keyframes shape-35 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(329deg);
-              transform: translate3d(0, 0, 0) rotate(329deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(689deg);
-              transform: translate3d(0, 0, 0) rotate(689deg);
-    }
-  }
-  .shape-container--35 {
-    -webkit-animation: shape-35 106s linear infinite;
-            animation: shape-35 106s linear infinite;
-  }
-  @-webkit-keyframes shape-36 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(20deg);
-              transform: translate3d(0, 0, 0) rotate(20deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(380deg);
-              transform: translate3d(0, 0, 0) rotate(380deg);
-    }
-  }
-  @keyframes shape-36 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(20deg);
-              transform: translate3d(0, 0, 0) rotate(20deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(380deg);
-              transform: translate3d(0, 0, 0) rotate(380deg);
-    }
-  }
-  .shape-container--36 {
-    -webkit-animation: shape-36 104s linear infinite;
-            animation: shape-36 104s linear infinite;
-  }
-  @-webkit-keyframes shape-37 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(218deg);
-              transform: translate3d(0, 0, 0) rotate(218deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(578deg);
-              transform: translate3d(0, 0, 0) rotate(578deg);
-    }
-  }
-  @keyframes shape-37 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(218deg);
-              transform: translate3d(0, 0, 0) rotate(218deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(578deg);
-              transform: translate3d(0, 0, 0) rotate(578deg);
-    }
-  }
-  .shape-container--37 {
-    -webkit-animation: shape-37 105s linear infinite;
-            animation: shape-37 105s linear infinite;
-  }
-  @-webkit-keyframes shape-38 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(206deg);
-              transform: translate3d(0, 0, 0) rotate(206deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(566deg);
-              transform: translate3d(0, 0, 0) rotate(566deg);
-    }
-  }
-  @keyframes shape-38 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(206deg);
-              transform: translate3d(0, 0, 0) rotate(206deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(566deg);
-              transform: translate3d(0, 0, 0) rotate(566deg);
-    }
-  }
-  .shape-container--38 {
-    -webkit-animation: shape-38 104s linear infinite;
-            animation: shape-38 104s linear infinite;
-  }
-  @-webkit-keyframes shape-39 {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(240deg);
-              transform: translate3d(0, 0, 0) rotate(240deg);
-    }
-    100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(600deg);
-              transform: translate3d(0, 0, 0) rotate(600deg);
-    }
-  }
   @keyframes shape-39 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(240deg);
-              transform: translate3d(0, 0, 0) rotate(240deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(279deg);
+              transform: translate3d(0, 0, 0) rotate(279deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(600deg);
-              transform: translate3d(0, 0, 0) rotate(600deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(639deg);
+              transform: translate3d(0, 0, 0) rotate(639deg);
     }
   }
   .shape-container--39 {
-    -webkit-animation: shape-39 110s linear infinite;
-            animation: shape-39 110s linear infinite;
+    -webkit-animation: shape-39 109s linear infinite;
+            animation: shape-39 109s linear infinite;
   }
   @-webkit-keyframes shape-40 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(68deg);
-              transform: translate3d(0, 0, 0) rotate(68deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(221deg);
+              transform: translate3d(0, 0, 0) rotate(221deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(428deg);
-              transform: translate3d(0, 0, 0) rotate(428deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(581deg);
+              transform: translate3d(0, 0, 0) rotate(581deg);
     }
   }
   @keyframes shape-40 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(68deg);
-              transform: translate3d(0, 0, 0) rotate(68deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(221deg);
+              transform: translate3d(0, 0, 0) rotate(221deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(428deg);
-              transform: translate3d(0, 0, 0) rotate(428deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(581deg);
+              transform: translate3d(0, 0, 0) rotate(581deg);
     }
   }
   .shape-container--40 {
-    -webkit-animation: shape-40 110s linear infinite;
-            animation: shape-40 110s linear infinite;
+    -webkit-animation: shape-40 108s linear infinite;
+            animation: shape-40 108s linear infinite;
   }
   @-webkit-keyframes shape-41 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(154deg);
-              transform: translate3d(0, 0, 0) rotate(154deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(232deg);
+              transform: translate3d(0, 0, 0) rotate(232deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(514deg);
-              transform: translate3d(0, 0, 0) rotate(514deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(592deg);
+              transform: translate3d(0, 0, 0) rotate(592deg);
     }
   }
   @keyframes shape-41 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(154deg);
-              transform: translate3d(0, 0, 0) rotate(154deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(232deg);
+              transform: translate3d(0, 0, 0) rotate(232deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(514deg);
-              transform: translate3d(0, 0, 0) rotate(514deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(592deg);
+              transform: translate3d(0, 0, 0) rotate(592deg);
     }
   }
   .shape-container--41 {
-    -webkit-animation: shape-41 103s linear infinite;
-            animation: shape-41 103s linear infinite;
+    -webkit-animation: shape-41 101s linear infinite;
+            animation: shape-41 101s linear infinite;
   }
   @-webkit-keyframes shape-42 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(3deg);
-              transform: translate3d(0, 0, 0) rotate(3deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(47deg);
+              transform: translate3d(0, 0, 0) rotate(47deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(363deg);
-              transform: translate3d(0, 0, 0) rotate(363deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(407deg);
+              transform: translate3d(0, 0, 0) rotate(407deg);
     }
   }
   @keyframes shape-42 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(3deg);
-              transform: translate3d(0, 0, 0) rotate(3deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(47deg);
+              transform: translate3d(0, 0, 0) rotate(47deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(363deg);
-              transform: translate3d(0, 0, 0) rotate(363deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(407deg);
+              transform: translate3d(0, 0, 0) rotate(407deg);
     }
   }
   .shape-container--42 {
-    -webkit-animation: shape-42 107s linear infinite;
-            animation: shape-42 107s linear infinite;
+    -webkit-animation: shape-42 106s linear infinite;
+            animation: shape-42 106s linear infinite;
   }
   @-webkit-keyframes shape-43 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(205deg);
-              transform: translate3d(0, 0, 0) rotate(205deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(291deg);
+              transform: translate3d(0, 0, 0) rotate(291deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(565deg);
-              transform: translate3d(0, 0, 0) rotate(565deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(651deg);
+              transform: translate3d(0, 0, 0) rotate(651deg);
     }
   }
   @keyframes shape-43 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(205deg);
-              transform: translate3d(0, 0, 0) rotate(205deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(291deg);
+              transform: translate3d(0, 0, 0) rotate(291deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(565deg);
-              transform: translate3d(0, 0, 0) rotate(565deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(651deg);
+              transform: translate3d(0, 0, 0) rotate(651deg);
     }
   }
   .shape-container--43 {
-    -webkit-animation: shape-43 110s linear infinite;
-            animation: shape-43 110s linear infinite;
+    -webkit-animation: shape-43 104s linear infinite;
+            animation: shape-43 104s linear infinite;
   }
   @-webkit-keyframes shape-44 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(94deg);
-              transform: translate3d(0, 0, 0) rotate(94deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(61deg);
+              transform: translate3d(0, 0, 0) rotate(61deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(454deg);
-              transform: translate3d(0, 0, 0) rotate(454deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(421deg);
+              transform: translate3d(0, 0, 0) rotate(421deg);
     }
   }
   @keyframes shape-44 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(94deg);
-              transform: translate3d(0, 0, 0) rotate(94deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(61deg);
+              transform: translate3d(0, 0, 0) rotate(61deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(454deg);
-              transform: translate3d(0, 0, 0) rotate(454deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(421deg);
+              transform: translate3d(0, 0, 0) rotate(421deg);
     }
   }
   .shape-container--44 {
-    -webkit-animation: shape-44 107s linear infinite;
-            animation: shape-44 107s linear infinite;
+    -webkit-animation: shape-44 103s linear infinite;
+            animation: shape-44 103s linear infinite;
   }
   @-webkit-keyframes shape-45 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(322deg);
-              transform: translate3d(0, 0, 0) rotate(322deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(172deg);
+              transform: translate3d(0, 0, 0) rotate(172deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(682deg);
-              transform: translate3d(0, 0, 0) rotate(682deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(532deg);
+              transform: translate3d(0, 0, 0) rotate(532deg);
     }
   }
   @keyframes shape-45 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(322deg);
-              transform: translate3d(0, 0, 0) rotate(322deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(172deg);
+              transform: translate3d(0, 0, 0) rotate(172deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(682deg);
-              transform: translate3d(0, 0, 0) rotate(682deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(532deg);
+              transform: translate3d(0, 0, 0) rotate(532deg);
     }
   }
   .shape-container--45 {
-    -webkit-animation: shape-45 103s linear infinite;
-            animation: shape-45 103s linear infinite;
+    -webkit-animation: shape-45 107s linear infinite;
+            animation: shape-45 107s linear infinite;
   }
   @-webkit-keyframes shape-46 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(132deg);
-              transform: translate3d(0, 0, 0) rotate(132deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(199deg);
+              transform: translate3d(0, 0, 0) rotate(199deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(492deg);
-              transform: translate3d(0, 0, 0) rotate(492deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(559deg);
+              transform: translate3d(0, 0, 0) rotate(559deg);
     }
   }
   @keyframes shape-46 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(132deg);
-              transform: translate3d(0, 0, 0) rotate(132deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(199deg);
+              transform: translate3d(0, 0, 0) rotate(199deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(492deg);
-              transform: translate3d(0, 0, 0) rotate(492deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(559deg);
+              transform: translate3d(0, 0, 0) rotate(559deg);
     }
   }
   .shape-container--46 {
-    -webkit-animation: shape-46 106s linear infinite;
-            animation: shape-46 106s linear infinite;
+    -webkit-animation: shape-46 103s linear infinite;
+            animation: shape-46 103s linear infinite;
   }
   @-webkit-keyframes shape-47 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(79deg);
-              transform: translate3d(0, 0, 0) rotate(79deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(231deg);
+              transform: translate3d(0, 0, 0) rotate(231deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(439deg);
-              transform: translate3d(0, 0, 0) rotate(439deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(591deg);
+              transform: translate3d(0, 0, 0) rotate(591deg);
     }
   }
   @keyframes shape-47 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(79deg);
-              transform: translate3d(0, 0, 0) rotate(79deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(231deg);
+              transform: translate3d(0, 0, 0) rotate(231deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(439deg);
-              transform: translate3d(0, 0, 0) rotate(439deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(591deg);
+              transform: translate3d(0, 0, 0) rotate(591deg);
     }
   }
   .shape-container--47 {
-    -webkit-animation: shape-47 107s linear infinite;
-            animation: shape-47 107s linear infinite;
+    -webkit-animation: shape-47 103s linear infinite;
+            animation: shape-47 103s linear infinite;
   }
   @-webkit-keyframes shape-48 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(107deg);
-              transform: translate3d(0, 0, 0) rotate(107deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(4deg);
+              transform: translate3d(0, 0, 0) rotate(4deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(467deg);
-              transform: translate3d(0, 0, 0) rotate(467deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(364deg);
+              transform: translate3d(0, 0, 0) rotate(364deg);
     }
   }
   @keyframes shape-48 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(107deg);
-              transform: translate3d(0, 0, 0) rotate(107deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(4deg);
+              transform: translate3d(0, 0, 0) rotate(4deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(467deg);
-              transform: translate3d(0, 0, 0) rotate(467deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(364deg);
+              transform: translate3d(0, 0, 0) rotate(364deg);
     }
   }
   .shape-container--48 {
-    -webkit-animation: shape-48 108s linear infinite;
-            animation: shape-48 108s linear infinite;
+    -webkit-animation: shape-48 107s linear infinite;
+            animation: shape-48 107s linear infinite;
   }
   @-webkit-keyframes shape-49 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(100deg);
-              transform: translate3d(0, 0, 0) rotate(100deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(294deg);
+              transform: translate3d(0, 0, 0) rotate(294deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(460deg);
-              transform: translate3d(0, 0, 0) rotate(460deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(654deg);
+              transform: translate3d(0, 0, 0) rotate(654deg);
     }
   }
   @keyframes shape-49 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(100deg);
-              transform: translate3d(0, 0, 0) rotate(100deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(294deg);
+              transform: translate3d(0, 0, 0) rotate(294deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(460deg);
-              transform: translate3d(0, 0, 0) rotate(460deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(654deg);
+              transform: translate3d(0, 0, 0) rotate(654deg);
     }
   }
   .shape-container--49 {
-    -webkit-animation: shape-49 109s linear infinite;
-            animation: shape-49 109s linear infinite;
+    -webkit-animation: shape-49 101s linear infinite;
+            animation: shape-49 101s linear infinite;
   }
   @-webkit-keyframes shape-50 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(111deg);
-              transform: translate3d(0, 0, 0) rotate(111deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(146deg);
+              transform: translate3d(0, 0, 0) rotate(146deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(471deg);
-              transform: translate3d(0, 0, 0) rotate(471deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(506deg);
+              transform: translate3d(0, 0, 0) rotate(506deg);
     }
   }
   @keyframes shape-50 {
     0% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(111deg);
-              transform: translate3d(0, 0, 0) rotate(111deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(146deg);
+              transform: translate3d(0, 0, 0) rotate(146deg);
     }
     100% {
-      -webkit-transform: translate3d(0, 0, 0) rotate(471deg);
-              transform: translate3d(0, 0, 0) rotate(471deg);
+      -webkit-transform: translate3d(0, 0, 0) rotate(506deg);
+              transform: translate3d(0, 0, 0) rotate(506deg);
     }
   }
   .shape-container--50 {
-    -webkit-animation: shape-50 110s linear infinite;
-            animation: shape-50 110s linear infinite;
+    -webkit-animation: shape-50 102s linear infinite;
+            animation: shape-50 102s linear infinite;
   }
 }
 /*# sourceMappingURL=background-elements.css.map */

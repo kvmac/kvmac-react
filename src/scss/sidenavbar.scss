@@ -14,7 +14,7 @@
   .sidenavbar-overlay {
     opacity: 0;
     visibility: hidden;
-    @include animation(3.5s, 1.5s, reveal-content, linear, forwards, 1);
+    @include animation(3s, 1.5s, reveal-content, linear, forwards, 1);
   }
 }
 

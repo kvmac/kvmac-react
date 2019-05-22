@@ -13,21 +13,37 @@
   // max-width: 70%;
   // max-height: 250px;
   width: 100%;
-  &.blue {
-    stroke: #6AB6FF;
+  &.golang {
+    stroke: #00ADD8;
   }
-  &.purple {
-    stroke: #8E7CFF;
+  &.react {
+    stroke: #00d8ff;
   }
-  &.red {
-    stroke: #FF7F95;
+  &.c-sharp {
+    stroke: #a27ddd;
   }
-  &.orange {
-    stroke: #FBB03B;
+  &.node {
+    stroke: #6cc24a;
   }
-  &.green {
-    stroke: #96FFD6;
+  &.angular {
+    stroke: #b52e31;
   }
+  &.python {
+    stroke: #ffde57;
+  }
+
+  // &.purple {
+  //   stroke: #8E7CFF;
+  // }
+  // &.red {
+  //   stroke: #FF7F95;
+  // }
+  // &.orange {
+  //   stroke: #FBB03B;
+  // }
+  // &.green {
+  //   stroke: #96FFD6;
+  // }
 }
 
 .background-circle {

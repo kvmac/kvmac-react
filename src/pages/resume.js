@@ -38,39 +38,39 @@ export const Resume = () => {
           <div className="title">Tech-Skills</div>
           <div className="card skill-container">
             <div className="skill">
-              <label>Golang</label>
-            </div>
-            <Circle label={"Mid"} percent={50} color={"blue"} isActive={activeSections["tech"]} />
-          </div>
-          <div className="card skill-container">
-            <div className="skill">
               <label>React.js</label>
             </div>
-            <Circle label={"Sr"} percent={75} color={"purple"} isActive={activeSections["tech"]} />
+            <Circle label={"Sr"} percent={75} color={"golang"} isActive={activeSections["tech"]} />
           </div>
           <div className="card skill-container">
             <div className="skill">
               <label>C#</label>
             </div>
-            <Circle label={"Mid"} percent={50} color={"red"} isActive={activeSections["tech"]} />
+            <Circle label={"Mid"} percent={50} color={"c-sharp"} isActive={activeSections["tech"]} />
+          </div>
+          <div className="card skill-container">
+            <div className="skill">
+              <label>Golang</label>
+            </div>
+            <Circle label={"Mid"} percent={50} color={"react"} isActive={activeSections["tech"]} />
           </div>
           <div className="card skill-container">
             <div className="skill">
               <label>Angular</label>
             </div>
-            <Circle label={"Jr"} percent={25} color={"green"} isActive={activeSections["tech"]} />
+            <Circle label={"Jr"} percent={25} color={"angular"} isActive={activeSections["tech"]} />
           </div>
           <div className="card skill-container">
             <div className="skill">
               <label>Node</label>
             </div>
-            <Circle label={"Jr"} percent={25} color={"orange"} isActive={activeSections["tech"]} />
+            <Circle label={"Jr"} percent={25} color={"node"} isActive={activeSections["tech"]} />
           </div>
           <div className="card skill-container">
             <div className="skill">
               <label>Python</label>
             </div>
-            <Circle label={"Jr"} percent={25} color={"green"} isActive={activeSections["tech"]} />
+            <Circle label={"Jr"} percent={25} color={"python"} isActive={activeSections["tech"]} />
           </div>
         </div>
       </VisibilitySensor>
