@@ -39,11 +39,12 @@ export class Contact extends React.Component {
     });
 
     axios
-      .post("http://localhost:9000/mailgun", {
+      .post("/.netlify/functions/mailgun", {
           header: {
             'Content-Type': 'application/x-www-form-urlencoded'
           },
-          body: { ...body,
+          body: {
+            ...body,
             'form-name': 'Contact'
           }
       })
