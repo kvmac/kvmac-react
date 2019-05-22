@@ -1,15 +1,14 @@
 
 
-// const mailgunSdk = require('mailgun-js');
-const mailgun = require('mailgun-js');
-// const apiKey = process.env.MAILGUN_API_KEY;
 const domain = 'https://api.mailgun.net/v3/kvmac.com/messages';
-// const mailgun = mailgunSdk({ apiKey, domain });
-
-mailgun({
+// const mailgunSdk = require('mailgun-js');
+const mailgun = require('mailgun-js')({
   username: 'api',
   apiKey: process.env.MAILGUN_API_KEY,
 });
+// const apiKey = process.env.MAILGUN_API_KEY;
+// const mailgun = mailgunSdk({ apiKey, domain });
+
 
 
 export async function handler(event, context, callback) {
