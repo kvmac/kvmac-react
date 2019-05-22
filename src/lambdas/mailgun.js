@@ -39,7 +39,6 @@ export async function handler(event, context, callback) {
     .catch((err) => console.warn(err)); // logs any error
 
     if (!res.ok) {
-    // NOT res.status >= 200 && res.status < 300
       return {
         statusCode: res.status,
         body: {
