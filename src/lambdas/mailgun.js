@@ -17,13 +17,14 @@ export async function handler(event, context, callback) {
     if(!event.body.from
       || !event.body.subject
       || !event.body.text) {
+        console.log('body:  ', event.body);
         console.log('MADE INTO NULL CHECK', 'from: ',event.body.from, '... subject: ', event.body.subject, '... text: ', event.body.text);
       return;
     }
         console.log('MADE INTO HANDLER', 'from: ', event.body.from, '... subject: ', event.body.subject, '... text: ', event.body.text);
 
     const data = JSON.parse(event.body);
-    let res = await mailgun.messages.create(domain, {
+    let res = await mailgun.messages().send(domain, {
       'to': 'kodee.mcintosh@gmail.com',
       data
       // from: data.from,
