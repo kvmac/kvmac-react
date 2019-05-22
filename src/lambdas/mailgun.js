@@ -13,7 +13,6 @@ mailgun({
 
 
 export async function handler(event, context, callback) {
-  const data = JSON.parse(...event.body, {to: 'kodee.mcintosh@gmail.com'});
   try {
     if(!event.body.from
       || !event.body.subject
@@ -23,7 +22,9 @@ export async function handler(event, context, callback) {
     }
         console.log('MADE INTO HANDLER', 'from: ', event.body.from, '... subject: ', event.body.subject, '... text: ', event.body.text);
 
+    const data = JSON.parse(event.body);
     let res = await mailgun.messages.create(domain, {
+      'to': 'kodee.mcintosh@gmail.com',
       data
       // from: data.from,
       // to: ['kodee.mcintosh@kvmac.com'],
