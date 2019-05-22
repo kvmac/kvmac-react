@@ -32,20 +32,16 @@ export class Contact extends React.Component {
       return;
     }
 
-    let body = JSON.stringify({
-      from,
-      subject,
-      text
-    });
-
     axios
       .post("/.netlify/functions/mailgun", {
           header: {
-            'Content-Type': 'application/x-www-form-urlencoded'
+            'Content-Type': 'application/json'
           },
           body: {
-            ...body,
-            'form-name': 'Contact'
+            'form-name': 'Contact',
+            from,
+            subject,
+            text
           }
       })
       .then(res => res.json())
