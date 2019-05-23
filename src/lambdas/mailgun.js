@@ -20,7 +20,7 @@ export async function handler(event) {
 
     data.to = 'kodee.mcintosh@kvmac.com';
     data.from = `KVMAC Contact Form <contact@kvmac.com>`;
-    data.subject = `${new Date().formatUTC()} -- ${data.subject} -- ${data.from}`;
+    data.subject = `${new Date()} -- ${data.subject} -- ${data.from}`;
     console.log('data: ', data);
 
     // let res = await mailgun.messages().send(JSON.stringify(data));
