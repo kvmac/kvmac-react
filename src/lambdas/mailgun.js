@@ -16,11 +16,12 @@ export async function handler(event, context, callback) {
       return;
     }
 
+    console.log('data: ', data);
 
-    let res = await mailgun.messages().send(JSON.stringify(data));
-    // let res = await mailgun.messages().send(JSON.stringify(data), (err, body) => {
-    //   console.log('BODY-------------:   ', body);
-    // })
+    // let res = await mailgun.messages().send(JSON.stringify(data));
+    mailgun.messages().send(JSON.stringify(data), (err, body) => {
+      console.log('BODY-------------:   ', body);
+    })
 
     if (!res.status !== 200) {
     // if (!res.o) {
