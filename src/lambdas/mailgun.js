@@ -6,7 +6,7 @@ const mailgun = require('mailgun-js')
   retry: 3
 });
 
-export async function handler(event, context, callback) {
+export async function handler(event) {
   try {
     let data = JSON.parse(event.body);
     let resData = {};
@@ -19,7 +19,8 @@ export async function handler(event, context, callback) {
     }
 
     data.to = 'kodee.mcintosh@kvmac.com';
-    // data.from = `KVMAC Contact <${data.from}>`;
+    data.from = `KVMAC Contact Form <contact@kvmac.com>`;
+    data.subject = `${new Date().formatUTC()} -- ${data.subject} -- ${data.from}`;
     console.log('data: ', data);
 
     // let res = await mailgun.messages().send(JSON.stringify(data));
