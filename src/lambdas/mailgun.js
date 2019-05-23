@@ -2,12 +2,13 @@ const mailgun = require('mailgun-js')
 ({
   domain: 'https://api.mailgun.net/v3/kvmac.com/messages',
   apiKey: process.env.MAILGUN_API_KEY,
+  retry: 3
 });
 
 export async function handler(event, context, callback) {
   try {
     let data = JSON.parse(event.body);
-    data.to = 'kodee.mcintosh@kvmac.com';
+    let resData = {};
 
     if(!data.from
       || !data.subject
@@ -16,17 +17,23 @@ export async function handler(event, context, callback) {
       return;
     }
 
+    data.to = 'kodee.mcintosh@kvmac.com';
+    data.from = `KVMAC Contact <${data.from}>`;
     console.log('data: ', data);
 
-    let res = await mailgun.messages().send(JSON.stringify(data));
+    // let res = await mailgun.messages().send(JSON.stringify(data));
+    mailgun.messages().send(JSON.stringify(data), (err, body) => {
+      console.log('body:  ', body);
+      resData = body;
+    });
     console.log('Mailgun response ------------------- ', res);
 
-    if (!res.status !== 200) {
+    if (!resData.status !== 200) {
     // if (!res.ok) {
       return {
-        statusCode: res.status,
+        statusCode: resData.status,
         body: {
-          statusText: res.statusText
+          statusText: resData.statusText
         }
       };
     }
@@ -34,7 +41,7 @@ export async function handler(event, context, callback) {
     return {
       statusCode: 200,
       message: 'Hey, wazzup, Boi??? Your data made it into the function',
-      data: JSON.stringify(data)
+      data: JSON.stringify(resData)
     };
   } catch(err) {
     console.log(err) // output to netlify function log
