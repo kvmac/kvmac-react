@@ -36,6 +36,7 @@ export async function handler(event, context, callback) {
     })
     .then((res) => console.log(res)) // logs response data
     .catch((err) => console.warn(err)); // logs any error
+    console.log('response:  ', res);
 
     if (!res.ok) {
       return {

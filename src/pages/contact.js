@@ -48,9 +48,7 @@ export class Contact extends React.Component {
       .then(json => this.setState({ isLoading: false, emailSuccessful: json.msg.statusCode === 200 ? true : false }))
   }
 
-  handleEmail = (e) => this.setState({ from: e.target.value });
-  handleSubject = (e) => this.setState({ subject: e.target.value });
-  handleMessage = (e) => this.setState({ text: e.target.value });
+  handleInput = (e) => this.setState({ [e.target.id]: e.target.value });
 
   render() {
     const { from, subject, text } = { ...this.state };
@@ -60,9 +58,9 @@ export class Contact extends React.Component {
         <div className="card">
           <form>
             <div className="title">Contact</div>
-            <input placeholder="return email" className="email" value={from} onChange={this.handleEmail} />
-            <input placeholder="subject" className="subject" value={subject} onChange={this.handleSubject} />
-            <textarea placeholder="message" className="message" value={text} onChange={this.handleMessage} />
+            <input id="from" placeholder="return email" className="email" value={from} onChange={this.handleInput} />
+            <input id="subject" placeholder="subject" className="subject" value={subject} onChange={this.handleInput} />
+            <textarea id="text" placeholder="message" className="message" value={text} onChange={this.handleInput} />
             <button className="submit" onClick={this.handleContactForm}>Submit</button>
           </form>
         </div>
