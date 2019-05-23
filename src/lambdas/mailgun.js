@@ -22,19 +22,14 @@ export async function handler(event, context, callback) {
     //     console.log('MADE INTO NULL CHECK', 'from: ',data.from, '... subject: ', data.subject, '... text: ', data.text);
     //   return;
     // }
+    data.to = 'kodee.mcintosh@kvmac.com';
+    data = JSON.stringify(data);
 
     console.log('NEW CALL ----------------------------------------');
     console.log('body:  ', data, '  type:  ', typeof(data));
     console.log('MADE INTO HANDLER', 'from: ', data.from, '... subject: ', data.subject, '... text: ', data.text);
 
-    let res = await mailgun.messages().send(domain, {
-      'to': 'kodee.mcintosh@gmail.com',
-      ...data
-      // from: data.from,
-      // to: ['kodee.mcintosh@kvmac.com'],
-      // subject: data.subject,
-      // text: data.text
-    })
+    let res = await mailgun.messages().send(domain, data)
     .then((res) => console.log(res)) // logs response data
     .catch((err) => console.warn(err)); // logs any error
     console.log('response:  ', res);
