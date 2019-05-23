@@ -85,13 +85,13 @@ export const Resume = () => {
           </div>
           <div className="availity card">
             <a href="https://www.availity.com">Availity</a>
-            <div className="card">
+            <div className="">
               did stuff here
             </div>
           </div>
           <div className="egenuity card">
             <a href="https://www.egenuity.com">eGenuity</a>
-            <div className="card">
+            <div className="">
               did stuff here
             </div>
           </div>
@@ -100,6 +100,18 @@ export const Resume = () => {
       <VisibilitySensor onChange={(e) => handleSection(e, "edu")}>
         <div className={`education card ${activeSections["edu"] ? "active" : "fade"}`}>
           <div className="title">Education</div>
+          <div className="au card">
+            <a href="https://www.anderson.edu">Anderson University</a>
+            <div className="">
+              did stuff here
+            </div>
+          </div>
+          <div className="iu card">
+            <a href="https://www.iub.edu">Indiana University</a>
+            <div className="">
+              did stuff here
+            </div>
+          </div>
         </div>
       </VisibilitySensor>
       <VisibilitySensor onChange={(e) => handleSection(e, "download-btn")}>

@@ -77,25 +77,25 @@
 }
 
 .sidenavbar.init {
-  -webkit-animation-delay: 1s;
+  -webkit-animation-delay: 0.5s;
   -webkit-animation-duration: 2s;
   -webkit-animation-name: init;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-direction: ease-in;
   -webkit-animation-iteration-count: 1;
-  -moz-animation-delay: 1s;
+  -moz-animation-delay: 0.5s;
   -moz-animation-duration: 2s;
   -moz-animation-name: init;
   -moz-animation-fill-mode: forwards;
   -moz-animation-direction: ease-in;
   -moz-animation-iteration-count: 1;
-  -ms-animation-delay: 1s;
+  -ms-animation-delay: 0.5s;
   -ms-animation-duration: 2s;
   -ms-animation-name: init;
   -ms-animation-fill-mode: forwards;
   -ms-animation-direction: ease-in;
   -ms-animation-iteration-count: 1;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
   animation-duration: 2s;
   animation-name: init;
   animation-fill-mode: forwards;

@@ -228,11 +228,50 @@
   opacity: 0;
 }
 
+.resume .education .iu {
+  position: relative;
+}
+
+.resume .education .iu a {
+  margin: 5% 0 5% 0;
+  position: relative;
+  font-family: 'Asap', 'Sans Serif';
+  color: white;
+  font-weight: bold;
+  color: white;
+  font-size: 2ch;
+  text-decoration: none;
+}
+
+.resume .education .iu .card {
+  width: 90%;
+}
+
+.resume .education .au {
+  position: relative;
+}
+
+.resume .education .au a {
+  margin: 5% 0 5% 0;
+  position: relative;
+  font-family: 'Asap', 'Sans Serif';
+  color: white;
+  font-weight: bold;
+  color: white;
+  font-size: 2ch;
+  text-decoration: none;
+}
+
+.resume .education .au .card {
+  width: 90%;
+}
+
 .resume .download-btn {
   opacity: 0;
 }
 
 .resume .download-btn > a > button {
+  text-align: center;
   -webkit-animation-delay: 0;
   -webkit-animation-duration: 2s;
   -webkit-animation-name: box-glow;
