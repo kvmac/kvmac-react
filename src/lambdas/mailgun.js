@@ -1,6 +1,7 @@
 const mailgun = require('mailgun-js')
 ({
-  domain: 'https://api.mailgun.net/v3/kvmac.com/messages',
+  // domain: 'https://api.mailgun.net/v3/kvmac.com/messages',
+  domain: 'kvmac.com',
   apiKey: process.env.MAILGUN_API_KEY,
   retry: 3
 });
@@ -23,10 +24,10 @@ export async function handler(event, context, callback) {
 
     // let res = await mailgun.messages().send(JSON.stringify(data));
     mailgun.messages().send(JSON.stringify(data), (err, body) => {
-      console.log('body:  ', body);
       resData = body;
+      console.log('body:  ', body);
     });
-    console.log('Mailgun response ------------------- ', res);
+    // console.log('Mailgun response ------------------- ', res);
 
     if (!resData.status !== 200) {
     // if (!res.ok) {
