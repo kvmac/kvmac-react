@@ -14,7 +14,8 @@ const mailgun = require('mailgun-js')({
 export async function handler(event, context, callback) {
   try {
     console.log('------------- event:  ', event);
-    const data = JSON.parse(event.payload);
+    const event = JSON.parse(event);
+    let data = event.body;
 
     // if(!data.from
     //   || !data.subject

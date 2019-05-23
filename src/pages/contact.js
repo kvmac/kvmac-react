@@ -34,15 +34,10 @@ export class Contact extends React.Component {
 
     axios
       .post("/.netlify/functions/mailgun", {
-          header: {
-            'Content-Type': 'application/json'
-          },
-          payload: {
-            'form-name': 'Contact',
-            from,
-            subject,
-            text
-          }
+        'form-name': 'Contact',
+        from,
+        subject,
+        text
       })
       .then(res => res.json())
       .then(json => this.setState({ isLoading: false, emailSuccessful: json.msg.statusCode === 200 ? true : false }))
