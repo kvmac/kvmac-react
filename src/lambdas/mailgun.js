@@ -15,7 +15,7 @@ export async function handler(event, context, callback) {
   try {
     console.log('------------- event:  ', event, '       typeof:  ', typeof event);
     // const event = JSON.parse(event);
-    let data = event.body;
+    let data = JSON.parse(event.body);
 
     // if(!data.from
     //   || !data.subject
@@ -24,7 +24,7 @@ export async function handler(event, context, callback) {
     //     console.log('MADE INTO NULL CHECK', 'from: ',data.from, '... subject: ', data.subject, '... text: ', data.text);
     //   return;
     // }
-    data.to = 'kodee.mcintosh@kvmac.com';
+    data.to = { 'to': 'kodee.mcintosh@kvmac.com' };
     data = JSON.stringify(data);
 
     console.log('NEW CALL ----------------------------------------');
