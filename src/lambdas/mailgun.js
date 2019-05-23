@@ -19,18 +19,19 @@ export async function handler(event, context, callback) {
     }
 
     data.to = 'kodee.mcintosh@kvmac.com';
-    data.from = `KVMAC Contact <${data.from}>`;
+    // data.from = `KVMAC Contact <${data.from}>`;
     console.log('data: ', data);
 
     // let res = await mailgun.messages().send(JSON.stringify(data));
-    mailgun.messages().send(JSON.stringify(data), (err, body) => {
+    mailgun.messages().send(JSON.stringify(data), (error, body) => {
       resData = body;
+      console.log('ERROR: ', error);
       console.log('body:  ', body);
     });
     // console.log('Mailgun response ------------------- ', res);
 
-    if (!resData.status !== 200) {
-    // if (!res.ok) {
+    // if (resData.status !== 200) {
+    if (!resData.ok) {
       return {
         statusCode: resData.status,
         body: {
