@@ -17,9 +17,9 @@ export class Contact extends React.Component {
     this.state = {
       isLoading: false,
       emailSuccessful: null,
-      from: '',
-      subject: '',
-      text: '' 
+      from: 'kodee.mcintosh@gmail.com',
+      subject: 'TEST SUBJECT',
+      text: 'THIS IS A TEST ' + new Date()
     };
   }
 

@@ -12,19 +12,17 @@ export async function handler(event, context, callback) {
     if(!data.from
       || !data.subject
       || !data.text) {
-        console.warn('MADE INTO NULL CHECK -- An object field is probably empty  -----  ', 'to: ', data.to, '... from: ', data.from, '... subject: ', data.subject, '... text: ', data.text);
+        console.warn('MADE INTO NULL CHECK -- An object field is probably empty: ', data);
       return;
     }
 
     console.log('data: ', data);
 
-    // let res = await mailgun.messages().send(JSON.stringify(data));
-    mailgun.messages().send(JSON.stringify(data), (err, body) => {
-      console.log('BODY-------------:   ', body);
-    })
+    let res = await mailgun.messages().send(JSON.stringify(data));
+    console.log('Mailgun response ------------------- ', res);
 
     if (!res.status !== 200) {
-    // if (!res.o) {
+    // if (!res.ok) {
       return {
         statusCode: res.status,
         body: {
@@ -36,7 +34,7 @@ export async function handler(event, context, callback) {
     return {
       statusCode: 200,
       message: 'Hey, wazzup, Boi??? Your data made it into the function',
-      event
+      data: JSON.stringify(data)
     };
   } catch(err) {
     console.log(err) // output to netlify function log
