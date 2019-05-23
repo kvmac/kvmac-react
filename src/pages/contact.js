@@ -31,14 +31,10 @@ export class Contact extends React.Component {
     if(!from || !subject || !text) {
       return;
     }
+    let payload = JSON.stringify({ from, subject, text });
 
     axios
-      .post("/.netlify/functions/mailgun", {
-        'form-name': 'Contact',
-        from,
-        subject,
-        text
-      })
+      .post("/.netlify/functions/mailgun", payload)
       .then(res => res.json())
       .then(json => this.setState({ isLoading: false, emailSuccessful: json.msg.statusCode === 200 ? true : false }))
   }

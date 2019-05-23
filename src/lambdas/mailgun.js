@@ -1,41 +1,29 @@
-
-
-const domain = 'https://api.mailgun.net/v3/kvmac.com/messages';
-// const mailgunSdk = require('mailgun-js');
-const mailgun = require('mailgun-js')({
-  username: 'api',
+const mailgun = require('mailgun-js')
+({
+  domain: 'https://api.mailgun.net/v3/kvmac.com/messages',
   apiKey: process.env.MAILGUN_API_KEY,
 });
-// const apiKey = process.env.MAILGUN_API_KEY;
-// const mailgun = mailgunSdk({ apiKey, domain });
-
-
 
 export async function handler(event, context, callback) {
   try {
-    console.log('------------- event:  ', event, '       typeof:  ', typeof event);
-    // const event = JSON.parse(event);
     let data = JSON.parse(event.body);
-    console.log('NEW CALL ----------------------------------------');
-    console.log('body:  ', data, '  type:  ', typeof(data));
-    console.log('MADE INTO HANDLER', 'from: ', data.from, '... subject: ', data.subject, '... text: ', data.text);
+    data.to = 'kodee.mcintosh@kvmac.com';
 
     if(!data.from
       || !data.subject
       || !data.text) {
-        console.log('body:  ', data, '  type:  ', typeof(data));
-        console.log('MADE INTO NULL CHECK', 'from: ',data.from, '... subject: ', data.subject, '... text: ', data.text);
+        console.warn('MADE INTO NULL CHECK -- An object field is probably empty  -----  ', 'to: ', data.to, '... from: ', data.from, '... subject: ', data.subject, '... text: ', data.text);
       return;
     }
-    data.to = 'kodee.mcintosh@kvmac.com';
-    data = JSON.stringify(data);
 
 
-    let res = await mailgun.messages().send(domain, data)
-    .then((res) => console.log('response: ', res)) // logs response data
-    .catch((err) => console.warn('Error in the mailgun client:  ', err)); // logs any error
+    let res = await mailgun.messages().send(JSON.stringify(data));
+    // let res = await mailgun.messages().send(JSON.stringify(data), (err, body) => {
+    //   console.log('BODY-------------:   ', body);
+    // })
 
-    if (!res.ok) {
+    if (!res.status !== 200) {
+    // if (!res.o) {
       return {
         statusCode: res.status,
         body: {
