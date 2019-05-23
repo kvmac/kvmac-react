@@ -37,7 +37,7 @@ export class Contact extends React.Component {
           header: {
             'Content-Type': 'application/json'
           },
-          body: {
+          payload: {
             'form-name': 'Contact',
             from,
             subject,

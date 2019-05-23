@@ -13,7 +13,7 @@ const mailgun = require('mailgun-js')({
 
 export async function handler(event, context, callback) {
   try {
-    const data = JSON.parse(event.body);
+    const data = JSON.parse(event.body.payload);
 
     // if(!data.from
     //   || !data.subject
@@ -23,12 +23,13 @@ export async function handler(event, context, callback) {
     //   return;
     // }
 
+    console.log('NEW CALL ----------------------------------------');
     console.log('body:  ', data, '  type:  ', typeof(data));
     console.log('MADE INTO HANDLER', 'from: ', data.from, '... subject: ', data.subject, '... text: ', data.text);
 
     let res = await mailgun.messages().send(domain, {
       'to': 'kodee.mcintosh@gmail.com',
-      data
+      ...data
       // from: data.from,
       // to: ['kodee.mcintosh@kvmac.com'],
       // subject: data.subject,
