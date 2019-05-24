@@ -19,12 +19,17 @@ export async function handler(event) {
     }
 
     data.to = 'kodee.mcintosh@kvmac.com';
-    data.from = `KVMAC Contact Form <kodee.mcintosh@protonmail.com>`;
+    // data.from = `KVMAC Contact Form <kodee.mcintosh@protonmail.com>`;
     data.subject = `${new Date()} -- ${data.subject} -- ${data.from}`;
     console.log('data: ', data);
 
     // let res = await mailgun.messages().send(JSON.stringify(data));
-    mailgun.messages().send(JSON.stringify(data), (error, body) => {
+    mailgun.messages().send({
+      from: `KVMAC Contact Form <${data.from}>`,
+      to: 'kodee.mcintosh@kvmac.com',
+      subject: data.subject,
+      text: data.text
+    }, (error, body) => {
       resData = body;
       console.log('ERROR: ', error);
       console.log('body:  ', body);
