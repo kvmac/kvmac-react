@@ -26,11 +26,11 @@ export async function handler(event) {
     // let res = await mailgun.messages().send(JSON.stringify(data));
     mailgun.messages().send(
 
-      // from: `KVMAC Contact Form <${data.from}>`,
-      // to: 'kodee.mcintosh@kvmac.com',
-      // subject: data.subject,
-      // text: data.text
-    JSON.stringify(data), (error, body) => {
+      JSON.stringify({from: `KVMAC Contact Form <${data.from}>`,
+      to: 'kodee.mcintosh@kvmac.com',
+      subject: data.subject,
+      text: data.text
+    }), (error, body) => {
       resData = body;
       console.log('ERROR: ', error);
       console.log('body:  ', body);
@@ -38,7 +38,7 @@ export async function handler(event) {
     // console.log('Mailgun response ------------------- ', res);
 
     // if (resData.status !== 200) {
-    if (!resData.ok) {
+    if (!resData || !resData.status !== 200) {
       return {
         statusCode: resData.status,
         body: {
