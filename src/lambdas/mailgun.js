@@ -7,9 +7,10 @@ const mailgun = require('mailgun-js')
 });
 
 export async function handler(event) {
+  let response;
+
   try {
     let data = JSON.parse(event.body);
-    let resData = {};
 
     if(!data.from
       || !data.subject
@@ -18,31 +19,27 @@ export async function handler(event) {
       return;
     }
 
-    data.to = 'kodee.mcintosh@kvmac.com';
-    data.from = `KVMAC Contact Form <kodee.mcintosh@gmail.com>`;
-    data.subject = `${new Date()} -- ${data.subject} -- ${data.from}`;
+    // data.to = 'kodee.mcintosh@kvmac.com';
+    // data.from = `KVMAC Contact Form <${data.from}>`;
+    // data.subject = `${new Date()} -- ${data.subject} -- ${data.from}`;
     console.log('data: ', data);
 
     // let res = await mailgun.messages().send(JSON.stringify(data));
-    mailgun.messages().send(
-
-      JSON.stringify({from: `KVMAC Contact Form <${data.from}>`,
+    response = await mailgun.messages().send({
+      from: `KVMAC Contact Form <${data.from}>`,
       to: 'kodee.mcintosh@kvmac.com',
-      subject: data.subject,
+      subject: `${new Date()} -- ${data.subject} -- ${data.from}`,
       text: data.text
-    }), (error, body) => {
-      resData = body;
-      console.log('ERROR: ', error);
-      console.log('body:  ', body);
     });
-    // console.log('Mailgun response ------------------- ', res);
+
+    console.log('Mailgun response ------------------- ', response);
 
     // if (resData.status !== 200) {
-    if (!resData || !resData.status !== 200) {
+    if (response.status !== 200) {
       return {
-        statusCode: resData.status,
+        statusCode: response.status,
         body: {
-          statusText: resData.statusText
+          statusText: response.statusText
         }
       };
     }
@@ -50,7 +47,7 @@ export async function handler(event) {
     return {
       statusCode: 200,
       message: 'Hey, wazzup, Boi??? Your data made it into the function',
-      data: JSON.stringify(resData)
+      data: response
     };
   } catch(err) {
     console.log(err) // output to netlify function log
