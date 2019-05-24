@@ -19,7 +19,7 @@ export async function handler(event) {
     }
 
     data.to = 'kodee.mcintosh@kvmac.com';
-    // data.from = `KVMAC Contact Form <kodee.mcintosh@protonmail.com>`;
+    data.from = `KVMAC Contact Form <kodee.mcintosh@protonmail.com>`;
     data.subject = `${new Date()} -- ${data.subject} -- ${data.from}`;
     console.log('data: ', data);
 
