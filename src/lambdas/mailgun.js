@@ -12,43 +12,41 @@ export async function handler(event) {
   try {
     let data = JSON.parse(event.body);
 
-    if(!data.from
-      || !data.subject
-      || !data.text) {
-        console.warn('MADE INTO NULL CHECK -- An object field is probably empty: ', data);
-      return;
+    if(!data || !data.from || !data.subject || !data.text) {
+      console.warn('Parameter value was null or undefined:  ', data);
+
+      return {
+        status: 500,
+        msg: `Parameter value was null or undefined:  ${data}`
+      };
     }
 
-    // data.to = 'kodee.mcintosh@kvmac.com';
-    // data.from = `KVMAC Contact Form <${data.from}>`;
-    // data.subject = `${new Date()} -- ${data.subject} -- ${data.from}`;
-    console.log('data: ', data);
+    const d = new Date();
 
-    // let res = await mailgun.messages().send(JSON.stringify(data));
     response = await mailgun.messages().send({
       from: `KVMAC Contact Form <${data.from}>`,
       to: 'kodee.mcintosh@kvmac.com',
-      subject: `${new Date()} -- ${data.subject} -- ${data.from}`,
+      subject: `${data.from} -- ${data.subject} -- ${d.getMonth()}/${d.getDate()}/${d.getFullYear()} ${d.getHours()}:${d.getMinutes()}`,
       text: data.text
     });
 
     console.log('Mailgun response ------------------- ', response);
 
     // if (resData.status !== 200) {
-    if (response.status !== 200) {
-      return {
-        statusCode: response.status,
-        body: {
-          statusText: response.statusText
-        }
-      };
-    }
+    // if (!response.ok) {
+      return JSON.stringify(response);
+      // return { statusCode: response.status,
+      //   body: {
+      //     statusText: response.statusText
+      //   }
+      // };
+    // }
 
-    return {
-      statusCode: 200,
-      message: 'Hey, wazzup, Boi??? Your data made it into the function',
-      data: response
-    };
+    // return {
+    //   statusCode: 200,
+    //   message: 'Hey, wazzup, Boi??? Your data made it into the function',
+    //   data: JSON.stringify(response)
+    // };
   } catch(err) {
     console.log(err) // output to netlify function log
     return {
