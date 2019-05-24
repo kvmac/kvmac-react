@@ -30,7 +30,7 @@ export async function handler(event) {
       // to: 'kodee.mcintosh@kvmac.com',
       // subject: data.subject,
       // text: data.text
-    data, (error, body) => {
+    JSON.stringify(data), (error, body) => {
       resData = body;
       console.log('ERROR: ', error);
       console.log('body:  ', body);
