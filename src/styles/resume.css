@@ -163,6 +163,10 @@
   opacity: 0;
 }
 
+.resume .experience.card {
+  padding: 5% 5% 5% 5%;
+}
+
 .resume .experience.card .title {
   position: relative;
   font-family: 'Asap', 'Sans Serif';
@@ -171,48 +175,10 @@
   color: white;
   font-size: 3ch;
   text-decoration: none;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 
-.resume .experience.card .sq {
-  position: relative;
-}
-
-.resume .experience.card .sq a {
-  margin: 5% 0 5% 0;
-  position: relative;
-  font-family: 'Asap', 'Sans Serif';
-  color: white;
-  font-weight: bold;
-  color: white;
-  font-size: 2ch;
-  text-decoration: none;
-}
-
-.resume .experience.card .availity {
-  position: relative;
-}
-
-.resume .experience.card .availity a {
-  margin: 5% 0 5% 0;
-  position: relative;
-  font-family: 'Asap', 'Sans Serif';
-  color: white;
-  font-weight: bold;
-  color: white;
-  font-size: 2ch;
-  text-decoration: none;
-}
-
-.resume .experience.card .availity .card {
-  width: 90%;
-}
-
-.resume .experience.card .egenuity {
-  position: relative;
-}
-
-.resume .experience.card .egenuity a {
+.resume .experience.card a {
   margin: 5% 0 5% 0;
   position: relative;
   font-family: 'Asap', 'Sans Serif';
@@ -228,12 +194,22 @@
   opacity: 0;
 }
 
-.resume .education .iu {
-  position: relative;
+.resume .education.card {
+  padding: 5% 5% 5% 5%;
 }
 
-.resume .education .iu a {
-  margin: 5% 0 5% 0;
+.resume .education.card .title {
+  position: relative;
+  font-family: 'Asap', 'Sans Serif';
+  color: white;
+  font-weight: bold;
+  color: white;
+  font-size: 3ch;
+  text-decoration: none;
+  margin-bottom: 10%;
+}
+
+.resume .education.card a {
   position: relative;
   font-family: 'Asap', 'Sans Serif';
   color: white;
@@ -241,29 +217,6 @@
   color: white;
   font-size: 2ch;
   text-decoration: none;
-}
-
-.resume .education .iu .card {
-  width: 90%;
-}
-
-.resume .education .au {
-  position: relative;
-}
-
-.resume .education .au a {
-  margin: 5% 0 5% 0;
-  position: relative;
-  font-family: 'Asap', 'Sans Serif';
-  color: white;
-  font-weight: bold;
-  color: white;
-  font-size: 2ch;
-  text-decoration: none;
-}
-
-.resume .education .au .card {
-  width: 90%;
 }
 
 .resume .download-btn {
@@ -271,6 +224,7 @@
 }
 
 .resume .download-btn > a > button {
+  position: relative;
   text-align: center;
   -webkit-animation-delay: 0;
   -webkit-animation-duration: 2s;
@@ -298,7 +252,6 @@
   animation-iteration-count: infinite;
   border: 2px solid #26e9ff;
   border-radius: .5ch;
-  margin: 0 0 10px 0;
   font-family: 'Asap', 'Sans Serif';
   color: white;
   font-weight: normal;
@@ -308,6 +261,11 @@
   box-shadow: 0px 0px 20px 0px #26e9ff;
   -webkit-box-shadow: 0px 0px 20px 0px #26e9ff;
   -moz-box-shadow: 0px 0px 20px 0px #26e9ff;
+  left: 50%;
+  right: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 40px;
 }
 
 .resume .active {

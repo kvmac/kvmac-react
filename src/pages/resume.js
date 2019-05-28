@@ -77,19 +77,19 @@ export const Resume = () => {
       <VisibilitySensor onChange={(e) => handleSection(e, "exp")}>
         <div className={`experience card ${activeSections["exp"] ? "active" : "fade"}`}>
           <div className="title">Experience</div>
-          <div className="sq card">
+          <div className="card">
             <a href="https://www.stratospherequality.com">Stratosphere Quality</a>
-            <div className="">
+            <div className="description">
               did stuff here
             </div>
           </div>
-          <div className="availity card">
+          <div className="card">
             <a href="https://www.availity.com">Availity</a>
-            <div className="">
+            <div className="description">
               did stuff here
             </div>
           </div>
-          <div className="egenuity card">
+          <div className="card">
             <a href="https://www.egenuity.com">eGenuity</a>
             <div className="">
               did stuff here
@@ -100,15 +100,15 @@ export const Resume = () => {
       <VisibilitySensor onChange={(e) => handleSection(e, "edu")}>
         <div className={`education card ${activeSections["edu"] ? "active" : "fade"}`}>
           <div className="title">Education</div>
-          <div className="au card">
+          <div className="card">
             <a href="https://www.anderson.edu">Anderson University</a>
-            <div className="">
+            <div className="description">
               did stuff here
             </div>
           </div>
-          <div className="iu card">
+          <div className="card">
             <a href="https://www.iub.edu">Indiana University</a>
-            <div className="">
+            <div className="description">
               did stuff here
             </div>
           </div>
