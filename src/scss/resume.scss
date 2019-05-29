@@ -125,6 +125,11 @@
         font-size: 2ch;
         text-decoration: none;
       }
+      .description {
+        position: relative;
+        @include asap-reg();
+        color: white;
+      }
     }
   }
   .education {
@@ -149,11 +154,10 @@
         text-decoration: none;
       }
 
-      .card>&.school {
-      }
-      .card>&.major {
-      }
-      .card>&.courses {
+      .card>.description {
+        position: relative;
+        @include asap-reg();
+        color: white;
       }
     }
   }

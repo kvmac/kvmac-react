@@ -189,6 +189,14 @@
   text-decoration: none;
 }
 
+.resume .experience.card .description {
+  position: relative;
+  font-family: 'Asap', 'Sans Serif';
+  color: white;
+  font-weight: normal;
+  color: white;
+}
+
 .resume .education {
   position: relative;
   opacity: 0;
@@ -217,6 +225,14 @@
   color: white;
   font-size: 2ch;
   text-decoration: none;
+}
+
+.resume .education.card .card > .description {
+  position: relative;
+  font-family: 'Asap', 'Sans Serif';
+  color: white;
+  font-weight: normal;
+  color: white;
 }
 
 .resume .download-btn {

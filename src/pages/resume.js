@@ -80,19 +80,19 @@ export const Resume = () => {
           <div className="card">
             <a href="https://www.stratospherequality.com">Stratosphere Quality</a>
             <div className="description">
-              did stuff here
+              React & C#
             </div>
           </div>
           <div className="card">
             <a href="https://www.availity.com">Availity</a>
             <div className="description">
-              did stuff here
+              Angular & C#
             </div>
           </div>
           <div className="card">
             <a href="https://www.egenuity.com">eGenuity</a>
-            <div className="">
-              did stuff here
+            <div className="description">
+              Angular & C#
             </div>
           </div>
         </div>
@@ -103,13 +103,13 @@ export const Resume = () => {
           <div className="card">
             <a href="https://www.anderson.edu">Anderson University</a>
             <div className="description">
-              did stuff here
+              Information Systems
             </div>
           </div>
           <div className="card">
             <a href="https://www.iub.edu">Indiana University</a>
             <div className="description">
-              did stuff here
+              Accounting & Finance
             </div>
           </div>
         </div>
@@ -121,17 +121,6 @@ export const Resume = () => {
           </a>
         </div>
       </VisibilitySensor>
-    </div>
-  );
-}
-
-const Section = ({ name, content, color }) => {
-
-  return (
-    <div className={name}>
-      <label className="section-title">{name}</label>
-      <Divider color={color} />
-      {content}
     </div>
   );
 }
