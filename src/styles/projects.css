@@ -24,9 +24,24 @@
   float: right;
   width: 82%;
   height: 100%;
-  padding: 5% 0 5% 0;
   color: white;
   text-decoration: none;
+}
+
+.projects .card {
+  margin: 5% 5% 5% 5%;
+  padding: 10% 10% 10% 10%;
+}
+
+.projects .title {
+  position: relative;
+  text-align: center;
+  font-size: 3ch;
+  color: white;
+  margin-bottom: 15%;
+  font-family: 'Asap', 'Sans Serif';
+  color: white;
+  font-weight: bold;
 }
 
 .projects a {
@@ -38,7 +53,7 @@
 }
 
 .projects .project.card {
-  margin: 5% 5% 5% 5%;
+  margin: 10% 0 10% 0;
 }
 
 .projects .project.card .links {
@@ -53,7 +68,7 @@
   position: relative;
   display: inline;
   margin: 0 6% 0 6%;
-  font-size: 3ch;
+  font-size: 2ch;
   text-decoration: none;
   color: white;
 }
@@ -62,7 +77,7 @@
   font-family: 'Asap', 'Sans Serif';
   color: white;
   font-weight: bold;
-  font-size: 3ch;
+  font-size: 2.5ch;
 }
 
 @media (min-width: 1200px) {

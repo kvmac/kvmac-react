@@ -43,11 +43,6 @@
 
 @media (min-width: 1200px) {
   .card {
-    display: block;
-    background-color: $dark-tertiary;
-    border-radius: .5ch;
-    opacity: .8;
-    @include box-shadow();
 
     input {
       position: relative;

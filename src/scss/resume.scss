@@ -4,43 +4,12 @@
 
 
 
-@include keyframes(draw) {
-  0% {
-    stroke-width: 1px;
-  }
-  100% {
-    stroke-width: 4px;
-    stroke-dasharray: 3500 0;
-    stroke-dashoffset: 1;
-  }
-}
-
-.svg-wrapper {
-  z-index: 4;
-  position: absolute;
-  transform: translateY(-50%);
-  top: 50%;
-  width: $page-width;
-  // margin: 0 auto;
-  .border {
-    stroke-dasharray: 0 3500;
-    stroke-dashoffset: 1;
-    stroke-width: 1px;
-    // margin-top: 5%;
-    fill: transparent;
-    stroke: #19f6e8;
-    @include animation(.5, 3s, draw, linear, forwards, 1);
-    z-index: 3;
-  }
-}
-
 .resume {
   position: relative;
   background-color: transparent;
   float: right;
   width: $page-width;
   height: 100%;
-  padding: 5% 0 5% 0;
 
   .title {
     position: relative;
@@ -49,33 +18,23 @@
     color: white;
     @include asap-bold();
   }
-  .card {
-    margin: 5% 5% 5% 5%;
-  }
 
   .tech-skills {
     position: relative;
     opacity: 0;
-      // #golang {
-      // }
-      // #c-sharp {
-      // }
-      // #python {
-      // }
-      // #node {
-      // }
-      // #angular {
-      // }
 
+    &.card {
+      margin: 5% 5% 5% 5%;
+    }
   }
+
   .tech-skills>.title {
-    margin-bottom: 10%;
+    margin-bottom: 15%;
   }
   .tech-skills>.skill-container {
     display: flex;
     flex-flow: row nowrap;
-    height: 15%;
-    margin: 5% 0 5% 0;
+    margin: 10% 0 0 0;
     &.card {
       padding: 0 0 0 0;
     }
@@ -95,7 +54,7 @@
   }
   .tech-skills>.skill-container>.circle-container {
     position: relative;
-    width: 60%;
+    width: 50%;
   }
 
   .tech-skills>button {
@@ -108,14 +67,18 @@
     opacity: 0;
 
     &.card {
-      padding: 5% 5% 5% 5%;
+      margin: 10% 5% 5% 5%;
+
+      .card {
+        margin: 10% 0 0 0;
+      }
       .title {
         position: relative;
         @include asap-bold();
         color: white;
         font-size: 3ch;
         text-decoration: none;
-        margin-bottom: 10%;
+        margin-bottom: 15%;
       }
       a {
         margin: 5% 0 5% 0;
@@ -137,14 +100,19 @@
     opacity: 0;
 
     &.card {
-      padding: 5% 5% 5% 5%;
+      margin: 10% 5% 5% 5%;
+
+      .card {
+        margin: 10% 0 0 0;
+      }
+
       .title {
         position: relative;
         @include asap-bold();
         color: white;
         font-size: 3ch;
         text-decoration: none;
-        margin-bottom: 10%;
+        margin-bottom: 15%;
       }
       a {
         position: relative;
@@ -163,7 +131,12 @@
   }
 
   .download-btn {
+    position: relative;
     opacity: 0;
+
+    &.card {
+      margin: 10% 5% 5% 5%;
+    }
   }
 
   .download-btn>a>button {
@@ -180,7 +153,7 @@
     left: 50%;
     right: 50%;
     transform: translateX(-50%);
-    height: 40px;
+    height: 30px;
   }
 
   .active {
@@ -219,19 +192,131 @@
 
 @media (min-width: 1200px) {
   .resume {
-    float: none;
     width: 100%;
 
     .tech-skills {
-      width: 100%;
+      opacity: 0;
+      width: 20%;
+      height: 80%;
 
-      .card {
-        width: 90%;
+      &.card {
+        padding: 5% 5% 5% 5%;
+        height: auto;
       }
-      .flex-wrapper {
-        display: flex;
-        flex-direction: row nowrap;
+    }
+
+    .tech-skills>.title {
+      margin-bottom: 10%;
+    }
+    .tech-skills>.skill-container {
+      display: flex;
+      flex-flow: row nowrap;
+      margin: 5% 0 5% 0;
+    }
+    .tech-skills>.skill-container>.skill {
+      position: relative;
+      width: 40%;
+    }
+    .tech-skills>.skill-container>.skill>label {
+      position: relative;
+      float: left;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @include asap-reg();
+      color: white;
+    }
+    .tech-skills>.skill-container>.circle-container {
+      position: relative;
+    }
+
+    .tech-skills>button {
+      width: 25%;
+      height: 40%;
+    }
+
+    .experience {
+      position: relative;
+      opacity: 0;
+
+      &.card {
+        padding: 5% 5% 5% 5%;
+        .title {
+          position: relative;
+          @include asap-bold();
+          color: white;
+          font-size: 3ch;
+          text-decoration: none;
+          margin-bottom: 10%;
+        }
+        a {
+          margin: 5% 0 5% 0;
+          position: relative;
+          @include asap-bold();
+          color: white;
+          font-size: 2ch;
+          text-decoration: none;
+        }
+        .description {
+          position: relative;
+          @include asap-reg();
+          color: white;
+        }
       }
+    }
+    .education {
+      position: relative;
+      opacity: 0;
+
+      &.card {
+        padding: 5% 5% 5% 5%;
+        .title {
+          position: relative;
+          @include asap-bold();
+          color: white;
+          font-size: 3ch;
+          text-decoration: none;
+          margin-bottom: 10%;
+        }
+        a {
+          position: relative;
+          @include asap-bold();
+          color: white;
+          font-size: 2ch;
+          text-decoration: none;
+        }
+
+        .card>.description {
+          position: relative;
+          @include asap-reg();
+          color: white;
+        }
+      }
+    }
+
+    .download-btn {
+      opacity: 0;
+    }
+
+    .download-btn>a>button {
+      position: relative;
+      text-align: center;
+      @include animation(0, 2s, box-glow, alternate, none, infinite);
+      border: 2px solid #26e9ff; 
+      border-radius: .5ch;
+      @include asap-reg();
+      color: white;
+      font-weight: normal;
+      background-color: transparent;
+      @include input-box-shadow();
+      left: 50%;
+      right: 50%;
+      transform: translateX(-50%);
+      height: 40px;
+    }
+
+    .active {
+      @include animation(.25s, 3s, reveal-card, ease-in, forwards, 1);
     }
   }
 }

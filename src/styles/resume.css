@@ -18,77 +18,12 @@
   }
 }
 
-@-webkit-keyframes draw {
-  0% {
-    stroke-width: 1px;
-  }
-  100% {
-    stroke-width: 4px;
-    stroke-dasharray: 3500 0;
-    stroke-dashoffset: 1;
-  }
-}
-
-@keyframes draw {
-  0% {
-    stroke-width: 1px;
-  }
-  100% {
-    stroke-width: 4px;
-    stroke-dasharray: 3500 0;
-    stroke-dashoffset: 1;
-  }
-}
-
-.svg-wrapper {
-  z-index: 4;
-  position: absolute;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  top: 50%;
-  width: 82%;
-}
-
-.svg-wrapper .border {
-  stroke-dasharray: 0 3500;
-  stroke-dashoffset: 1;
-  stroke-width: 1px;
-  fill: transparent;
-  stroke: #19f6e8;
-  -webkit-animation-delay: 0.5;
-  -webkit-animation-duration: 3s;
-  -webkit-animation-name: draw;
-  -webkit-animation-fill-mode: forwards;
-  -webkit-animation-direction: linear;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-delay: 0.5;
-  -moz-animation-duration: 3s;
-  -moz-animation-name: draw;
-  -moz-animation-fill-mode: forwards;
-  -moz-animation-direction: linear;
-  -moz-animation-iteration-count: 1;
-  -ms-animation-delay: 0.5;
-  -ms-animation-duration: 3s;
-  -ms-animation-name: draw;
-  -ms-animation-fill-mode: forwards;
-  -ms-animation-direction: linear;
-  -ms-animation-iteration-count: 1;
-  animation-delay: 0.5;
-  animation-duration: 3s;
-  animation-name: draw;
-  animation-fill-mode: forwards;
-  animation-direction: linear;
-  animation-iteration-count: 1;
-  z-index: 3;
-}
-
 .resume {
   position: relative;
   background-color: transparent;
   float: right;
   width: 82%;
   height: 100%;
-  padding: 5% 0 5% 0;
 }
 
 .resume .title {
@@ -101,17 +36,17 @@
   font-weight: bold;
 }
 
-.resume .card {
-  margin: 5% 5% 5% 5%;
-}
-
 .resume .tech-skills {
   position: relative;
   opacity: 0;
 }
 
+.resume .tech-skills.card {
+  margin: 5% 5% 5% 5%;
+}
+
 .resume .tech-skills > .title {
-  margin-bottom: 10%;
+  margin-bottom: 15%;
 }
 
 .resume .tech-skills > .skill-container {
@@ -122,8 +57,7 @@
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  height: 15%;
-  margin: 5% 0 5% 0;
+  margin: 10% 0 0 0;
 }
 
 .resume .tech-skills > .skill-container.card {
@@ -150,7 +84,7 @@
 
 .resume .tech-skills > .skill-container > .circle-container {
   position: relative;
-  width: 60%;
+  width: 50%;
 }
 
 .resume .tech-skills > button {
@@ -164,7 +98,11 @@
 }
 
 .resume .experience.card {
-  padding: 5% 5% 5% 5%;
+  margin: 10% 5% 5% 5%;
+}
+
+.resume .experience.card .card {
+  margin: 10% 0 0 0;
 }
 
 .resume .experience.card .title {
@@ -175,7 +113,7 @@
   color: white;
   font-size: 3ch;
   text-decoration: none;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
 }
 
 .resume .experience.card a {
@@ -203,7 +141,11 @@
 }
 
 .resume .education.card {
-  padding: 5% 5% 5% 5%;
+  margin: 10% 5% 5% 5%;
+}
+
+.resume .education.card .card {
+  margin: 10% 0 0 0;
 }
 
 .resume .education.card .title {
@@ -214,7 +156,7 @@
   color: white;
   font-size: 3ch;
   text-decoration: none;
-  margin-bottom: 10%;
+  margin-bottom: 15%;
 }
 
 .resume .education.card a {
@@ -236,7 +178,12 @@
 }
 
 .resume .download-btn {
+  position: relative;
   opacity: 0;
+}
+
+.resume .download-btn.card {
+  margin: 10% 5% 5% 5%;
 }
 
 .resume .download-btn > a > button {
@@ -281,7 +228,7 @@
   right: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  height: 40px;
+  height: 30px;
 }
 
 .resume .active {
@@ -350,23 +297,192 @@
 
 @media (min-width: 1200px) {
   .resume {
-    float: none;
     width: 100%;
   }
   .resume .tech-skills {
-    width: 100%;
+    opacity: 0;
+    width: 20%;
+    height: 80%;
   }
-  .resume .tech-skills .card {
-    width: 90%;
+  .resume .tech-skills.card {
+    padding: 5% 5% 5% 5%;
+    height: auto;
   }
-  .resume .tech-skills .flex-wrapper {
+  .resume .tech-skills > .title {
+    margin-bottom: 10%;
+  }
+  .resume .tech-skills > .skill-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row nowrap;
-            flex-direction: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    margin: 5% 0 5% 0;
+  }
+  .resume .tech-skills > .skill-container > .skill {
+    position: relative;
+    width: 40%;
+  }
+  .resume .tech-skills > .skill-container > .skill > label {
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-family: 'Asap', 'Sans Serif';
+    color: white;
+    font-weight: normal;
+    color: white;
+  }
+  .resume .tech-skills > .skill-container > .circle-container {
+    position: relative;
+  }
+  .resume .tech-skills > button {
+    width: 25%;
+    height: 40%;
+  }
+  .resume .experience {
+    position: relative;
+    opacity: 0;
+  }
+  .resume .experience.card {
+    padding: 5% 5% 5% 5%;
+  }
+  .resume .experience.card .title {
+    position: relative;
+    font-family: 'Asap', 'Sans Serif';
+    color: white;
+    font-weight: bold;
+    color: white;
+    font-size: 3ch;
+    text-decoration: none;
+    margin-bottom: 10%;
+  }
+  .resume .experience.card a {
+    margin: 5% 0 5% 0;
+    position: relative;
+    font-family: 'Asap', 'Sans Serif';
+    color: white;
+    font-weight: bold;
+    color: white;
+    font-size: 2ch;
+    text-decoration: none;
+  }
+  .resume .experience.card .description {
+    position: relative;
+    font-family: 'Asap', 'Sans Serif';
+    color: white;
+    font-weight: normal;
+    color: white;
+  }
+  .resume .education {
+    position: relative;
+    opacity: 0;
+  }
+  .resume .education.card {
+    padding: 5% 5% 5% 5%;
+  }
+  .resume .education.card .title {
+    position: relative;
+    font-family: 'Asap', 'Sans Serif';
+    color: white;
+    font-weight: bold;
+    color: white;
+    font-size: 3ch;
+    text-decoration: none;
+    margin-bottom: 10%;
+  }
+  .resume .education.card a {
+    position: relative;
+    font-family: 'Asap', 'Sans Serif';
+    color: white;
+    font-weight: bold;
+    color: white;
+    font-size: 2ch;
+    text-decoration: none;
+  }
+  .resume .education.card .card > .description {
+    position: relative;
+    font-family: 'Asap', 'Sans Serif';
+    color: white;
+    font-weight: normal;
+    color: white;
+  }
+  .resume .download-btn {
+    opacity: 0;
+  }
+  .resume .download-btn > a > button {
+    position: relative;
+    text-align: center;
+    -webkit-animation-delay: 0;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-name: box-glow;
+    -webkit-animation-fill-mode: none;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-delay: 0;
+    -moz-animation-duration: 2s;
+    -moz-animation-name: box-glow;
+    -moz-animation-fill-mode: none;
+    -moz-animation-direction: alternate;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-delay: 0;
+    -ms-animation-duration: 2s;
+    -ms-animation-name: box-glow;
+    -ms-animation-fill-mode: none;
+    -ms-animation-direction: alternate;
+    -ms-animation-iteration-count: infinite;
+    animation-delay: 0;
+    animation-duration: 2s;
+    animation-name: box-glow;
+    animation-fill-mode: none;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    border: 2px solid #26e9ff;
+    border-radius: .5ch;
+    font-family: 'Asap', 'Sans Serif';
+    color: white;
+    font-weight: normal;
+    color: white;
+    font-weight: normal;
+    background-color: transparent;
+    box-shadow: 0px 0px 20px 0px #26e9ff;
+    -webkit-box-shadow: 0px 0px 20px 0px #26e9ff;
+    -moz-box-shadow: 0px 0px 20px 0px #26e9ff;
+    left: 50%;
+    right: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: 40px;
+  }
+  .resume .active {
+    -webkit-animation-delay: 0.25s;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-name: reveal-card;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-direction: ease-in;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-delay: 0.25s;
+    -moz-animation-duration: 3s;
+    -moz-animation-name: reveal-card;
+    -moz-animation-fill-mode: forwards;
+    -moz-animation-direction: ease-in;
+    -moz-animation-iteration-count: 1;
+    -ms-animation-delay: 0.25s;
+    -ms-animation-duration: 3s;
+    -ms-animation-name: reveal-card;
+    -ms-animation-fill-mode: forwards;
+    -ms-animation-direction: ease-in;
+    -ms-animation-iteration-count: 1;
+    animation-delay: 0.25s;
+    animation-duration: 3s;
+    animation-name: reveal-card;
+    animation-fill-mode: forwards;
+    animation-direction: ease-in;
+    animation-iteration-count: 1;
   }
 }
 /*# sourceMappingURL=resume.css.map */
