@@ -116,16 +116,16 @@
       .nav {
         position: relative;
         margin: 10% 0 5% 0;
-        height: 30%;
-        max-height: 200px;
+        height: 40%;
+        max-height: 250px;
 
         .link-wrapper {
           height: 20%;
 
           a {
             i {
-              padding-right: 3ch;
-              padding-left: 7ch;
+              padding-right: 4ch;
+              padding-left: 8ch;
             }
 
             label {
@@ -146,7 +146,7 @@
         right: 50%;
         transform: translate(-50%);
         bottom: 0;
-        margin: 10% 0 10% 0;
+        margin: 10% 0 0 0;
         text-align: center;
         opacity: 0;
         visibility: hidden;
