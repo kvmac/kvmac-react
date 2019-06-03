@@ -15,112 +15,89 @@ export const Resume = () => {
     // return KodeeResume;
   }
 
-  // const handleCircle = (visibility, id) => {
-  //   console.log('handle circle:   ', {[id]: visibility});
-  //   activateCircle({ ...activeCircles, [id]: visibility });
-  // }
-  const handleSection = (visibility, id) => {
-    if(!visibility) {
-      return;
-    }
-
-    activateSection({ ...activeSections, [id]: visibility});
-  }
-  // console.log('active:   ', activeCircles, "    ", activeCircles["React"], activeCircles["Golang"], activeCircles["C#"], activeCircles["Python"], activateCircle["Node"], activeCircles["Angular"]);
-
-  let w = window.innerWidth;
-  let h = window.innerHeight;
 
   return (
     <div className="resume">
-      <VisibilitySensor onChange={(e) => handleSection(e, "tech")}>
-        <div className={`tech-skills card ${activeSections["tech"] ? "active" : "fade"}`}>
-          <div className="title">Tech-Skills</div>
-          <div className="card skill-container">
-            <div className="skill">
-              <label>React.js</label>
-            </div>
-            <Circle label={"Sr"} percent={75} color={"golang"} isActive={activeSections["tech"]} />
+      <div className="tech-skills card active">
+        <div className="title">Tech-Skills</div>
+        <div className="card skill-container">
+          <div className="skill">
+            <label>React.js</label>
           </div>
-          <div className="card skill-container">
-            <div className="skill">
-              <label>C#</label>
-            </div>
-            <Circle label={"Mid"} percent={50} color={"c-sharp"} isActive={activeSections["tech"]} />
+          <Circle label={"Sr"} percent={75} color="golang" isActive={true} />
+        </div>
+        <div className="card skill-container">
+          <div className="skill">
+            <label>C#</label>
           </div>
-          <div className="card skill-container">
-            <div className="skill">
-              <label>Golang</label>
-            </div>
-            <Circle label={"Mid"} percent={50} color={"react"} isActive={activeSections["tech"]} />
+          <Circle label={"Mid"} percent={50} color={"c-sharp"} isActive={true} />
+        </div>
+        <div className="card skill-container">
+          <div className="skill">
+            <label>Golang</label>
           </div>
-          <div className="card skill-container">
-            <div className="skill">
-              <label>Angular</label>
-            </div>
-            <Circle label={"Jr"} percent={25} color={"angular"} isActive={activeSections["tech"]} />
+          <Circle label={"Mid"} percent={50} color={"react"} isActive={true} />
+        </div>
+        <div className="card skill-container">
+          <div className="skill">
+            <label>Angular</label>
           </div>
-          <div className="card skill-container">
-            <div className="skill">
-              <label>Node</label>
-            </div>
-            <Circle label={"Jr"} percent={25} color={"node"} isActive={activeSections["tech"]} />
+          <Circle label={"Jr"} percent={25} color={"angular"} isActive={true} />
+        </div>
+        <div className="card skill-container">
+          <div className="skill">
+            <label>Node</label>
           </div>
-          <div className="card skill-container">
-            <div className="skill">
-              <label>Python</label>
-            </div>
-            <Circle label={"Jr"} percent={25} color={"python"} isActive={activeSections["tech"]} />
+          <Circle label={"Jr"} percent={25} color={"node"} isActive={true} />
+        </div>
+        <div className="card skill-container">
+          <div className="skill">
+            <label>Python</label>
+          </div>
+          <Circle label={"Jr"} percent={25} color={"python"} isActive={true} />
+        </div>
+      </div>
+      <div className="experience card active">
+        <div className="title">Experience</div>
+        <div className="card">
+          <a href="https://www.stratospherequality.com">Stratosphere Quality</a>
+          <div className="description">
+            React & C#
           </div>
         </div>
-      </VisibilitySensor>
-      <VisibilitySensor onChange={(e) => handleSection(e, "exp")}>
-        <div className={`experience card ${activeSections["exp"] ? "active" : "fade"}`}>
-          <div className="title">Experience</div>
-          <div className="card">
-            <a href="https://www.stratospherequality.com">Stratosphere Quality</a>
-            <div className="description">
-              React & C#
-            </div>
-          </div>
-          <div className="card">
-            <a href="https://www.availity.com">Availity</a>
-            <div className="description">
-              Angular & C#
-            </div>
-          </div>
-          <div className="card">
-            <a href="https://www.egenuity.com">eGenuity</a>
-            <div className="description">
-              Angular & C#
-            </div>
+        <div className="card">
+          <a href="https://www.availity.com">Availity</a>
+          <div className="description">
+            Angular & C#
           </div>
         </div>
-      </VisibilitySensor>
-      <VisibilitySensor onChange={(e) => handleSection(e, "edu")}>
-        <div className={`education card ${activeSections["edu"] ? "active" : "fade"}`}>
-          <div className="title">Education</div>
-          <div className="card">
-            <a href="https://www.anderson.edu">Anderson University</a>
-            <div className="description">
-              Information Systems
-            </div>
-          </div>
-          <div className="card">
-            <a href="https://www.iub.edu">Indiana University</a>
-            <div className="description">
-              Accounting & Finance
-            </div>
+        <div className="card">
+          <a href="https://www.egenuity.com">eGenuity</a>
+          <div className="description">
+            Angular & C#
           </div>
         </div>
-      </VisibilitySensor>
-      <VisibilitySensor onChange={(e) => handleSection(e, "download-btn")}>
-        <div className={`download-btn card ${activeSections["download-btn"] ? "active" : "fade"}`}>
-          <a href="../pdf/McIntosh-Kodee.pdf" download>
-            <button onClick={handleResume}>Download Resume!</button>
-          </a>
+      </div>
+      <div className="education card active">
+        <div className="title">Education</div>
+        <div className="card">
+          <a href="https://www.anderson.edu">Anderson University</a>
+          <div className="description">
+            Information Systems
+          </div>
         </div>
-      </VisibilitySensor>
+        <div className="card">
+          <a href="https://www.iub.edu">Indiana University</a>
+          <div className="description">
+            Accounting & Finance
+          </div>
+        </div>
+      </div>
+      <div className="download-btn card active">
+        <a href="../pdf/McIntosh-Kodee.pdf" download>
+          <button onClick={handleResume}>Download Resume!</button>
+        </a>
+      </div>
     </div>
   );
 }

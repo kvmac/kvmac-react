@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/circle.css';
 
-export const Circle = ({ label, color, percent = 0, isActive = false }) => {
+export const Circle = ({ label, color, percent = 0, isActive = true }) => {
 
     return (
         <div className="circle-container">

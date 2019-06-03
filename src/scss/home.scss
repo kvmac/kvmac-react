@@ -9,6 +9,7 @@
   width: $page-width;
   height: 100%;
   text-align: center;
+  overflow-x: hidden;
 
   label {
     @include animation(1.5s, 2s, reveal-text, ease-in, forwards, 1);
