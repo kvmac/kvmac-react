@@ -357,9 +357,10 @@
 
 .sidenavbar .contents.visible .nav {
   position: relative;
-  margin: 10% 0 5% 0;
+  margin: 10% 0 15% 0;
   height: 40%;
-  max-height: 250px;
+  min-height: 150px;
+  max-height: 300px;
 }
 
 .sidenavbar .contents.visible .nav .link-wrapper {
@@ -401,15 +402,11 @@
 }
 
 .sidenavbar .contents.visible .social {
-  position: absolute;
+  position: relative;
   background-color: transparent;
   width: 95%;
   height: 10%;
-  left: 50%;
-  right: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  bottom: 0;
+  bottom: 15%;
   margin: 10% 0 0 0;
   text-align: center;
   opacity: 0;
