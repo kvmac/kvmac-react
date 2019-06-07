@@ -22,7 +22,7 @@ export const Resume = () => {
         <div className="title">Tech-Skills</div>
         <div className="card skill-container">
           <div className="skill">
-            <label>React.js</label>
+            <label>React</label>
           </div>
           <Circle label={"Sr"} percent={75} color="golang" isActive={true} />
         </div>
