@@ -73,33 +73,25 @@
   }
   @-webkit-keyframes drawer {
     0% {
-      .footer {
-        .drawer {
-          height: 0%;
-        }
+      .footer > .drawer {
+        height: 0%;
       }
     }
     100% {
-      .footer {
-        .drawer {
-          height: 20%;
-        }
+      .footer > .drawer {
+        height: 20%;
       }
     }
   }
   @keyframes drawer {
     0% {
-      .footer {
-        .drawer {
-          height: 0%;
-        }
+      .footer > .drawer {
+        height: 0%;
       }
     }
     100% {
-      .footer {
-        .drawer {
-          height: 20%;
-        }
+      .footer > .drawer {
+        height: 20%;
       }
     }
   }

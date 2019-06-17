@@ -2,12 +2,12 @@ import React from 'react';
 import '../../styles/blog-post.css';
 
 
-export const Post1 = () => {
+export const Post2 = () => {
 
   return(
     <div className="blog-post">
       <div className="post-header">
-        Post1
+        Post2
       </div>
       <div className="post-body">
         post-body

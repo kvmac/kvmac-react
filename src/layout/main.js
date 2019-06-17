@@ -182,6 +182,7 @@ export class Main extends React.Component {
               <Route exact path="/projects" component={Projects} />
               <Route exact path="/resume" component={Resume} />
               <Route exact path="/blog" component={Blog} />
+              <Route path="/blog/:postId" component={Blog} />
               <Route exact path="/contact" component={Contact} />
             </Switch>
           </div>
