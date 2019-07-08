@@ -75,12 +75,16 @@
   position: relative;
   width: 100%;
   text-align: center;
-  margin: 1% 1% 1% 1%;
+  margin: 2% 1% 1% 1%;
+}
+
+.about .content .card.profile-header .profile-info label {
+  display: block;
 }
 
 .about .content .card.profile-header .social {
   position: relative;
-  margin: 10% 0 5% 0;
+  margin: 10% 0 0 0;
   left: 50%;
   right: 50%;
   -webkit-transform: translate(-50%, -50%);

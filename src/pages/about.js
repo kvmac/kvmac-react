@@ -15,7 +15,7 @@ export class About extends React.Component {
   render() {
 
     return (
-      <div className="about">
+      <div className="about card">
         <div className="about-title">About</div>
         <div className="content">
           <div className="profile-header card">

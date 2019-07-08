@@ -47,22 +47,6 @@ export class Projects extends React.Component {
           tech={[this.tech['angular']]}
           description="A crud app to keep track of your groceries"
         />
-        <Project
-          cardNumber="3"
-          name="Grocery List"
-          url="https://gl-app.kvmac.com"
-          github="gl-web-app"
-          tech={[this.tech['angular']]}
-          description="A crud app to keep track of your groceries"
-        />
-        <Project
-          cardNumber="3"
-          name="Grocery List"
-          url="https://gl-app.kvmac.com"
-          github="gl-web-app"
-          tech={[this.tech['angular']]}
-          description="A crud app to keep track of your groceries"
-        />
         </div>
       </div>
     );

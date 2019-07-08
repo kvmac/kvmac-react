@@ -1,10 +1,11 @@
 import React from 'react';
 import '../styles/blog.css';
 import { Link, Route } from 'react-router-dom';
+import { withRouter } from 'react-router';
 import BlogPosts from './blog-posts';
 
-export const Blog = ({ match }) => {
-  const Post = BlogPosts.filter((post) => post.key === match.params.postId).pop().value;
+const Blog = ({ match }) => {
+  const Post = BlogPosts.filter((post) => post.key === match.params.postId);
 
   return (
     <div className="blog">
@@ -28,3 +29,5 @@ export const Blog = ({ match }) => {
     </div>
   );
 }
+
+export default withRouter(Blog);

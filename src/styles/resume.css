@@ -260,9 +260,11 @@
 
 @media (min-width: 700px) {
   .resume {
-    width: 100%;
+    position: relative;
+    float: right;
+    background-color: transparent;
     height: 100%;
-    float: none;
+    width: 82%;
   }
   .resume .tech-skills {
     width: 90%;
@@ -298,11 +300,10 @@
 @media (min-width: 1200px) {
   .resume {
     width: 100%;
+    overflow-x: auto;
   }
   .resume .tech-skills {
-    opacity: 0;
     width: 20%;
-    height: 80%;
   }
   .resume .tech-skills.card {
     padding: 5% 5% 5% 5%;

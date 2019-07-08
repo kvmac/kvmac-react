@@ -10,6 +10,7 @@
   height: 100%;
   color: white;
   text-decoration: none;
+  overflow-y: auto;
 
   .card {
     margin: 5% 5% 5% 5%;
@@ -33,7 +34,7 @@
     position: relative;
 
     &.card {
-      margin: 10% 0 10% 0;
+      margin: 5% 0 5% 0;
 
       .links {
         position: relative;
@@ -76,11 +77,25 @@
   background-color: transparent;
   width: 100%;
   float: none;
-  padding: 2% 0 2% 0;
+  padding: 0 0 0 0;
   color: white;
   text-decoration: none;
   a {
     text-decoration: none;
+  }
+
+  .card {
+    margin: 5% 5% 5% 5%;
+    padding: 5% 5% 5% 5%;
+  }
+
+  .title {
+    position: relative;
+    text-align: center;
+    font-size: 3ch;
+    color: white;
+    margin-bottom: 5%;
+    @include asap-bold();
   }
 
   .project {
@@ -89,7 +104,7 @@
     &.card {
       position: relative;
       padding: 2% 2% 2% 2%;
-      margin: 2% 10% 2% 10%;
+      margin: 2% 5% 2% 5%;
 
       .links {
         position: relative;
@@ -107,7 +122,6 @@
         }
       }
     }
-
 
     .project-header {
       a {
