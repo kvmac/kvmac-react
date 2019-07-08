@@ -57,6 +57,7 @@ export const Resume = () => {
           <Circle label={"Jr"} percent={25} color={"python"} isActive={true} />
         </div>
       </div>
+      <div className="right-container">
       <div className="experience card active">
         <div className="title">Experience</div>
         <div className="card">
@@ -97,6 +98,7 @@ export const Resume = () => {
         <a href="../pdf/McIntosh-Kodee.pdf" download>
           <button onClick={handleResume}>Download Resume!</button>
         </a>
+      </div>
       </div>
     </div>
   );

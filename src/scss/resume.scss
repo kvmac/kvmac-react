@@ -172,11 +172,10 @@
 
     .tech-skills {
       width: 90%;
-      height: 40%;
+
       .card {
         margin: 0 0 0 0;
         padding: 0 0 0 0;
-        height: 50%;
       }
     }
   }
@@ -195,15 +194,24 @@
 
 @media (min-width: 1200px) {
   .resume {
+    height: inherit;
     width: 100%;
-    overflow-x: auto;
+    overflow-y: auto;
+    display: flex;
+    flex-flow: row;
+
+    .right-container {
+      display: flex;
+      flex-flow: column nowrap;
+      width: 70%;
+    }
 
     .tech-skills {
+      position: relative;
       width: 20%;
 
       &.card {
         padding: 5% 5% 5% 5%;
-        height: auto;
       }
     }
 
@@ -264,6 +272,9 @@
           @include asap-reg();
           color: white;
         }
+        .card {
+          padding: 5% 5% 5% 5%;
+        }
       }
     }
     .education {
@@ -272,6 +283,7 @@
 
       &.card {
         padding: 5% 5% 5% 5%;
+        margin-top: 5%;
         .title {
           position: relative;
           @include asap-bold();

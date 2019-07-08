@@ -268,12 +268,10 @@
   }
   .resume .tech-skills {
     width: 90%;
-    height: 40%;
   }
   .resume .tech-skills .card {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
-    height: 50%;
   }
   @-webkit-keyframes draw {
     0% {
@@ -299,15 +297,33 @@
 
 @media (min-width: 1200px) {
   .resume {
+    height: inherit;
     width: 100%;
-    overflow-x: auto;
+    overflow-y: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+  }
+  .resume .right-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    width: 70%;
   }
   .resume .tech-skills {
+    position: relative;
     width: 20%;
   }
   .resume .tech-skills.card {
     padding: 5% 5% 5% 5%;
-    height: auto;
   }
   .resume .tech-skills > .title {
     margin-bottom: 10%;
@@ -379,12 +395,16 @@
     font-weight: normal;
     color: white;
   }
+  .resume .experience.card .card {
+    padding: 5% 5% 5% 5%;
+  }
   .resume .education {
     position: relative;
     opacity: 0;
   }
   .resume .education.card {
     padding: 5% 5% 5% 5%;
+    margin-top: 5%;
   }
   .resume .education.card .title {
     position: relative;
