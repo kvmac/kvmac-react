@@ -194,16 +194,15 @@
 
 @media (min-width: 1200px) {
   .resume {
-    height: inherit;
+    height: 100%;
     width: 100%;
+    float: none;
     overflow-y: auto;
-    display: flex;
-    flex-flow: row;
 
     .right-container {
-      display: flex;
-      flex-flow: column nowrap;
-      width: 70%;
+      position: relative;
+      width: 60%;
+      float: right;
     }
 
     .tech-skills {
@@ -212,6 +211,7 @@
 
       &.card {
         padding: 5% 5% 5% 5%;
+        margin: 5% 5% 5% 5%;
       }
     }
 
@@ -248,9 +248,12 @@
     .experience {
       position: relative;
       opacity: 0;
+      width: 70%;
 
       &.card {
         padding: 5% 5% 5% 5%;
+        margin: 5% 5% 5% 5%;
+
         .title {
           position: relative;
           @include asap-bold();
