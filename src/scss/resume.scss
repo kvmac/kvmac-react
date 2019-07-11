@@ -10,6 +10,8 @@
   float: right;
   width: $page-width;
   height: 100%;
+  opacity: 0;
+  @include animation(1.5s, 2s, reveal-text, ease-in, forwards, 1);
 
   .title {
     position: relative;
@@ -211,7 +213,6 @@
 
       &.card {
         padding: 5% 5% 5% 5%;
-        margin: 5% 5% 5% 5%;
       }
     }
 
@@ -252,7 +253,6 @@
 
       &.card {
         padding: 5% 5% 5% 5%;
-        margin: 5% 5% 5% 5%;
 
         .title {
           position: relative;

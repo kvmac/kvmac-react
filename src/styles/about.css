@@ -23,12 +23,36 @@
   background-color: transparent;
   width: 100%;
   float: none;
-  padding: 2% 0 2% 0;
   color: white;
   text-decoration: none;
   text-align: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  opacity: 0;
+  -webkit-animation-delay: 1.5s;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-name: reveal-text;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-direction: ease-in;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-delay: 1.5s;
+  -moz-animation-duration: 2s;
+  -moz-animation-name: reveal-text;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-direction: ease-in;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-delay: 1.5s;
+  -ms-animation-duration: 2s;
+  -ms-animation-name: reveal-text;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-direction: ease-in;
+  -ms-animation-iteration-count: 1;
+  animation-delay: 1.5s;
+  animation-duration: 2s;
+  animation-name: reveal-text;
+  animation-fill-mode: forwards;
+  animation-direction: ease-in;
+  animation-iteration-count: 1;
 }
 
 .about a {
@@ -56,13 +80,11 @@
 
 .about .content .card {
   position: relative;
-  padding: 2% 2% 2% 2%;
 }
 
 .about .content .card.profile-header {
   position: relative;
   width: 40%;
-  margin: 2% 1% 2% 2%;
 }
 
 .about .content .card.profile-header .photo {

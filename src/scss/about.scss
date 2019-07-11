@@ -3,17 +3,18 @@
 @import 'mixins';
 
 
-
 .about {
   position: relative;
   background-color: transparent;
   width: 100%;
   float: none;
-  padding: 2% 0 2% 0;
   color: white;
   text-decoration: none;
   text-align: center;
   align-content: center;
+  opacity: 0;
+  @include animation(1.5s, 2s, reveal-text, ease-in, forwards, 1);
+  
   a {
     text-decoration: none;
   }
@@ -30,12 +31,12 @@
 
     .card {
       position: relative;
-      padding: 2% 2% 2% 2%;
+      // padding: 2% 2% 2% 2%;
 
       &.profile-header {
         position: relative;
         width: 40%;
-        margin: 2% 1% 2% 2%;
+        // margin: 2% 1% 2% 2%;
 
         .photo {
           border-radius: 50%;
