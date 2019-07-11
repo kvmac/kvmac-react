@@ -8,25 +8,29 @@
   float: right;
   width: $page-width;
   height: 100%;
+  padding-top: 10%;
+  opacity: 0;
+  @include animation(1s, 2s, reveal-text, ease-in, forwards, 1);
+
+  .title {
+    position: relative;
+    margin-bottom: 15%;
+    text-align: center;
+    font-size: 4ch;
+    left: 0;
+    @include asap-bold();
+  }
 
   .card {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 20% 5% 20% 5%;
-    margin-top: 0;
+    margin: 5% 5% 2% 5%;
   }
+
   .card>form {
+    display: flex;
+    flex-flow: column nowrap;
     position: relative;
     width: 92%;
-  }
-  .card>form>.title {
-    position: relative;
-    margin-bottom: 5%;
-    text-align: center;
-    font-size: 3ch;
-    left: 0;
-    @include asap-bold();
   }
   .card>form>input {
     position: relative;
@@ -35,7 +39,7 @@
     border-radius: .5ch;
     padding: 3%;
     background: transparent;
-    margin: 5% 0 5% 0;
+    margin: 0 0 10% 0;
     @include asap-reg();
     color: white;
 
@@ -56,11 +60,11 @@
   }
   .card>form>textarea {
     position: relative;
-    min-height: 250px;
+    min-height: 200px;
     border: 2px solid white; 
     border-radius: .5ch;
     padding: 3%;
-    margin: 5% 0 10% 0;
+    margin: 0 0 20% 0;
     background: transparent;
     @include asap-reg();
     color: white;
@@ -76,11 +80,9 @@
   .card>form>button {
     position: relative;
     background-color: #26e9ff;
-    width: 30%;
-    height: 5%;
-    margin: 5% 0 0 0;
-    left: 50%;
     border-radius: .5ch;
+    width: 50%;
+    transform: translateX(100%);
     border: 2px solid transparent; 
     @include animation(0, 1s, box-glow, alternate, none, infinite);
     @include input-box-shadow();
@@ -97,7 +99,6 @@
     -webkit-box-shadow: unset;
     -moz-box-shadow: unset;
   }
-
 }
 
 @keyframes box-glow {

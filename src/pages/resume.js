@@ -18,8 +18,8 @@ export const Resume = () => {
 
   return (
     <div className="resume">
-      <div className="card">
-        <div className="title">Résumé</div>
+      <div className="title">Résumé</div>
+      <div className="main-container">
         <div className="tech-skills card active">
           <div className="title">Tech-Skills</div>
           <div className="card skill-container">
@@ -60,48 +60,48 @@ export const Resume = () => {
           </div>
         </div>
         <div className="right-container">
-        <div className="experience card active">
-          <div className="title">Experience</div>
-          <div className="card">
-            <a href="https://www.stratospherequality.com">Stratosphere Quality</a>
-            <div className="description">
-              React & C#
+          <div className="experience card active">
+            <div className="title">Experience</div>
+            <div className="card">
+              <a href="https://www.stratospherequality.com">Stratosphere Quality</a>
+              <div className="description">
+                React & C#
+              </div>
+            </div>
+            <div className="card">
+              <a href="https://www.availity.com">Availity</a>
+              <div className="description">
+                Angular & C#
+              </div>
+            </div>
+            <div className="card">
+              <a href="https://www.egenuity.com">eGenuity</a>
+              <div className="description">
+                Angular & C#
+              </div>
             </div>
           </div>
-          <div className="card">
-            <a href="https://www.availity.com">Availity</a>
-            <div className="description">
-              Angular & C#
+          <div className="education card active">
+            <div className="title">Education</div>
+            <div className="card">
+              <a href="https://www.anderson.edu">Anderson University</a>
+              <div className="description">
+                Information Systems
+              </div>
             </div>
-          </div>
-          <div className="card">
-            <a href="https://www.egenuity.com">eGenuity</a>
-            <div className="description">
-              Angular & C#
+            <div className="card">
+              <a href="https://www.iub.edu">Indiana University</a>
+              <div className="description">
+                Accounting & Finance
+              </div>
             </div>
           </div>
         </div>
-        <div className="education card active">
-          <div className="title">Education</div>
-          <div className="card">
-            <a href="https://www.anderson.edu">Anderson University</a>
-            <div className="description">
-              Information Systems
-            </div>
-          </div>
-          <div className="card">
-            <a href="https://www.iub.edu">Indiana University</a>
-            <div className="description">
-              Accounting & Finance
-            </div>
-          </div>
-        </div>
-        <div className="download-btn card active">
-          <a href="../pdf/McIntosh-Kodee.pdf" download>
-            <button onClick={handleResume}>Download Resume!</button>
-          </a>
-        </div>
-        </div>
+      </div>
+      <div className="download-btn active">
+        <a href="../pdf/McIntosh-Kodee.pdf" download>
+          <button onClick={handleResume}>Download Resume!</button>
+        </a>
       </div>
     </div>
   );

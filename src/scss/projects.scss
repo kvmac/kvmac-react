@@ -8,6 +8,7 @@
   float: right;
   width: $page-width;
   height: 100%;
+  padding-top: 10%;
   color: white;
   text-decoration: none;
   overflow-y: auto;
@@ -15,14 +16,13 @@
   @include animation(1s, 2s, reveal-text, ease-in, forwards, 1);
 
   .card {
-    margin: 5% 5% 5% 5%;
-    padding: 10% 10% 10% 10%;
+    margin: 5% 5% 2% 5%;
   }
 
   .title {
     position: relative;
     text-align: center;
-    font-size: 3ch;
+    font-size: 4ch;
     color: white;
     margin-bottom: 15%;
     @include asap-bold();
@@ -36,7 +36,7 @@
     position: relative;
 
     &.card {
-      margin: 5% 0 5% 0;
+      margin: 0 0 15% 0;
 
       .links {
         position: relative;

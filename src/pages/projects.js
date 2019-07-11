@@ -21,8 +21,8 @@ export class Projects extends React.Component {
 
     return (
       <div className="projects">
+        <div className="title">Projects</div>
         <div className="card">
-          <div className="title">Projects</div>
           <Project
             cardNumber="1"
             name="Pupper-ML"

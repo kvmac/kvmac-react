@@ -46,9 +46,9 @@ export class Contact extends React.Component {
 
     return (
       <div className="contact">
+        <div className="title">Contact</div>
         <div className="card">
           <form>
-            <div className="title">Contact</div>
             <input id="name" placeholder="name" className="name" value={name} onChange={this.handleInput} />
             <input id="from" placeholder="return email" className="email" value={from} onChange={this.handleInput} />
             <input id="subject" placeholder="subject" className="subject" value={subject} onChange={this.handleInput} />
