@@ -78,10 +78,6 @@
           flex-flow: row nowrap;
 }
 
-.about .content .card {
-  position: relative;
-}
-
 .about .content .card.profile-header {
   position: relative;
   width: 40%;
@@ -121,7 +117,6 @@
   -ms-flex-line-pack: center;
       align-content: center;
   width: 60%;
-  margin: 2% 2% 2% 1%;
 }
 
 .about .content .card.bio .bio-title {

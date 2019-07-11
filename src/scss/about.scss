@@ -30,7 +30,6 @@
     flex-flow: row nowrap;
 
     .card {
-      position: relative;
       // padding: 2% 2% 2% 2%;
 
       &.profile-header {
@@ -69,7 +68,7 @@
       &.bio {
         align-content: center;
         width: 60%;
-        margin: 2% 2% 2% 1%;
+        // margin: 2% 2% 2% 1%;
 
         .bio-title {
           @include asap-bold();

@@ -37,7 +37,7 @@
     background-color: #171717;
     @include box-shadow();
 
-    @include animation(1s, .5s, drop, ease-in, forwards, 1);
+    @include animation(1s, 1s, drop, ease-in, forwards, 1);
 
     .space-between {
       width: 40%;
@@ -49,13 +49,14 @@
     }
 
     .nav-links {
-      @include animation(1s, .5s, reveal-text, ease-in, forwards, 1);
+      @include animation(1s, 1s, reveal-text, ease-in, forwards, 1);
       visibility: hidden;
       display: flex;
       justify-content: space-between;
       flex-direction: row nowrap;
       width: 30%;
       height: 100%;
+
       .link {
         color: white;
         text-decoration: none;
@@ -64,6 +65,7 @@
         font-weight: normal;
         display: inline;
         align-self: center;
+
         span {
           width: 0;
           color: white;
@@ -190,21 +192,21 @@
 }
 
 @media (min-height: 600px) {
-  @include keyframes(drop) {
-    0% {
-      height: 0;
-    }
-    25% {
-      height: 11%;
-    }
-    50% {
-      height: 8%;
-    }
-    75% {
-      height: 10%;
-    }
-    100% {
-      height: 9%;
-    }
-  }
+  // @include keyframes(drop) {
+  //   0% {
+  //     height: 0;
+  //   }
+  //   25% {
+  //     height: 11%;
+  //   }
+  //   50% {
+  //     height: 8%;
+  //   }
+  //   75% {
+  //     height: 10%;
+  //   }
+  //   100% {
+  //     height: 9%;
+  //   }
+  // }
 }

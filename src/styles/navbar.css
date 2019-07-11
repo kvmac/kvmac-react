@@ -47,25 +47,25 @@
     -webkit-box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
     -webkit-animation-delay: 1s;
-    -webkit-animation-duration: 0.5s;
+    -webkit-animation-duration: 1s;
     -webkit-animation-name: drop;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-direction: ease-in;
     -webkit-animation-iteration-count: 1;
     -moz-animation-delay: 1s;
-    -moz-animation-duration: 0.5s;
+    -moz-animation-duration: 1s;
     -moz-animation-name: drop;
     -moz-animation-fill-mode: forwards;
     -moz-animation-direction: ease-in;
     -moz-animation-iteration-count: 1;
     -ms-animation-delay: 1s;
-    -ms-animation-duration: 0.5s;
+    -ms-animation-duration: 1s;
     -ms-animation-name: drop;
     -ms-animation-fill-mode: forwards;
     -ms-animation-direction: ease-in;
     -ms-animation-iteration-count: 1;
     animation-delay: 1s;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-name: drop;
     animation-fill-mode: forwards;
     animation-direction: ease-in;
@@ -80,25 +80,25 @@
   }
   .navbar .nav-links {
     -webkit-animation-delay: 1s;
-    -webkit-animation-duration: 0.5s;
+    -webkit-animation-duration: 1s;
     -webkit-animation-name: reveal-text;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-direction: ease-in;
     -webkit-animation-iteration-count: 1;
     -moz-animation-delay: 1s;
-    -moz-animation-duration: 0.5s;
+    -moz-animation-duration: 1s;
     -moz-animation-name: reveal-text;
     -moz-animation-fill-mode: forwards;
     -moz-animation-direction: ease-in;
     -moz-animation-iteration-count: 1;
     -ms-animation-delay: 1s;
-    -ms-animation-duration: 0.5s;
+    -ms-animation-duration: 1s;
     -ms-animation-name: reveal-text;
     -ms-animation-fill-mode: forwards;
     -ms-animation-direction: ease-in;
     -ms-animation-iteration-count: 1;
     animation-delay: 1s;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-name: reveal-text;
     animation-fill-mode: forwards;
     animation-direction: ease-in;
@@ -330,43 +330,6 @@
     }
     100% {
       height: 46px;
-    }
-  }
-}
-
-@media (min-height: 600px) {
-  @-webkit-keyframes drop {
-    0% {
-      height: 0;
-    }
-    25% {
-      height: 11%;
-    }
-    50% {
-      height: 8%;
-    }
-    75% {
-      height: 10%;
-    }
-    100% {
-      height: 9%;
-    }
-  }
-  @keyframes drop {
-    0% {
-      height: 0;
-    }
-    25% {
-      height: 11%;
-    }
-    50% {
-      height: 8%;
-    }
-    75% {
-      height: 10%;
-    }
-    100% {
-      height: 9%;
     }
   }
 }
