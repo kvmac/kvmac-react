@@ -12,7 +12,7 @@
   height: 100%;
   padding-top: 10%;
   opacity: 0;
-  @include animation(1s, 2s, reveal-text, ease-in, forwards, 1);
+  @include animation(.5s, 2s, reveal-text, ease-in, forwards, 1);
 
   .title {
     position: relative;
@@ -25,7 +25,7 @@
 
   .card {
     padding: 5% 5% 5% 5%;
-    margin: 5% 5% 5% 5%;
+    margin: 5% 5% 10% 5%;
   }
 
   .tech-skills {
@@ -34,6 +34,7 @@
 
     &.card {
       padding: 5% 10% 5% 10%;
+      margin: 5% 5% 5% 5%;
     }
   }
 
@@ -115,7 +116,7 @@
     opacity: 0;
 
     &.card {
-      margin: 5% 5% 5% 5%;
+      margin: 5% 5% 10% 5%;
       padding: 5% 10% 5% 10%;
 
       .card {
@@ -149,10 +150,6 @@
   .download-btn {
     position: relative;
     opacity: 0;
-
-    &.card {
-      margin: 10% 5% 5% 5%;
-    }
   }
 
   .download-btn>a>button {
@@ -169,7 +166,8 @@
     left: 50%;
     right: 50%;
     transform: translateX(-50%);
-    height: 30px;
+    min-height: 30px;
+    margin-bottom: 10%;
   }
 
   .active {
@@ -214,11 +212,15 @@
     width: 100%;
     float: none;
     overflow-y: auto;
-    padding-top: 10%;
+    padding-top: 5%;
 
     .card {
-      padding: 5% 5% 5% 5%;
-      margin: 5% 5% 2% 5%;
+      padding: 2% 2% 2% 2%;
+      margin: 5% 5% 5% 5%;
+    }
+
+    .title {
+      margin-bottom: 5%;
     }
 
     .main-container {
@@ -233,23 +235,24 @@
 
     .tech-skills {
       position: relative;
-      width: 20%;
       height: 100%;
+      width: 20%;
       display: flex;
       flex-flow: column;
 
       &.card {
-        padding: 5% 5% 5% 5%;
+        margin: 5% 5% 5% 5%;
+        padding: 2% 5% 5% 5%;
       }
     }
 
     .tech-skills>.title {
-      margin-bottom: 10%;
+      margin-bottom: 15%;
     }
     .tech-skills>.skill-container {
       display: flex;
       flex-flow: row nowrap;
-      margin: 5% 0 5% 0;
+      margin: 0 0 5% 0;
     }
     .tech-skills>.skill-container>.skill {
       position: relative;
@@ -268,17 +271,12 @@
       position: relative;
     }
 
-    .tech-skills>button {
-      width: 25%;
-      height: 40%;
-    }
-
     .experience {
       position: relative;
       opacity: 0;
-      width: 70%;
 
       &.card {
+        // padding: 5% 5% 5% 5%;
 
         .title {
           position: relative;
@@ -311,7 +309,7 @@
       opacity: 0;
 
       &.card {
-        padding: 5% 5% 5% 5%;
+        // padding: 5% 5% 5% 5%;
         margin-top: 5%;
         .title {
           position: relative;
@@ -348,6 +346,7 @@
       border: 2px solid #26e9ff; 
       border-radius: .5ch;
       @include asap-reg();
+      font-size: 2ch;
       color: white;
       font-weight: normal;
       background-color: transparent;
@@ -355,7 +354,9 @@
       left: 50%;
       right: 50%;
       transform: translateX(-50%);
-      height: 40px;
+      height: 60px;
+      width: 20%;
+      margin-bottom: 10%;
     }
 
     .active {

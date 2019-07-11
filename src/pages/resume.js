@@ -19,7 +19,7 @@ export const Resume = () => {
   return (
     <div className="resume">
       <div className="title">Résumé</div>
-      <div className="main-container">
+      <div className="main-container card">
         <div className="tech-skills card active">
           <div className="title">Tech-Skills</div>
           <div className="card skill-container">

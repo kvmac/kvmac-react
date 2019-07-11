@@ -16,8 +16,8 @@ export class About extends React.Component {
 
     return (
       <div className="about">
+        <div className="title">About</div>
         <div className="card">
-          <div className="about-title">About</div>
           <div className="content">
             <div className="profile-header card">
               <img className="photo" src={headshot} alt="Kodee McIntosh" />

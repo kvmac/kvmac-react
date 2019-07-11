@@ -13,7 +13,7 @@
   text-decoration: none;
   overflow-y: auto;
   opacity: 0;
-  @include animation(1s, 2s, reveal-text, ease-in, forwards, 1);
+  @include animation(.5s, 2s, reveal-text, ease-in, forwards, 1);
 
   .card {
     margin: 5% 5% 2% 5%;
@@ -76,22 +76,22 @@
 @media (min-width: 1200px) {
 .projects {
   width: 100%;
-  height: 90%;
+  height: 70%;
   float: none;
-  padding: 0 0 0 0;
+  padding: 5% 0 5% 0;
   a {
     text-decoration: none;
   }
 
   .card {
     padding: 5% 5% 5% 5%;
-    margin: 5% 5% 2% 5%;
+    margin: 5% 5% 5% 5%;
   }
 
   .title {
     position: relative;
     text-align: center;
-    font-size: 3ch;
+    font-size: 4ch;
     color: white;
     margin-bottom: 5%;
     @include asap-bold();
