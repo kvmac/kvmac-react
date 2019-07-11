@@ -37,7 +37,7 @@
     background-color: #171717;
     @include box-shadow();
 
-    @include animation(1s, 1s, drop, ease-in, forwards, 1);
+    @include animation(1s, .5s, drop, ease-in, forwards, 1);
 
     .space-between {
       width: 40%;
@@ -88,16 +88,20 @@
         height: 0;
       }
       25% {
-        height: 15%;
+        height: 14%;
+        min-height: 50px;
       }
       50% {
         height: 10%;
+        min-height: 42px;
       }
       75% {
-        height: 13%;
+        height: 12%;
+        min-height: 48px;
       }
       100% {
         height: 11%;
+        min-height: 46px;
       }
     }
   }
@@ -106,8 +110,7 @@
 // LARGE MONITORS
 @media (min-width: 1600px) {
   .navbar {
-
-    @include animation(0, .5s, drop, ease-in, forwards, 1);
+    @include animation(1s, .5s, drop, ease-in, forwards, 1);
     @include keyframes(drop) {
       0% {
         height: 0;
@@ -155,58 +158,4 @@
     }
   }
 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-// minimum height
-@media (max-height: 600px) {
-  .navbar {
-    @include keyframes(drop) {
-      0% {
-        height: 0;
-      }
-      25% {
-        height: 50px;
-      }
-      50% {
-        height: 42px;
-      }
-      75% {
-        height: 48px;
-      }
-      100% {
-        height: 46px;
-      }
-    }
-  }
-}
-
-@media (min-height: 600px) {
-  // @include keyframes(drop) {
-  //   0% {
-  //     height: 0;
-  //   }
-  //   25% {
-  //     height: 11%;
-  //   }
-  //   50% {
-  //     height: 8%;
-  //   }
-  //   75% {
-  //     height: 10%;
-  //   }
-  //   100% {
-  //     height: 9%;
-  //   }
-  // }
 }

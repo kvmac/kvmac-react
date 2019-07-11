@@ -47,25 +47,25 @@
     -webkit-box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
     -webkit-animation-delay: 1s;
-    -webkit-animation-duration: 1s;
+    -webkit-animation-duration: 0.5s;
     -webkit-animation-name: drop;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-direction: ease-in;
     -webkit-animation-iteration-count: 1;
     -moz-animation-delay: 1s;
-    -moz-animation-duration: 1s;
+    -moz-animation-duration: 0.5s;
     -moz-animation-name: drop;
     -moz-animation-fill-mode: forwards;
     -moz-animation-direction: ease-in;
     -moz-animation-iteration-count: 1;
     -ms-animation-delay: 1s;
-    -ms-animation-duration: 1s;
+    -ms-animation-duration: 0.5s;
     -ms-animation-name: drop;
     -ms-animation-fill-mode: forwards;
     -ms-animation-direction: ease-in;
     -ms-animation-iteration-count: 1;
     animation-delay: 1s;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-name: drop;
     animation-fill-mode: forwards;
     animation-direction: ease-in;
@@ -178,16 +178,20 @@
       height: 0;
     }
     25% {
-      height: 15%;
+      height: 14%;
+      min-height: 50px;
     }
     50% {
       height: 10%;
+      min-height: 42px;
     }
     75% {
-      height: 13%;
+      height: 12%;
+      min-height: 48px;
     }
     100% {
       height: 11%;
+      min-height: 46px;
     }
   }
   @keyframes drop {
@@ -195,41 +199,45 @@
       height: 0;
     }
     25% {
-      height: 15%;
+      height: 14%;
+      min-height: 50px;
     }
     50% {
       height: 10%;
+      min-height: 42px;
     }
     75% {
-      height: 13%;
+      height: 12%;
+      min-height: 48px;
     }
     100% {
       height: 11%;
+      min-height: 46px;
     }
   }
 }
 
 @media (min-width: 1600px) {
   .navbar {
-    -webkit-animation-delay: 0;
+    -webkit-animation-delay: 1s;
     -webkit-animation-duration: 0.5s;
     -webkit-animation-name: drop;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-direction: ease-in;
     -webkit-animation-iteration-count: 1;
-    -moz-animation-delay: 0;
+    -moz-animation-delay: 1s;
     -moz-animation-duration: 0.5s;
     -moz-animation-name: drop;
     -moz-animation-fill-mode: forwards;
     -moz-animation-direction: ease-in;
     -moz-animation-iteration-count: 1;
-    -ms-animation-delay: 0;
+    -ms-animation-delay: 1s;
     -ms-animation-duration: 0.5s;
     -ms-animation-name: drop;
     -ms-animation-fill-mode: forwards;
     -ms-animation-direction: ease-in;
     -ms-animation-iteration-count: 1;
-    animation-delay: 0;
+    animation-delay: 1s;
     animation-duration: 0.5s;
     animation-name: drop;
     animation-fill-mode: forwards;
@@ -294,43 +302,6 @@
     color: white;
     text-decoration: none;
     font-size: 2.5ch;
-  }
-}
-
-@media (max-height: 600px) {
-  @-webkit-keyframes drop {
-    0% {
-      height: 0;
-    }
-    25% {
-      height: 50px;
-    }
-    50% {
-      height: 42px;
-    }
-    75% {
-      height: 48px;
-    }
-    100% {
-      height: 46px;
-    }
-  }
-  @keyframes drop {
-    0% {
-      height: 0;
-    }
-    25% {
-      height: 50px;
-    }
-    50% {
-      height: 42px;
-    }
-    75% {
-      height: 48px;
-    }
-    100% {
-      height: 46px;
-    }
   }
 }
 /*# sourceMappingURL=navbar.css.map */

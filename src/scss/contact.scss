@@ -38,6 +38,10 @@
     margin: 5% 0 5% 0;
     @include asap-reg();
     color: white;
+
+    &.name {
+      width: 80%;
+    }
     &.email {
       width: 80%;
     }

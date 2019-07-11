@@ -65,6 +65,10 @@
   color: white;
 }
 
+.contact .card > form > input.name {
+  width: 80%;
+}
+
 .contact .card > form > input.email {
   width: 80%;
 }

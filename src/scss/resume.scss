@@ -11,7 +11,7 @@
   width: $page-width;
   height: 100%;
   opacity: 0;
-  @include animation(1.5s, 2s, reveal-text, ease-in, forwards, 1);
+  @include animation(1s, 2s, reveal-text, ease-in, forwards, 1);
 
   .title {
     position: relative;
@@ -19,6 +19,11 @@
     font-size: 3ch;
     color: white;
     @include asap-bold();
+  }
+
+  .card {
+    padding: 5% 5% 5% 5%;
+    margin: 5% 5% 2% 5%;
   }
 
   .tech-skills {

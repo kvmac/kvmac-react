@@ -15,36 +15,38 @@ export class About extends React.Component {
   render() {
 
     return (
-      <div className="about card">
-        <div className="about-title">About</div>
-        <div className="content">
-          <div className="profile-header card">
-            <img className="photo" src={headshot} alt="Kodee McIntosh" />
-            <div className="profile-info">
-              <label>Kodee McIntosh</label>
-              <label>Software Engineer @ SQ</label>
-              <label>Indianapolis, IN area</label>
+      <div className="about">
+        <div className="card">
+          <div className="about-title">About</div>
+          <div className="content">
+            <div className="profile-header card">
+              <img className="photo" src={headshot} alt="Kodee McIntosh" />
+              <div className="profile-info">
+                <label>Kodee McIntosh</label>
+                <label>Software Engineer @ SQ</label>
+                <label>Indianapolis, IN area</label>
+              </div>
+              <div className="social">
+                <a href="https://github.com/kvmac" target="_blank" rel="noopener noreferrer">
+                  <Icon
+                    name="github-outline"
+                    size="large"
+                    fill="white"
+                    />
+                </a>
+                <a href="https://www.linkedin.com/in/kodee-mcintosh" target="_blank" rel="noopener noreferrer">
+                  <Icon
+                    name="linkedin-outline"
+                    size="large"
+                    fill="white"
+                    />
+                </a>
+              </div>
             </div>
-            <div className="social">
-              <a href="https://github.com/kvmac" target="_blank" rel="noopener noreferrer">
-                <Icon
-                  name="github-outline"
-                  size="large"
-                  fill="white"
-                  />
-              </a>
-              <a href="https://www.linkedin.com/in/kodee-mcintosh" target="_blank" rel="noopener noreferrer">
-                <Icon
-                  name="linkedin-outline"
-                  size="large"
-                  fill="white"
-                  />
-              </a>
+            <div className="bio card">
+              <div className="bio-title">Bio</div>
+              <div>Stuff about me</div>
             </div>
-          </div>
-          <div className="bio card">
-            <div className="bio-title">Bio</div>
-            <div>Stuff about me</div>
           </div>
         </div>
       </div>

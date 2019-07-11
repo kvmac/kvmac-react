@@ -17,6 +17,7 @@ export class Contact extends React.Component {
     this.state = {
       isLoading: false,
       emailSuccessful: null,
+      name: '',
       from: '',
       subject: '',
       text: ''
@@ -24,31 +25,31 @@ export class Contact extends React.Component {
   }
 
   handleContactForm = (e) => {
-    const { from, subject, text } = { ...this.state };
+    const { name, from, subject, text } = { ...this.state };
 
     e.preventDefault();
 
-    if(!from || !subject || !text) {
+    if(!name || !from || !subject || !text) {
       return;
     }
-    let payload = JSON.stringify({ from, subject, text });
+    let payload = JSON.stringify({ name, from, subject, text });
 
     axios
       .post("/.netlify/functions/mailgun", payload)
-      .then(res => res.json())
       .then(json => this.setState({ isLoading: false, emailSuccessful: json.msg.statusCode === 200 ? true : false }))
   }
 
   handleInput = (e) => this.setState({ [e.target.id]: e.target.value });
 
   render() {
-    const { from, subject, text } = { ...this.state };
+    const { name, from, subject, text } = { ...this.state };
 
     return (
       <div className="contact">
         <div className="card">
           <form>
             <div className="title">Contact</div>
+            <input id="name" placeholder="name" className="name" value={name} onChange={this.handleInput} />
             <input id="from" placeholder="return email" className="email" value={from} onChange={this.handleInput} />
             <input id="subject" placeholder="subject" className="subject" value={subject} onChange={this.handleInput} />
             <textarea id="text" placeholder="message" className="message" value={text} onChange={this.handleInput} />
