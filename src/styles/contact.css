@@ -23,8 +23,7 @@
   background-color: transparent;
   float: right;
   width: 82%;
-  height: 100%;
-  padding-top: 10%;
+  padding: 5% 0 5% 0;
   opacity: 0;
   -webkit-animation-delay: 0.5s;
   -webkit-animation-duration: 2s;
@@ -54,13 +53,12 @@
 
 .contact .title {
   position: relative;
-  margin-bottom: 15%;
-  text-align: center;
-  font-size: 4ch;
-  left: 0;
+  font-size: 3ch;
   font-family: 'Asap', 'Sans Serif';
   color: white;
   font-weight: bold;
+  color: #F0EFED;
+  margin: 0  0 10% 5%;
 }
 
 .contact .card {
@@ -83,7 +81,7 @@
 .contact .card > form > input {
   position: relative;
   left: 0;
-  border: 2px solid white;
+  border: 2px solid #F0EFED;
   border-radius: .5ch;
   padding: 3%;
   background: transparent;

@@ -10,17 +10,16 @@
   float: right;
   width: $page-width;
   height: 100%;
-  padding-top: 10%;
+  padding: 5% 0 5% 0;
   opacity: 0;
   @include animation(.5s, 2s, reveal-text, ease-in, forwards, 1);
 
   .title {
     position: relative;
-    text-align: center;
-    font-size: 4ch;
+    font-size: 3ch;
     color: white;
     @include asap-bold();
-    margin-bottom: 15%;
+    margin: 0  0 10% 5%;
   }
 
   .card {
@@ -34,24 +33,24 @@
 
     &.card {
       padding: 5% 10% 5% 10%;
-      margin: 5% 5% 5% 5%;
+      margin: 5% 5% 10% 5%;
     }
   }
 
   .tech-skills>.title {
     position: relative;
     @include asap-bold();
-    color: white;
-    font-size: 3ch;
+    color: $light-primary;
+    font-size: 2.5ch;
     text-decoration: none;
-    margin-bottom: 15%;
+    margin: 0  0 10% 0;
   }
   .tech-skills>.skill-container {
     display: flex;
     flex-flow: row nowrap;
     margin: 0 0 10% 0;
     &.card {
-      padding: 5% 5% 5% 5%;
+      padding: 0 0 0 10%;
     }
   }
   .tech-skills>.skill-container>.skill {
@@ -65,7 +64,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     @include asap-reg();
-    color: white;
+    color: $light-secondary;
   }
   .tech-skills>.skill-container>.circle-container {
     position: relative;
@@ -83,7 +82,7 @@
 
     &.card {
       // margin: 5% 5% 5% 5%;
-      padding: 5% 10% 5% 10%;
+      padding: 10% 10% 5% 10%;
 
       .card {
         margin: 0 0 10% 0;
@@ -91,23 +90,24 @@
       .title {
         position: relative;
         @include asap-bold();
-        color: white;
-        font-size: 3ch;
+        color: $light-primary;
+        font-size: 2.5ch;
         text-decoration: none;
-        margin-bottom: 15%;
+        margin: 0 0 10% 0;
       }
       a {
-        margin: 5% 0 5% 0;
-        position: relative;
+        display: block;
+        margin: 0 0 5% 0;
         @include asap-bold();
-        color: white;
-        font-size: 2ch;
+        color: $light-primary;
+        font-size: 1.5ch;
         text-decoration: none;
       }
       .description {
         position: relative;
         @include asap-reg();
-        color: white;
+        font-size: 1.5ch;
+        color: $light-secondary;
       }
     }
   }
@@ -116,8 +116,8 @@
     opacity: 0;
 
     &.card {
-      margin: 5% 5% 10% 5%;
-      padding: 5% 10% 5% 10%;
+      margin: 5% 5% 5% 5%;
+      padding: 10% 10% 5% 10%;
 
       .card {
         margin: 0 0 10% 0;
@@ -126,23 +126,26 @@
       .title {
         position: relative;
         @include asap-bold();
-        color: white;
-        font-size: 3ch;
+        color: $light-primary;
+        font-size: 2.5ch;
         text-decoration: none;
-        margin-bottom: 15%;
+        margin: 0  0 10% 0;
       }
       a {
         position: relative;
+        display: block;
+        margin: 0 0 5% 0;
         @include asap-bold();
-        color: white;
-        font-size: 2ch;
+        color: $light-primary;
+        font-size: 1.5ch;
         text-decoration: none;
       }
 
-      .card>.description {
+      .description {
         position: relative;
         @include asap-reg();
-        color: white;
+        color: $light-secondary;
+        font-size: 1.5ch;
       }
     }
   }
@@ -159,7 +162,7 @@
     border: 2px solid #26e9ff; 
     border-radius: .5ch;
     @include asap-reg();
-    color: white;
+    color: $light-primary;
     font-weight: normal;
     background-color: transparent;
     @include input-box-shadow();
@@ -173,6 +176,13 @@
   .active {
     @include animation(.25s, 3s, reveal-card, ease-in, forwards, 1);
   }
+}
+
+.desktop-content {
+  display: none;
+}
+.mobile-content {
+  display: block;
 }
 
 
@@ -208,19 +218,23 @@
 
 @media (min-width: 1200px) {
   .resume {
-    height: 90%;
     width: 100%;
-    float: none;
+    height: 100%;
     overflow-y: auto;
-    padding-top: 5%;
+    float: none;
+    padding: 2% 0 0 0;
 
     .card {
-      padding: 2% 2% 2% 2%;
-      margin: 5% 5% 5% 5%;
+      padding: 0 0 0 0;
+      margin: 2% 5% 5% 5%;
     }
 
     .title {
-      margin-bottom: 5%;
+      position: relative;
+      font-size: 3ch;
+      color: $light-primary;
+      margin: 0 0 0 5%;
+      @include asap-bold();
     }
 
     .main-container {
@@ -241,18 +255,19 @@
       flex-flow: column;
 
       &.card {
-        margin: 5% 5% 5% 5%;
-        padding: 2% 5% 5% 5%;
+        margin: 5% 5% 5% 4%;
+        padding: 2% 5% 2% 5%;
       }
     }
 
     .tech-skills>.title {
-      margin-bottom: 15%;
+      margin-bottom: 12%;
+      color: $light-primary;
     }
     .tech-skills>.skill-container {
       display: flex;
       flex-flow: row nowrap;
-      margin: 0 0 5% 0;
+      margin: 0 0 15% 0;
     }
     .tech-skills>.skill-container>.skill {
       position: relative;
@@ -265,7 +280,8 @@
       left: 50%;
       transform: translate(-50%, -50%);
       @include asap-reg();
-      color: white;
+      color: $light-secondary;
+      font-size: 2ch;
     }
     .tech-skills>.skill-container>.circle-container {
       position: relative;
@@ -276,31 +292,34 @@
       opacity: 0;
 
       &.card {
-        // padding: 5% 5% 5% 5%;
+        margin: 5% 5% 5% 2%;
+        // padding: 2% 5% 5% 5%;
+        padding: 3% 7% 5% 7%;
 
         .title {
           position: relative;
           @include asap-bold();
-          color: white;
-          font-size: 3ch;
+          color: $light-primary;
+          font-size: 2.5ch;
           text-decoration: none;
-          margin-bottom: 10%;
+          margin: 0 0 5% 0;
         }
         a {
-          margin: 5% 0 5% 0;
           position: relative;
           @include asap-bold();
-          color: white;
+          color: $light-primary;
           font-size: 2ch;
           text-decoration: none;
         }
         .description {
           position: relative;
           @include asap-reg();
-          color: white;
+          font-size: 1.75ch;
+          color: $light-secondary;
         }
         .card {
           padding: 5% 5% 5% 5%;
+          margin: 5% 2% 5% 2%;
         }
       }
     }
@@ -309,28 +328,35 @@
       opacity: 0;
 
       &.card {
-        // padding: 5% 5% 5% 5%;
-        margin-top: 5%;
+        padding: 3% 7% 5% 7%;
+        margin: 5% 5% 5% 2%;
+
         .title {
           position: relative;
           @include asap-bold();
-          color: white;
-          font-size: 3ch;
+          color: $light-primary;
+          font-size: 2.5ch;
           text-decoration: none;
-          margin-bottom: 10%;
+          margin: 0 0 5% 0;
         }
         a {
           position: relative;
           @include asap-bold();
-          color: white;
+          color: $light-primary;
           font-size: 2ch;
           text-decoration: none;
         }
 
-        .card>.description {
+        .description {
           position: relative;
           @include asap-reg();
-          color: white;
+          font-size: 1.75ch;
+          color: $light-secondary;
+        }
+
+        .card {
+          padding: 5% 5% 5% 5%;
+          margin: 2% 2% 5% 2%;
         }
       }
     }
@@ -347,7 +373,7 @@
       border-radius: .5ch;
       @include asap-reg();
       font-size: 2ch;
-      color: white;
+      color: $light-primary;
       font-weight: normal;
       background-color: transparent;
       @include input-box-shadow();
@@ -356,11 +382,16 @@
       transform: translateX(-50%);
       height: 60px;
       width: 20%;
-      margin-bottom: 10%;
     }
 
     .active {
       @include animation(.25s, 3s, reveal-card, ease-in, forwards, 1);
     }
+  }
+  .mobile-content {
+    display: none;
+  }
+  .desktop-content {
+    display: block;
   }
 }

@@ -24,7 +24,7 @@
   float: right;
   width: 82%;
   height: 100%;
-  padding-top: 10%;
+  padding: 5% 0 5% 0;
   opacity: 0;
   -webkit-animation-delay: 0.5s;
   -webkit-animation-duration: 2s;
@@ -54,13 +54,12 @@
 
 .resume .title {
   position: relative;
-  text-align: center;
-  font-size: 4ch;
+  font-size: 3ch;
   color: white;
   font-family: 'Asap', 'Sans Serif';
   color: white;
   font-weight: bold;
-  margin-bottom: 15%;
+  margin: 0  0 10% 5%;
 }
 
 .resume .card {
@@ -75,7 +74,7 @@
 
 .resume .tech-skills.card {
   padding: 5% 10% 5% 10%;
-  margin: 5% 5% 5% 5%;
+  margin: 5% 5% 10% 5%;
 }
 
 .resume .tech-skills > .title {
@@ -83,10 +82,10 @@
   font-family: 'Asap', 'Sans Serif';
   color: white;
   font-weight: bold;
-  color: white;
-  font-size: 3ch;
+  color: #F0EFED;
+  font-size: 2.5ch;
   text-decoration: none;
-  margin-bottom: 15%;
+  margin: 0  0 10% 0;
 }
 
 .resume .tech-skills > .skill-container {
@@ -101,7 +100,7 @@
 }
 
 .resume .tech-skills > .skill-container.card {
-  padding: 5% 5% 5% 5%;
+  padding: 0 0 0 10%;
 }
 
 .resume .tech-skills > .skill-container > .skill {
@@ -119,7 +118,7 @@
   font-family: 'Asap', 'Sans Serif';
   color: white;
   font-weight: normal;
-  color: white;
+  color: #D6D4D5;
 }
 
 .resume .tech-skills > .skill-container > .circle-container {
@@ -138,7 +137,7 @@
 }
 
 .resume .experience.card {
-  padding: 5% 10% 5% 10%;
+  padding: 10% 10% 5% 10%;
 }
 
 .resume .experience.card .card {
@@ -150,20 +149,20 @@
   font-family: 'Asap', 'Sans Serif';
   color: white;
   font-weight: bold;
-  color: white;
-  font-size: 3ch;
+  color: #F0EFED;
+  font-size: 2.5ch;
   text-decoration: none;
-  margin-bottom: 15%;
+  margin: 0 0 10% 0;
 }
 
 .resume .experience.card a {
-  margin: 5% 0 5% 0;
-  position: relative;
+  display: block;
+  margin: 0 0 5% 0;
   font-family: 'Asap', 'Sans Serif';
   color: white;
   font-weight: bold;
-  color: white;
-  font-size: 2ch;
+  color: #F0EFED;
+  font-size: 1.5ch;
   text-decoration: none;
 }
 
@@ -172,7 +171,8 @@
   font-family: 'Asap', 'Sans Serif';
   color: white;
   font-weight: normal;
-  color: white;
+  font-size: 1.5ch;
+  color: #D6D4D5;
 }
 
 .resume .education {
@@ -181,8 +181,8 @@
 }
 
 .resume .education.card {
-  margin: 5% 5% 10% 5%;
-  padding: 5% 10% 5% 10%;
+  margin: 5% 5% 5% 5%;
+  padding: 10% 10% 5% 10%;
 }
 
 .resume .education.card .card {
@@ -194,28 +194,31 @@
   font-family: 'Asap', 'Sans Serif';
   color: white;
   font-weight: bold;
-  color: white;
-  font-size: 3ch;
+  color: #F0EFED;
+  font-size: 2.5ch;
   text-decoration: none;
-  margin-bottom: 15%;
+  margin: 0  0 10% 0;
 }
 
 .resume .education.card a {
   position: relative;
+  display: block;
+  margin: 0 0 5% 0;
   font-family: 'Asap', 'Sans Serif';
   color: white;
   font-weight: bold;
-  color: white;
-  font-size: 2ch;
+  color: #F0EFED;
+  font-size: 1.5ch;
   text-decoration: none;
 }
 
-.resume .education.card .card > .description {
+.resume .education.card .description {
   position: relative;
   font-family: 'Asap', 'Sans Serif';
   color: white;
   font-weight: normal;
-  color: white;
+  color: #D6D4D5;
+  font-size: 1.5ch;
 }
 
 .resume .download-btn {
@@ -255,7 +258,7 @@
   font-family: 'Asap', 'Sans Serif';
   color: white;
   font-weight: normal;
-  color: white;
+  color: #F0EFED;
   font-weight: normal;
   background-color: transparent;
   box-shadow: 0px 0px 20px 0px #26e9ff;
@@ -294,6 +297,14 @@
   animation-fill-mode: forwards;
   animation-direction: ease-in;
   animation-iteration-count: 1;
+}
+
+.desktop-content {
+  display: none;
+}
+
+.mobile-content {
+  display: block;
 }
 
 @media (min-width: 700px) {
@@ -335,18 +346,24 @@
 
 @media (min-width: 1200px) {
   .resume {
-    height: 90%;
     width: 100%;
-    float: none;
+    height: 100%;
     overflow-y: auto;
-    padding-top: 5%;
+    float: none;
+    padding: 2% 0 0 0;
   }
   .resume .card {
-    padding: 2% 2% 2% 2%;
-    margin: 5% 5% 5% 5%;
+    padding: 0 0 0 0;
+    margin: 2% 5% 5% 5%;
   }
   .resume .title {
-    margin-bottom: 5%;
+    position: relative;
+    font-size: 3ch;
+    color: #F0EFED;
+    margin: 0 0 0 5%;
+    font-family: 'Asap', 'Sans Serif';
+    color: white;
+    font-weight: bold;
   }
   .resume .main-container {
     display: -webkit-box;
@@ -377,11 +394,12 @@
             flex-flow: column;
   }
   .resume .tech-skills.card {
-    margin: 5% 5% 5% 5%;
-    padding: 2% 5% 5% 5%;
+    margin: 5% 5% 5% 4%;
+    padding: 2% 5% 2% 5%;
   }
   .resume .tech-skills > .title {
-    margin-bottom: 15%;
+    margin-bottom: 12%;
+    color: #F0EFED;
   }
   .resume .tech-skills > .skill-container {
     display: -webkit-box;
@@ -391,7 +409,7 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
-    margin: 0 0 5% 0;
+    margin: 0 0 15% 0;
   }
   .resume .tech-skills > .skill-container > .skill {
     position: relative;
@@ -407,7 +425,8 @@
     font-family: 'Asap', 'Sans Serif';
     color: white;
     font-weight: normal;
-    color: white;
+    color: #D6D4D5;
+    font-size: 2ch;
   }
   .resume .tech-skills > .skill-container > .circle-container {
     position: relative;
@@ -416,23 +435,26 @@
     position: relative;
     opacity: 0;
   }
+  .resume .experience.card {
+    margin: 5% 5% 5% 2%;
+    padding: 3% 7% 5% 7%;
+  }
   .resume .experience.card .title {
     position: relative;
     font-family: 'Asap', 'Sans Serif';
     color: white;
     font-weight: bold;
-    color: white;
-    font-size: 3ch;
+    color: #F0EFED;
+    font-size: 2.5ch;
     text-decoration: none;
-    margin-bottom: 10%;
+    margin: 0 0 5% 0;
   }
   .resume .experience.card a {
-    margin: 5% 0 5% 0;
     position: relative;
     font-family: 'Asap', 'Sans Serif';
     color: white;
     font-weight: bold;
-    color: white;
+    color: #F0EFED;
     font-size: 2ch;
     text-decoration: none;
   }
@@ -441,43 +463,51 @@
     font-family: 'Asap', 'Sans Serif';
     color: white;
     font-weight: normal;
-    color: white;
+    font-size: 1.75ch;
+    color: #D6D4D5;
   }
   .resume .experience.card .card {
     padding: 5% 5% 5% 5%;
+    margin: 5% 2% 5% 2%;
   }
   .resume .education {
     position: relative;
     opacity: 0;
   }
   .resume .education.card {
-    margin-top: 5%;
+    padding: 3% 7% 5% 7%;
+    margin: 5% 5% 5% 2%;
   }
   .resume .education.card .title {
     position: relative;
     font-family: 'Asap', 'Sans Serif';
     color: white;
     font-weight: bold;
-    color: white;
-    font-size: 3ch;
+    color: #F0EFED;
+    font-size: 2.5ch;
     text-decoration: none;
-    margin-bottom: 10%;
+    margin: 0 0 5% 0;
   }
   .resume .education.card a {
     position: relative;
     font-family: 'Asap', 'Sans Serif';
     color: white;
     font-weight: bold;
-    color: white;
+    color: #F0EFED;
     font-size: 2ch;
     text-decoration: none;
   }
-  .resume .education.card .card > .description {
+  .resume .education.card .description {
     position: relative;
     font-family: 'Asap', 'Sans Serif';
     color: white;
     font-weight: normal;
-    color: white;
+    font-size: 1.75ch;
+    color: #D6D4D5;
+  }
+  .resume .education.card .card {
+    padding: 5% 5% 5% 5%;
+    margin: 2% 2% 5% 2%;
   }
   .resume .download-btn {
     opacity: 0;
@@ -515,7 +545,7 @@
     color: white;
     font-weight: normal;
     font-size: 2ch;
-    color: white;
+    color: #F0EFED;
     font-weight: normal;
     background-color: transparent;
     box-shadow: 0px 0px 20px 0px #26e9ff;
@@ -527,7 +557,6 @@
             transform: translateX(-50%);
     height: 60px;
     width: 20%;
-    margin-bottom: 10%;
   }
   .resume .active {
     -webkit-animation-delay: 0.25s;
@@ -554,6 +583,12 @@
     animation-fill-mode: forwards;
     animation-direction: ease-in;
     animation-iteration-count: 1;
+  }
+  .mobile-content {
+    display: none;
+  }
+  .desktop-content {
+    display: block;
   }
 }
 /*# sourceMappingURL=resume.css.map */

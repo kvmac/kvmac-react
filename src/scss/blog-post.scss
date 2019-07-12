@@ -6,4 +6,11 @@
   width: 100%;
   height: 100%;
   background-color: blue;
+  .title {
+    color: $light-primary;
+  }
+
+  .content {
+    color: $light-primary;
+  }
 }

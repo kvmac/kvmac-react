@@ -63,36 +63,76 @@ export const Resume = () => {
           <div className="experience card active">
             <div className="title">Experience</div>
             <div className="card">
-              <a href="https://www.stratospherequality.com">Stratosphere Quality</a>
-              <div className="description">
-                React & C#
+              <div className="mobile-content">
+                <a href="https://www.stratospherequality.com">Stratosphere Quality</a>
+                <div className="description">
+                  React & C# mobile
+                </div>
+              </div>
+              <div className="desktop-content">
+                <a href="https://www.stratospherequality.com">Stratosphere Quality</a>
+                <div className="description">
+                  React & C# desktop
+                </div>
               </div>
             </div>
             <div className="card">
-              <a href="https://www.availity.com">Availity</a>
-              <div className="description">
-                Angular & C#
+              <div className="mobile-content">
+                <a href="https://www.availity.com">Availity</a>
+                <div className="description">
+                  Angular & C# mobile
+                </div>
+              </div>
+              <div className="desktop-content">
+                <a href="https://www.availity.com">Availity</a>
+                <div className="description">
+                  Angular & C# desktop
+                </div>
               </div>
             </div>
             <div className="card">
-              <a href="https://www.egenuity.com">eGenuity</a>
-              <div className="description">
-                Angular & C#
+              <div className="mobile-content">
+                <a href="https://www.egenuity.com">eGenuity</a>
+                <div className="description">
+                  Angular & C# mobile
+                </div>
+              </div>
+              <div className="desktop-content">
+                <a href="https://www.egenuity.com">eGenuity</a>
+                <div className="description">
+                  Angular & C# desktop
+                </div>
               </div>
             </div>
           </div>
           <div className="education card active">
             <div className="title">Education</div>
             <div className="card">
-              <a href="https://www.anderson.edu">Anderson University</a>
-              <div className="description">
-                Information Systems
+              <div className="mobile-content">
+                <a href="https://www.anderson.edu">Anderson University</a>
+                <div className="description">
+                  Information Systems mobile
+                </div>
+              </div>
+              <div className="desktop-content">
+                <a href="https://www.anderson.edu">Anderson University</a>
+                <div className="description">
+                  Information Systems desktop
+                </div>
               </div>
             </div>
             <div className="card">
-              <a href="https://www.iub.edu">Indiana University</a>
-              <div className="description">
-                Accounting & Finance
+              <div className="mobile-content">
+                <a href="https://www.iub.edu">Indiana University</a>
+                <div className="description">
+                  Accounting & Finance mobile
+                </div>
+              </div>
+              <div className="desktop-content">
+                <a href="https://www.iub.edu">Indiana University</a>
+                <div className="description">
+                  Accounting & Finance desktop
+                </div>
               </div>
             </div>
           </div>

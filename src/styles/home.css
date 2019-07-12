@@ -26,6 +26,12 @@
   height: 100%;
   text-align: center;
   overflow-x: hidden;
+}
+
+.home label {
+  visibility: hidden;
+  display: block;
+  font-size: 2em;
   -webkit-animation-delay: 0.5s;
   -webkit-animation-duration: 2s;
   -webkit-animation-name: reveal-text;
@@ -50,12 +56,6 @@
   animation-fill-mode: forwards;
   animation-direction: ease-in;
   animation-iteration-count: 1;
-}
-
-.home label {
-  visibility: hidden;
-  display: block;
-  font-size: 2em;
 }
 
 .home .bold {

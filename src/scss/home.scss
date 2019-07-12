@@ -10,12 +10,12 @@
   height: 100%;
   text-align: center;
   overflow-x: hidden;
-  @include animation(.5s, 2s, reveal-text, ease-in, forwards, 1);
 
   label {
     visibility: hidden;
     display: block;
     font-size: 2em;
+    @include animation(.5s, 2s, reveal-text, ease-in, forwards, 1);
   }
   .bold {
     @include asap-bold();

@@ -23,4 +23,12 @@
   height: 100%;
   background-color: blue;
 }
+
+.post1 .title {
+  color: #F0EFED;
+}
+
+.post1 .content {
+  color: #F0EFED;
+}
 /*# sourceMappingURL=blog-post.css.map */

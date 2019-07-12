@@ -7,18 +7,16 @@
   background-color: transparent;
   float: right;
   width: $page-width;
-  height: 100%;
-  padding-top: 10%;
+  padding: 5% 0 5% 0;
   opacity: 0;
   @include animation(.5s, 2s, reveal-text, ease-in, forwards, 1);
 
   .title {
     position: relative;
-    margin-bottom: 15%;
-    text-align: center;
-    font-size: 4ch;
-    left: 0;
+    font-size: 3ch;
     @include asap-bold();
+    color: $light-primary;
+    margin: 0  0 10% 5%;
   }
 
   .card {
@@ -35,7 +33,7 @@
   .card>form>input {
     position: relative;
     left: 0;
-    border: 2px solid white; 
+    border: 2px solid $light-primary; 
     border-radius: .5ch;
     padding: 3%;
     background: transparent;

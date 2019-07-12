@@ -5,12 +5,14 @@ import { Logo } from '../svg';
 import '../styles/navbar.css';
 
 
-export const NavBar = () => {
+const NavBar = ({ history }) => {
+
+  const routeToHome = () => history.push('/');
 
   return(
     <div className="navbar">
     {/* TODO: figure out routing back to the main page */}
-      <img className="nav-logo" src={Logo} />
+      <img className="nav-logo" onClick={routeToHome} src={Logo} />
       <div className="space-between"></div>
       <div className="nav-links">
         <Link className="link" to="/about">About<span></span></Link>
@@ -22,3 +24,5 @@ export const NavBar = () => {
     </div>
   )
 }
+
+export default withRouter(NavBar);
