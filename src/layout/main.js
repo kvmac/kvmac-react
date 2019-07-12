@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/main.css';
 import { Route, Switch } from 'react-router-dom';
 import { Header, SideNavBar, Footer } from '../layout';
@@ -26,17 +26,11 @@ import {
   GlowCube,
   GlowSticks
  } from '../svg';
+import { NotFound } from '../pages/not-found';
 
 
-export class Main extends React.Component {
-  constructor(props) {
-    super(props);
+export function Main() {
 
-    this.state = {
-    };
-  }
-
-  componentDidMount() {
     const shapes = [
       // Cross,
       {
@@ -146,29 +140,28 @@ export class Main extends React.Component {
       // },
     ];
 
-    let bg = document.querySelector('.shape-background');
+    useEffect(() => generateShapes(), []);
 
-    for (var i = 1; i <= 50; i ++) {
-      let el = shapes[Math.floor(Math.random() * Math.floor(shapes.length))]
-      let size = el.sizes[Math.floor(Math.random() * Math.floor(el.sizes.length))]
-      let node = document.createElement('div');
-      node.className = `shape-container--${i}`;
-      let img = document.createElement('img');
-      img.src = el.shape;
-      img.style = size;
-      img.className = "shape";
+    const generateShapes = () => {
+      let bg = document.querySelector('.shape-background');
 
-      node.appendChild(img);
+      for (var i = 1; i <= 50; i ++) {
+        let el = shapes[Math.floor(Math.random() * Math.floor(shapes.length))]
+        let size = el.sizes[Math.floor(Math.random() * Math.floor(el.sizes.length))]
+        let node = document.createElement('div');
+        node.className = `shape-container--${i}`;
+        let img = document.createElement('img');
+        img.src = el.shape;
+        img.style = size;
+        img.className = "shape";
 
-      bg.appendChild(node);
-    }
-}
+        node.appendChild(img);
+
+        bg.appendChild(node);
+      }
+    };
 
 
-
-  render() {
-    let w = window.innerWidth;
-    let h = window.innerHeight;
 
     return (
       <div className="main">
@@ -178,16 +171,17 @@ export class Main extends React.Component {
           <div className="routes">
             <Switch>
               <Route exact path="/" component={Home} />
+              <Route exact path="/" component={Home} />
               <Route exact path="/about" component={About} />
               <Route exact path="/projects" component={Projects} />
               <Route exact path="/resume" component={Resume} />
               <Route exact path="/blog" component={Blog} />
               <Route path="/blog/:postId" component={Blog} />
               <Route exact path="/contact" component={Contact} />
+              <Route path="/*" component={NotFound} />
             </Switch>
           </div>
           <Footer />
       </div>
     );
-  }
 }

@@ -1,0 +1,12 @@
+
+@import 'variables';
+@import 'mixins';
+
+
+.not-found {
+  .four-zero-four {
+    @include asap-bold();
+    color: $light-primary;
+    font-size: 50px;
+  }
+}
