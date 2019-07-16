@@ -46,6 +46,11 @@
         @content;
     }
 }
+@mixin link-box-shadow() {
+  box-shadow: 4px 0 25px 0 #1fb6c6;
+  -webkit-box-shadow: 4px 0 25px 0 #1fb6c6;
+  -moz-box-shadow: 4px 0 25px 0 #1fb6c6;
+}
 @mixin box-shadow() {
   box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 4px 0 25px 0 rgba(0, 0, 0, 0.75);

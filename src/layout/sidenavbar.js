@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import headshot from '../img/headshot.png';
 import Icon from 'react-eva-icons';
 import { GlowHomeIcon } from '../svg';
-import { HomeElement, PulseElement, CodeElement, FileElement, MessageElement, EmailElement } from '../shared';
+import { HomeElement, CodeElement, FileElement, MessageElement, EmailElement } from '../shared';
 
 
 export class SideNavBar extends React.Component {
@@ -13,16 +13,21 @@ export class SideNavBar extends React.Component {
 
     this.state = {
       isOpen: false,
-      sidenavAnimation: 'init'
+      sidenavAnimation: 'init',
+      currentPage: 'home'
     };
   }
 
   handleSidenav = () => this.setState({ isOpen: !this.state.isOpen, sidenavAnimation: !this.state.isOpen ? "open" : "close" });
 
-  closeSidenav = () => !this.state.isOpen || this.setState({ isOpen: false, sidenavAnimation: "close" });
+  closeSidenav = (e) => {
+    !this.state.isOpen || this.setState({ isOpen: false, sidenavAnimation: "close" });
+
+    this.setState({ currentPage: e.target.id });
+  }
 
   render() {
-    const { isOpen, sidenavAnimation } = {...this.state};
+    const { isOpen, sidenavAnimation, currentPage } = {...this.state};
 
     return(
       <React.Fragment>
@@ -54,68 +59,63 @@ export class SideNavBar extends React.Component {
                 /> Indianapolis, IN area</div>
             </div>
             <div className="nav">
-              <div className="link-wrapper">
-                {/* <span onMouseOver={}> */}
-                  {/* </span> */}
-                <Link onClick={this.closeSidenav} to="/">
-                  {/* <HighLighter /> */}
-
-                  {/* <i><img src={GlowHomeIcon} /></i> */}
-                  <Icon
-                    name="home-outline"
-                    size="medium"
-                    fill="white"
-                    />
+              <div className={`link-wrapper ${currentPage === "home" ? "raised" : ""}`}>
+                <Link id="home" onClick={this.closeSidenav} to="/">
+                  {currentPage === "home" ? 
+                    <HomeElement isActive={true} fill="#1fb6c6" /> :
+                    <Icon
+                      name="home-outline"
+                      size="medium"
+                      fill="white"
+                      />}
                     {!isOpen || <label>Home</label>}
                 </Link>
               </div>
-              <div className="link-wrapper">
-                {/* <span onMouseOver={}> */}
-                {/* </span> */}
-                <Link onClick={this.closeSidenav} to="/projects">
-                {/* <CodeElement /> */}
+              <div className={`link-wrapper ${currentPage === "projects" ? "raised" : ""}`}>
+                <Link id="projects" onClick={this.closeSidenav} to="/projects">
+                  {currentPage === "projects" ? 
+                  <CodeElement isActive={true} fill="#1fb6c6" /> :
                   <Icon
                     name="code-outline"
                     size="medium"
                     fill="white"
-                    />
-                    {/* <PulseElement /> */}
+                    />}
                     {!isOpen || <label>Projects</label>}
                 </Link>
               </div>
-              <div className="link-wrapper">
-                {/* <span onMouseOver={}> */}
-                {/* </span> */}
-                <Link onClick={this.closeSidenav} to="/resume">️
+              <div className={`link-wrapper ${currentPage === "resume" ? "raised" : ""}`}>
+                <Link id="resume" onClick={this.closeSidenav} to="/resume">️
+                  {currentPage === "resume" ? 
+                  <FileElement isActive={true} fill="#1fb6c6" /> :
                   <Icon
                     name="file-text-outline"
                     size="medium"
                     fill="white"
-                    />
-                    {/* <FileElement /> */}
+                    />}
                     {!isOpen || <label>Resume</label>}
                 </Link>
               </div>
-              {/* <div className="link-wrapper">
+              {/* <div className={`link-wrapper ${currentPage === "home" ? "raised" : ""}`}>
                 <Link onClick={this.closeSidenav} to="/blog">️
+                  {currentPage === "blog" ? 
+                  <MessageElement isActive={true} fill="#1fb6c6" /> :
                   <Icon
                     name="message-square-outline"
                     size="medium"
                     fill="white"
-                    />
+                    />}
                     {!isOpen || <label>Blog</label>}
                 </Link>
               </div> */}
-              <div className="link-wrapper">
-                {/* <span onMouseOver={}> */}
-                {/* </span> */}
-                <Link onClick={this.closeSidenav} to="/contact">️
+              <div className={`link-wrapper ${currentPage === "contact" ? "raised" : ""}`}>
+                <Link id="contact" onClick={this.closeSidenav} to="/contact">️
+                  {currentPage === "contact" ? 
+                  <EmailElement isActive={true} fill="#1fb6c6" /> :
                   <Icon
                     name="email-outline"
                     size="medium"
                     fill="white"
-                    />
-                    {/* <EmailElement /> */}
+                    />}
                     {!isOpen || <label>Contact</label>}
                 </Link>
               </div>
@@ -142,22 +142,4 @@ export class SideNavBar extends React.Component {
       </React.Fragment>
     );
   }
-}
-
-const HighLighter = () => {
-
-  return (
-    <div className="highlighter">
-      <svg viewBox="0 0 50 50">
-        <defs>
-            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-            <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0"></feOffset>
-            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="4"></feGaussianBlur>
-            <feBlend in="SourceGraphic" in2="blurOut" mode="overlay"></feBlend>
-            </filter>
-        </defs>
-        <path x1="0" y1="0" x2="0" y2="10" stroke="#26e9ff" stroke-width="2" />
-      </svg>
-    </div>
-  );
 }

@@ -10,12 +10,6 @@ export const Resume = () => {
   // const [ activeCircles, activateCircle ] = React.useState({});
   const [ activeSections, activateSection ] = React.useState({ "tech": true });
   
-  const handleResume = () => {
-    console.log('resume downloaded');
-    // return KodeeResume;
-  }
-
-
   return (
     <div className="resume">
       <div className="title">Résumé</div>
@@ -66,13 +60,13 @@ export const Resume = () => {
               <div className="mobile-content">
                 <a href="https://www.stratospherequality.com">Stratosphere Quality</a>
                 <div className="description">
-                  React & C# mobile
+                  React & C#
                 </div>
               </div>
               <div className="desktop-content">
                 <a href="https://www.stratospherequality.com">Stratosphere Quality</a>
                 <div className="description">
-                  React & C# desktop
+                  React & C#
                 </div>
               </div>
             </div>
@@ -80,13 +74,13 @@ export const Resume = () => {
               <div className="mobile-content">
                 <a href="https://www.availity.com">Availity</a>
                 <div className="description">
-                  Angular & C# mobile
+                  Angular & C#
                 </div>
               </div>
               <div className="desktop-content">
                 <a href="https://www.availity.com">Availity</a>
                 <div className="description">
-                  Angular & C# desktop
+                  Angular & C#
                 </div>
               </div>
             </div>
@@ -94,13 +88,13 @@ export const Resume = () => {
               <div className="mobile-content">
                 <a href="https://www.egenuity.com">eGenuity</a>
                 <div className="description">
-                  Angular & C# mobile
+                  Angular & C#
                 </div>
               </div>
               <div className="desktop-content">
                 <a href="https://www.egenuity.com">eGenuity</a>
                 <div className="description">
-                  Angular & C# desktop
+                  Angular & C#
                 </div>
               </div>
             </div>
@@ -111,36 +105,36 @@ export const Resume = () => {
               <div className="mobile-content">
                 <a href="https://www.anderson.edu">Anderson University</a>
                 <div className="description">
-                  Information Systems mobile
+                  Computer Science
                 </div>
               </div>
               <div className="desktop-content">
                 <a href="https://www.anderson.edu">Anderson University</a>
                 <div className="description">
-                  Information Systems desktop
+                  Computer Science
                 </div>
               </div>
             </div>
-            <div className="card">
+            {/* <div className="card">
               <div className="mobile-content">
                 <a href="https://www.iub.edu">Indiana University</a>
                 <div className="description">
-                  Accounting & Finance mobile
+                  Accounting & Finance
                 </div>
               </div>
               <div className="desktop-content">
                 <a href="https://www.iub.edu">Indiana University</a>
                 <div className="description">
-                  Accounting & Finance desktop
+                  Accounting & Finance
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
       <div className="download-btn active">
-        <a href="../pdf/McIntosh-Kodee.pdf" download>
-          <button onClick={handleResume}>Download Resume!</button>
+        <a href={KodeeResume} download>
+          <button>Download Resume</button>
         </a>
       </div>
     </div>

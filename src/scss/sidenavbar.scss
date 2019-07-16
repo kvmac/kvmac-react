@@ -124,6 +124,11 @@
         .link-wrapper {
           height: 20%;
 
+          // &.raised {
+          //   border-radius: .5ch;
+          //   @include link-box-shadow();
+          // }
+
           a {
             i {
               padding-right: 4ch;
@@ -208,6 +213,13 @@
         left: 0;
         .link-wrapper {
           height: 20%;
+
+          // &.raised {
+          //   border-radius: .5ch;
+          //   border: 8px outset;
+          //   @include link-box-shadow();
+          // }
+
           a {
               display: block;
               position: relative;

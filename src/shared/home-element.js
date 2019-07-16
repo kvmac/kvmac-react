@@ -3,7 +3,16 @@ import React from 'react';
 export const HomeElement = ({ isActive, fill }) => {
   return (
     <i>
-    <svg xmlns="http://www.w3.org/2000/svg" className="eva eva-message-square-outline" width="18px" height="18px" viewBox="0 0 24 24" fill={ isActive ? fill : "grey" }>
+    <svg xmlns="http://www.w3.org/2000/svg" className="eva eva-home-outline" height="18px" width="18px" x="0" y="0" viewBox="0 0 24 24" fill={ isActive ? fill : "white" }>
+      {!isActive ||
+        <defs>
+            <filter id="glow" x="-120%" y="-120%" width="400%" height="400%">
+            <feOffset result="offOut" in="SourceGraphic" dx="0" dy="0"></feOffset>
+            <feGaussianBlur result="blurOut" in="offOut" stdDeviation="2"></feGaussianBlur>
+            <feBlend in="SourceGraphic" in2="blurOut" mode="overlay"></feBlend>
+            </filter>
+        </defs>
+      }
       <g filter="url(#glow)" data-name="Layer 2">
         <g data-name="home">
           <rect width="24" height="24" opacity="0"></rect>
