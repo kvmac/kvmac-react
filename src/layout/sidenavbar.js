@@ -14,7 +14,7 @@ export class SideNavBar extends React.Component {
     this.state = {
       isOpen: false,
       sidenavAnimation: 'init',
-      currentPage: 'home'
+      currentPage: ''
     };
   }
 
@@ -23,7 +23,7 @@ export class SideNavBar extends React.Component {
   closeSidenav = (e) => {
     !this.state.isOpen || this.setState({ isOpen: false, sidenavAnimation: "close" });
 
-    this.setState({ currentPage: e.target.id });
+    // this.setState({ currentPage: e.target.id });
   }
 
   render() {
