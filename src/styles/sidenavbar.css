@@ -288,13 +288,6 @@
 
 .sidenavbar .contents.visible {
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
 }
 
 .sidenavbar .contents.visible .profile-header {
@@ -364,8 +357,11 @@
 }
 
 .sidenavbar .contents.visible .nav {
+  position: relative;
   margin: 10% 0 15% 0;
   height: 40%;
+  min-height: 150px;
+  max-height: 300px;
 }
 
 .sidenavbar .contents.visible .nav .link-wrapper {
