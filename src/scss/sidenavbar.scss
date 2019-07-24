@@ -95,6 +95,8 @@
 
     &.visible {
       overflow: hidden;
+      display: flex;
+      flex-flow: column nowrap;
 
       .profile-header {
         position: relative;
@@ -115,11 +117,8 @@
         }
       }
       .nav {
-        position: relative;
         margin: 10% 0 15% 0;
         height: 40%;
-        min-height: 150px;
-        max-height: 300px;
 
         .link-wrapper {
           height: 20%;
