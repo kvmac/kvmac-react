@@ -39,14 +39,14 @@ export class Projects extends React.Component {
             tech={[this.tech['react']]}
             description="An app that lets you search tweets by hashtag"
           />
-          <Project
+          {/* <Project
             cardNumber="3"
             name="Grocery List"
             appUrl="https://gl-app.kvmac.com"
             githubName="gl-web-app"
             tech={[this.tech['angular']]}
             description="A crud app to keep track of your groceries"
-          />
+          /> */}
         </div>
       </div>
     );
