@@ -39,14 +39,14 @@ export class Projects extends React.Component {
             tech={[this.tech['react']]}
             description="An app that lets you search tweets by hashtag"
           />
-          {/* <Project
+          <Project
             cardNumber="3"
             name="Grocery List"
             appUrl="https://gl-app.kvmac.com"
             githubName="gl-web-app"
             tech={[this.tech['angular']]}
             description="A crud app to keep track of your groceries"
-          /> */}
+          />
         </div>
       </div>
     );
@@ -66,13 +66,13 @@ const Project = ({ name, githubName, appUrl, tech, description, cardNumber }) =>
         <label>{description}</label>
       </div>
       <div className="links">
-        <a href={appUrl} target="_blank" rel="noopener noreferrer">
+        {/* <a href={appUrl} target="_blank" rel="noopener noreferrer"> */}
           <Icon
             name="browser-outline"
             size="large"
             fill="white"
           />
-        </a>
+        {/* </a> */}
         <a href={"https://www.github.com/kvmac/" + githubName} target="_blank" rel="noopener noreferrer">
           <Icon
             name="archive-outline"
