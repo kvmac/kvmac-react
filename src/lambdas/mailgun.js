@@ -1,7 +1,7 @@
 const mailgun = require('mailgun-js')
 ({
   // domain: 'https://api.mailgun.net/v3/kvmac.com/messages',
-  domain: 'kvmac.com',
+  domain: 'kodeemcintosh.com',
   apiKey: process.env.MAILGUN_API_KEY,
   retry: 3
 });
@@ -24,8 +24,8 @@ export async function handler(event, context, callback) {
     const d = new Date();
 
     let response = await mailgun.messages().send({
-      from: `KVMAC Contact Form <${data.from}>`,
-      to: 'kodee.mcintosh@kvmac.com',
+      from: `Kodee Contact Form <${data.from}>`,
+      to: 'kodee.mcintosh@kodeemcintosh.com',
       subject: `${data.from} -- ${data.subject} -- ${d.getMonth()}/${d.getDate()}/${d.getFullYear()} ${d.getHours()}:${d.getMinutes()}`,
       text: data.text
     });

@@ -46,11 +46,11 @@ export class SideNavBar extends React.Component {
             </div>
             <div className="profile-info">
               <div>Kodee McIntosh</div>
-              <div>Software Engineer <Icon
+              <div>Sr Software Engineer <Icon
                   name="at-outline"
                   size="small"
                   fill="grey"
-                /> SQ</div>
+                /> <a className="current-company" href="www.parachut.co" target="_blank" rel="noopener noreferrer">Parachut.co</a></div>
               <div>
                 <Icon
                   name="pin-outline"

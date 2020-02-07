@@ -109,6 +109,10 @@
         height: 10%;
         visibility: hidden;
         @include animation(.15s, 1.5s, reveal-content, linear, forwards, 1);
+
+        .current-company {
+          text-decoration: none;
+        }
         
         label {
           margin: 2% 0 2% 0;
