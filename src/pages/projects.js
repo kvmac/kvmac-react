@@ -33,14 +33,6 @@ export class Projects extends React.Component {
           />
           <Project
             cardNumber="2"
-            name="Twitter Search"
-            appUrl="https://ts-app.kvmac.com"
-            githubName="TwitterSearchApp"
-            tech={[this.tech['react']]}
-            description="An app that lets you search tweets by hashtag"
-          />
-          <Project
-            cardNumber="3"
             name="Grocery List"
             appUrl="https://gl-app.kvmac.com"
             githubName="gl-web-app"

@@ -23,7 +23,7 @@ export class About extends React.Component {
               <img className="photo" src={headshot} alt="Kodee McIntosh" />
               <div className="profile-info">
                 <label>Kodee McIntosh</label>
-                <label>Software Engineer @ SQ</label>
+                <label>Software Engineer @ Parachut.co</label>
                 <label>Indianapolis, IN area</label>
               </div>
               <div className="social">
