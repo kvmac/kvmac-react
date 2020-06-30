@@ -12,12 +12,18 @@ export class Home extends React.Component {
   }
 
   render() {
-
     return (
       <div className="home">
-        <label className="bold">This site is currently</label>
-        <label className="regular">under development</label>
+        <label className="bold">Hey, I'm Kodee.</label>
+        <label className="regular">Welcome to my site!</label>
       </div>
     );
+
+    // return (
+    //   <div className="home">
+    //     <label className="bold">This site is currently</label>
+    //     <label className="regular">under development</label>
+    //   </div>
+    // );
   }
 }
